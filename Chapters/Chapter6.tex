@@ -1,27 +1,79 @@
 % Chapter 6
 
-\chapter{Applications} % Main chapter title
+\chapter{Potential Applications of the EIIM Framework} % Main chapter title
 
 \label{applications} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
-\lhead{Chapter 6. \emph{Applications}} % This is for the header on each page - perhaps a shortened title
+\lhead{Chapter 6. \emph{Potential Applications of the EIIM Framework}} % This is for the header on each page - perhaps a shortened title
 
 \section{Event Monitoring and Analysis}
-References related to real-life events are extremely abundant in social media. Right from natural disasters such as the `Haiti Earthquake' to international sporting events like the `Winter Olympics' to socio-political and socio-economical events that shook the world such as presidential elections, `Egyptian Revolution', and recessions were covered, analyzed, extrapolated and informed by social media. This prolific event-specific content in social media makes it a promising ground for performing event analytics. Platforms like Geofeedia\footnote{http://geofeedia.com/}, TwitterStand\footnote{http://twitterstand.umiacs.umd.edu/}, Twitris\footnote{http://twitris.knoesis.org/}, Truthy\footnote{http://truthy.indiana.edu/}, and TweetTracker\footnote{http://tweettracker.fulton.asu.edu/}  have developed techniques to provide analytics related to different local and global real-life events. 
+References related to real-life events are extremely abundant in social media. Right from natural disasters such as the `Haiti Earthquake' \cite{gao2011harnessing} to international sporting events like the `Winter Olympics' \cite{walker2013russia} to socio-political \cite{singh2010mining} and socio-economical \cite{bollen2009modeling} events that shook the world such as presidential elections \cite{metzgar2009social}, `Egyptian Revolution' \cite{choudhary2012social}, and recessions were covered, analyzed, extrapolated and informed by social media. This prolific event-specific content in social media makes it a promising ground for performing event analytics. Platforms like Geofeedia\footnote{http://geofeedia.com/}, TwitterStand\footnote{http://twitterstand.umiacs.umd.edu/}, Twitris\footnote{http://twitris.knoesis.org/}, Truthy\footnote{http://truthy.indiana.edu/}, and TweetTracker\footnote{http://tweettracker.fulton.asu.edu/}  have developed techniques to provide analytics related to different local and global real-life events. 
 
 Monitoring social media has become one of the essential activities of national security agencies for predicting potential threats and mass protests \cite{ghannam2011social}. Social media is being used for tracking terrorism activities \cite{oh2011information}, collective actions \cite{agarwal2014online}, and countering cyber-attack threats\footnote{https://www.recordedfuture.com/}. One of the main components of each of these applications is tracking references related to the events. The proposed EIIM model could be an essential component of such systems. It would help in identifying, tracking and analyzing events and its related references in an organized manner over time.
 
 
 
-
-
 \section{Event Information Retrieval}
+Retrieving informative content related to real-life events shared in social media and presenting them in an organized way to the interested users has led to web based services like Seen\footnote{http://seen.co}. It allows users to follow live updates of the events and also aids in witnessing and re-living the events at a later stage from the archives. Showing useful and interesting content to users by filtering out the pointless babbles from social media streams is an important component of such services. Additionally, such systems could get immensely benifitted by identification of event-specific informative hashtags, text units, users and URLs over time as the event proceeds. This would further enable efficient indexing of event-specific terms and hashtags that leads to high quality information, and effective processing of information. It would enhance the user experience, allowing better consumption and summarization of information related to the events, and positively impact triggering of event-specific recommendations. Thus, the proposed EIIM model in this thesis can act as the core component of information retrieval systems retrieving and organizing information related to real-life events from social media. 
 
-\section{Event Opinion Mining}
+\section{Opinion and Review Mining}
+Every day millions of people express their opinions in social media about products and companies they like and dislike. Their communications often include thoughts about good and bad experiences with the products and services. This provides a great opportunity for companies to understand its customers and to get unbiased valuable feedback from them about their product offerings without asking them to fill out time consuming outdated surveys. The EIIM framework when used for monitoring references of products/services from social media during product launch events could be useful in mining isightful and informative opinionated content. Combined with sentiment analysis, the invention could be a powerful tool for review analysis. One of the important contributions of the system could be to identify the sources having high chances of containing insightful information and filter them out for further processing. This would make a review mining system more efficient and increase its overall quality. Mining opinions related to entities related to an event could be used in many other contexts like political campaigns, socio-political studies, market behavior analysis, e-commerce applications, etc. Steps are being taken for adding this capability to the EIIM framework. On considering a mix of named entities and unigram opinionated words as text units in the \textit{EventIdentityInfoGraph} we obtained some preliminary encouraging results. A glimpse of the results obtained for a basketball game ''Miami Heats VS Cleveland Cavaliers", played on 25th December, 2014 is as follows:
 
-\section{Event-specific Recommendations}
+Top 10 insightful and opinionated tweets for an hour related to the game
+\begin{enumerate}
+
+\item	Good win for the Heat tonight against Cavs and Lebron. Great game for Wade and Deng. Just imagine if Bosh were healthy. \#HeatvsCavs
+
+\item	Good work Dwayne Wade. Good work Miami Heat. LeBron is embarrassed. It's all over his face. \#NBA \#heatvscavs
+
+\item	Great game on Christmas Heat Showed up and spoiled Lebron Return to MIA! \#Wade County \#HeatvsCavs \#NBAChristmas
+
+\item	Lebron leaves Miami high and dry and they cheer his return. Some even cheering cavs. Embarrassing bandwagon fan base. \#heatv…
+
+\item	I totally understand LBJ move to Cleveland and like it. But if I'm a \#Miami fan, I would boo LeBron like crazy today. \#heatvscavs \#CLEvsMIA
+
+\item	Stay classy \#Miami. Good game vs. Lebron and; Cavs. \#NBA \#MIAvsCLE \#HeatvsCavs \#Heat \#HeatNation
+
+\item Loul Deng playing both ends of the floor. He's playing good D to LBJ \#heatvscavs
+
+\item	Heat fans ; Cavs fans. Class vs no class. No burning a jersey in Miami \#heatvscavs \#HeatNation
+
+\item	WE FUCKING WON!!!!!! LETS GO HEAT \#HEATgame \#HeatNation \#HeatvsCavs Wade with 31 points 5 assist 5 rebounds! Good shit MIAMI
+
+\item	Kevin Love is overrated. Big fish, small pond in MN and injury prone. \#HeatvsCavs \#NBAXmas
+
+\end{enumerate}
+
+The above tweets point to the reactions of the viewers on the game as well as the players participating in the event.
+
+\section{Recommender Systems}
+The EIIM framework can be used for developing event related recommender systems. The ranked list of event identity information can be used for giving useful recommendations. For example following is a refined tweet recommendation for an event obtained from a snapshot of the \textit{EventIdentityInfoGraph} created for the event: “BlackLivesMatter”: Protest movement against the killing of Eric Garner.
+
+\textbf{Original Tweet:}
+
+\begin{itemize}
+\item \#BREAKING \#NEWS | New York City Mayor Says, \#BlackLivesMatter \\ http://t.co/qYvp8L8gDh | \#BLACK  \@HCP520
+\end{itemize}
+
+\textbf{Recommended Tweets:}
+
+\begin{itemize}
+
+\item New York: What's the plan? Where are the protests happening tonight? \#EricGarner \#BlackLivesMatter \#MichaelBrown \#ICantBreathe
+
+\item Brooklyn District Attorney to Convene Grand Jury in Case of \#AkaiGurley NBC New York http://t.co/mLlYPy39Pa \#BlackLivesMatter
+
+\item New York Today! \#ShutItDown \#economicshutdown \#BlackLivesMatter \#ICantBreathe \#EricGarner \#nojusticenoprofits http://t.co/F0TrZtx2Y5
+
+\end{itemize}
+
+Similarly an user can get other recommended users who are talking on the same topic. Hashtags and topics can also be recommended. It can further lead to clustering of similar content and discovery of communities around different topics related to the event. We wish to work on this in the future.
+
+
 
 \section{Event Management and Marketing}
+Social media is increasingly being used  by event management practitioners while organizing conferences, seminars, music festivals, fashion shows, fundraisers and various other types of planned events. Tracking and producing useful and informative content before, during and after the events in social media from the perspective of event management has proved to be extremely beneficial \footnote{http://oursocialtimes.com/using-social-media-to-make-your-event-a-dazzling-success-infographic/}. Right from promoting the events, collecting RSVPs, creating communities around topics, announcing important information, getting real-time unbiased feedbacks, to marketing right content to the users creating buzz about the events, social media plays an important role. It also helps in building long term relationships with the communities of users interested in an event and track their related activities. In such a scenario the EIIM life cycle can constantly track and persistently store salient information related to events right from its inception. The \textit{EventIdentityInfoGraph} can aid in identifying event-specific informative content and users producing them, which could further lead to effective targeting of user communities, generating event summaries, mining opinions, broadcasting interesting information, among other things related to an event.
+
 
 \section{Social Media Data Integration}
-Organizations have increasingly started integrating the data available in social media with the enterprise data\footnote{http://www.altimetergroup.com/research/reports/social-data-intelligence}. Social media data is most powerful when it is combined with daily transactional data and the master data to give a comprehensive view of customers, products and business conditions. Customers often openly talk about the products in social media and build communities around hashtags related to different products. An EIIM system capable of operating in social media could go a long way in collecting the right information about the entities of concern maintained in the enterprise databases and integrate the collected information with the already existing ones. The entity resolution aspect would further help in managing the data quality issues related to data integration. In such conditions the EIIM model proposed could be used for integrating entity information from two distinct domains of enterprise system and social media in order to gain strategic intelligence related to business of an organization. This would further help an organization in marketing, corporate communications, public relations, customer support, product development, advertising, market research, product recommendations and gaining competitive intelligence.
+Organizations have increasingly started integrating the data available in social media with the enterprise data\footnote{http://www.altimetergroup.com/research/reports/social-data-intelligence}. Social media data is most powerful when it is combined with daily transactional data and the master data to give a comprehensive view of customers, products and business conditions. Customers often openly talk about the products in social media and build communities around hashtags \cite{tsur2012s} related to different topics. The EIIM framework could go a long way in collecting right information about the entities of concern maintained in the enterprise databases and integrate the collected information with the already existing ones. The entity resolution aspect would further help in managing the data quality issues related to data integration. In such conditions the EIIM model proposed could be used for integrating entity information from two distinct domains of enterprise system and social media in order to gain strategic intelligence related to business of an organization. This would further help an organization in marketing, corporate communications, public relations, customer support, product development, advertising, market research, product recommendations and gaining competitive intelligence.
