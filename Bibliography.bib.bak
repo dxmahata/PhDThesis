@@ -1,13 +1,6 @@
 % This file was created with JabRef 2.9.2.
 % Encoding: Cp1252
 
-@BOOK{agarwal2014online,
-  title = {Online collective action: Dynamics of the crowd in social media},
-  publisher = {Springer},
-  year = {2014},
-  author = {Agarwal, Nitin and Lim, Merlyna and Wigand, Rolf T}
-}
-
 @ARTICLE{agarwal2013grouping,
   author = {Agarwal, Nitin and Mahata, Debanjan},
   title = {Grouping the Similar among the Disconnected Bloggers},

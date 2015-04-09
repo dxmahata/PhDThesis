@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.18)  2 APR 2015 00:29
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.18)  9 APR 2015 11:03
 entering extended mode
 **C:/Users/cisstudent/Documents/Phd*Defense/Thesis/main.tex
 ("C:/Users/cisstudent/Documents/Phd Defense/Thesis/main.tex"
@@ -815,64 +815,190 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--121
 
 ]
 ------------------------------------------------------------------------------
- Abbreviations
+ Dedicatory
 ------------------------------------------------------------------------------
 [9
 
-
-
 ]
-------------------------------------------------------------------------------
- Physical Constants
-------------------------------------------------------------------------------
-[10
+<Figures/EIIMComponents/fullFramework.jpg, id=395, 1697.5922pt x 808.52063pt>
+File: Figures/EIIMComponents/fullFramework.jpg Graphic file (type jpg)
 
+<use Figures/EIIMComponents/fullFramework.jpg>
+Package pdftex.def Info: Figures/EIIMComponents/fullFramework.jpg used on input
+ line 269.
+(pdftex.def)             Requested size: 441.00092pt x 227.61794pt.
 
+Overfull \hbox (23.52785pt too wide) in paragraph at lines 269--270
+ [][] 
+ []
 
-]
-------------------------------------------------------------------------------
- Symbols
-------------------------------------------------------------------------------
-[11
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 274.
 
-
-
-]
-------------------------------------------------------------------------------
- Dedicatory
-------------------------------------------------------------------------------
-[12
-
-] ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\Chapters/Chapter1.tex"
-Chapter 1.
-------------------------------------------------------------------------------
- 1 Chapter Title Here
-------------------------------------------------------------------------------
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 22.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 22.
- [1
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 274.
+ [10
 
 
+ <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIMComponents/fullF
+ramework.jpg>] [11] ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\Chapters
+/Chapter1.tex"
+Chapter 1.
+------------------------------------------------------------------------------
+ 1 Introduction
+------------------------------------------------------------------------------
+) ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\Chapters/Chapter2.tex"
+[1
 
-] [2] [3]
-[4] [5]
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 135.
- [6] [7] [8] [9]
-<Figures/Electron.pdf, id=313, 398.3386pt x 284.52756pt>
-File: Figures/Electron.pdf Graphic file (type pdf)
 
-<use Figures/Electron.pdf>
-Package pdftex.def Info: Figures/Electron.pdf used on input line 219.
-(pdftex.def)             Requested size: 398.33762pt x 284.52686pt.
- [10 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/Electron.pdf>] [
-11])
-("C:\Users\cisstudent\Documents\Phd Defense\Thesis\Appendices/AppendixA.tex"
-[12]
+]
+Chapter 2.
+------------------------------------------------------------------------------
+ 2 Literature Review
+------------------------------------------------------------------------------
+) ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\Chapters/Chapter3.tex"
+[2
+
+]
+Chapter 3.
+------------------------------------------------------------------------------
+ 3 Defining Events
+------------------------------------------------------------------------------
+) ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\Chapters/Chapter4.tex"
+[3
+
+]
+Chapter 4.
+------------------------------------------------------------------------------
+ 4 Event Identity Information Management Life Cycle
+------------------------------------------------------------------------------
+
+<Figures/EIIMComponents/IdentityIntegrity.jpg, id=419, 687.31781pt x 528.47438p
+t>
+File: Figures/EIIMComponents/IdentityIntegrity.jpg Graphic file (type jpg)
+ <use Figures/EIIMComponents/IdentityIntegrity.jpg>
+Package pdftex.def Info: Figures/EIIMComponents/IdentityIntegrity.jpg used on i
+nput line 15.
+(pdftex.def)             Requested size: 250.38124pt x 213.3939pt.
+
+<Figures/EIIMComponents/EventReferenceCollection.jpg, id=420, 686.565pt x 529.9
+8pt>
+File: Figures/EIIMComponents/EventReferenceCollection.jpg Graphic file (type jp
+g)
+ <use Figures/EIIMComponents/EventReferenceCollection.jpg>
+Package pdftex.def Info: Figures/EIIMComponents/EventReferenceCollection.jpg us
+ed on input line 23.
+(pdftex.def)             Requested size: 250.37938pt x 213.39534pt.
+
+<Figures/EIIMComponents/EventReferencePreparation.jpg, id=421, 686.565pt x 529.
+98pt>
+File: Figures/EIIMComponents/EventReferencePreparation.jpg Graphic file (type j
+pg)
+ <use Figures/EIIMComponents/EventReferencePreparation.jpg>
+Package pdftex.def Info: Figures/EIIMComponents/EventReferencePreparation.jpg u
+sed on input line 31.
+(pdftex.def)             Requested size: 250.37938pt x 213.39534pt.
+
+<Figures/EIIMComponents/EventInformationQuality.jpg, id=422, 686.565pt x 529.98
+pt>
+File: Figures/EIIMComponents/EventInformationQuality.jpg Graphic file (type jpg
+)
+ <use Figures/EIIMComponents/EventInformationQuality.jpg>
+Package pdftex.def Info: Figures/EIIMComponents/EventInformationQuality.jpg use
+d on input line 39.
+(pdftex.def)             Requested size: 250.37938pt x 213.39534pt.
+
+<Figures/EIIMComponents/EventIdentityInformationCapture.jpg, id=423, 722.7pt x 
+535.2497pt>
+File: Figures/EIIMComponents/EventIdentityInformationCapture.jpg Graphic file (
+type jpg)
+ <use Figures/EIIMComponents/EventIdentityInformationCapture.jpg>
+Package pdftex.def Info: Figures/EIIMComponents/EventIdentityInformationCapture
+.jpg used on input line 47.
+(pdftex.def)             Requested size: 250.37938pt x 213.39369pt.
+
+[4
+
+ <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIMComponents/Ident
+ityIntegrity.jpg>]
+<Figures/EIIMComponents/EventIdentityInformationStructure.jpg, id=428, 686.565p
+t x 529.98pt>
+File: Figures/EIIMComponents/EventIdentityInformationStructure.jpg Graphic file
+ (type jpg)
+
+<use Figures/EIIMComponents/EventIdentityInformationStructure.jpg>
+Package pdftex.def Info: Figures/EIIMComponents/EventIdentityInformationStructu
+re.jpg used on input line 55.
+(pdftex.def)             Requested size: 250.37938pt x 213.39534pt.
+ [5 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIMComponents/Ev
+entReferenceCollection.jpg> <C:/Users/cisstudent/Documents/Phd Defense/Thesis/F
+igures/EIIMComponents/EventReferencePreparation.jpg>]
+<Figures/EIIMComponents/EventIdentityInformationProcessing.jpg, id=433, 686.565
+pt x 529.98pt>
+File: Figures/EIIMComponents/EventIdentityInformationProcessing.jpg Graphic fil
+e (type jpg)
+
+<use Figures/EIIMComponents/EventIdentityInformationProcessing.jpg>
+Package pdftex.def Info: Figures/EIIMComponents/EventIdentityInformationProcess
+ing.jpg used on input line 63.
+(pdftex.def)             Requested size: 250.37938pt x 213.39534pt.
+
+<Figures/EIIMComponents/EventReferenceResolution.jpg, id=434, 686.565pt x 529.9
+8pt>
+File: Figures/EIIMComponents/EventReferenceResolution.jpg Graphic file (type jp
+g)
+ <use Figures/EIIMComponents/EventReferenceResolution.jpg>
+Package pdftex.def Info: Figures/EIIMComponents/EventReferenceResolution.jpg us
+ed on input line 71.
+(pdftex.def)             Requested size: 250.37938pt x 213.39534pt.
+
+<Figures/EIIMComponents/EventAnalytics.jpg, id=435, 689.57625pt x 529.22719pt>
+File: Figures/EIIMComponents/EventAnalytics.jpg Graphic file (type jpg)
+
+<use Figures/EIIMComponents/EventAnalytics.jpg>
+Package pdftex.def Info: Figures/EIIMComponents/EventAnalytics.jpg used on inpu
+t line 78.
+(pdftex.def)             Requested size: 250.38324pt x 213.39102pt.
+)
+("C:\Users\cisstudent\Documents\Phd Defense\Thesis\Chapters/Chapter5.tex"
+Overfull \vbox (135.56825pt too high) has occurred while \output is active []
+
+
+[6 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIMComponents/Eve
+ntInformationQuality.jpg> <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Fig
+ures/EIIMComponents/EventIdentityInformationCapture.jpg>] [7 <C:/Users/cisstude
+nt/Documents/Phd Defense/Thesis/Figures/EIIMComponents/EventIdentityInformation
+Structure.jpg> <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIMCo
+mponents/EventIdentityInformationProcessing.jpg>] [8 <C:/Users/cisstudent/Docum
+ents/Phd Defense/Thesis/Figures/EIIMComponents/EventReferenceResolution.jpg> <C
+:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIMComponents/EventAna
+lytics.jpg>]
+Chapter 5.
+------------------------------------------------------------------------------
+ 5 Discovering Event-specific Informative Content from Twitter
+------------------------------------------------------------------------------
+) ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\Chapters/Chapter6.tex"
+[9
+
+]
+Chapter 6.
+------------------------------------------------------------------------------
+ 6 Applications
+------------------------------------------------------------------------------
+) ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\Chapters/Chapter7.tex"
+[10
+
+] [11]
+Chapter 7.
+------------------------------------------------------------------------------
+ 7 Conclusion and Future Work
+------------------------------------------------------------------------------
+) ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\Appendices/AppendixA.tex"
+[12
+
+]
 Appendix A.
 ------------------------------------------------------------------------------
  A Appendix Title Here
@@ -884,49 +1010,45 @@ Appendix A.
  Bibliography
 ------------------------------------------------------------------------------
 ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\main.bbl")
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 307.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 359.
  [14
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 307.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 359.
 
 ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\main.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 307.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 307.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 359.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 359.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B96BEB177C650094A12E36609383D64E;5607.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 307.
+(rerunfilecheck)             Checksum: A483D980239BF3E3E253EA711E5AE445;13224.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 359.
  ) 
 Here is how much of TeX's memory you used:
- 13120 strings out of 493921
- 185037 string characters out of 3144860
- 251590 words of memory out of 3000000
- 16140 multiletter control sequences out of 15000+200000
- 20306 words of font info for 77 fonts, out of 3000000 for 9000
+ 13223 strings out of 493921
+ 188882 string characters out of 3144860
+ 253515 words of memory out of 3000000
+ 16182 multiletter control sequences out of 15000+200000
+ 16111 words of font info for 59 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  49i,11n,45p,3250b,428s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
-type1/public/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (27 pages, 329149 bytes).
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/amsfonts/symbols/msam7.pfb>
+Output written on main.pdf (26 pages, 2115249 bytes).
 PDF statistics:
- 480 PDF objects out of 1000 (max. 8388607)
- 77 named destinations out of 1000 (max. 500000)
- 270 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 568 PDF objects out of 1000 (max. 8388607)
+ 114 named destinations out of 1000 (max. 500000)
+ 555 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -6,33 +6,63 @@
 \contentsline {chapter}{Contents}{v}{dummy.4}
 \contentsline {chapter}{List of Figures}{vii}{dummy.6}
 \contentsline {chapter}{List of Tables}{viii}{dummy.8}
-\contentsline {chapter}{Abbreviations}{ix}{dummy.10}
-\contentsline {chapter}{Physical Constants}{x}{dummy.13}
-\contentsline {chapter}{Symbols}{xi}{dummy.16}
 \vspace {2em}
-\contentsline {chapter}{\numberline {1}Chapter Title Here}{1}{chapter.19}
-\contentsline {section}{\numberline {1.1}Welcome and Thank You}{1}{section.20}
-\contentsline {section}{\numberline {1.2}Learning \LaTeX {}}{1}{section.21}
-\contentsline {subsection}{\numberline {1.2.1}A (not so short) Introduction to \LaTeX {}}{2}{subsection.22}
-\contentsline {subsection}{\numberline {1.2.2}A Short Math Guide for \LaTeX {}}{2}{subsection.23}
-\contentsline {subsection}{\numberline {1.2.3}Common \LaTeX {} Math Symbols}{2}{subsection.24}
-\contentsline {subsection}{\numberline {1.2.4}\LaTeX {} on a Mac}{3}{subsection.25}
-\contentsline {section}{\numberline {1.3}Getting Started with this Template}{3}{section.26}
-\contentsline {subsection}{\numberline {1.3.1}About this Template}{3}{subsection.27}
-\contentsline {section}{\numberline {1.4}What this Template Includes}{4}{section.28}
-\contentsline {subsection}{\numberline {1.4.1}Folders}{4}{subsection.29}
-\contentsline {subsection}{\numberline {1.4.2}Files}{5}{subsection.30}
-\contentsline {section}{\numberline {1.5}Filling in the `\texttt {Thesis.cls}' File}{6}{section.31}
-\contentsline {section}{\numberline {1.6}The `\texttt {Thesis.tex}' File Explained}{7}{section.32}
-\contentsline {section}{\numberline {1.7}Thesis Features and Conventions}{8}{section.33}
-\contentsline {subsection}{\numberline {1.7.1}Printing Format}{8}{subsection.34}
-\contentsline {subsection}{\numberline {1.7.2}Using US Letter Paper}{8}{subsection.35}
-\contentsline {subsection}{\numberline {1.7.3}References}{9}{subsection.36}
-\contentsline {subsection}{\numberline {1.7.4}Figures}{10}{subsection.38}
-\contentsline {subsection}{\numberline {1.7.5}Typesetting mathematics}{11}{subsection.40}
-\contentsline {section}{\numberline {1.8}Sectioning and Subsectioning}{12}{section.42}
-\contentsline {section}{\numberline {1.9}In Closing}{12}{section.43}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.11}
+\contentsline {section}{\numberline {1.1}Social Media and Real-life Events}{1}{section.12}
+\contentsline {section}{\numberline {1.2}Challenges and Opportunities}{1}{section.13}
+\contentsline {section}{\numberline {1.3}Research Questions}{1}{section.14}
+\contentsline {section}{\numberline {1.4}Research Methodology}{1}{section.15}
+\contentsline {section}{\numberline {1.5}Research Contributions}{1}{section.16}
+\contentsline {section}{\numberline {1.6}Structure of the Thesis}{1}{section.17}
+\contentsline {chapter}{\numberline {2}Literature Review}{2}{chapter.18}
+\contentsline {section}{\numberline {2.1}Event Identification in News Text}{2}{section.19}
+\contentsline {section}{\numberline {2.2}Event Identification in Social Media}{2}{section.20}
+\contentsline {section}{\numberline {2.3}Information Quality in Social Media}{2}{section.21}
+\contentsline {section}{\numberline {2.4}Ranking and Summarization of Short Textual Social Media Posts}{2}{section.22}
+\contentsline {section}{\numberline {2.5}Reference Tracking and Entity Resolution}{2}{section.23}
+\contentsline {chapter}{\numberline {3}Defining Events}{3}{chapter.24}
+\contentsline {section}{\numberline {3.1}Topic Detection and Tracking}{3}{section.25}
+\contentsline {section}{\numberline {3.2}Automatic Content Extraction}{3}{section.26}
+\contentsline {section}{\numberline {3.3}Multimedia Event Detection}{3}{section.27}
+\contentsline {section}{\numberline {3.4}Events in Social Media}{3}{section.28}
+\contentsline {chapter}{\numberline {4}Event Identity Information Management Life Cycle}{4}{chapter.29}
+\contentsline {section}{\numberline {4.1}Identity Integrity}{4}{section.30}
+\contentsline {section}{\numberline {4.2}Event Reference Collection}{6}{section.32}
+\contentsline {section}{\numberline {4.3}Event Reference Preparation}{6}{section.34}
+\contentsline {section}{\numberline {4.4}Event Information Quality}{6}{section.36}
+\contentsline {section}{\numberline {4.5}Event Identity Information Capture}{6}{section.38}
+\contentsline {section}{\numberline {4.6}Event Identity Information Structure}{6}{section.40}
+\contentsline {section}{\numberline {4.7}Event Identity Information Processing}{6}{section.42}
+\contentsline {section}{\numberline {4.8}Event Reference Resolution}{6}{section.44}
+\contentsline {section}{\numberline {4.9}Event Analytics}{6}{section.46}
+\contentsline {chapter}{\numberline {5}Discovering Event-specific Informative Content from Twitter}{9}{chapter.48}
+\contentsline {section}{\numberline {5.1}Twitter and Event Related Content}{9}{section.49}
+\contentsline {section}{\numberline {5.2}Analysis of Informative and Non-informative Content in Tweets}{9}{section.50}
+\contentsline {section}{\numberline {5.3}EventIdentityInfoGraph}{9}{section.51}
+\contentsline {section}{\numberline {5.4}EventIdentityInfoRank}{9}{section.52}
+\contentsline {section}{\numberline {5.5}Experiments}{9}{section.53}
+\contentsline {subsection}{\numberline {5.5.1}Data Collection}{9}{subsection.54}
+\contentsline {subsection}{\numberline {5.5.2}Data Preparation}{9}{subsection.55}
+\contentsline {subsection}{\numberline {5.5.3}Baselines}{9}{subsection.56}
+\contentsline {subsection}{\numberline {5.5.4}Evaluation}{9}{subsection.57}
+\contentsline {subsection}{\numberline {5.5.5}Sample Results}{9}{subsection.58}
+\contentsline {chapter}{\numberline {6}Applications}{10}{chapter.59}
+\contentsline {section}{\numberline {6.1}Event Monitoring and Analysis}{10}{section.60}
+\contentsline {section}{\numberline {6.2}Event Information Retrieval}{11}{section.67}
+\contentsline {section}{\numberline {6.3}Event Opinion Mining}{11}{section.68}
+\contentsline {section}{\numberline {6.4}Event-specific Recommendations}{11}{section.69}
+\contentsline {section}{\numberline {6.5}Event Management and Marketing}{11}{section.70}
+\contentsline {section}{\numberline {6.6}Social Media Data Integration}{11}{section.71}
+\contentsline {chapter}{\numberline {7}Conclusion and Future Work}{12}{chapter.73}
+\contentsline {section}{\numberline {7.1}Conclusion}{12}{section.74}
+\contentsline {section}{\numberline {7.2}Future Work}{12}{section.75}
+\contentsline {subsection}{\numberline {7.2.1}Summarizing Event Related Content}{12}{subsection.76}
+\contentsline {subsection}{\numberline {7.2.2}Identifying Insightful Opinionated Content Related to Events}{12}{subsection.77}
+\contentsline {subsection}{\numberline {7.2.3}Event Topic Modeling}{12}{subsection.78}
+\contentsline {subsection}{\numberline {7.2.4}Event-specific Recommendations}{12}{subsection.79}
+\contentsline {subsection}{\numberline {7.2.5}Distributed Processing of EventIdentityInfoGraph}{12}{subsection.80}
+\contentsline {subsection}{\numberline {7.2.6}Event Ontology for Social Media}{12}{subsection.81}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendix Title Here}{13}{appendix.44}
+\contentsline {chapter}{\numberline {A}Appendix Title Here}{13}{appendix.82}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{14}{dummy.45}
+\contentsline {chapter}{Bibliography}{14}{dummy.83}
