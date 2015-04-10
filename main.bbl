@@ -1,9 +1,105 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Hemp(2009)]{hemp2009death}
+Paul Hemp.
+\newblock Death by information overload.
+\newblock \emph{Harvard business review}, 87\penalty0 (9):\penalty0 82--89,
+  2009.
+
+\bibitem[Benevenuto et~al.(2010)Benevenuto, Magno, Rodrigues, and
+  Almeida]{benevenuto2010detecting}
+Fabricio Benevenuto, Gabriel Magno, Tiago Rodrigues, and Virgilio Almeida.
+\newblock Detecting spammers on twitter.
+\newblock In \emph{Collaboration, electronic messaging, anti-abuse and spam
+  conference (CEAS)}, volume~6, page~12, 2010.
+
+\bibitem[Bontcheva et~al.(2013)Bontcheva, Derczynski, Funk, Greenwood, Maynard,
+  and Aswani]{bontcheva2013twitie}
+Kalina Bontcheva, Leon Derczynski, Adam Funk, Mark~A Greenwood, Diana Maynard,
+  and Niraj Aswani.
+\newblock Twitie: An open-source information extraction pipeline for microblog
+  text.
+\newblock In \emph{RANLP}, pages 83--90, 2013.
+
+\bibitem[Prevost(1996)]{prevost1996information}
+Scott Prevost.
+\newblock An information structural approach to spoken language generation.
+\newblock In \emph{Proceedings of the 34th annual meeting on Association for
+  Computational Linguistics}, pages 294--301. Association for Computational
+  Linguistics, 1996.
+
+\bibitem[Derczynski et~al.(2013)Derczynski, Maynard, Aswani, and
+  Bontcheva]{derczynski2013microblog}
+Leon Derczynski, Diana Maynard, Niraj Aswani, and Kalina Bontcheva.
+\newblock Microblog-genre noise and impact on semantic annotation accuracy.
+\newblock In \emph{Proceedings of the 24th ACM Conference on Hypertext and
+  Social Media}, pages 21--30. ACM, 2013.
+
+\bibitem[Ritter et~al.(2011)Ritter, Clark, Etzioni, et~al.]{ritter2011named}
+Alan Ritter, Sam Clark, Oren Etzioni, et~al.
+\newblock Named entity recognition in tweets: an experimental study.
+\newblock In \emph{Proceedings of the Conference on Empirical Methods in
+  Natural Language Processing}, pages 1524--1534. Association for Computational
+  Linguistics, 2011.
+
+\bibitem[Phelan et~al.(2009)Phelan, McCarthy, and Smyth]{phelan2009using}
+Owen Phelan, Kevin McCarthy, and Barry Smyth.
+\newblock Using twitter to recommend real-time topical news.
+\newblock In \emph{Proceedings of the third ACM conference on Recommender
+  systems}, pages 385--388. ACM, 2009.
+
+\bibitem[O'Connor et~al.(2010)O'Connor, Balasubramanyan, Routledge, and
+  Smith]{o2010tweets}
+Brendan O'Connor, Ramnath Balasubramanyan, Bryan~R Routledge, and Noah~A Smith.
+\newblock From tweets to polls: Linking text sentiment to public opinion time
+  series.
+\newblock \emph{ICWSM}, 11:\penalty0 122--129, 2010.
+
+\bibitem[Sakaki et~al.(2013)Sakaki, Okazaki, and Matsuo]{sakaki2013tweet}
+Takeshi Sakaki, Makoto Okazaki, and Yutaka Matsuo.
+\newblock Tweet analysis for real-time event detection and earthquake reporting
+  system development.
+\newblock \emph{Knowledge and Data Engineering, IEEE Transactions on},
+  25\penalty0 (4):\penalty0 919--931, 2013.
+
+\bibitem[Popescu et~al.(2011)Popescu, Pennacchiotti, and
+  Paranjpe]{popescu2011extracting}
+Ana-Maria Popescu, Marco Pennacchiotti, and Deepa Paranjpe.
+\newblock Extracting events and event descriptions from twitter.
+\newblock In \emph{Proceedings of the 20th international conference companion
+  on World wide web}, pages 105--106. ACM, 2011.
+
+\bibitem[Purohit and Sheth(2013)]{purohit2013twitris}
+Hemant Purohit and Amit~P Sheth.
+\newblock Twitris v3: From citizen sensing to analysis, coordination and
+  action.
+\newblock In \emph{ICWSM}, 2013.
+
+\bibitem[Laniado and Mika(2010)]{laniado2010making}
+David Laniado and Peter Mika.
+\newblock Making sense of twitter.
+\newblock In \emph{The Semantic Web--ISWC 2010}, pages 470--485. Springer,
+  2010.
+
+\bibitem[Barrons(2012)]{barrons2012suleiman}
+Genevieve Barrons.
+\newblock 'suleiman: Mubarak decided to step down\# egypt\# jan25 oh my god':
+  Examining the use of social media in the 2011 egyptian revolution.
+\newblock \emph{Contemporary Arab Affairs}, 5\penalty0 (1):\penalty0 54--67,
+  2012.
+
+\bibitem[Wei et~al.(2008)Wei, Li, Lu, and He]{wei2008query}
+Furu Wei, Wenjie Li, Qin Lu, and Yanxiang He.
+\newblock Query-sensitive mutual reinforcement chain and its application in
+  query-oriented multi-document summarization.
+\newblock In \emph{Proceedings of the 31st annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  283--290. ACM, 2008.
 
 \bibitem[Gao et~al.(2011)Gao, Barbier, Goolsby, and Zeng]{gao2011harnessing}
 Huiji Gao, Geoffrey Barbier, Rebecca Goolsby, and Daniel Zeng.
@@ -59,12 +155,5 @@ Nitin Agarwal, Merlyna Lim, and Rolf~T Wigand.
 \newblock \emph{Online collective action: Dynamics of the crowd in social
   media}.
 \newblock Springer, 2014.
-
-\bibitem[Tsur and Rappoport(2012)]{tsur2012s}
-Oren Tsur and Ari Rappoport.
-\newblock What's in a hashtag?: content based prediction of the spread of ideas
-  in microblogging communities.
-\newblock In \emph{Proceedings of the fifth ACM international conference on Web
-  search and data mining}, pages 643--652. ACM, 2012.
 
 \end{thebibliography}

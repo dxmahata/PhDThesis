@@ -6,7 +6,72 @@
 
 \lhead{Chapter 5. \emph{Discovering Event-specific Informative Content from Twitter}} % This is for the header on each page - perhaps a shortened title
 
+Twitter has brought a paradigm shift in the way we produce and curate information about real-life events. Huge volumes of user-generated tweets are produced in Twitter, related to events. Not, all of them are useful and informative. A sizable amount of tweets are spams and colloquial personal status updates, which does not provide any useful information about an event.  Thus, it is necessary to identify, rank and segregate event-specific informative content from the tweet streams. In this chapter, we implement \textit{EventIdentityInfoGraph} and \textit{EventIdentityInfoRank} as introduced in \ref{EventIdentityInformationProcessing} in the context of Twitter. We name \textit{EventIdentityInfoGraph} as \textit{TwitterEventInfoGraph} and \textit{EventIdentityInfoRank} as \textit{TwitterEventInfoRank}. Mutually reinforcing relationships between tweets, hashtags, text units, URLs and users are defined and represented using \textit{TwitterEventInfoGraph}. \textit{TwitterEventInfoRank} simultaneously ranks tweets, hashtags, text units, URLs and users producing them in terms of event-specific informativeness by leveraging the semantics of relationships between each of them as represented by \textit{TwitterEventInfoGraph}. Experiments and observations are reported on four million (approx) tweets collected for five real-life events, and evaluated against popular baseline techniques showing significant improvement in performance. 
+
 \section{Twitter and Event Related Content}
+
+\noindent Social media platforms provide multiple venues to people for sharing first-hand experiences and exchange information about real-life events. Twitter is one such platform that has become an indispensable source for disseminating news and real-time information about current events. It is a microblogging application that allows its users to post short messages of 140 characters known as tweets, from a variety of internet enabled devices. Studies have shown the importance of Twitter as a news circulation service \cite{phelan2009using}, and a source for gauging public interest and opinions \cite{o2010tweets}. It's efficacy as a real-time citizen-journalistic source of information has been recently harnessed in detection, extraction and analysis of real-life events \cite{sakaki2013tweet,popescu2011extracting,purohit2013twitris}.
+
+ 
+
+%Table \ref{tweetsample} presents few examples of informative and uninformative tweets.  In this work we consider tweets having news worthy content, recent updates and real-time coverage of on-going events, that are suitable for general audience, as informative.
+
+\begin{table}[htbp]
+\centering
+\caption{Examples of different event related tweets.}
+\label{tweetsample}
+     \begin{tabular}{|p{14cm}|} \hline
+     Ted Cruz is a dangerous man. Crazy and gaining support. Megalomaniac leaders are bad, mkay. \#CPAC \#politics \#joke [\textit{\textbf{personal/uninformative}}] \small \textit{\textbf{Event: `CPAC 2014'}}\\ \hline
+     Thanks for the memories Sochi! I've had the time of my life \#Sochi2014 \#sochiselfie http://t.co/DqkLEaAMpo. [\textit{\textbf{personal/uninformative}}] \small \textit{\textbf{Event: `Sochi Games'}} \\ \hline
+     \#SXSW14 \#SXSW \#sxswinteractive \#CPAC2014 \#CPAC \#CPACPickupLines \#CPACPanels Be squared away \@ perky TOP TWEETED of http://t.co/h0igdOVNW0. [\textit{\textbf{spam/uninformative}}] \small \textit{\textbf{Event: `CPAC 2014'}}\\ \hline
+In \#Sochi, the Dutch are dominating the overall Olympic medal count http://t.co/jMR1WUqEK4 (Reuters) http://t.co/dAfDhEgTGA. [\textit{\textbf{event-specific informative}}] \small \textit{\textbf{Event: `Sochi Games'}}\\ \hline
+New post: Sochi Was For Suckers - Laugh Studios/ http://t.co/cWQJCBp3Ow \#lol \#funny \#rofl \#funnypic \#fail \#wtf. [\textit{\textbf{spam/uninformative}}] \small \textit{\textbf{Event: `Sochi Games'}}\\ \hline
+It's \@tedcruz vs. \@SenJohnMcCain in a \#CPAC spat. What did they say? Find out on \#AC360 8p on \@CNN. [\textit{\textbf{event-specific informative}}] \small \textit{\textbf{Event: `CPAC 2014'}} \\ \hline
+     \end{tabular}
+\end{table}
+
+Users not only post plain textual content in their messages but also share URLs, linking to other external websites, images and videos. Apart from creating new content, the users also share content produced by others. This activity is known as \textit{retweeting}, and such tweets are preceded by special characters `\textit{RT}'.
+The messages are normally written by a single person and are read by many. The readers in this context are known as \textit{followers}, and the user whom they follow is considered as their \textit{friend}. Any user with good intent either share messages 
+that might be of interest to his followers, or for joining conversations on topics of his interest. The `@' symbol followed by the username commonly known as \textit{user mentions}, is used for mentioning other users in tweets for initiating conversations. 
+
+The concise and informal content of a tweet is often contextualized by the use of a crowdsourced annotation scheme called \textit{hashtags}. Hashtags are a sequence of characters in any language prefixed by the symbol `\#' (for e.g. \#websci2015). They are widely used
+by the users for categorizing the content based on a topic, join conversations related to a topic, and to make the tweets easily searchable by other interested users. They also act as strong identifiers of topics \cite{laniado2010making}. When tweeting about real-life events the users also tend to use hashtags in order to post event-specific content. For e.g. `\#Egypt' and `\#Jan25', were among the most popular hashtags in Twitter used for spreading, organizing and analyzing information related to `Egyptian Revolution of 2011' \cite{barrons2012suleiman}. 
+
+
+284 million monthly users of Twitter posting 500 million tweets per day produces a variety of content\footnote{\tiny http://about.twitter.com/company}. A significant proportion of it are related to different real-life events (e.g, football matches, conferences, music shows, etc). Majority of this content are personal updates (e.g.  \textit{Thanks for the memories Sochi! I've had the time of my life \#Sochi2014 \#sochiselfie http://t.co/DqkLEaAMpo}), pointless babbles (e.g. \textit{Ted Cruz is a dangerous man. Crazy and gaining support. Megalomaniac leaders are bad, mkay. \#CPAC \#politics \#joke}) and spams (e.g \textit{New post: Sochi Was For Suckers - Laugh Studios/ http://t.co/cWQJCBp3Ow \#lol \#funny \#rofl \#funnypic \#wtf.}). Personal views and conversations might be of interest to a specific group of people. However, they are meaningless and provides no information to the general audience. On the other hand there are tweets that presents newsworthy content, recent updates and real-time coverage of on-going events (e.g. \textit{In \#Sochi, the Dutch are dominating the overall Olympic medal count http://t.co/jMR1WUqEK4 (Reuters) http://t.co/dAfDhEgTGA}). These tweets provide event-specific informative content and are more useful for general audience interested to know about the event. We call them as event-specific informative tweets. Table \ref{tweetsample} presents some examples of different types of tweets shared during real-life events.
+
+\section{Motivation} 
+With the plethora of event related content being produced in Twitter, it becomes inconvenient for users to search and follow informative posts. This necessitates development of techniques that can identify and rank tweets in terms of their event-specific informativeness. In addition to the tweets, a backend automated system dedicated for processing, analyzing and presenting information from Twitter during an event, could get immensely benefitted from identification and ranking of event-specific informative hashtags, text units, users and URLs. This would enable the system to generate answers to questions like: \textit{Who are the users producing large amount of event-specific informative content?}. \textit{Which are the best hashtags and URLs to follow that would lead to high quality event-specific information?}. \textit{Which are the best hashtags and text units to index for efficient retrieval of event-specific information?}. Such a system would further facilitate better consumption of content while exploring event information from Twitter. It could have a positive impact on triggering event-specific recommendations and efficient processing of information. It can act as a core component of event management, event summarization, event marketing and journalistic platforms leveraging Twitter.
+
+
+\section{Challenges in Mining Tweets} 
+Apart from the problem of information overload, microblogging websites like Twitter pose challenges for automated information mining tools and techniques due to their brevity, noisiness, idiosyncratic language, unusual structure and ambiguous representation of discourse. Information extraction tasks using state-of-the-art natural language processing techniques, often give poor results for tweets \cite{ritter2011named}. Abundance of link farms, unwanted promotional posts, and nepotistic relationships between content creates additional challenges. Due to the lack of explicit links between content shared in Twitter it is also difficult to implement and get useful results from ranking algorithms popularly used for web pages. Lastly, to our knowledge, there is an absence of techniques at present that is capable of simultaneously ranking and identifying event-specific informative tweets, hashtags, text units, users and URLs, with an ability to scale. 
+
+\section{Objective and Contributions} The main objective of our work is to automatically identify and rank event-specific informative content posted in Twitter. Our primary hypothesis is that there are explicit cues available in the content of the tweets posted during an event for determining event-specific informativeness. Our approach is based on the \textit{principle of mutual reinforcement} commonly used for summarization of textual documents. We build our methodology on the basic tenets of \textit{Mutually Reinforcing Chains} \cite{wei2008query}, for ranking and identification of event-specific informative content in Twitter. We make the following contributions:
+
+% Therefore, we don't take into account the external sources of information in order to corroborate informativeness of the analyzed content, as done by \cite{mccreadie2013,ravikumar2012}. We also don't rely on learning to rank approaches \cite{duan2010} and supervised learning models \cite{kumaraguru2012,castillo2011}. 
+
+%We identify event-specific \textit{information units} embedded in tweet content and
+%define implicit mutually reinforcing relationships between them.
+
+%\textbf{[insert a paragraph on how the work is different from already existing popular works]}
+
+
+%towards analysis, representation and identification of informative content in Twitter, related to events:
+\begin{itemize}
+%\item analyze the characteristics of informative and non-informative content in event related tweets;
+\item analysis of informative and non-informative content in 3.8 million event related tweets;
+\item propose a generic framework based on principle of mutual reinforcement that takes into account the semantics of relationships between \textit{tweets}, \textit{hashtags}, \textit{text units}, \textit{URLs} and \textit{users}, and represent them in a graph structure - \textit{TwitterEventInfoGraph};
+\item leverage the mutually reinforcing relationships in \textit{TwitterEventInfoGraph} and develop a graph based iterative algorithm - \textit{TwitterEventInfoRank}, for simultaneously ranking \textit{tweets}, \textit{hashtags}, \textit{text units}, \textit{users} and \textit{URLs} in terms of event-specific informativeness;
+\item evaluate the algorithm against popular baselines and report its performance in identifying and ranking event-specific informative content from Twitter.
+
+%like \textit{LexRank} \cite{erkan2004}, \textit{Centroid} \cite{hilabecker2011}, \textit{TextRank} \cite{rada2004}, \textit{retweets}, and a proprietary algorithm - \textit{SeenRank}\footnote{http://seen.co/about}.
+%\footnote{SeenRank is used for ranking tweets in order to present event highlights and summaries. For more information refer http://seen.co/about}. 
+%We report the performance (NDCG scores) of our algorithm and its ability to identify highly informative tweets related to events more effectively than the baselines.
+\end{itemize}
+%The work presented in this paper identifies event related information cues from Twitter and ranks tweets w.r.t event-specific information content.
+%In the rest of the paper we first review the works related to the scope of our problem. Then we define the problem. Next, we describe the proposed methodology. Details of the experimental setup, implementation of the experiment and the evaluation framework is discussed next. Finally, we conclude our work and envisage future directions for our research.
+
 
 \section{Analysis of Informative and Non-informative Content in Tweets}
 
