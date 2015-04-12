@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.18)  12 APR 2015 00:37
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.18)  12 APR 2015 16:45
 entering extended mode
 **C:/Users/cisstudent/Documents/Phd*Defense/Thesis/main.tex
 ("C:/Users/cisstudent/Documents/Phd Defense/Thesis/main.tex"
@@ -753,14 +753,7 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 43.
 
-("C:\Users\cisstudent\Documents\Phd Defense\Thesis\main.aux"
-
-LaTeX Warning: Label `millionsmarchndcg' multiply defined.
-
-
-LaTeX Warning: Label `sydneysiegendcg' multiply defined.
-
-)
+("C:\Users\cisstudent\Documents\Phd Defense\Thesis\main.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
 LaTeX Font Info:    ... okay on input line 46.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
@@ -781,7 +774,8 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\ltcaption.sty"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\ltcaption.sty"
 Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
@@ -871,46 +865,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--131
 ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\main.toc" [5
 
 
-]
-Overfull \hbox (8.20874pt too wide) in paragraph at lines 71--71
- [][] [][][]\OT1/cmr/m/n/10.95 Difference be-tween In-for-ma-tive and Event-spe
-cific In-for-ma-tive Tweets:[][] [][]  
- []
-
-[6]
-Overfull \hbox (6.44469pt too wide) in paragraph at lines 97--97
- [][] [][]\OT1/cmr/m/n/10.95 Top Five Event-specific In-for-ma-tive URLs for Mi
-l-lions March 
- []
-
-[7])
+])
 \tf@toc=\write4
- [8]
+ [6]
 ------------------------------------------------------------------------------
  List of Figures
 ------------------------------------------------------------------------------
-("C:\Users\cisstudent\Documents\Phd Defense\Thesis\main.lof" [9
-
-
-])
+("C:\Users\cisstudent\Documents\Phd Defense\Thesis\main.lof")
 \tf@lof=\write5
- [10]
+ [7
+
+
+]
 ------------------------------------------------------------------------------
  List of Tables
 ------------------------------------------------------------------------------
 ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\main.lot")
 \tf@lot=\write6
- [11
+ [8
 
 
 ]
 ------------------------------------------------------------------------------
  Dedicatory
 ------------------------------------------------------------------------------
-[12
+[9
 
 ]
-<Figures/EIIMComponents/fullFramework.jpg, id=727, 1697.5922pt x 808.52063pt>
+<Figures/EIIMComponents/fullFramework.jpg, id=377, 1697.5922pt x 808.52063pt>
 File: Figures/EIIMComponents/fullFramework.jpg Graphic file (type jpg)
 
 <use Figures/EIIMComponents/fullFramework.jpg>
@@ -929,11 +911,11 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 284.
- [13
+ [10
 
 
  <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIMComponents/fullF
-ramework.jpg>] [14] [15]
+ramework.jpg>] [11] [12]
 ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\Chapters/Chapter1.tex"
 Chapter 1.
 ------------------------------------------------------------------------------
@@ -943,781 +925,210 @@ Chapter 1.
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 [][][]\OT1/cmr/m/n/9 https://www.brightplanet.com/2013/06/twitter-firehose-vs-t
 witter-api-whats-the-difference-and-
  []
 
-[2]) ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\Chapters/Chapter2.tex"
-[3] [4]
+[2] [3])
+("C:\Users\cisstudent\Documents\Phd Defense\Thesis\Chapters/Chapter3.tex"
+[4]
 Chapter 2.
 ------------------------------------------------------------------------------
- 2 Defining Events
+ 2 Literature Review
 ------------------------------------------------------------------------------
-) ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\Chapters/Chapter3.tex"
+) ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\Chapters/Chapter2.tex"
 [5
 
 ]
 Chapter 3.
 ------------------------------------------------------------------------------
- 3 Event Identity Information Management Life Cycle
+ 3 Defining Events in Social Media
+------------------------------------------------------------------------------
+) ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\Chapters/Chapter4.tex"
+[6
+
+]
+Chapter 4.
+------------------------------------------------------------------------------
+ 4 Event Identity Information Management (EIIM) Life Cycle for Social Media
 ------------------------------------------------------------------------------
 
-<Figures/EIIMComponents/IdentityIntegrity.jpg, id=790, 687.31781pt x 528.47438p
+<Figures/EIIMComponents/IdentityIntegrity.jpg, id=445, 687.31781pt x 528.47438p
 t>
 File: Figures/EIIMComponents/IdentityIntegrity.jpg Graphic file (type jpg)
  <use Figures/EIIMComponents/IdentityIntegrity.jpg>
 Package pdftex.def Info: Figures/EIIMComponents/IdentityIntegrity.jpg used on i
-nput line 14.
+nput line 15.
 (pdftex.def)             Requested size: 398.34047pt x 312.98256pt.
 
-<Figures/EIIMComponents/EventReferenceCollection.jpg, id=791, 686.565pt x 529.9
+<Figures/EIIMComponents/EventReferenceCollection.jpg, id=446, 686.565pt x 529.9
 8pt>
 File: Figures/EIIMComponents/EventReferenceCollection.jpg Graphic file (type jp
 g)
  <use Figures/EIIMComponents/EventReferenceCollection.jpg>
 Package pdftex.def Info: Figures/EIIMComponents/EventReferenceCollection.jpg us
-ed on input line 22.
+ed on input line 23.
 (pdftex.def)             Requested size: 398.3337pt x 312.98468pt.
- [6
 
- <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIMComponents/Ident
-ityIntegrity.jpg>]
-<Figures/EIIMComponents/EventReferencePreparation.jpg, id=796, 686.565pt x 529.
+<Figures/EIIMComponents/EventReferencePreparation.jpg, id=447, 686.565pt x 529.
 98pt>
 File: Figures/EIIMComponents/EventReferencePreparation.jpg Graphic file (type j
 pg)
  <use Figures/EIIMComponents/EventReferencePreparation.jpg>
 Package pdftex.def Info: Figures/EIIMComponents/EventReferencePreparation.jpg u
-sed on input line 30.
+sed on input line 31.
 (pdftex.def)             Requested size: 398.3337pt x 312.98468pt.
 
-<Figures/EIIMComponents/EventInformationQuality.jpg, id=797, 686.565pt x 529.98
+<Figures/EIIMComponents/EventInformationQuality.jpg, id=448, 686.565pt x 529.98
 pt>
 File: Figures/EIIMComponents/EventInformationQuality.jpg Graphic file (type jpg
 )
  <use Figures/EIIMComponents/EventInformationQuality.jpg>
 Package pdftex.def Info: Figures/EIIMComponents/EventInformationQuality.jpg use
-d on input line 38.
+d on input line 39.
 (pdftex.def)             Requested size: 398.3337pt x 312.98468pt.
 
-<Figures/EIIMComponents/EventIdentityInformationCapture.jpg, id=798, 722.7pt x 
+<Figures/EIIMComponents/EventIdentityInformationCapture.jpg, id=449, 722.7pt x 
 535.2497pt>
 File: Figures/EIIMComponents/EventIdentityInformationCapture.jpg Graphic file (
 type jpg)
  <use Figures/EIIMComponents/EventIdentityInformationCapture.jpg>
 Package pdftex.def Info: Figures/EIIMComponents/EventIdentityInformationCapture
-.jpg used on input line 46.
+.jpg used on input line 47.
 (pdftex.def)             Requested size: 398.33534pt x 312.99321pt.
 
-<Figures/EIIMComponents/EventIdentityInformationStructure.jpg, id=799, 686.565p
+<Figures/EIIMComponents/EventIdentityInformationStructure.jpg, id=450, 686.565p
 t x 529.98pt>
 File: Figures/EIIMComponents/EventIdentityInformationStructure.jpg Graphic file
  (type jpg)
 
 <use Figures/EIIMComponents/EventIdentityInformationStructure.jpg>
 Package pdftex.def Info: Figures/EIIMComponents/EventIdentityInformationStructu
-re.jpg used on input line 54.
+re.jpg used on input line 55.
 (pdftex.def)             Requested size: 398.3337pt x 312.98468pt.
 
-<Figures/EIIMComponents/EventIdentityInformationProcessing.jpg, id=800, 686.565
+<Figures/EIIMComponents/EventIdentityInformationProcessing.jpg, id=451, 686.565
 pt x 529.98pt>
 File: Figures/EIIMComponents/EventIdentityInformationProcessing.jpg Graphic fil
 e (type jpg)
 
 <use Figures/EIIMComponents/EventIdentityInformationProcessing.jpg>
 Package pdftex.def Info: Figures/EIIMComponents/EventIdentityInformationProcess
-ing.jpg used on input line 62.
+ing.jpg used on input line 63.
 (pdftex.def)             Requested size: 398.3337pt x 312.98468pt.
 
-<Figures/EIIMComponents/EventReferenceResolution.jpg, id=801, 686.565pt x 529.9
+<Figures/EIIMComponents/EventReferenceResolution.jpg, id=452, 686.565pt x 529.9
 8pt>
 File: Figures/EIIMComponents/EventReferenceResolution.jpg Graphic file (type jp
 g)
  <use Figures/EIIMComponents/EventReferenceResolution.jpg>
 Package pdftex.def Info: Figures/EIIMComponents/EventReferenceResolution.jpg us
-ed on input line 70.
+ed on input line 71.
 (pdftex.def)             Requested size: 398.3337pt x 312.98468pt.
 
-<Figures/EIIMComponents/EventAnalytics.jpg, id=802, 689.57625pt x 529.22719pt>
+<Figures/EIIMComponents/EventAnalytics.jpg, id=453, 689.57625pt x 529.22719pt>
 File: Figures/EIIMComponents/EventAnalytics.jpg Graphic file (type jpg)
 
 <use Figures/EIIMComponents/EventAnalytics.jpg>
 Package pdftex.def Info: Figures/EIIMComponents/EventAnalytics.jpg used on inpu
-t line 77.
+t line 78.
 (pdftex.def)             Requested size: 398.34462pt x 312.98427pt.
- [7 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIMComponents/Ev
-entReferenceCollection.jpg>]
-[8 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIMComponents/Eve
-ntReferencePreparation.jpg> <C:/Users/cisstudent/Documents/Phd Defense/Thesis/F
-igures/EIIMComponents/EventInformationQuality.jpg>] [9 <C:/Users/cisstudent/Doc
-uments/Phd Defense/Thesis/Figures/EIIMComponents/EventIdentityInformationCaptur
-e.jpg> <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIMComponents
-/EventIdentityInformationStructure.jpg>] [10 <C:/Users/cisstudent/Documents/Phd
- Defense/Thesis/Figures/EIIMComponents/EventIdentityInformationProcessing.jpg> 
-<C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIMComponents/EventR
-eferenceResolution.jpg>])
-("C:\Users\cisstudent\Documents\Phd Defense\Thesis\Chapters/Chapter4.tex"
-[11 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIMComponents/Ev
-entAnalytics.jpg>]
-Chapter 4.
-------------------------------------------------------------------------------
- 4 Identifying Event-specific Sources from the Blogosphere
-------------------------------------------------------------------------------
-------------------------------------------------------------------------------
- Abstract Page
-------------------------------------------------------------------------------
-[12
-
-] <Figures/Chapter3Figures/comp.pdf, id=833, 1931.215pt x 680.5425pt>
-File: Figures/Chapter3Figures/comp.pdf Graphic file (type pdf)
-
-<use Figures/Chapter3Figures/comp.pdf>
-Package pdftex.def Info: Figures/Chapter3Figures/comp.pdf used on input line 23
-.
-(pdftex.def)             Requested size: 325.20808pt x 144.53807pt.
- [13
-
- <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/Chapter3Figures/comp
-.pdf>]
-<Figures/Chapter3Figures/touchgraph.jpg, id=877, 736.1904pt x 455.7828pt>
-File: Figures/Chapter3Figures/touchgraph.jpg Graphic file (type jpg)
-
-<use Figures/Chapter3Figures/touchgraph.jpg>
-Package pdftex.def Info: Figures/Chapter3Figures/touchgraph.jpg used on input l
-ine 32.
-(pdftex.def)             Requested size: 325.20537pt x 252.94159pt.
-
-
-Package hyperref Warning: Difference (3) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 43.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\noindent' on input line 43.
-
-[14 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/Chapter3Figures/t
-ouchgraph.jpg>]
-<Figures/Chapter3Figures/LongTailVsShortHead.jpg, id=894, 649.67719pt x 356.833
-13pt>
-File: Figures/Chapter3Figures/LongTailVsShortHead.jpg Graphic file (type jpg)
- <use Figures/Chapter3Figures/LongTailVsShortHead.jpg>
-Package pdftex.def Info: Figures/Chapter3Figures/LongTailVsShortHead.jpg used o
-n input line 59.
-(pdftex.def)             Requested size: 346.90471pt x 238.4889pt.
-
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\noindent' on input line 68.
-
-[15 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/Chapter3Figures/L
-ongTailVsShortHead.jpg>] [16]
-
-Package natbib Warning: Citation `erkan2004lexrank' on page 17 undefined on inp
-ut line 92.
-
-
-<Figures/Chapter3Figures/frameworkIllustrated.jpg, id=935, 670.75594pt x 398.99
-063pt>
-File: Figures/Chapter3Figures/frameworkIllustrated.jpg Graphic file (type jpg)
- <use Figures/Chapter3Figures/frameworkIllustrated.jpg>
-Package pdftex.def Info: Figures/Chapter3Figures/frameworkIllustrated.jpg used 
-on input line 105.
-(pdftex.def)             Requested size: 346.8914pt x 216.80937pt.
-
-
-Package hyperref Warning: Difference (3) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 111.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\noindent' on input line 111.
-
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 114.
-
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 114.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\noindent' on input line 114.
-
-[17]
-<Figures/Chapter3Figures/entitySources.jpg, id=946, 660.21657pt x 482.55281pt>
-File: Figures/Chapter3Figures/entitySources.jpg Graphic file (type jpg)
-
-<use Figures/Chapter3Figures/entitySources.jpg>
-Package pdftex.def Info: Figures/Chapter3Figures/entitySources.jpg used on inpu
-t line 144.
-(pdftex.def)             Requested size: 346.90096pt x 274.63089pt.
- [18 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/Chapter3Figures/
-frameworkIllustrated.jpg>]
-[19 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/Chapter3Figures/e
-ntitySources.jpg>]
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 168.
-
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 168.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\noindent' on input line 168.
-
-
-Overfull \hbox (8.58836pt too wide) in paragraph at lines 168--169
-[] [][] \OT1/cmr/bx/it/10.95 For-mu-la-tion of ini-tial close-ness scores: \OT1
-/cmr/m/n/10.95 We cal-cu-late the `close-ness' score ($\OML/cmm/m/it/10.95 \OT
-1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 e[]\OT1/cmr/m/n/10.95 )[]$)
- []
-
-[20] [21]
-<Figures/Chapter3Figures/graphnew.jpg, id=998, 280.79906pt x 383.18156pt>
-File: Figures/Chapter3Figures/graphnew.jpg Graphic file (type jpg)
-
-<use Figures/Chapter3Figures/graphnew.jpg>
-Package pdftex.def Info: Figures/Chapter3Figures/graphnew.jpg used on input lin
-e 225.
-(pdftex.def)             Requested size: 202.35512pt x 289.09274pt.
- [22 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/Chapter3Figures/
-graphnew.jpg>]
-<Figures/Chapter3Figures/algo.pdf, id=1007, 687.56876pt x 617.30624pt>
-File: Figures/Chapter3Figures/algo.pdf Graphic file (type pdf)
-
-<use Figures/Chapter3Figures/algo.pdf>
-Package pdftex.def Info: Figures/Chapter3Figures/algo.pdf used on input line 27
-9.
-(pdftex.def)             Requested size: 325.21368pt x 289.08842pt.
-
-Overfull \hbox (1.33447pt too wide) in paragraph at lines 288--289
-[]\OT1/cmr/m/n/10.95 Following the Mu-tual Re-in-force-ment Prin-ci-ple the re-
-la-tion-ships be-tween speci-ficity scores
- []
-
-[23] [24 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/Chapter3Figu
-res/algo.pdf>] [25]
-
-Package hyperref Warning: Difference (3) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 422.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\noindent' on input line 422.
-
-[26] [27]
-<Figures/Chapter3Figures/Iteration.pdf, id=1070, 1067.99pt x 680.5425pt>
-File: Figures/Chapter3Figures/Iteration.pdf Graphic file (type pdf)
-
-<use Figures/Chapter3Figures/Iteration.pdf>
-Package pdftex.def Info: Figures/Chapter3Figures/Iteration.pdf used on input li
-ne 513.
-(pdftex.def)             Requested size: 216.80457pt x 180.67519pt.
- [28 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/Chapter3Figures/
-Iteration.pdf>]
-<Figures/Chapter3Figures/RankDistGoogle.jpg, id=1133, 1068.1506pt x 744.8628pt>
-File: Figures/Chapter3Figures/RankDistGoogle.jpg Graphic file (type jpg)
-<use Figures/Chapter3Figures/RankDistGoogle.jpg>
-Package pdftex.def Info: Figures/Chapter3Figures/RankDistGoogle.jpg used on inp
-ut line 525.
-(pdftex.def)             Requested size: 252.93866pt x 144.53731pt.
-
-<Figures/Chapter3Figures/RankDistIceRocket.jpg, id=1134, 1140.4206pt x 744.8628
-pt>
-File: Figures/Chapter3Figures/RankDistIceRocket.jpg Graphic file (type jpg)
- <use Figures/Chapter3Figures/RankDistIceRocket.jpg>
-Package pdftex.def Info: Figures/Chapter3Figures/RankDistIceRocket.jpg used on 
-input line 526.
-(pdftex.def)             Requested size: 252.94667pt x 144.53731pt.
-
-<Figures/Chapter3Figures/GrayedImages/googleEgyptCumulative.jpg, id=1135, 898.3
-5625pt x 712.6625pt>
-File: Figures/Chapter3Figures/GrayedImages/googleEgyptCumulative.jpg Graphic fi
-le (type jpg)
-
-<use Figures/Chapter3Figures/GrayedImages/googleEgyptCumulative.jpg>
-Package pdftex.def Info: Figures/Chapter3Figures/GrayedImages/googleEgyptCumula
-tive.jpg used on input line 536.
-(pdftex.def)             Requested size: 166.22072pt x 166.21428pt.
-
-<Figures/Chapter3Figures/GrayedImages/icerocketEgyptCumulative.jpg, id=1136, 86
-6.23625pt x 733.74126pt>
-File: Figures/Chapter3Figures/GrayedImages/icerocketEgyptCumulative.jpg Graphic
- file (type jpg)
-
-<use Figures/Chapter3Figures/GrayedImages/icerocketEgyptCumulative.jpg>
-Package pdftex.def Info: Figures/Chapter3Figures/GrayedImages/icerocketEgyptCum
-ulative.jpg used on input line 537.
-(pdftex.def)             Requested size: 180.67252pt x 166.21545pt.
-
-<Figures/Chapter3Figures/GrayedImages/googleLibyaCumulative.jpg, id=1137, 884.3
-0376pt x 735.74875pt>
-File: Figures/Chapter3Figures/GrayedImages/googleLibyaCumulative.jpg Graphic fi
-le (type jpg)
-
-<use Figures/Chapter3Figures/GrayedImages/googleLibyaCumulative.jpg>
-Package pdftex.def Info: Figures/Chapter3Figures/GrayedImages/googleLibyaCumula
-tive.jpg used on input line 538.
-(pdftex.def)             Requested size: 166.21135pt x 166.22115pt.
-
-<Figures/Chapter3Figures/GrayedImages/icerocketLibyaCumulative.jpg, id=1138, 90
-2.37125pt x 733.74126pt>
-File: Figures/Chapter3Figures/GrayedImages/icerocketLibyaCumulative.jpg Graphic
- file (type jpg)
-
-<use Figures/Chapter3Figures/GrayedImages/icerocketLibyaCumulative.jpg>
-Package pdftex.def Info: Figures/Chapter3Figures/GrayedImages/icerocketLibyaCum
-ulative.jpg used on input line 539.
-(pdftex.def)             Requested size: 166.22008pt x 166.21545pt.
-
-<Figures/Chapter3Figures/GrayedImages/googleTunisiaCumulative.jpg, id=1139, 104
-3.9pt x 734.745pt>
-File: Figures/Chapter3Figures/GrayedImages/googleTunisiaCumulative.jpg Graphic 
-file (type jpg)
-
-<use Figures/Chapter3Figures/GrayedImages/googleTunisiaCumulative.jpg>
-Package pdftex.def Info: Figures/Chapter3Figures/GrayedImages/googleTunisiaCumu
-lative.jpg used on input line 540.
-(pdftex.def)             Requested size: 166.21504pt x 166.2186pt.
-
-<Figures/Chapter3Figures/GrayedImages/icerocketTunisiaCumulatice.jpg, id=1140, 
-866.23625pt x 732.7375pt>
-File: Figures/Chapter3Figures/GrayedImages/icerocketTunisiaCumulatice.jpg Graph
-ic file (type jpg)
-
-<use Figures/Chapter3Figures/GrayedImages/icerocketTunisiaCumulatice.jpg>
-Package pdftex.def Info: Figures/Chapter3Figures/GrayedImages/icerocketTunisiaC
-umulatice.jpg used on input line 541.
-(pdftex.def)             Requested size: 166.21237pt x 166.21169pt.
-
-[29 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/Chapter3Figures/R
-ankDistGoogle.jpg> <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/Ch
-apter3Figures/RankDistIceRocket.jpg>] [30 <C:/Users/cisstudent/Documents/Phd De
-fense/Thesis/Figures/Chapter3Figures/GrayedImages/googleEgyptCumulative.jpg> <C
-:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/Chapter3Figures/GrayedI
-mages/icerocketEgyptCumulative.jpg> <C:/Users/cisstudent/Documents/Phd Defense/
-Thesis/Figures/Chapter3Figures/GrayedImages/googleLibyaCumulative.jpg> <C:/User
-s/cisstudent/Documents/Phd Defense/Thesis/Figures/Chapter3Figures/GrayedImages/
-icerocketLibyaCumulative.jpg> <C:/Users/cisstudent/Documents/Phd Defense/Thesis
-/Figures/Chapter3Figures/GrayedImages/googleTunisiaCumulative.jpg> <C:/Users/ci
-sstudent/Documents/Phd Defense/Thesis/Figures/Chapter3Figures/GrayedImages/icer
-ocketTunisiaCumulatice.jpg>] [31]
-Underfull \hbox (badness 10000) in paragraph at lines 583--584
-[]\OT1/cmr/m/n/10.95 Tahrir Square, Egyp-tian
- []
-
-
-Underfull \hbox (badness 5147) in paragraph at lines 583--584
-\OT1/cmr/m/n/10.95 gov-ern-ment, Gigi Ibrahim,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 585--586
-[]\OT1/cmr/m/n/10.95 Tripoli, Muam-mar Al
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 585--586
-\OT1/cmr/m/n/10.95 Gaddafi, North At-lantic
- []
-
-
-Underfull \hbox (badness 1394) in paragraph at lines 585--586
-\OT1/cmr/m/n/10.95 Treaty Or-ga-ni-za-tion, Chad,
- []
-
-
-<Figures/Chapter3Figures/confusionMatrixEgypt.pdf, id=1157, 925.4575pt x 686.56
-5pt>
-File: Figures/Chapter3Figures/confusionMatrixEgypt.pdf Graphic file (type pdf)
- <use Figures/Chapter3Figures/confusionMatrixEgypt.pdf>
-Package pdftex.def Info: Figures/Chapter3Figures/confusionMatrixEgypt.pdf used 
-on input line 600.
-(pdftex.def)             Requested size: 289.07767pt x 216.80339pt.
-
-<Figures/Chapter3Figures/confusionMatrixLibya.pdf, id=1158, 925.4575pt x 676.52
-75pt>
-File: Figures/Chapter3Figures/confusionMatrixLibya.pdf Graphic file (type pdf)
- <use Figures/Chapter3Figures/confusionMatrixLibya.pdf>
-Package pdftex.def Info: Figures/Chapter3Figures/confusionMatrixLibya.pdf used 
-on input line 601.
-(pdftex.def)             Requested size: 289.07767pt x 216.81323pt.
-
-<Figures/Chapter3Figures/confusionMatrixTunisia.pdf, id=1159, 925.4575pt x 676.
-5275pt>
-File: Figures/Chapter3Figures/confusionMatrixTunisia.pdf Graphic file (type pdf
 )
- <use Figures/Chapter3Figures/confusionMatrixTunisia.pdf>
-Package pdftex.def Info: Figures/Chapter3Figures/confusionMatrixTunisia.pdf use
-d on input line 602.
-(pdftex.def)             Requested size: 289.07767pt x 216.81323pt.
- [32] [33 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/Chapter3Fig
-ures/confusionMatrixEgypt.pdf> <C:/Users/cisstudent/Documents/Phd Defense/Thesi
-s/Figures/Chapter3Figures/confusionMatrixLibya.pdf> <C:/Users/cisstudent/Docume
-nts/Phd Defense/Thesis/Figures/Chapter3Figures/confusionMatrixTunisia.pdf>] [34
-])
 ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\Chapters/Chapter5.tex"
-[35] [36]
-Chapter 5.
-------------------------------------------------------------------------------
- 5 Discovering Event-specific Informative Content from Twitter
-------------------------------------------------------------------------------
-[37
+[7
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 26--26
-[]\OT1/cmr/m/n/10.95 #SXSW14 #SXSW #sxswin-ter-ac-tive #CPAC2014 #CPAC #CPACPic
-k-
- []
 
-
-Underfull \hbox (badness 6775) in paragraph at lines 26--26
-\OT1/cmr/m/n/10.95 u-pLines #CPAC-Pan-els Be squared away  perky TOP TWEETED of
-
- []
-
-
-Underfull \hbox (badness 3078) in paragraph at lines 27--27
-[]\OT1/cmr/m/n/10.95 In #Sochi, the Dutch are dom-i-nat-ing the over-all Olympi
-c medal count
- []
-
-[38] [39] [40] [41]
-<Figures/InformationAnalysisTable.jpg, id=1293, 1040.38687pt x 298.11375pt>
-File: Figures/InformationAnalysisTable.jpg Graphic file (type jpg)
-
-<use Figures/InformationAnalysisTable.jpg>
-Package pdftex.def Info: Figures/InformationAnalysisTable.jpg used on input lin
-e 159.
-(pdftex.def)             Requested size: 426.78363pt x 156.48932pt.
-
-Overfull \hbox (9.31056pt too wide) in paragraph at lines 159--160
- [][] 
- []
-
-[42]
-Overfull \hbox (4.65886pt too wide) in paragraph at lines 195--195
-[] 
- []
-
-
-LaTeX Warning: Reference `tweetcharacteristics' on page 43 undefined on input l
-ine 201.
-
-[43 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/InformationAnalys
-isTable.jpg>] [44]
-Overfull \hbox (28.19354pt too wide) in paragraph at lines 236--238
-\OT1/cmr/bx/it/10.95 Problem\OT1/cmr/m/n/10.95 : \OT1/cmr/m/it/10.95 Given an e
-vent $\OML/cmm/m/it/10.95 E[]$\OT1/cmr/m/it/10.95 , a time or-dered stream of $
-\OML/cmm/m/it/10.95 n$ \OT1/cmr/m/it/10.95 tweets $\OML/cmm/m/it/10.95 M[] \OT1
-/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 m[]; :::; m[]; m[]; :
-::; m[]\OMS/cmsy/m/n/10.95 g$
- []
-
-[45]
-Overfull \hbox (17.25574pt too wide) in paragraph at lines 265--291
-[][] 
- []
-
-[46] <Figures/TwitterEventInfoGraph.jpg, id=1328, 906.38625pt x 740.7675pt>
-File: Figures/TwitterEventInfoGraph.jpg Graphic file (type jpg)
-
-<use Figures/TwitterEventInfoGraph.jpg>
-Package pdftex.def Info: Figures/TwitterEventInfoGraph.jpg used on input line 3
-46.
-(pdftex.def)             Requested size: 455.23889pt x 341.43538pt.
-
-Overfull \hbox (37.76582pt too wide) in paragraph at lines 346--347
- [][] 
- []
-
-[47 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/TwitterEventInfoG
-raph.jpg>]
-Overfull \hbox (49.42625pt too wide) in paragraph at lines 427--428
-$[]$\OT1/cmr/m/n/10.95 , which we call as \OT1/cmr/m/it/10.95 Twit-terEventIn-f
-o-Graph\OT1/cmr/m/n/10.95 , where $[]$,
- []
-
-[48] [49] [50] [51]
-Overfull \hbox (3.0859pt too wide) in paragraph at lines 561--562
-[]\OT1/cmr/m/n/10.95 We get the fi-nal rank vec-tors for each sub-set of the ve
-r-tices ($\OML/cmm/m/it/10.95 R[]; R[]; R[]; R[]; R[]$\OT1/cmr/m/n/10.95 )
- []
-
-[52] [53] [54] [55]
-<Figures/Chapter4Figures/MillionsMarchNycEventIdentityInfoRankPerformance.jpg, 
-id=1397, 667.74469pt x 465.99094pt>
-File: Figures/Chapter4Figures/MillionsMarchNycEventIdentityInfoRankPerformance.
-jpg Graphic file (type jpg)
-
-<use Figures/Chapter4Figures/MillionsMarchNycEventIdentityInfoRankPerformance.j
-pg>
-Package pdftex.def Info: Figures/Chapter4Figures/MillionsMarchNycEventIdentityI
-nfoRankPerformance.jpg used on input line 676.
-(pdftex.def)             Requested size: 433.63153pt x 325.22441pt.
-
-Overfull \hbox (16.15846pt too wide) in paragraph at lines 676--677
- [][] 
- []
-
-
-<Figures/Chapter4Figures/SydneySiegeEventIdentityInfoRankPerformance.jpg, id=13
-98, 666.99188pt x 471.26062pt>
-File: Figures/Chapter4Figures/SydneySiegeEventIdentityInfoRankPerformance.jpg G
-raphic file (type jpg)
-
-<use Figures/Chapter4Figures/SydneySiegeEventIdentityInfoRankPerformance.jpg>
-Package pdftex.def Info: Figures/Chapter4Figures/SydneySiegeEventIdentityInfoRa
-nkPerformance.jpg used on input line 683.
-(pdftex.def)             Requested size: 433.63118pt x 325.22052pt.
-
-Overfull \hbox (16.15811pt too wide) in paragraph at lines 683--684
- [][] 
- []
-
-<Figures/millionsmarchnycndcg.jpg, id=1399, 809.27344pt x 395.22656pt>
-File: Figures/millionsmarchnycndcg.jpg Graphic file (type jpg)
-
-<use Figures/millionsmarchnycndcg.jpg>
-Package pdftex.def Info: Figures/millionsmarchnycndcg.jpg used on input line 72
-3.
-(pdftex.def)             Requested size: 397.48595pt x 252.94412pt.
-
-<Figures/sydneysiegendcg.jpg, id=1400, 809.27344pt x 395.22656pt>
-File: Figures/sydneysiegendcg.jpg Graphic file (type jpg)
-
-<use Figures/sydneysiegendcg.jpg>
-Package pdftex.def Info: Figures/sydneysiegendcg.jpg used on input line 730.
-(pdftex.def)             Requested size: 397.48595pt x 252.94412pt.
-
-<Figures/millionsmarchnycprecision.jpg, id=1401, 809.27344pt x 395.22656pt>
-File: Figures/millionsmarchnycprecision.jpg Graphic file (type jpg)
-
-<use Figures/millionsmarchnycprecision.jpg>
-Package pdftex.def Info: Figures/millionsmarchnycprecision.jpg used on input li
-ne 737.
-(pdftex.def)             Requested size: 397.48595pt x 252.94412pt.
-
-<Figures/sydneysiegeprecision.jpg, id=1402, 809.27344pt x 395.22656pt>
-File: Figures/sydneysiegeprecision.jpg Graphic file (type jpg)
-
-<use Figures/sydneysiegeprecision.jpg>
-Package pdftex.def Info: Figures/sydneysiegeprecision.jpg used on input line 74
-4.
-(pdftex.def)             Requested size: 397.48595pt x 252.94412pt.
-
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 905.
-
-[56] [57 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/Chapter4Figu
-res/MillionsMarchNycEventIdentityInfoRankPerformance.jpg>] [58 <C:/Users/cisstu
-dent/Documents/Phd Defense/Thesis/Figures/Chapter4Figures/SydneySiegeEventIdent
-ityInfoRankPerformance.jpg> <C:/Users/cisstudent/Documents/Phd Defense/Thesis/F
-igures/millionsmarchnycndcg.jpg>] [59 <C:/Users/cisstudent/Documents/Phd Defens
-e/Thesis/Figures/sydneysiegendcg.jpg> <C:/Users/cisstudent/Documents/Phd Defens
-e/Thesis/Figures/millionsmarchnycprecision.jpg>]
-
-LaTeX Warning: Reference `avgannotationscores' on page 60 undefined on input li
-ne 911.
-
-
-LaTeX Warning: Reference `avgannotationscores' on page 60 undefined on input li
-ne 911.
-
-
-Overfull \hbox (35.50829pt too wide) in paragraph at lines 911--912
-[] []\OT1/cmr/bx/n/10.95 Tweet An-no-ta-tions:[] \OT1/cmr/m/n/10.95 The ranked 
-tweets were an-no-tated on an event-specific informativeness-
- []
-
-[60 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/sydneysiegeprecis
-ion.jpg>]
-
-LaTeX Warning: Reference `avgannotationscores' on page 61 undefined on input li
-ne 913.
-
-
-LaTeX Warning: Reference `avgannotationscores' on page 61 undefined on input li
-ne 915.
-
-[61]
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 954.
-
-[62]
-Overfull \hbox (0.81747pt too wide) in paragraph at lines 974--975
-[]\OT1/cmr/m/n/10.95 http://www.cnn.com/2014/12/15/world/asia/australia-sydney-
-hostage-situation/ 
- []
-
-
-Overfull \hbox (13.562pt too wide) in paragraph at lines 978--979
-[]\OT1/cmr/m/n/10.95 http://www.newsroompost.com/138766/sydney-cafe-siege-ends-
-gunman-among-two-
- []
-
-[63]
-Overfull \hbox (7.18864pt too wide) in paragraph at lines 1029--1030
-\OT1/cmr/m/n/10.95 eye-wit-ness http://t.co/m51P8dUPhB #Syd-neySiege http://t.c
-o/NvJzFsGrFN 
- []
-
-[64]
-Overfull \hbox (28.45409pt too wide) in paragraph at lines 1057--1058
-[]\OT1/cmr/m/n/10.95 http://mashable.com/2014/12/13/time-lapse-new-york-protest
--march/?utm[]cid=mash-
- []
-
-
-Overfull \hbox (3.31154pt too wide) in paragraph at lines 1058--1059
-[]\OT1/cmr/m/n/10.95 http://www.cbsnews.com/news/eric-garner-ferguson-missouri-
-protesters-converge-
- []
-
-
-Overfull \hbox (151.20374pt too wide) in paragraph at lines 1059--1060
-[]\OT1/cmr/m/n/10.95 http://www.huffingtonpost.com/2014/12/13/millions-march-ny
-c[]n[]6320348.html?ncid=tweetlnkushpmg00000051 
- []
-
-[65]
-Overfull \hbox (21.1043pt too wide) in paragraph at lines 1075--1076
-\OT1/cmr/m/n/10.95 protests http://t.co/zhqHpkDLk1 #Mil-lion-s-March-NYC http:/
-/t.co/WktxssAfDp 
- []
-
-
-Overfull \hbox (22.48703pt too wide) in paragraph at lines 1077--1078
-\OT1/cmr/m/n/10.95 ton Square Park #Mil-lion-s-March-NYC #The-Root-MOW http://t
-.co/IwkQG1KjFg 
- []
-
-
-Overfull \hbox (21.1043pt too wide) in paragraph at lines 1089--1090
-\OT1/cmr/m/n/10.95 protests http://t.co/zhqHpkDLk1 #Mil-lion-s-March-NYC http:/
-/t.co/WktxssAfDp 
- []
-
-
-Overfull \hbox (27.90747pt too wide) in paragraph at lines 1091--1092
-\OT1/cmr/m/n/10.95 hat-tan Sky-line be-hind. #Mil-lion-s-March-NYC #ICant-Breat
-he http://t.co/UPvN... 
- []
-
-
-LaTeX Warning: Reference `sypre' on page 66 undefined on input line 1096.
-
-
-LaTeX Warning: Reference `millionpre' on page 66 undefined on input line 1096.
-
-[66]
-
-LaTeX Warning: Reference `top5sydneysiege' on page 67 undefined on input line 1
-122.
-
-
-LaTeX Warning: Reference `sydneysiegeusers' on page 67 undefined on input line 
-1122.
-
-[67]) ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\Chapters/Chapter6.tex"
-[68]
-Chapter 6.
+Package Fancyhdr Warning: \headheight is too small (20.0pt): 
+ Make it at least 25.89253pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIMComponents/Ide
+ntityIntegrity.jpg> <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/E
+IIMComponents/EventReferenceCollection.jpg>] [9 <C:/Users/cisstudent/Documents/
+Phd Defense/Thesis/Figures/EIIMComponents/EventReferencePreparation.jpg> <C:/Us
+ers/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIMComponents/EventInforma
+tionQuality.jpg>] [10 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures
+/EIIMComponents/EventIdentityInformationCapture.jpg> <C:/Users/cisstudent/Docum
+ents/Phd Defense/Thesis/Figures/EIIMComponents/EventIdentityInformationStructur
+e.jpg>] [11 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIMCompo
+nents/EventIdentityInformationProcessing.jpg> <C:/Users/cisstudent/Documents/Ph
+d Defense/Thesis/Figures/EIIMComponents/EventReferenceResolution.jpg>] [12 <C:/
+Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIMComponents/EventAnaly
+tics.jpg>]
+Chapter 5.
 ------------------------------------------------------------------------------
- 6 Potential Applications of the EIIM Framework
+ 5 Potential Applications of the EIIM Framework
 ------------------------------------------------------------------------------
-[69
+[13
 
-] [70] [71]
+] [14] [15]
 Overfull \hbox (2.51059pt too wide) in paragraph at lines 66--67
 []\OT1/cmr/m/n/10.95 New York To-day! #ShutIt-Down #eco-nomic-shut-down #Black-
 Lives-Mat-ter #ICant-
  []
 
-[72]
+[16]
 
-Package natbib Warning: Citation `tsur2012s' on page 73 undefined on input line
+Package natbib Warning: Citation `tsur2012s' on page 17 undefined on input line
  79.
 
-) ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\Chapters/Chapter7.tex"
-[73]
-Chapter 7.
+) ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\Chapters/Chapter6.tex"
+[17]
+Chapter 6.
 ------------------------------------------------------------------------------
- 7 Literature Review
+ 6 Conclusion and Future Work
 ------------------------------------------------------------------------------
-) [74
+) [18
 
 ]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
-("C:\Users\cisstudent\Documents\Phd Defense\Thesis\main.bbl" [75
+("C:\Users\cisstudent\Documents\Phd Defense\Thesis\main.bbl" [19
 
 
-] [76] [77]
-[78] [79])
+])
 
 Package natbib Warning: There were undefined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 374.
-[80]
+[20]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 374.
  ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\main.aux")
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 374.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 374.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A58CE06CBE529F0A99246C2075EF106E;26611.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: 8AB682CB22D2E31A51255902BE6DBED0;13273.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 374.
  ) 
 Here is how much of TeX's memory you used:
- 15700 strings out of 493921
- 229159 string characters out of 3144860
- 316644 words of memory out of 3000000
- 18284 multiletter control sequences out of 15000+200000
- 20085 words of font info for 73 fonts, out of 3000000 for 9000
+ 14964 strings out of 493921
+ 213527 string characters out of 3144860
+ 301573 words of memory out of 3000000
+ 17879 multiletter control sequences out of 15000+200000
+ 16111 words of font info for 59 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 49i,15n,45p,3250b,552s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,11n,45p,3250b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx6.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (96 pages, 6774264 bytes).
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/amsfonts/symbols/msam7.pfb>
+Output written on main.pdf (33 pages, 2152241 bytes).
 PDF statistics:
- 1784 PDF objects out of 2073 (max. 8388607)
- 438 named destinations out of 1000 (max. 500000)
- 1082 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 636 PDF objects out of 1000 (max. 8388607)
+ 147 named destinations out of 1000 (max. 500000)
+ 523 words of extra memory for PDF output out of 10000 (max. 10000000)
 

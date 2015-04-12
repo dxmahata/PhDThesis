@@ -1,10 +1,6 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 The style file: unsrtnat.bst
 Database file #1: Bibliography.bib
-Repeated entry---line 830 of file Bibliography.bib
- : @inproceedings{popescu2011extracting
- :                                     ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 921 of file Bibliography.bib
  : @inproceedings{ritter2011named
  :                               ,
@@ -13,7 +9,5 @@ Repeated entry---line 1024 of file Bibliography.bib
  : @inproceedings{singh2010mining
  :                               ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "erkan2004lexrank"
 Warning--I didn't find a database entry for "tsur2012s"
-Warning--there's a number but no series in olteanu2014crisislex
-(There were 3 error messages)
+(There were 2 error messages)

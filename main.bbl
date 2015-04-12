@@ -1,4 +1,4 @@
-\begin{thebibliography}{60}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -18,13 +18,13 @@ Fabricio Benevenuto, Gabriel Magno, Tiago Rodrigues, and Virgilio Almeida.
 \newblock In \emph{Collaboration, electronic messaging, anti-abuse and spam
   conference (CEAS)}, volume~6, page~12, 2010.
 
-\bibitem[Bontcheva et~al.(2013{\natexlab{a}})Bontcheva, Derczynski, Funk,
-  Greenwood, Maynard, and Aswani]{bontcheva2013twitie}
+\bibitem[Bontcheva et~al.(2013)Bontcheva, Derczynski, Funk, Greenwood, Maynard,
+  and Aswani]{bontcheva2013twitie}
 Kalina Bontcheva, Leon Derczynski, Adam Funk, Mark~A Greenwood, Diana Maynard,
   and Niraj Aswani.
 \newblock Twitie: An open-source information extraction pipeline for microblog
   text.
-\newblock In \emph{RANLP}, pages 83--90, 2013{\natexlab{a}}.
+\newblock In \emph{RANLP}, pages 83--90, 2013.
 
 \bibitem[Prevost(1996)]{prevost1996information}
 Scott Prevost.
@@ -47,302 +47,6 @@ Alan Ritter, Sam Clark, Oren Etzioni, et~al.
   Natural Language Processing}, pages 1524--1534. Association for Computational
   Linguistics, 2011.
 
-\bibitem[Reese et~al.(2007)]{reese2007mapping}
-S.D. Reese et~al.
-\newblock Mapping the blogosphere professional and citizen-based media in the
-  global news arena.
-\newblock \emph{Journalism}, 8\penalty0 (3):\penalty0 235--261, 2007.
-
-\bibitem[Hamdy et~al.(2012)]{hamdy2012framing}
-N.~Hamdy et~al.
-\newblock Framing the egyptian uprising in arabic language newspapers and
-  social media.
-\newblock \emph{Journal of Communication}, 2012.
-
-\bibitem[Johnson et~al.(2004)]{johnson2004wag}
-T.J. Johnson et~al.
-\newblock Wag the blog: How reliance on traditional media and the internet
-  influence credibility perceptions of weblogs among blog users.
-\newblock \emph{Journalism \& Mass Communication Quarterly}, 81\penalty0
-  (3):\penalty0 622--642, 2004.
-
-\bibitem[Agarwal et~al.(2011)Agarwal, Lim, and Wigand]{agarwal2011finding}
-Nitin Agarwal, Merlyna Lim, and Rolf~T Wigand.
-\newblock Finding her master's voice: the power of collective action among
-  female muslim bloggers.
-\newblock In \emph{ECIS}, 2011.
-
-\bibitem[Agarwal et~al.(2012{\natexlab{a}})Agarwal, Lim, and
-  Wigand]{agarwal2012online}
-Nitin Agarwal, Merlyna Lim, and Rolf~T Wigand.
-\newblock Online collective action and the role of social media in mobilizing
-  opinions: A case study on women's right-to-drive campaigns in saudi arabia.
-\newblock In \emph{Web 2.0 Technologies and Democratic Governance}, pages
-  99--123. Springer, 2012{\natexlab{a}}.
-
-\bibitem[Agarwal et~al.(2012{\natexlab{b}})Agarwal, Lim, and
-  Wigand]{agarwal2012raising}
-Nitin Agarwal, Merlyna Lim, and Rolf~T Wigand.
-\newblock Raising and rising voices in social media.
-\newblock \emph{Business \& Information Systems Engineering}, 4\penalty0
-  (3):\penalty0 113--126, 2012{\natexlab{b}}.
-
-\bibitem[Adamic et~al.(2000)]{adamic2000power}
-L.A. Adamic et~al.
-\newblock Power-law distribution of the world wide web.
-\newblock \emph{Science}, 287\penalty0 (5461):\penalty0 2115--2115, 2000.
-
-\bibitem[LOmariba(2009)]{LOmariba}
-LOmariba.
-\newblock Is new media posing a serious challenge to traditional media?''.
-\newblock Technical report, University of Westminster, 2009.
-
-\bibitem[Harb(2011)]{harb2011arab}
-Z.~Harb.
-\newblock Arab revolutions and the social media effect.
-\newblock \emph{M/C Journal}, 14\penalty0 (2), 2011.
-
-\bibitem[Anderson(2008)]{anderson2008long}
-C.~Anderson.
-\newblock \emph{Long Tail, The, Revised and Updated Edition: Why the Future of
-  Business is Selling Less of More}.
-\newblock Hyperion, 2008.
-
-\bibitem[Younus et~al.(2011)]{younus2011average}
-A.~Younus et~al.
-\newblock What do the average twitterers say: A twitter model for public
-  opinion analysis in the face of major political events.
-\newblock In \emph{Advances in Social Networks Analysis and Mining (ASONAM),
-  2011 International Conference on}, pages 618--623. IEEE, 2011.
-
-\bibitem[Singh et~al.(2010)]{singh2010mining}
-V.K. Singh et~al.
-\newblock Mining the blogosphere from a socio-political perspective.
-\newblock In \emph{Computer Information Systems and Industrial Management
-  Applications (CISIM), 2010 International Conference on}, pages 365--370.
-  IEEE, 2010.
-
-\bibitem[Vieweg et~al.(2010)]{vieweg2010microblogging}
-S.~Vieweg et~al.
-\newblock Microblogging during two natural hazards events: what twitter may
-  contribute to situational awareness.
-\newblock In \emph{Proceedings of the 28th international conference on Human
-  factors in computing systems}, pages 1079--1088. ACM, 2010.
-
-\bibitem[Cheong et~al.(2011)]{cheong2011social}
-F.~Cheong et~al.
-\newblock Social media data mining: A social network analysis of tweets during
-  the 2010--2011 australian floods.
-\newblock \emph{PACIS 2011 Proceedings}, 2011.
-
-\bibitem[Marcus et~al.(2011)]{marcus2011twitinfo}
-A.~Marcus et~al.
-\newblock Twitinfo: aggregating and visualizing microblogs for event
-  exploration.
-\newblock In \emph{Proceedings of the 2011 annual conference on Human factors
-  in computing systems}, pages 227--236. ACM, 2011.
-
-\bibitem[Popescu et~al.(2011)]{popescu2011extracting}
-A.M. Popescu et~al.
-\newblock Extracting events and event descriptions from twitter.
-\newblock In \emph{Proceedings of the 20th international conference companion
-  on World wide web}, pages 105--106. ACM, 2011.
-
-\bibitem[Troncy et~al.(2010)]{troncy2010linking}
-Rapha{\"e}l Troncy et~al.
-\newblock Linking events with media.
-\newblock In \emph{Proceedings of the 6th International Conference on Semantic
-  Systems}, page~42. ACM, 2010.
-
-\bibitem[Rattenbury et~al.(2007)]{rattenbury2007towards}
-T.~Rattenbury et~al.
-\newblock Towards automatic extraction of event and place semantics from flickr
-  tags.
-\newblock In \emph{Proceedings of the 30th annual international ACM SIGIR
-  conference on Research and development in information retrieval}, pages
-  103--110. ACM, 2007.
-
-\bibitem[Becker et~al.(2011{\natexlab{a}})Becker, Naaman, and
-  Gravano]{becker2011selecting}
-Hila Becker, Mor Naaman, and Luis Gravano.
-\newblock Selecting quality twitter content for events.
-\newblock \emph{ICWSM}, 11, 2011{\natexlab{a}}.
-
-\bibitem[Gupta et~al.(2012)Gupta, Zhao, and Han]{gupta2012evaluating}
-Manish Gupta, Peixiang Zhao, and Jiawei Han.
-\newblock Evaluating event credibility on twitter.
-\newblock In \emph{SDM}, pages 153--164. SIAM, 2012.
-
-\bibitem[Diakopoulos et~al.(2012)Diakopoulos, De~Choudhury, and
-  Naaman]{diakopoulos2012finding}
-Nicholas Diakopoulos, Munmun De~Choudhury, and Mor Naaman.
-\newblock Finding and assessing social media information sources in the context
-  of journalism.
-\newblock In \emph{Proceedings of the SIGCHI Conference on Human Factors in
-  Computing Systems}, pages 2451--2460. ACM, 2012.
-
-\bibitem[Brin et~al.(1998)]{brin1998anatomy}
-S.~Brin et~al.
-\newblock The anatomy of a large-scale hypertextual web search engine.
-\newblock \emph{Computer networks and ISDN systems}, 30\penalty0 (1):\penalty0
-  107--117, 1998.
-
-\bibitem[Haveliwala(2003)]{haveliwala2003topic}
-T.H. Haveliwala.
-\newblock Topic-sensitive pagerank: A context-sensitive ranking algorithm for
-  web search.
-\newblock \emph{Knowledge and Data Engineering, IEEE Transactions on},
-  15\penalty0 (4):\penalty0 784--796, 2003.
-
-\bibitem[Kleinberg(1999)]{kleinberg1999authoritative}
-J.M. Kleinberg.
-\newblock Authoritative sources in a hyperlinked environment.
-\newblock \emph{Journal of the ACM (JACM)}, 46\penalty0 (5):\penalty0 604--632,
-  1999.
-
-\bibitem[Ramos(2003)]{ramos2003using}
-J.~Ramos.
-\newblock Using tf-idf to determine word relevance in document queries.
-\newblock In \emph{Proceedings of the First Instructional Conference on Machine
-  Learning}, 2003.
-
-\bibitem[Golub et~al.(1996)]{golub1996matrix}
-G.H. Golub et~al.
-\newblock \emph{Matrix computations}, volume~3.
-\newblock Johns Hopkins University Press, 1996.
-
-\bibitem[Langville et~al.(2004)]{langville2004deeper}
-A.N. Langville et~al.
-\newblock Deeper inside pagerank.
-\newblock \emph{Internet Mathematics}, 1\penalty0 (3):\penalty0 335--380, 2004.
-
-\bibitem[Ekdale et~al.(2007)]{ekdale2007expression}
-B.~Ekdale et~al.
-\newblock From expression to influence: Understanding the change in blogger
-  motivations over the blogspan.
-\newblock \emph{AEJMC, Washington, DC}, 2007.
-
-\bibitem[Phelan et~al.(2009)Phelan, McCarthy, and Smyth]{phelan2009using}
-Owen Phelan, Kevin McCarthy, and Barry Smyth.
-\newblock Using twitter to recommend real-time topical news.
-\newblock In \emph{Proceedings of the third ACM conference on Recommender
-  systems}, pages 385--388. ACM, 2009.
-
-\bibitem[O'Connor et~al.(2010)O'Connor, Balasubramanyan, Routledge, and
-  Smith]{o2010tweets}
-Brendan O'Connor, Ramnath Balasubramanyan, Bryan~R Routledge, and Noah~A Smith.
-\newblock From tweets to polls: Linking text sentiment to public opinion time
-  series.
-\newblock \emph{ICWSM}, 11:\penalty0 122--129, 2010.
-
-\bibitem[Sakaki et~al.(2013)Sakaki, Okazaki, and Matsuo]{sakaki2013tweet}
-Takeshi Sakaki, Makoto Okazaki, and Yutaka Matsuo.
-\newblock Tweet analysis for real-time event detection and earthquake reporting
-  system development.
-\newblock \emph{Knowledge and Data Engineering, IEEE Transactions on},
-  25\penalty0 (4):\penalty0 919--931, 2013.
-
-\bibitem[Purohit and Sheth(2013)]{purohit2013twitris}
-Hemant Purohit and Amit~P Sheth.
-\newblock Twitris v3: From citizen sensing to analysis, coordination and
-  action.
-\newblock In \emph{ICWSM}, 2013.
-
-\bibitem[Laniado and Mika(2010)]{laniado2010making}
-David Laniado and Peter Mika.
-\newblock Making sense of twitter.
-\newblock In \emph{The Semantic Web--ISWC 2010}, pages 470--485. Springer,
-  2010.
-
-\bibitem[Barrons(2012)]{barrons2012suleiman}
-Genevieve Barrons.
-\newblock 'suleiman: Mubarak decided to step down\# egypt\# jan25 oh my god':
-  Examining the use of social media in the 2011 egyptian revolution.
-\newblock \emph{Contemporary Arab Affairs}, 5\penalty0 (1):\penalty0 54--67,
-  2012.
-
-\bibitem[Bontcheva et~al.(2013{\natexlab{b}})Bontcheva, Gorrell, and
-  Wessels]{bontcheva2013social}
-Kalina Bontcheva, Genevieve Gorrell, and Bridgette Wessels.
-\newblock Social media and information overload: Survey results.
-\newblock \emph{arXiv preprint arXiv:1306.0813}, 2013{\natexlab{b}}.
-
-\bibitem[Rodriguez et~al.(2014)Rodriguez, Gummadi, and
-  Schoelkopf]{rodriguez2014quantifying}
-Manuel~Gomez Rodriguez, Krishna Gummadi, and Bernhard Schoelkopf.
-\newblock Quantifying information overload in social media and its impact on
-  social contagions.
-\newblock \emph{arXiv preprint arXiv:1403.6838}, 2014.
-
-\bibitem[Ratinov and Roth(2009)]{ratinov2009design}
-Lev Ratinov and Dan Roth.
-\newblock Design challenges and misconceptions in named entity recognition.
-\newblock In \emph{Proceedings of the Thirteenth Conference on Computational
-  Natural Language Learning}, pages 147--155. Association for Computational
-  Linguistics, 2009.
-
-\bibitem[Wei et~al.(2008)Wei, Li, Lu, and He]{wei2008query}
-Furu Wei, Wenjie Li, Qin Lu, and Yanxiang He.
-\newblock Query-sensitive mutual reinforcement chain and its application in
-  query-oriented multi-document summarization.
-\newblock In \emph{Proceedings of the 31st annual international ACM SIGIR
-  conference on Research and development in information retrieval}, pages
-  283--290. ACM, 2008.
-
-\bibitem[Olteanu et~al.(2014)Olteanu, Castillo, Diaz, and
-  Vieweg]{olteanu2014crisislex}
-Alexandra Olteanu, Carlos Castillo, Fernando Diaz, and Sarah Vieweg.
-\newblock Crisislex: A lexicon for collecting and filtering microblogged
-  communications in crises.
-\newblock In \emph{In Proceedings of the 8th International AAAI Conference on
-  Weblogs and Social Media (ICWSM" 14)}, number EPFL-CONF-203561, 2014.
-
-\bibitem[Imran et~al.(2013)Imran, Elbassuoni, Castillo, Diaz, and
-  Meier]{Imran2013}
-Muhammad Imran, Shady Elbassuoni, Carlos Castillo, Fernando Diaz, and Patrick
-  Meier.
-\newblock Practical extraction of disaster-relevant information from social
-  media.
-\newblock In \emph{Proceedings of the 22nd international conference on World
-  Wide Web companion}, pages 1021--1024. International World Wide Web
-  Conferences Steering Committee, 2013.
-
-\bibitem[Yardi et~al.(2009)Yardi, Romero, Schoenebeck,
-  et~al.]{yardi2009detecting}
-Sarita Yardi, Daniel Romero, Grant Schoenebeck, et~al.
-\newblock Detecting spam in a twitter network.
-\newblock \emph{First Monday}, 15\penalty0 (1), 2009.
-
-\bibitem[Becker et~al.(2011{\natexlab{b}})Becker, Naaman, and
-  Gravano]{becker2011beyond}
-Hila Becker, Mor Naaman, and Luis Gravano.
-\newblock Beyond trending topics: Real-world event identification on twitter.
-\newblock \emph{ICWSM}, 11:\penalty0 438--441, 2011{\natexlab{b}}.
-
-\bibitem[Lin and Schatz(2010)]{lin2010design}
-Jimmy Lin and Michael Schatz.
-\newblock Design patterns for efficient graph algorithms in mapreduce.
-\newblock In \emph{Proceedings of the Eighth Workshop on Mining and Learning
-  with Graphs}, pages 78--85. ACM, 2010.
-
-\bibitem[Rolling(1981)]{rolling1981indexing}
-L~Rolling.
-\newblock Indexing consistency, quality and efficiency.
-\newblock \emph{Information Processing \& Management}, 17\penalty0
-  (2):\penalty0 69--76, 1981.
-
-\bibitem[J{\"a}rvelin and Kek{\"a}l{\"a}inen(2002)]{jarvelin2002cumulated}
-Kalervo J{\"a}rvelin and Jaana Kek{\"a}l{\"a}inen.
-\newblock Cumulated gain-based evaluation of ir techniques.
-\newblock \emph{ACM Transactions on Information Systems (TOIS)}, 20\penalty0
-  (4):\penalty0 422--446, 2002.
-
-\bibitem[Baeza-Yates et~al.(1999)Baeza-Yates, Ribeiro-Neto,
-  et~al.]{baeza1999modern}
-Ricardo Baeza-Yates, Berthier Ribeiro-Neto, et~al.
-\newblock \emph{Modern information retrieval}, volume 463.
-\newblock ACM press New York, 1999.
-
 \bibitem[Gao et~al.(2011)Gao, Barbier, Goolsby, and Zeng]{gao2011harnessing}
 Huiji Gao, Geoffrey Barbier, Rebecca Goolsby, and Daniel Zeng.
 \newblock Harnessing the crowdsourcing power of social media for disaster
@@ -353,6 +57,13 @@ Huiji Gao, Geoffrey Barbier, Rebecca Goolsby, and Daniel Zeng.
 Shaun Walker.
 \newblock Russia to monitor 'all communications' at winter olympics in sochi.
 \newblock \emph{The Guardian, October}, 6, 2013.
+
+\bibitem[Singh et~al.(2010)]{singh2010mining}
+V.K. Singh et~al.
+\newblock Mining the blogosphere from a socio-political perspective.
+\newblock In \emph{Computer Information Systems and Industrial Management
+  Applications (CISIM), 2010 International Conference on}, pages 365--370.
+  IEEE, 2010.
 
 \bibitem[Bollen et~al.(2009)Bollen, Pepe, and Mao]{bollen2009modeling}
 Johan Bollen, Alberto Pepe, and Huina Mao.
