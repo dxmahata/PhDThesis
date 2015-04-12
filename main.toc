@@ -4,8 +4,8 @@
 \contentsline {chapter}{Acknowledgements}{iv}{dummy.3}
 \vspace {1em}
 \contentsline {chapter}{Contents}{v}{dummy.4}
-\contentsline {chapter}{List of Figures}{viii}{dummy.6}
-\contentsline {chapter}{List of Tables}{ix}{dummy.8}
+\contentsline {chapter}{List of Figures}{ix}{dummy.6}
+\contentsline {chapter}{List of Tables}{xi}{dummy.8}
 \vspace {2em}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.11}
 \contentsline {section}{\numberline {1.1}Social Media and Real-life Events}{1}{section.12}
@@ -20,58 +20,98 @@
 \contentsline {section}{\numberline {1.4}Research Methodology}{4}{section.27}
 \contentsline {section}{\numberline {1.5}Research Contributions}{4}{section.28}
 \contentsline {section}{\numberline {1.6}Structure of the Thesis}{4}{section.29}
-\contentsline {chapter}{\numberline {2}Literature Review}{5}{chapter.30}
-\contentsline {section}{\numberline {2.1}Event Identification in News Text}{5}{section.31}
-\contentsline {section}{\numberline {2.2}Event Identification in Social Media}{5}{section.32}
-\contentsline {section}{\numberline {2.3}Information Quality in Social Media}{5}{section.33}
-\contentsline {section}{\numberline {2.4}Ranking and Summarization of Short Textual Social Media Posts}{5}{section.34}
-\contentsline {section}{\numberline {2.5}Reference Tracking and Entity Resolution}{5}{section.35}
-\contentsline {chapter}{\numberline {3}Defining Events}{6}{chapter.36}
-\contentsline {section}{\numberline {3.1}Topic Detection and Tracking}{6}{section.37}
-\contentsline {section}{\numberline {3.2}Automatic Content Extraction}{6}{section.38}
-\contentsline {section}{\numberline {3.3}Multimedia Event Detection}{6}{section.39}
-\contentsline {section}{\numberline {3.4}Events in Social Media}{6}{section.40}
-\contentsline {chapter}{\numberline {4}Event Identity Information Management Life Cycle}{7}{chapter.41}
-\contentsline {section}{\numberline {4.1}Identity Integrity}{7}{section.42}
-\contentsline {section}{\numberline {4.2}Event Reference Collection}{9}{section.44}
-\contentsline {section}{\numberline {4.3}Event Reference Preparation}{9}{section.46}
-\contentsline {section}{\numberline {4.4}Event Information Quality}{9}{section.48}
-\contentsline {section}{\numberline {4.5}Event Identity Information Capture}{9}{section.50}
-\contentsline {section}{\numberline {4.6}Event Identity Information Structure}{9}{section.52}
-\contentsline {section}{\numberline {4.7}Event Identity Information Processing}{9}{section.54}
-\contentsline {section}{\numberline {4.8}Event Reference Resolution}{9}{section.56}
-\contentsline {section}{\numberline {4.9}Event Analytics}{9}{section.58}
-\contentsline {chapter}{\numberline {5}Discovering Event-specific Informative Content from Twitter}{13}{chapter.60}
-\contentsline {section}{\numberline {5.1}Twitter and Event Related Content}{13}{section.61}
-\contentsline {section}{\numberline {5.2}Motivation}{15}{section.64}
-\contentsline {section}{\numberline {5.3}Challenges in Mining Tweets}{16}{section.65}
-\contentsline {section}{\numberline {5.4}Objective and Contributions}{16}{section.66}
-\contentsline {section}{\numberline {5.5}Analysis of Informative and Non-informative Content in Tweets}{17}{section.67}
-\contentsline {section}{\numberline {5.6}EventIdentityInfoGraph}{17}{section.68}
-\contentsline {section}{\numberline {5.7}EventIdentityInfoRank}{17}{section.69}
-\contentsline {section}{\numberline {5.8}Experiments}{17}{section.70}
-\contentsline {subsection}{\numberline {5.8.1}Data Collection}{17}{subsection.71}
-\contentsline {subsection}{\numberline {5.8.2}Data Preparation}{17}{subsection.72}
-\contentsline {subsection}{\numberline {5.8.3}Baselines}{17}{subsection.73}
-\contentsline {subsection}{\numberline {5.8.4}Evaluation}{17}{subsection.74}
-\contentsline {subsection}{\numberline {5.8.5}Sample Results}{17}{subsection.75}
-\contentsline {chapter}{\numberline {6}Potential Applications of the EIIM Framework}{18}{chapter.76}
-\contentsline {section}{\numberline {6.1}Event Monitoring and Analysis}{18}{section.77}
-\contentsline {section}{\numberline {6.2}Event Information Retrieval}{19}{section.84}
-\contentsline {section}{\numberline {6.3}Opinion and Review Mining}{19}{section.86}
-\contentsline {section}{\numberline {6.4}Recommender Systems}{20}{section.97}
-\contentsline {section}{\numberline {6.5}Event Management and Marketing}{21}{section.98}
-\contentsline {section}{\numberline {6.6}Social Media Data Integration}{22}{section.100}
-\contentsline {chapter}{\numberline {7}Conclusion and Future Work}{23}{chapter.102}
-\contentsline {section}{\numberline {7.1}Conclusion}{23}{section.103}
-\contentsline {section}{\numberline {7.2}Future Work}{23}{section.104}
-\contentsline {subsection}{\numberline {7.2.1}Summarizing Event Related Content}{23}{subsection.105}
-\contentsline {subsection}{\numberline {7.2.2}Identifying Insightful Opinionated Content Related to Events}{23}{subsection.106}
-\contentsline {subsection}{\numberline {7.2.3}Event Topic Modeling}{23}{subsection.107}
-\contentsline {subsection}{\numberline {7.2.4}Event-specific Recommendations}{23}{subsection.108}
-\contentsline {subsection}{\numberline {7.2.5}Distributed Processing of EventIdentityInfoGraph}{23}{subsection.109}
-\contentsline {subsection}{\numberline {7.2.6}Event Ontology for Social Media}{23}{subsection.110}
+\contentsline {chapter}{\numberline {2}Defining Events}{5}{chapter.30}
+\contentsline {section}{\numberline {2.1}Topic Detection and Tracking}{5}{section.31}
+\contentsline {section}{\numberline {2.2}Automatic Content Extraction}{5}{section.32}
+\contentsline {section}{\numberline {2.3}Multimedia Event Detection}{5}{section.33}
+\contentsline {section}{\numberline {2.4}Events in Social Media}{5}{section.34}
+\contentsline {chapter}{\numberline {3}Event Identity Information Management Life Cycle}{6}{chapter.35}
+\contentsline {section}{\numberline {3.1}Identity Integrity}{6}{section.36}
+\contentsline {section}{\numberline {3.2}Event Reference Collection}{7}{section.38}
+\contentsline {section}{\numberline {3.3}Event Reference Preparation}{11}{section.40}
+\contentsline {section}{\numberline {3.4}Event Information Quality}{11}{section.42}
+\contentsline {section}{\numberline {3.5}Event Identity Information Capture}{11}{section.44}
+\contentsline {section}{\numberline {3.6}Event Identity Information Structure}{11}{section.46}
+\contentsline {section}{\numberline {3.7}Event Identity Information Processing}{11}{section.48}
+\contentsline {section}{\numberline {3.8}Event Reference Resolution}{11}{section.50}
+\contentsline {section}{\numberline {3.9}Event Analytics}{11}{section.52}
+\contentsline {chapter}{\numberline {4}Identifying Event-specific Sources from the Blogosphere}{12}{chapter.54}
+\contentsline {section}{\numberline {4.1}Introduction}{13}{section.55}
+\contentsline {paragraph}{\noindent }{14}{figure.caption.57}
+\contentsline {paragraph}{\noindent }{15}{figure.caption.59}
+\contentsline {section}{\numberline {4.2}\textbf {Related Work}}{16}{section.60}
+\contentsline {section}{\numberline {4.3}\textbf {Problem Definition}}{17}{section.61}
+\contentsline {paragraph}{\noindent }{17}{figure.caption.62}
+\contentsline {paragraph}{\noindent }{18}{section*.63}
+\contentsline {section}{\numberline {4.4}\textbf {Methodology}}{19}{section.68}
+\contentsline {subsection}{\numberline {4.4.1}\textbf {Event Dictionaries}}{20}{subsection.70}
+\contentsline {paragraph}{\noindent }{20}{section*.71}
+\contentsline {subsection}{\numberline {4.4.2}\textbf {Mutually Reinforcing Sources and Entities}}{21}{subsection.81}
+\contentsline {section}{\numberline {4.5} \textbf {Data Collection}}{26}{section.97}
+\contentsline {paragraph}{\noindent }{27}{table.caption.98}
+\contentsline {section}{\numberline {4.6}\textbf {Experiment and Analysis}}{27}{section.101}
+\contentsline {subsection}{\numberline {4.6.1}\textbf {Experimental Setup}}{27}{subsection.102}
+\contentsline {subsection}{\numberline {4.6.2}\textbf {Comparing Conventional and Evolutionary Mutual Reinforcement Models}}{28}{subsection.103}
+\contentsline {subsection}{\numberline {4.6.3}\textbf {Baseline Comparisons}}{29}{subsection.107}
+\contentsline {section}{\numberline {4.7}\textbf {Further Exploration}}{32}{section.109}
+\contentsline {subsection}{\numberline {4.7.1}\textbf {Event-specific Popular and Close Entities}}{34}{subsection.111}
+\contentsline {subsection}{\numberline {4.7.2}\textbf {Event-specific and Event-class specific dictionaries}}{35}{subsection.112}
+\contentsline {section}{\numberline {4.8}\textbf {Conclusions And Future Work}}{35}{section.113}
+\contentsline {chapter}{\numberline {5}Discovering Event-specific Informative Content from Twitter}{37}{chapter.114}
+\contentsline {section}{\numberline {5.1}Twitter and Event Related Content}{37}{section.115}
+\contentsline {section}{\numberline {5.2}Motivation}{39}{section.118}
+\contentsline {section}{\numberline {5.3}Challenges in Mining Tweets}{40}{section.119}
+\contentsline {subsection}{\numberline {5.3.1}Information Overload affecting Consumption and Collection of Data}{40}{subsection.120}
+\contentsline {subsection}{\numberline {5.3.2}Idiosyncratic Structure and Informal Language}{40}{subsection.121}
+\contentsline {subsection}{\numberline {5.3.3}Nepotistic relationships}{41}{subsection.122}
+\contentsline {subsection}{\numberline {5.3.4}Data Management Challenges}{41}{subsection.123}
+\contentsline {section}{\numberline {5.4}Objective and Contributions}{41}{section.124}
+\contentsline {section}{\numberline {5.5}Analysis of Event Related Tweet Content}{42}{section.125}
+\contentsline {subsection}{\numberline {5.5.1}Analysis of Informative and Non-informative Content in Tweets}{43}{subsection.132}
+\contentsline {subsection}{\numberline {5.5.2}Difference between Informative and Event-specific Informative Tweets:}{44}{subsection.133}
+\contentsline {section}{\numberline {5.6}Problem Statement}{45}{section.134}
+\contentsline {section}{\numberline {5.7}Methodology}{46}{section.135}
+\contentsline {subsection}{\numberline {5.7.1}TwitterEventInfoGraph}{46}{subsection.137}
+\contentsline {subsection}{\numberline {5.7.2}TwitterEventInfoRank}{49}{subsection.139}
+\contentsline {section}{\numberline {5.8}Experimental Settings and Evaluation}{53}{section.154}
+\contentsline {subsection}{\numberline {5.8.1}Data Collection}{54}{subsection.155}
+\contentsline {subsection}{\numberline {5.8.2}Data Preparation}{54}{subsection.158}
+\contentsline {subsection}{\numberline {5.8.3}Experiment with Named Entities as Text Units}{55}{subsection.162}
+\contentsline {subsubsection}{\numberline {5.8.3.1}Baselines}{55}{subsubsection.163}
+\contentsline {subsection}{\numberline {5.8.4}Experiment with Nouns as Text Units}{55}{subsection.164}
+\contentsline {subsubsection}{\numberline {5.8.4.1}Baselines}{55}{subsubsection.165}
+\contentsline {subsubsection}{\numberline {5.8.4.2}Evaluation}{56}{subsubsection.175}
+\contentsline {paragraph}{Evaluation Setup and Objectives:}{56}{section*.176}
+\contentsline {paragraph}{Tweet Annotations:}{60}{section*.176}
+\contentsline {paragraph}{Hashtags, Text Units and URL Annotations:}{61}{section*.176}
+\contentsline {paragraph}{User Annotations:}{61}{section*.176}
+\contentsline {paragraph}{NDCG@n and Precision@n:}{62}{section*.176}
+\contentsline {subsubsection}{\numberline {5.8.4.3}Event Analytics}{62}{subsubsection.180}
+\contentsline {paragraph}{Top Five Event-specific Informative Hashtags for Sydney Siege Event}{62}{section*.181}
+\contentsline {paragraph}{Top Five Event-specific Informative Text Units for Sydney Siege Event}{62}{Item.186}
+\contentsline {paragraph}{Top Five Event-specific Informative URLs for Sydney Siege Event}{63}{Item.191}
+\contentsline {paragraph}{Top Five Event-specific Informative Tweet Excerpts for Sydney Siege Event}{63}{Item.196}
+\contentsline {paragraph}{Three Randomly Selected Tweets for Top Three Event-specific Informative Users posting about Sydney Siege Event.}{64}{Item.201}
+\contentsline {paragraph}{Top Five Event-specific Informative Hashtags for Millions March NYC Event}{64}{Item.213}
+\contentsline {paragraph}{Top Five Event-specific Informative Text Units for Millions March NYC Event}{65}{Item.218}
+\contentsline {paragraph}{Top Five Event-specific Informative URLs for Millions March NYC Event}{65}{Item.223}
+\contentsline {paragraph}{Top Five Event-specific Informative Tweet Excerpts for Millions March NYC Event}{65}{Item.228}
+\contentsline {paragraph}{Three Randomly Selected Tweets for Top Three Event-specific Informative Users posting about Millions March NYC Event for a particular hour.}{66}{Item.233}
+\contentsline {subsection}{\numberline {5.8.5}Discussion}{67}{subsection.246}
+\contentsline {section}{\numberline {5.9}Conclusion and Future Work}{67}{section.247}
+\contentsline {chapter}{\numberline {6}Potential Applications of the EIIM Framework}{69}{chapter.248}
+\contentsline {section}{\numberline {6.1}Event Monitoring and Analysis}{69}{section.249}
+\contentsline {section}{\numberline {6.2}Event Information Retrieval}{70}{section.256}
+\contentsline {section}{\numberline {6.3}Opinion and Review Mining}{70}{section.258}
+\contentsline {section}{\numberline {6.4}Recommender Systems}{71}{section.269}
+\contentsline {section}{\numberline {6.5}Event Management and Marketing}{72}{section.270}
+\contentsline {section}{\numberline {6.6}Social Media Data Integration}{73}{section.272}
+\contentsline {chapter}{\numberline {7}Literature Review}{74}{chapter.274}
+\contentsline {section}{\numberline {7.1}Event Identification in News Text}{74}{section.275}
+\contentsline {section}{\numberline {7.2}Event Identification in Social Media}{74}{section.276}
+\contentsline {section}{\numberline {7.3}Information Quality in Social Media}{74}{section.277}
+\contentsline {section}{\numberline {7.4}Ranking and Summarization of Short Textual Social Media Posts}{74}{section.278}
+\contentsline {section}{\numberline {7.5}Reference Tracking and Entity Resolution}{74}{section.279}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendix Title Here}{24}{appendix.111}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{25}{dummy.112}
+\contentsline {chapter}{Bibliography}{75}{dummy.280}
