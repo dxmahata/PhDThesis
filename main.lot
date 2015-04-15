@@ -2,5 +2,12 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Details of data collected for analyzing event related tweet content.\relax }}{12}{table.caption.51}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Tweet features for content informativeness.\relax }}{16}{table.caption.56}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Evaluation measures for logistic regression model.\relax }}{16}{table.caption.57}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Affinity scores of edges between vertices of TwitterEventInfoGraph\relax }}{19}{table.caption.65}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Avg IIC scores and total avg scores of annotations for Millions March NYC event.\relax }}{25}{table.caption.84}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Avg IIC scores and total avg scores of annotations for Sydney Siege event.\relax }}{26}{table.caption.85}
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

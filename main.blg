@@ -1,13 +1,18 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 The style file: unsrtnat.bst
 Database file #1: Bibliography.bib
-Repeated entry---line 921 of file Bibliography.bib
- : @inproceedings{ritter2011named
- :                               ,
+Repeated entry---line 508 of file Bibliography.bib
+ : @inproceedings{hatzivassiloglou2000investigation
+ :                                                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1024 of file Bibliography.bib
- : @inproceedings{singh2010mining
- :                               ,
+Repeated entry---line 1016 of file Bibliography.bib
+ : @inproceedings{rattenbury2007towards
+ :                                     ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "damak2013effectiveness"
+Warning--I didn't find a database entry for "duan2010empirical"
 Warning--I didn't find a database entry for "tsur2012s"
+Warning--empty journal in hatzivassiloglou2003domain
+Warning--empty journal in page1999pagerank
+Warning--empty journal in hallberg2012adaptation
 (There were 2 error messages)

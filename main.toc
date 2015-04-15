@@ -4,8 +4,8 @@
 \contentsline {chapter}{Acknowledgements}{iv}{dummy.3}
 \vspace {1em}
 \contentsline {chapter}{Contents}{v}{dummy.4}
-\contentsline {chapter}{List of Figures}{vii}{dummy.6}
-\contentsline {chapter}{List of Tables}{viii}{dummy.8}
+\contentsline {chapter}{List of Figures}{viii}{dummy.6}
+\contentsline {chapter}{List of Tables}{ix}{dummy.8}
 \vspace {2em}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.11}
 \contentsline {section}{\numberline {1.1}Social Media and Real-life Events}{1}{section.12}
@@ -23,42 +23,54 @@
 \contentsline {section}{\numberline {1.7}Structure of the Thesis}{4}{section.30}
 \contentsline {chapter}{\numberline {2}Literature Review}{5}{chapter.31}
 \contentsline {section}{\numberline {2.1}Event Identification in News Text}{5}{section.32}
-\contentsline {section}{\numberline {2.2}Event Identification in Social Media}{5}{section.33}
-\contentsline {section}{\numberline {2.3}Information Quality in Social Media}{5}{section.34}
-\contentsline {section}{\numberline {2.4}Ranking and Summarization of Short Textual Social Media Posts}{5}{section.35}
-\contentsline {section}{\numberline {2.5}Reference Tracking and Entity Resolution}{5}{section.36}
-\contentsline {chapter}{\numberline {3}Defining Events in Social Media}{6}{chapter.37}
-\contentsline {section}{\numberline {3.1}Events from Different Perspectives}{6}{section.38}
-\contentsline {subsection}{\numberline {3.1.1}Topic Detection and Tracking}{6}{subsection.39}
-\contentsline {subsection}{\numberline {3.1.2}Automatic Content Extraction}{6}{subsection.40}
-\contentsline {subsection}{\numberline {3.1.3}Multimedia Event Detection}{6}{subsection.41}
-\contentsline {section}{\numberline {3.2}Events in Social Media}{6}{section.42}
-\contentsline {chapter}{\numberline {4}Event Identity Information Management (EIIM) Life Cycle for Social Media}{7}{chapter.43}
-\contentsline {section}{\numberline {4.1}Identity Integrity}{7}{section.44}
-\contentsline {section}{\numberline {4.2}Event Reference Collection}{7}{section.46}
-\contentsline {section}{\numberline {4.3}Event Reference Preparation}{7}{section.48}
-\contentsline {section}{\numberline {4.4}Event Information Quality}{7}{section.50}
-\contentsline {section}{\numberline {4.5}Event Identity Information Capture}{7}{section.52}
-\contentsline {section}{\numberline {4.6}Event Identity Information Structure}{7}{section.54}
-\contentsline {section}{\numberline {4.7}Event Identity Information Processing}{7}{section.56}
-\contentsline {section}{\numberline {4.8}Event Reference Resolution}{7}{section.58}
-\contentsline {section}{\numberline {4.9}Event Analytics}{7}{section.60}
-\contentsline {chapter}{\numberline {5}Potential Applications of the EIIM Framework}{13}{chapter.62}
-\contentsline {section}{\numberline {5.1}Event Monitoring and Analysis}{13}{section.63}
-\contentsline {section}{\numberline {5.2}Event Information Retrieval}{14}{section.70}
-\contentsline {section}{\numberline {5.3}Opinion and Review Mining}{14}{section.72}
-\contentsline {section}{\numberline {5.4}Recommender Systems}{15}{section.83}
-\contentsline {section}{\numberline {5.5}Event Management and Marketing}{16}{section.84}
-\contentsline {section}{\numberline {5.6}Social Media Data Integration}{17}{section.86}
-\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{18}{chapter.88}
-\contentsline {section}{\numberline {6.1}Conclusion}{18}{section.89}
-\contentsline {section}{\numberline {6.2}Future Work}{18}{section.90}
-\contentsline {subsection}{\numberline {6.2.1}Summarizing Event Related Content}{18}{subsection.91}
-\contentsline {subsection}{\numberline {6.2.2}Identifying Insightful Opinionated Content Related to Events}{18}{subsection.92}
-\contentsline {subsection}{\numberline {6.2.3}Event Topic Modeling}{18}{subsection.93}
-\contentsline {subsection}{\numberline {6.2.4}Event-specific Recommendations}{18}{subsection.94}
-\contentsline {subsection}{\numberline {6.2.5}Distributed Processing of EventIdentityInfoGraph}{18}{subsection.95}
-\contentsline {subsection}{\numberline {6.2.6}Event Ontology for Social Media}{18}{subsection.96}
+\contentsline {section}{\numberline {2.2}Event Identification in Social Media}{6}{section.33}
+\contentsline {section}{\numberline {2.3}Information Quality in Social Media}{8}{section.34}
+\contentsline {section}{\numberline {2.4}Ranking and Summarization of Short Textual Social Media Posts}{8}{section.35}
+\contentsline {section}{\numberline {2.5}Reference Tracking and Entity Resolution}{8}{section.39}
+\contentsline {chapter}{\numberline {3}Defining Events in Social Media}{9}{chapter.40}
+\contentsline {section}{\numberline {3.1}Events from Different Perspectives}{9}{section.41}
+\contentsline {subsection}{\numberline {3.1.1}Topic Detection and Tracking}{9}{subsection.42}
+\contentsline {subsection}{\numberline {3.1.2}Automatic Content Extraction}{9}{subsection.43}
+\contentsline {subsection}{\numberline {3.1.3}Multimedia Event Detection}{9}{subsection.44}
+\contentsline {section}{\numberline {3.2}Events in Social Media}{9}{section.45}
+\contentsline {chapter}{\numberline {4}Event Identity Information Management (EIIM) Life Cycle for Social Media}{10}{chapter.46}
+\contentsline {section}{\numberline {4.1}Identity Integrity}{11}{section.48}
+\contentsline {section}{\numberline {4.2}Event Reference Collection}{11}{section.49}
+\contentsline {section}{\numberline {4.3}Event Reference Preparation}{12}{section.52}
+\contentsline {section}{\numberline {4.4}Event Information Quality}{13}{section.54}
+\contentsline {section}{\numberline {4.5}Event Identity Information Capture}{16}{section.59}
+\contentsline {section}{\numberline {4.6}Event Identity Information Structure}{17}{section.61}
+\contentsline {section}{\numberline {4.7}Event Identity Information Processing}{17}{section.63}
+\contentsline {subsection}{\numberline {4.7.1}TwitterEventInfoRank}{21}{subsection.67}
+\contentsline {section}{\numberline {4.8}Event Reference Resolution}{30}{section.90}
+\contentsline {section}{\numberline {4.9}Event Analytics}{30}{section.92}
+\contentsline {paragraph}{Top Five Event-specific Informative Hashtags for Sydney Siege Event}{30}{figure.caption.93}
+\contentsline {paragraph}{Top Five Event-specific Informative Text Units for Sydney Siege Event}{30}{Item.98}
+\contentsline {paragraph}{Top Five Event-specific Informative URLs for Sydney Siege Event}{31}{Item.103}
+\contentsline {paragraph}{Top Five Event-specific Informative Tweet Excerpts for Sydney Siege Event}{31}{Item.108}
+\contentsline {paragraph}{Three Randomly Selected Tweets for Top Three Event-specific Informative Users posting about Sydney Siege Event.}{32}{Item.113}
+\contentsline {paragraph}{Top Five Event-specific Informative Hashtags for Millions March NYC Event}{32}{Item.125}
+\contentsline {paragraph}{Top Five Event-specific Informative Text Units for Millions March NYC Event}{33}{Item.130}
+\contentsline {paragraph}{Top Five Event-specific Informative URLs for Millions March NYC Event}{33}{Item.135}
+\contentsline {paragraph}{Top Five Event-specific Informative Tweet Excerpts for Millions March NYC Event}{33}{Item.140}
+\contentsline {paragraph}{Three Randomly Selected Tweets for Top Three Event-specific Informative Users posting about Millions March NYC Event for a particular hour.}{34}{Item.145}
+\contentsline {chapter}{\numberline {5}Potential Applications of the EIIM Framework}{35}{chapter.158}
+\contentsline {section}{\numberline {5.1}Event Monitoring and Analysis}{35}{section.159}
+\contentsline {section}{\numberline {5.2}Event Information Retrieval}{36}{section.166}
+\contentsline {section}{\numberline {5.3}Opinion and Review Mining}{36}{section.168}
+\contentsline {section}{\numberline {5.4}Recommender Systems}{37}{section.179}
+\contentsline {section}{\numberline {5.5}Event Management and Marketing}{38}{section.180}
+\contentsline {section}{\numberline {5.6}Social Media Data Integration}{39}{section.182}
+\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{40}{chapter.184}
+\contentsline {section}{\numberline {6.1}Conclusion}{40}{section.185}
+\contentsline {section}{\numberline {6.2}Future Work}{40}{section.186}
+\contentsline {subsection}{\numberline {6.2.1}Summarizing Event Related Content}{40}{subsection.187}
+\contentsline {subsection}{\numberline {6.2.2}Identifying Insightful Opinionated Content Related to Events}{40}{subsection.188}
+\contentsline {subsection}{\numberline {6.2.3}Event Topic Modeling}{40}{subsection.189}
+\contentsline {subsection}{\numberline {6.2.4}Event-specific Recommendations}{40}{subsection.190}
+\contentsline {subsection}{\numberline {6.2.5}Distributed Processing of EventIdentityInfoGraph}{40}{subsection.191}
+\contentsline {subsection}{\numberline {6.2.6}Event Ontology for Social Media}{40}{subsection.192}
 \vspace {2em}
+\contentsline {chapter}{\numberline {A}Appendix Title Here}{41}{appendix.193}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{19}{dummy.97}
+\contentsline {chapter}{Bibliography}{42}{dummy.194}

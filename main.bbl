@@ -1,4 +1,4 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{45}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -47,6 +47,209 @@ Alan Ritter, Sam Clark, Oren Etzioni, et~al.
   Natural Language Processing}, pages 1524--1534. Association for Computational
   Linguistics, 2011.
 
+\bibitem[Allan(2002)]{allan2002topic}
+James Allan.
+\newblock \emph{Topic detection and tracking: event-based information
+  organization}, volume~12.
+\newblock Springer Science \& Business Media, 2002.
+
+\bibitem[Allan et~al.(1998)Allan, Papka, and Lavrenko]{allan1998line}
+James Allan, Ron Papka, and Victor Lavrenko.
+\newblock On-line new event detection and tracking.
+\newblock In \emph{Proceedings of the 21st annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  37--45. ACM, 1998.
+
+\bibitem[Kumaran and Allan(2004)]{kumaran2004text}
+Giridhar Kumaran and James Allan.
+\newblock Text classification and named entities for new event detection.
+\newblock In \emph{Proceedings of the 27th annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  297--304. ACM, 2004.
+
+\bibitem[Yang et~al.(1998)Yang, Pierce, and Carbonell]{yang1998study}
+Yiming Yang, Tom Pierce, and Jaime Carbonell.
+\newblock A study of retrospective and on-line event detection.
+\newblock In \emph{Proceedings of the 21st annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  28--36. ACM, 1998.
+
+\bibitem[Zhang et~al.(2007)Zhang, Zi, and Wu]{zhang2007new}
+Kuo Zhang, Juan Zi, and Li~Gang Wu.
+\newblock New event detection based on indexing-tree and named entity.
+\newblock In \emph{Proceedings of the 30th annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  215--222. ACM, 2007.
+
+\bibitem[Hatzivassiloglou and Filatova(2003)]{hatzivassiloglou2003domain}
+Vasileios Hatzivassiloglou and Elena Filatova.
+\newblock Domain-independent detection, extraction, and labeling of atomic
+  events.
+\newblock 2003.
+
+\bibitem[Hatzivassiloglou et~al.(2000)Hatzivassiloglou, Gravano, and
+  Maganti]{hatzivassiloglou2000investigation}
+Vasileios Hatzivassiloglou, Luis Gravano, and Ankineedu Maganti.
+\newblock An investigation of linguistic features and clustering algorithms for
+  topical document clustering.
+\newblock In \emph{Proceedings of the 23rd annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  224--231. ACM, 2000.
+
+\bibitem[Makkonen et~al.(2004)Makkonen, Ahonen-Myka, and
+  Salmenkivi]{makkonen2004simple}
+Juha Makkonen, Helena Ahonen-Myka, and Marko Salmenkivi.
+\newblock Simple semantics in topic detection and tracking.
+\newblock \emph{Information Retrieval}, 7\penalty0 (3-4):\penalty0 347--368,
+  2004.
+
+\bibitem[Ahn(2006)]{ahn2006stages}
+David Ahn.
+\newblock The stages of event extraction.
+\newblock In \emph{Proceedings of the Workshop on Annotating and Reasoning
+  about Time and Events}, pages 1--8. Association for Computational
+  Linguistics, 2006.
+
+\bibitem[Ji and Grishman(2008)]{ji2008refining}
+Heng Ji and Ralph Grishman.
+\newblock Refining event extraction through cross-document inference.
+\newblock In \emph{ACL}, pages 254--262, 2008.
+
+\bibitem[Filatova et~al.(2006)Filatova, Hatzivassiloglou, and
+  McKeown]{filatova2006automatic}
+Elena Filatova, Vasileios Hatzivassiloglou, and Kathleen McKeown.
+\newblock Automatic creation of domain templates.
+\newblock In \emph{Proceedings of the COLING/ACL on Main conference poster
+  sessions}, pages 207--214. Association for Computational Linguistics, 2006.
+
+\bibitem[Weng and Lee(2011)]{weng2011event}
+Jianshu Weng and Bu-Sung Lee.
+\newblock Event detection in twitter.
+\newblock \emph{ICWSM}, 11:\penalty0 401--408, 2011.
+
+\bibitem[Sankaranarayanan et~al.(2009)Sankaranarayanan, Samet, Teitler,
+  Lieberman, and Sperling]{sankaranarayanan2009twitterstand}
+Jagan Sankaranarayanan, Hanan Samet, Benjamin~E Teitler, Michael~D Lieberman,
+  and Jon Sperling.
+\newblock Twitterstand: news in tweets.
+\newblock In \emph{Proceedings of the 17th acm sigspatial international
+  conference on advances in geographic information systems}, pages 42--51. ACM,
+  2009.
+
+\bibitem[Petrovi{\'c} et~al.(2010)Petrovi{\'c}, Osborne, and
+  Lavrenko]{petrovic2010streaming}
+Sa{\v{s}}a Petrovi{\'c}, Miles Osborne, and Victor Lavrenko.
+\newblock Streaming first story detection with application to twitter.
+\newblock In \emph{Human Language Technologies: The 2010 Annual Conference of
+  the North American Chapter of the Association for Computational Linguistics},
+  pages 181--189. Association for Computational Linguistics, 2010.
+
+\bibitem[Rattenbury et~al.(2007)Rattenbury, Good, and
+  Naaman]{rattenbury2007towards}
+Tye Rattenbury, Nathaniel Good, and Mor Naaman.
+\newblock Towards automatic extraction of event and place semantics from flickr
+  tags.
+\newblock In \emph{Proceedings of the 30th annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  103--110. ACM, 2007.
+
+\bibitem[Chen and Roy(2009)]{chen2009event}
+Ling Chen and Abhishek Roy.
+\newblock Event detection from flickr data through wavelet-based spatial
+  analysis.
+\newblock In \emph{Proceedings of the 18th ACM conference on Information and
+  knowledge management}, pages 523--532. ACM, 2009.
+
+\bibitem[Sakaki et~al.(2010)Sakaki, Okazaki, and Matsuo]{sakaki2010earthquake}
+Takeshi Sakaki, Makoto Okazaki, and Yutaka Matsuo.
+\newblock Earthquake shakes twitter users: real-time event detection by social
+  sensors.
+\newblock In \emph{Proceedings of the 19th international conference on World
+  wide web}, pages 851--860. ACM, 2010.
+
+\bibitem[Yardi and Boyd(2010)]{yardi2010tweeting}
+Sarita Yardi and Danah Boyd.
+\newblock Tweeting from the town square: Measuring geographic local networks.
+\newblock In \emph{ICWSM}, 2010.
+
+\bibitem[Benson et~al.(2011)Benson, Haghighi, and Barzilay]{benson2011event}
+Edward Benson, Aria Haghighi, and Regina Barzilay.
+\newblock Event discovery in social media feeds.
+\newblock In \emph{Proceedings of the 49th Annual Meeting of the Association
+  for Computational Linguistics: Human Language Technologies-Volume 1}, pages
+  389--398. Association for Computational Linguistics, 2011.
+
+\bibitem[Tsagkias et~al.(2011)Tsagkias, de~Rijke, and
+  Weerkamp]{tsagkias2011linking}
+Manos Tsagkias, Maarten de~Rijke, and Wouter Weerkamp.
+\newblock Linking online news and social media.
+\newblock In \emph{Proceedings of the fourth ACM international conference on
+  Web search and data mining}, pages 565--574. ACM, 2011.
+
+\bibitem[Nagmoti et~al.(2010)Nagmoti, Teredesai, and
+  De~Cock]{nagmoti2010ranking}
+Rinkesh Nagmoti, Ankur Teredesai, and Martine De~Cock.
+\newblock Ranking approaches for microblog search.
+\newblock In \emph{2010 IEEE/WIC/ACM International joint conference on Web
+  Intelligence-Intelligent Agent Technology (WI-IAT)}, volume~1, pages
+  153--157. IEEE Computer Society, 2010.
+
+\bibitem[Page et~al.(1999)Page, Brin, Motwani, and Winograd]{page1999pagerank}
+Lawrence Page, Sergey Brin, Rajeev Motwani, and Terry Winograd.
+\newblock The pagerank citation ranking: Bringing order to the web.
+\newblock 1999.
+
+\bibitem[Weng et~al.(2010)Weng, Lim, Jiang, and He]{weng2010twitterrank}
+Jianshu Weng, Ee-Peng Lim, Jing Jiang, and Qi~He.
+\newblock Twitterrank: finding topic-sensitive influential twitterers.
+\newblock In \emph{Proceedings of the third ACM international conference on Web
+  search and data mining}, pages 261--270. ACM, 2010.
+
+\bibitem[Tunkelang(2009)]{tunkelang2009twitter}
+D~Tunkelang.
+\newblock A twitter analog to pagerank.
+\newblock \emph{The Noisy Channel}, 2009.
+
+\bibitem[Hallberg et~al.(2012)Hallberg, Hjalmarsson, Puigcerver, Rydberg, and
+  Stjernberg]{hallberg2012adaptation}
+V~Hallberg, A~Hjalmarsson, J~Puigcerver, C~Rydberg, and J~Stjernberg.
+\newblock An adaptation of the pagerank algorithm to twitter world.
+\newblock 2012.
+
+\bibitem[McCreadie and Macdonald(2013)]{mccreadie2013relevance}
+Richard McCreadie and Craig Macdonald.
+\newblock Relevance in microblogs: Enhancing tweet retrieval using hyperlinked
+  documents.
+\newblock In \emph{Proceedings of the 10th conference on open research areas in
+  information retrieval}, pages 189--196. LE CENTRE DE HAUTES ETUDES
+  INTERNATIONALES D'INFORMATIQUE DOCUMENTAIRE, 2013.
+
+\bibitem[Vosecky et~al.(2012)Vosecky, Leung, and Ng]{vosecky2012searching}
+Jan Vosecky, Kenneth Wai-Ting Leung, and Wilfred Ng.
+\newblock Searching for quality microblog posts: Filtering and ranking based on
+  content analysis and implicit links.
+\newblock In \emph{Database Systems for Advanced Applications}, pages 397--413.
+  Springer, 2012.
+
+\bibitem[Becker et~al.(2011)Becker, Naaman, and Gravano]{becker2011selecting}
+Hila Becker, Mor Naaman, and Luis Gravano.
+\newblock Selecting quality twitter content for events.
+\newblock \emph{ICWSM}, 11, 2011.
+
+\bibitem[Wei et~al.(2008)Wei, Li, Lu, and He]{wei2008query}
+Furu Wei, Wenjie Li, Qin Lu, and Yanxiang He.
+\newblock Query-sensitive mutual reinforcement chain and its application in
+  query-oriented multi-document summarization.
+\newblock In \emph{Proceedings of the 31st annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  283--290. ACM, 2008.
+
+\bibitem[Lin and Schatz(2010)]{lin2010design}
+Jimmy Lin and Michael Schatz.
+\newblock Design patterns for efficient graph algorithms in mapreduce.
+\newblock In \emph{Proceedings of the Eighth Workshop on Mining and Learning
+  with Graphs}, pages 78--85. ACM, 2010.
+
 \bibitem[Gao et~al.(2011)Gao, Barbier, Goolsby, and Zeng]{gao2011harnessing}
 Huiji Gao, Geoffrey Barbier, Rebecca Goolsby, and Daniel Zeng.
 \newblock Harnessing the crowdsourcing power of social media for disaster
@@ -58,8 +261,8 @@ Shaun Walker.
 \newblock Russia to monitor 'all communications' at winter olympics in sochi.
 \newblock \emph{The Guardian, October}, 6, 2013.
 
-\bibitem[Singh et~al.(2010)]{singh2010mining}
-V.K. Singh et~al.
+\bibitem[Singh et~al.(2010)Singh, Mahata, and Adhikari]{singh2010mining}
+Vivek~Kumar Singh, Debanjan Mahata, and Rakesh Adhikari.
 \newblock Mining the blogosphere from a socio-political perspective.
 \newblock In \emph{Computer Information Systems and Industrial Management
   Applications (CISIM), 2010 International Conference on}, pages 365--370.
