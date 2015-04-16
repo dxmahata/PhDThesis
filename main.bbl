@@ -1,57 +1,99 @@
-\begin{thebibliography}{45}
+\begin{thebibliography}{53}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Hemp(2009)]{hemp2009death}
-Paul Hemp.
-\newblock Death by information overload.
-\newblock \emph{Harvard business review}, 87\penalty0 (9):\penalty0 82--89,
-  2009.
+\bibitem[Phelan et~al.(2009)Phelan, McCarthy, and Smyth]{phelan2009using}
+Owen Phelan, Kevin McCarthy, and Barry Smyth.
+\newblock Using twitter to recommend real-time topical news.
+\newblock In \emph{Proceedings of the third ACM conference on Recommender
+  systems}, pages 385--388. ACM, 2009.
 
-\bibitem[Benevenuto et~al.(2010)Benevenuto, Magno, Rodrigues, and
-  Almeida]{benevenuto2010detecting}
-Fabricio Benevenuto, Gabriel Magno, Tiago Rodrigues, and Virgilio Almeida.
-\newblock Detecting spammers on twitter.
-\newblock In \emph{Collaboration, electronic messaging, anti-abuse and spam
-  conference (CEAS)}, volume~6, page~12, 2010.
+\bibitem[O'Connor et~al.(2010)O'Connor, Balasubramanyan, Routledge, and
+  Smith]{o2010tweets}
+Brendan O'Connor, Ramnath Balasubramanyan, Bryan~R Routledge, and Noah~A Smith.
+\newblock From tweets to polls: Linking text sentiment to public opinion time
+  series.
+\newblock \emph{ICWSM}, 11:\penalty0 122--129, 2010.
 
-\bibitem[Bontcheva et~al.(2013)Bontcheva, Derczynski, Funk, Greenwood, Maynard,
-  and Aswani]{bontcheva2013twitie}
-Kalina Bontcheva, Leon Derczynski, Adam Funk, Mark~A Greenwood, Diana Maynard,
-  and Niraj Aswani.
-\newblock Twitie: An open-source information extraction pipeline for microblog
-  text.
-\newblock In \emph{RANLP}, pages 83--90, 2013.
+\bibitem[Singh et~al.(2010{\natexlab{a}})Singh, Adhikari, and
+  Mahata]{singh2010clustering}
+Vivek~Kumar Singh, Rakesh Adhikari, and Debanjan Mahata.
+\newblock A clustering and opinion mining approach to socio-political analysis
+  of the blogosphere.
+\newblock In \emph{Computational Intelligence and Computing Research (ICCIC),
+  2010 IEEE International Conference on}, pages 1--4. IEEE, 2010{\natexlab{a}}.
 
-\bibitem[Prevost(1996)]{prevost1996information}
-Scott Prevost.
-\newblock An information structural approach to spoken language generation.
-\newblock In \emph{Proceedings of the 34th annual meeting on Association for
-  Computational Linguistics}, pages 294--301. Association for Computational
-  Linguistics, 1996.
+\bibitem[Singh et~al.(2010{\natexlab{b}})Singh, Mahata, and
+  Adhikari]{singh2010mining}
+Vivek~Kumar Singh, Debanjan Mahata, and Rakesh Adhikari.
+\newblock Mining the blogosphere from a socio-political perspective.
+\newblock In \emph{Computer Information Systems and Industrial Management
+  Applications (CISIM), 2010 International Conference on}, pages 365--370.
+  IEEE, 2010{\natexlab{b}}.
 
-\bibitem[Derczynski et~al.(2013)Derczynski, Maynard, Aswani, and
-  Bontcheva]{derczynski2013microblog}
-Leon Derczynski, Diana Maynard, Niraj Aswani, and Kalina Bontcheva.
-\newblock Microblog-genre noise and impact on semantic annotation accuracy.
-\newblock In \emph{Proceedings of the 24th ACM Conference on Hypertext and
-  Social Media}, pages 21--30. ACM, 2013.
+\bibitem[Agarwal et~al.(2012{\natexlab{a}})Agarwal, Lim, and
+  Wigand]{agarwal2012online}
+Nitin Agarwal, Merlyna Lim, and Rolf~T Wigand.
+\newblock Online collective action and the role of social media in mobilizing
+  opinions: A case study on women's right-to-drive campaigns in saudi arabia.
+\newblock In \emph{Web 2.0 Technologies and Democratic Governance}, pages
+  99--123. Springer, 2012{\natexlab{a}}.
 
-\bibitem[Ritter et~al.(2011)Ritter, Clark, Etzioni, et~al.]{ritter2011named}
-Alan Ritter, Sam Clark, Oren Etzioni, et~al.
-\newblock Named entity recognition in tweets: an experimental study.
-\newblock In \emph{Proceedings of the Conference on Empirical Methods in
-  Natural Language Processing}, pages 1524--1534. Association for Computational
-  Linguistics, 2011.
+\bibitem[Sakaki et~al.(2013)Sakaki, Okazaki, and Matsuo]{sakaki2013tweet}
+Takeshi Sakaki, Makoto Okazaki, and Yutaka Matsuo.
+\newblock Tweet analysis for real-time event detection and earthquake reporting
+  system development.
+\newblock \emph{Knowledge and Data Engineering, IEEE Transactions on},
+  25\penalty0 (4):\penalty0 919--931, 2013.
 
-\bibitem[Allan(2002)]{allan2002topic}
-James Allan.
-\newblock \emph{Topic detection and tracking: event-based information
-  organization}, volume~12.
-\newblock Springer Science \& Business Media, 2002.
+\bibitem[Popescu et~al.(2011)Popescu, Pennacchiotti, and
+  Paranjpe]{popescu2011extracting}
+Ana-Maria Popescu, Marco Pennacchiotti, and Deepa Paranjpe.
+\newblock Extracting events and event descriptions from twitter.
+\newblock In \emph{Proceedings of the 20th international conference companion
+  on World wide web}, pages 105--106. ACM, 2011.
+
+\bibitem[Purohit and Sheth(2013)]{purohit2013twitris}
+Hemant Purohit and Amit~P Sheth.
+\newblock Twitris v3: From citizen sensing to analysis, coordination and
+  action.
+\newblock In \emph{ICWSM}, 2013.
+
+\bibitem[Agarwal and Mahata(2013)]{agarwal2013grouping}
+Nitin Agarwal and Debanjan Mahata.
+\newblock Grouping the similar among the disconnected bloggers.
+\newblock \emph{Social Media Mining and Social Network Analysis: Emerging
+  Research: Emerging Research}, page~54, 2013.
+
+\bibitem[Agarwal et~al.(2014{\natexlab{a}})Agarwal, Mahata, and
+  Liu]{agarwal2014time}
+Nitin Agarwal, Debanjan Mahata, and Huan Liu.
+\newblock Time-and event-driven modeling of blogger influence.
+\newblock In \emph{Encyclopedia of Social Network Analysis and Mining}, pages
+  2154--2165. Springer, 2014{\natexlab{a}}.
+
+\bibitem[Sen et~al.(2012)Sen, Wigand, Agarwal, Mahata, and
+  Bisgin]{sen2012identifying}
+Fatih Sen, Rolf~T Wigand, Nitin Agarwal, Debanjan Mahata, and Halil Bisgin.
+\newblock Identifying focal patterns in social networks.
+\newblock In \emph{CASoN}, pages 105--108, 2012.
+
+\bibitem[Agarwal et~al.(2014{\natexlab{b}})Agarwal, Lim, and
+  Wigand]{agarwal2014online}
+Nitin Agarwal, Merlyna Lim, and Rolf~T Wigand.
+\newblock \emph{Online collective action: Dynamics of the crowd in social
+  media}.
+\newblock Springer, 2014{\natexlab{b}}.
+
+\bibitem[Agarwal et~al.(2012{\natexlab{b}})Agarwal, Lim, and
+  Wigand]{agarwal2012raising}
+Nitin Agarwal, Merlyna Lim, and Rolf~T Wigand.
+\newblock Raising and rising voices in social media.
+\newblock \emph{Business \& Information Systems Engineering}, 4\penalty0
+  (3):\penalty0 113--126, 2012{\natexlab{b}}.
 
 \bibitem[Allan et~al.(1998)Allan, Papka, and Lavrenko]{allan1998line}
 James Allan, Ron Papka, and Victor Lavrenko.
@@ -66,6 +108,18 @@ Giridhar Kumaran and James Allan.
 \newblock In \emph{Proceedings of the 27th annual international ACM SIGIR
   conference on Research and development in information retrieval}, pages
   297--304. ACM, 2004.
+
+\bibitem[Zhou and Talburt(2011)]{zhou2011entity}
+Yinle Zhou and John Talburt.
+\newblock Entity identity information management (eiim).
+\newblock In \emph{International Conference on Information Quality (ICIQ-11),
+  Adelaide, Australia}, pages 327--341, 2011.
+
+\bibitem[Allan(2002)]{allan2002topic}
+James Allan.
+\newblock \emph{Topic detection and tracking: event-based information
+  organization}, volume~12.
+\newblock Springer Science \& Business Media, 2002.
 
 \bibitem[Yang et~al.(1998)Yang, Pierce, and Carbonell]{yang1998study}
 Yiming Yang, Tom Pierce, and Jaime Carbonell.
@@ -122,6 +176,20 @@ Elena Filatova, Vasileios Hatzivassiloglou, and Kathleen McKeown.
 \newblock In \emph{Proceedings of the COLING/ACL on Main conference poster
   sessions}, pages 207--214. Association for Computational Linguistics, 2006.
 
+\bibitem[Derczynski et~al.(2013)Derczynski, Maynard, Aswani, and
+  Bontcheva]{derczynski2013microblog}
+Leon Derczynski, Diana Maynard, Niraj Aswani, and Kalina Bontcheva.
+\newblock Microblog-genre noise and impact on semantic annotation accuracy.
+\newblock In \emph{Proceedings of the 24th ACM Conference on Hypertext and
+  Social Media}, pages 21--30. ACM, 2013.
+
+\bibitem[Ritter et~al.(2011)Ritter, Clark, Etzioni, et~al.]{ritter2011named}
+Alan Ritter, Sam Clark, Oren Etzioni, et~al.
+\newblock Named entity recognition in tweets: an experimental study.
+\newblock In \emph{Proceedings of the Conference on Empirical Methods in
+  Natural Language Processing}, pages 1524--1534. Association for Computational
+  Linguistics, 2011.
+
 \bibitem[Weng and Lee(2011)]{weng2011event}
 Jianshu Weng and Bu-Sung Lee.
 \newblock Event detection in twitter.
@@ -144,9 +212,8 @@ Sa{\v{s}}a Petrovi{\'c}, Miles Osborne, and Victor Lavrenko.
   the North American Chapter of the Association for Computational Linguistics},
   pages 181--189. Association for Computational Linguistics, 2010.
 
-\bibitem[Rattenbury et~al.(2007)Rattenbury, Good, and
-  Naaman]{rattenbury2007towards}
-Tye Rattenbury, Nathaniel Good, and Mor Naaman.
+\bibitem[Rattenbury et~al.(2007)]{rattenbury2007towards}
+T.~Rattenbury et~al.
 \newblock Towards automatic extraction of event and place semantics from flickr
   tags.
 \newblock In \emph{Proceedings of the 30th annual international ACM SIGIR
@@ -261,13 +328,6 @@ Shaun Walker.
 \newblock Russia to monitor 'all communications' at winter olympics in sochi.
 \newblock \emph{The Guardian, October}, 6, 2013.
 
-\bibitem[Singh et~al.(2010)Singh, Mahata, and Adhikari]{singh2010mining}
-Vivek~Kumar Singh, Debanjan Mahata, and Rakesh Adhikari.
-\newblock Mining the blogosphere from a socio-political perspective.
-\newblock In \emph{Computer Information Systems and Industrial Management
-  Applications (CISIM), 2010 International Conference on}, pages 365--370.
-  IEEE, 2010.
-
 \bibitem[Bollen et~al.(2009)Bollen, Pepe, and Mao]{bollen2009modeling}
 Johan Bollen, Alberto Pepe, and Huina Mao.
 \newblock Modeling public mood and emotion: Twitter sentiment and
@@ -298,11 +358,5 @@ Onook Oh, Manish Agrawal, and H~Raghav Rao.
   attack through twitter.
 \newblock \emph{Information Systems Frontiers}, 13\penalty0 (1):\penalty0
   33--43, 2011.
-
-\bibitem[Agarwal et~al.(2014)Agarwal, Lim, and Wigand]{agarwal2014online}
-Nitin Agarwal, Merlyna Lim, and Rolf~T Wigand.
-\newblock \emph{Online collective action: Dynamics of the crowd in social
-  media}.
-\newblock Springer, 2014.
 
 \end{thebibliography}

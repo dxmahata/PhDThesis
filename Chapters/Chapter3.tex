@@ -23,30 +23,38 @@ As already discussed, social media documents are extremely concise, noisy and la
 While event detection in textual news documents has been studied in depth, the identification
 of events in social media sites is still in its infancy. Several related papers explored the unknown event identification scenario in social media.
 Weng and Lee \cite{weng2011event} proposed wavelet-based signal detection techniques for identifying
-real-life events on Twitter. These techniques can detect significant bursts or trends
-in a Twitter data stream but, unlike our work in Chapter 4, they do not filter the vast
-amount of non-event content that exists on Twitter. This, unfortunately, results in poor
-performance, with very low precision scores compared with the precision achieved by our
-methods. Related to our work in Chapters 4 and 5, Sankaranarayanan et al. \cite{sankaranarayanan2009twitterstand}
+real-life events from Twitter. These techniques can detect significant bursts or trends
+in a Twitter data stream. Sankaranarayanan et al. \cite{sankaranarayanan2009twitterstand}
 identified late breaking news events on Twitter using clustering, along with a text-based
-classifier and a set of news seeders,  which are handpicked users known for publishing news
-(e.g., news agency feeds). As we discussed, such text-based and seeder-driven filtering of
-non-event data can be used to generate the event document stream we use in Chapter 5.
-Petrovic et al. \cite{petrovic2010streaming} used locality-sensitive hashing to detect the first tweet associated with an event in a stream of Twitter messages. We use the general text-based classifier suggested in \cite{sankaranarayanan2009twitterstand} and a method for identifying top events suggested by Petrovic et
-al. \cite{petrovic2010streaming} as baseline approaches in our evaluation of the unknown identification methods
-of Chapter 4. While our work in the unknown event identification scenario focuses on timely, online, analysis, several efforts tried to address this task using retrospective analysis. Rattenbury et al. \cite{rattenbury2007towards} analyzed the temporal usage distribution of tags to identify tags that correspond
+classifier and a set of handpicked news seeders. But they do not take into account the filtering of non-event content, which results in poor performance. Segregating the messages that have high likelihood of containing informative content from the ones with chances of having non-informative content are at the core of our work.  
+
+% but, unlike our work in Chapter 4, they do not filter the vast
+%amount of non-event content that exists on Twitter. This, unfortunately, results in poor
+%performance, with very low precision scores compared with the precision achieved by our
+%methods. Related to our work in Chapters 4 and 5, 
+
+
+
+%As we discussed, such text-based and seeder-driven filtering of
+%non-event data can be used to generate the event document stream we use in Chapter 5.
+
+Petrovic et al. \cite{petrovic2010streaming} used locality-sensitive hashing to detect the first tweet associated with an event in a stream of Twitter messages. Rattenbury et al. \cite{rattenbury2007towards} analyzed the temporal usage distribution of tags to identify tags that correspond
 to events. Chen and Roy \cite{chen2009event} used the time and location associated with Flickr image
 tags to discover event-related tags with significant distribution patterns (e.g.bursts) in
 both of these dimensions.
+ 
+%
+%%We use the general text-based classifier suggested in \cite{sankaranarayanan2009twitterstand} and a method for identifying top events suggested by Petrovic et
+%%al. \cite{petrovic2010streaming} as baseline approaches in our evaluation of the unknown identification methods
+%%of Chapter 4. While our work in the unknown event identification scenario focuses on timely, online, analysis, several efforts tried to address this task using retrospective analysis. 
+
 
 Recent efforts proposed techniques for known identification of events in social media.
 Many of these techniques rely on a set of manually selected terms to retrieve event-related
-documents from a single social media site \cite{sakaki2010earthquake,yardi2010tweeting}. Sakaki et al. \cite{sakaki2010earthquake} developed
+documents from a single social media site \cite{sakaki2010earthquake,yardi2010tweeting}. Our method of tracking an event is similar to this. We also use predefined hashtags to bootstrap the process of collecting data related to a known set of events. Sakaki et al. \cite{sakaki2010earthquake} developed
 techniques for identifying earthquake events on Twitter by monitoring keyword triggers
 (e.g., earthquake or shaking). In their setting, the type of event must be known a
-priori, and should be easily represented using simple keyword queries. Most related to our
-work in Chapter 6, Benson et al. \cite{benson2011event} identified Twitter messages for concert events
-using statistical models to automatically tag artist and venue terms in Twitter messages.
+priori, and should be easily represented using simple keyword queries. Benson et al. \cite{benson2011event} identified Twitter messages for concert events using statistical models to automatically tag artist and venue terms in Twitter messages.
 Their approach is novel and fully automatic, but it limits the set of identified messages for
 concert events to those with explicit artist and venue mentions. Importantly, both of these
 approaches are tailored to one specific social media site. In contrast, we propose methods
@@ -85,3 +93,16 @@ Various learning to rank approaches have been used for ordering tweets retrieved
 %short events such as concerts or festivals.
 
 \section{Reference Tracking and Entity Resolution}
+
+An entity in general may be defined as an object that has a distinct, independent and self-contained existence, whether hypothetical or real. Thus, an entity could be a person (e.g `Barack Obama'), a place (e.g `Little Rock'), a product (e.g `Iphone6'), an event (eg `Egyptian Revolution') or anything from real-life that has an individual identity. The identity of an entity is a set of attribute values for that entity along with a set of distinct rules that allow that entity to be distinguished from all other entities of the same class in a given context [3].
+
+
+\begin{figure}[htbp]
+  \caption{Identity Integrity component of the EIIM life cycle.}
+  \centering
+    \includegraphics[width=14cm,height=7cm]{Figures/OriginalEIIM.jpg}
+\end{figure} 
+
+In this section we explain the current EIIM process that lays the foundation and acts as a background of the presented research.
+The idea of Entity Identity Information Management (EIIM) as defined by [15] is the collection and management of identity information of real-world entities with the goal of sustaining entity identity integrity. Their model of EIIM was motivated by the problem of entity resolution in information systems, particularly in the domain of MDM (Master Data Management). They define entity resolution as the process of determining whether two references to real-world objects in an information system are referring to the same object, or to different object [16]. The EIIM life cycle as proposed by them is an iterative process that combines entity resolution and data structures representing entity identity into specific operational configurations (EIIM configurations, as shown in Figure 3), that when executed in concert, work to maintain the entity identity integrity of master data over time. The EIIM framework is implemented by developing open source software known as OYSTER .
+

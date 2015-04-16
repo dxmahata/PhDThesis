@@ -494,7 +494,7 @@
   year = {2003}
 }
 
-@INPROCEEDINGS{hatzivassiloglou2000investigation,
+@INPROCEEDINGS{Hatzivassiloglou2000,
   author = {Hatzivassiloglou, Vasileios and Gravano, Luis and Maganti, Ankineedu},
   title = {An investigation of linguistic features and clustering algorithms
 	for topical document clustering},
@@ -1002,7 +1002,7 @@
   organization = {Association for Computational Linguistics}
 }
 
-@INPROCEEDINGS{rattenbury2007towards,
+@INPROCEEDINGS{Rattenbury2007,
   author = {Rattenbury, Tye and Good, Nathaniel and Naaman, Mor},
   title = {Towards automatic extraction of event and place semantics from flickr
 	tags},
@@ -1129,6 +1129,15 @@
   pages = {105--108}
 }
 
+@INPROCEEDINGS{sen2012identifying,
+  author = {Sen, Fatih and Wigand, Rolf T and Agarwal, Nitin and Mahata, Debanjan
+	and Bisgin, Halil},
+  title = {Identifying focal patterns in social networks.},
+  booktitle = {CASoN},
+  year = {2012},
+  pages = {105--108}
+}
+
 @INPROCEEDINGS{sharifi2010experiments,
   author = {Sharifi, Beaux and Hutton, M-A and Kalita, Jugal K},
   title = {Experiments in microblog summarization},
@@ -1213,6 +1222,16 @@
   date-modified = {2013-04-15 23:33:52 -0500},
   owner = {cisstudent},
   timestamp = {2015.04.10}
+}
+
+@INPROCEEDINGS{tsagkias2011linking,
+  author = {Tsagkias, Manos and de Rijke, Maarten and Weerkamp, Wouter},
+  title = {Linking online news and social media},
+  booktitle = {Proceedings of the fourth ACM international conference on Web search
+	and data mining},
+  year = {2011},
+  pages = {565--574},
+  organization = {ACM}
 }
 
 @INPROCEEDINGS{,
@@ -1365,6 +1384,15 @@
   owner = {cisstudent},
   publisher = {Springer},
   timestamp = {2015.04.10}
+}
+
+@ELECTRONIC{pewresearch,
+  year = {2014},
+  title = {Social Networking Fact Sheet},
+  organization = {Pew Research Center for Internet, Science and Tech},
+  url = {http://www.pewinternet.org/fact-sheets/social-networking-fact-sheet/},
+  owner = {cisstudent},
+  timestamp = {2015.04.16}
 }
 
 @OTHER{difflib,
