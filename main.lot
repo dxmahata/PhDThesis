@@ -2,12 +2,13 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Details of data collected for analyzing event related tweet content.\relax }}{16}{table.caption.40}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Tweet features for content informativeness.\relax }}{20}{table.caption.45}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Evaluation measures for logistic regression model.\relax }}{20}{table.caption.46}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Affinity scores of edges between vertices of TwitterEventInfoGraph\relax }}{23}{table.caption.54}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Avg IIC scores and total avg scores of annotations for Millions March NYC event.\relax }}{29}{table.caption.73}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Avg IIC scores and total avg scores of annotations for Sydney Siege event.\relax }}{30}{table.caption.74}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Details of Data Collected.\relax }}{16}{table.caption.41}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Details of data collected for analyzing event related tweet content.\relax }}{17}{table.caption.45}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Tweet features for content informativeness.\relax }}{19}{table.caption.50}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Evaluation measures for logistic regression model.\relax }}{20}{table.caption.51}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Affinity scores of edges between vertices of TwitterEventInfoGraph\relax }}{24}{table.caption.59}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Avg IIC scores and total avg scores of annotations for Millions March NYC event.\relax }}{31}{table.caption.78}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Avg IIC scores and total avg scores of annotations for Sydney Siege event.\relax }}{34}{table.caption.79}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -30,7 +30,56 @@ One of the fundamental goals of the proposed framework is to maintain a one-to-o
 \end{figure}
 
 This component allows the framework to collect event references from different social media websites using its publicly available APIs (Application Programming Interface), and store them in the database after processing them using the next two components of the EIIM life cycle. Due to the semi-structured nature of the collected data, a NOSQL document oriented database management system (MongoDb ) is used for storage. The choice of MongoDb was also driven by its ability to scale horizontally and perform operations on large volumes of data.
-For the experiments and analysis 4 million tweets (approx) related to five different events were collected using this component. Details of the collected event references are provided in Table 2. The tweets were collected over the given period of time, by providing a popular hashtag to the Twitter streaming API  (for details about Twitter Data Collection please refer Appendix \ref{AppendixA}.
+
+For performing the experiments, data was collected from two types of social media websites, 
+\begin{itemize}
+\item Blogs - representing the longer genre of textual references.
+\item Microblogs - representing the shorter genre of textual references.
+\end{itemize}
+
+%\noindent \textbf{\textit{Motivation behind source selection:}} For many people blogs have become popular social media sources for satisfying interpersonal communication needs. Blogs act as a platform for masses to share their likes and dislikes, voice their opinions, provide suggestions and report news. Over the years blogging has matured from personal diaries to citizen journalistic sources providing live coverage of events beyond the professional newsrooms. Often mainstream media rely on blogs for reporting first-hand accounts of an event \cite{ekdale2007expression}. Other social media platforms like microblogs, social networks etc., also promote such activities. But, these platforms have very little scope to elaborately discuss about the events due to the limitations in the length of content allowed to be posted. However, these alternative platforms act as good sources for studying and tracking dissemination of information during real-life events. This motivated us to perform our experiments on sources collected from the blogging platforms instead of other social media websites.
+
+\subsection{Blog Reference Collection}
+
+\begin{table}[htbp]
+\centering
+\caption{Details of Data Collected.}
+\label{tab:table1}
+\begin{tabular}{|c|c|c| }
+\hline
+\textbf{Service Used} & \textbf{Event} & \textbf{Number of Blog Posts} \\ [0.5ex]
+\hline
+GlobalVoices & Egyptian Revolution & 234 \\
+&Libyan Revolution & 86 \\
+&Tunisian Revolution & 77\\
+\hline 
+Google Blogger & Egyptian Revolution & 579 \\
+&Libyan Revolution & 600 \\
+&Tunisian Revolution & 484 \\
+\hline
+Icerocket Blog Search & Egyptian Revolution & 5900 \\ 
+&Libyan Revolution & 2198 \\
+&Tunisian Revolution & 1220 \\
+\hline
+\end{tabular}
+\end{table}
+
+%The blog writers, also known as bloggers, loosely form their special interest communities where they debate and discuss issues, spread awareness, gather support, organize and mobilize campaigns - utilizing and in many ways demonstrating the democratic nature of the Internet. 
+
+%
+%\paragraph
+%\noindent \textit{\textbf{Sources:}}
+Blog posts from GlobalVoices, Blogger\footnote{http://blogger.com} and Icerocket Blog Search\footnote{http://icerocket.com} respectively, were collected for the study. The details of the dataset used is given in Table ~\ref{tab:table1}. The dataset includes 11,378 blog posts from various blogging platforms like blogspot.com, wordpress.com, livejournal.com, typepad.com, etc. We also filter out the non-english blogs. The data from GlobalVoices is used for constructing event dictionaries, as explained later in Section \ref{infocapture}. We collect blog posts related to the three events from Blogger using Google Search, and from other blogging platforms using Icerocket blog search. 
+
+
+%We perform our experiments on the references retrieved by the search engines due to the lack of ground truth and take the references along with the ranks assigned to them by the search engines as our baseline. 
+
+%The collected blog posts are parsed for extracting various information. However, we use the following information for our study: \textit{URL} of the blog and blogpost), \textit{blog text}, \textit{entities}, \textit{language}, and \textit{rank} of the post in the respective search engines used for collecting it. We use AlchemyAPI in order to extract entities. These datasets would be made available on request.
+
+
+\subsection{Microblog Reference Collection}
+
+Due to extreme popularity of Twitter, data from it was collected for representing the microblog genre. Four million tweets (approx) related to five different events were collected. Details of the collected event references are provided in Table 2. The tweets were collected over the given period of time, by providing a popular hashtag to the Twitter streaming API  (for details about Twitter Data Collection please refer Appendix \ref{AppendixA}.
 
 \begin{table}[htbp]
 \center
@@ -111,7 +160,7 @@ characters, No. of special characters, Favorite count, Retweet \\ count, Formali
 
 
 
-\section{Event Identity Information Capture}
+\section{Event Identity Information Capture\label{infocapture}}
 
 \begin{figure}[htbp]
   \caption{Event Identity Information Capture component of the EIIM life cycle.}
