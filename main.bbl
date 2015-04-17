@@ -1,4 +1,4 @@
-\begin{thebibliography}{53}
+\begin{thebibliography}{87}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -302,6 +302,233 @@ Jan Vosecky, Kenneth Wai-Ting Leung, and Wilfred Ng.
 Hila Becker, Mor Naaman, and Luis Gravano.
 \newblock Selecting quality twitter content for events.
 \newblock \emph{ICWSM}, 11, 2011.
+
+\bibitem[Fellegi and Sunter(1969)]{fellegi1969theory}
+Ivan~P Fellegi and Alan~B Sunter.
+\newblock A theory for record linkage.
+\newblock \emph{Journal of the American Statistical Association}, 64\penalty0
+  (328):\penalty0 1183--1210, 1969.
+
+\bibitem[Newcombe et~al.(1959)Newcombe, Kennedy, Axford, and
+  James]{newcombe1959automatic}
+Howard~B Newcombe, James~M Kennedy, SJ~Axford, and Allison~P James.
+\newblock Automatic linkage of vital records computers can be used to extract"
+  follow-up" statistics of families from files of routine records.
+\newblock \emph{Science}, 130\penalty0 (3381):\penalty0 954--959, 1959.
+
+\bibitem[Herzog et~al.(2007)Herzog, Scheuren, and Winkler]{herzog2007data}
+Thomas~N Herzog, Fritz~J Scheuren, and William~E Winkler.
+\newblock \emph{Data quality and record linkage techniques}.
+\newblock Springer Science \& Business Media, 2007.
+
+\bibitem[Hern{\'a}ndez and Stolfo(1998)]{hernandez1998real}
+Mauricio~A Hern{\'a}ndez and Salvatore~J Stolfo.
+\newblock Real-world data is dirty: Data cleansing and the merge/purge problem.
+\newblock \emph{Data mining and knowledge discovery}, 2\penalty0 (1):\penalty0
+  9--37, 1998.
+
+\bibitem[Sarawagi and Bhamidipaty(2002)]{sarawagi2002interactive}
+Sunita Sarawagi and Anuradha Bhamidipaty.
+\newblock Interactive deduplication using active learning.
+\newblock In \emph{Proceedings of the eighth ACM SIGKDD international
+  conference on Knowledge discovery and data mining}, pages 269--278. ACM,
+  2002.
+
+\bibitem[Ananthakrishna et~al.(2002)Ananthakrishna, Chaudhuri, and
+  Ganti]{ananthakrishna2002eliminating}
+Rohit Ananthakrishna, Surajit Chaudhuri, and Venkatesh Ganti.
+\newblock Eliminating fuzzy duplicates in data warehouses.
+\newblock In \emph{Proceedings of the 28th international conference on Very
+  Large Data Bases}, pages 586--597. VLDB Endowment, 2002.
+
+\bibitem[Wang and Madnick(1989)]{wang1989inter}
+Y~Richard Wang and Stuart~E Madnick.
+\newblock The inter-database instance identification problem in integrating
+  autonomous systems.
+\newblock In \emph{Data Engineering, 1989. Proceedings. Fifth International
+  Conference on}, pages 46--55. IEEE, 1989.
+
+\bibitem[Cohen et~al.(2000)Cohen, Kautz, and McAllester]{cohen2000hardening}
+William~W Cohen, Henry Kautz, and David McAllester.
+\newblock Hardening soft information sources.
+\newblock In \emph{Proceedings of the sixth ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 255--259. ACM, 2000.
+
+\bibitem[Bilenko et~al.(2003)Bilenko, Mooney, Cohen, Ravikumar, and
+  Fienberg]{bilenko2003adaptive}
+Mikhail Bilenko, Raymond Mooney, William Cohen, Pradeep Ravikumar, and Stephen
+  Fienberg.
+\newblock Adaptive name matching in information integration.
+\newblock \emph{IEEE Intelligent Systems}, 18\penalty0 (5):\penalty0 16--23,
+  2003.
+
+\bibitem[Elmagarmid et~al.(2007)Elmagarmid, Ipeirotis, and
+  Verykios]{elmagarmid2007duplicate}
+Ahmed~K Elmagarmid, Panagiotis~G Ipeirotis, and Vassilios~S Verykios.
+\newblock Duplicate record detection: A survey.
+\newblock \emph{Knowledge and Data Engineering, IEEE Transactions on},
+  19\penalty0 (1):\penalty0 1--16, 2007.
+
+\bibitem[Garcia-Molina(2006)]{garcia2006pair}
+Hector Garcia-Molina.
+\newblock Pair-wise entity resolution: overview and challenges.
+\newblock In \emph{Proceedings of the 15th ACM international conference on
+  Information and knowledge management}, pages 1--1. ACM, 2006.
+
+\bibitem[Talburt(2011)]{talburt2011entity}
+John~R Talburt.
+\newblock \emph{Entity resolution and information quality}.
+\newblock Elsevier, 2011.
+
+\bibitem[Benjelloun et~al.(2006)Benjelloun, Garcia-Molina, Kawai, Larson,
+  Menestrina, Su, Thavisomboon, and Widom]{benjelloun2006generic}
+Omar Benjelloun, Hector Garcia-Molina, Hideki Kawai, Tait~Eliott Larson, David
+  Menestrina, Qi~Su, Sutthipong Thavisomboon, and Jennifer Widom.
+\newblock Generic entity resolution in the serf project.
+\newblock \emph{IEEE Data Engineering Bulletin, June 2006 Issue}, 2006.
+
+\bibitem[Benjelloun et~al.(2007)Benjelloun, Garcia-Molina, Gong, Kawai, Larson,
+  Menestrina, and Thavisomboon]{benjelloun2007d}
+Omar Benjelloun, Hector Garcia-Molina, Heng Gong, Hideki Kawai, Tait~Eliott
+  Larson, David Menestrina, and Sutthipong Thavisomboon.
+\newblock D-swoosh: A family of algorithms for generic, distributed entity
+  resolution.
+\newblock In \emph{Distributed Computing Systems, 2007. ICDCS'07. 27th
+  International Conference on}, pages 37--37. IEEE, 2007.
+
+\bibitem[Talburt et~al.(2007)Talburt, Wang, Hess, and
+  Kuo]{talburt2007algebraic}
+John Talburt, Richard Wang, Kimberly Hess, and Emily Kuo.
+\newblock An algebraic approach to data quality metrics for entity resolution
+  over large datasets.
+\newblock \emph{Information quality management: Theory and applications}, pages
+  1--22, 2007.
+
+\bibitem[Finkel(2007)]{finkel2007named}
+Jenny~Rose Finkel.
+\newblock Named entity recognition and the stanford ner software, 2007.
+
+\bibitem[Baldridge(2005)]{baldridge2005opennlp}
+Jason Baldridge.
+\newblock The opennlp project.
+\newblock \emph{URL: http://opennlp. apache. org/index. html,(accessed 2
+  February 2012)}, 2005.
+
+\bibitem[Cunningham(2002)]{cunningham2002gate}
+Hamish Cunningham.
+\newblock Gate, a general architecture for text engineering.
+\newblock \emph{Computers and the Humanities}, 36\penalty0 (2):\penalty0
+  223--254, 2002.
+
+\bibitem[Baldwin and Carpenter(2003)]{baldwin2003lingpipe}
+Breck Baldwin and Bob Carpenter.
+\newblock Lingpipe.
+\newblock \emph{Available from World Wide Web: http://alias-i. com/lingpipe},
+  2003.
+
+\bibitem[Bird(2006)]{bird2006nltk}
+Steven Bird.
+\newblock Nltk: the natural language toolkit.
+\newblock In \emph{Proceedings of the COLING/ACL on Interactive presentation
+  sessions}, pages 69--72. Association for Computational Linguistics, 2006.
+
+\bibitem[Piskorski and Yangarber(2013)]{piskorski2013information}
+Jakub Piskorski and Roman Yangarber.
+\newblock Information extraction: Past, present and future.
+\newblock In \emph{Multi-source, multilingual information extraction and
+  summarization}, pages 23--49. Springer, 2013.
+
+\bibitem[Sarawagi(2008)]{sarawagi2008information}
+Sunita Sarawagi.
+\newblock Information extraction.
+\newblock \emph{Foundations and trends in databases}, 1\penalty0 (3):\penalty0
+  261--377, 2008.
+
+\bibitem[Hua et~al.(2012)Hua, Huynh, Hosseini, Lu, and
+  Zhou]{hua2012information}
+Wen Hua, Dat~T Huynh, Saeid Hosseini, Jiaheng Lu, and Xiaofang Zhou.
+\newblock Information extraction from microblogs: A survey.
+\newblock \emph{Int. J. Soft. and Informatics}, 6\penalty0 (4):\penalty0
+  495--522, 2012.
+
+\bibitem[Nadeau and Sekine(2007)]{nadeau2007survey}
+David Nadeau and Satoshi Sekine.
+\newblock A survey of named entity recognition and classification.
+\newblock \emph{Lingvisticae Investigationes}, 30\penalty0 (1):\penalty0 3--26,
+  2007.
+
+\bibitem[Bollacker et~al.(2008)Bollacker, Evans, Paritosh, Sturge, and
+  Taylor]{bollacker2008freebase}
+Kurt Bollacker, Colin Evans, Praveen Paritosh, Tim Sturge, and Jamie Taylor.
+\newblock Freebase: a collaboratively created graph database for structuring
+  human knowledge.
+\newblock In \emph{Proceedings of the 2008 ACM SIGMOD international conference
+  on Management of data}, pages 1247--1250. ACM, 2008.
+
+\bibitem[Auer et~al.(2007)Auer, Bizer, Kobilarov, Lehmann, Cyganiak, and
+  Ives]{auer2007dbpedia}
+S{\"o}ren Auer, Christian Bizer, Georgi Kobilarov, Jens Lehmann, Richard
+  Cyganiak, and Zachary Ives.
+\newblock \emph{Dbpedia: A nucleus for a web of open data}.
+\newblock Springer, 2007.
+
+\bibitem[Deshpande et~al.(2013)Deshpande, Lamba, Tourn, Das, Subramaniam,
+  Rajaraman, Harinarayan, and Doan]{deshpande2013building}
+Omkar Deshpande, Digvijay~S Lamba, Michel Tourn, Sanjib Das, Sri Subramaniam,
+  Anand Rajaraman, Venky Harinarayan, and AnHai Doan.
+\newblock Building, maintaining, and using knowledge bases: A report from the
+  trenches.
+\newblock In \emph{Proceedings of the 2013 ACM SIGMOD International Conference
+  on Management of Data}, pages 1209--1220. ACM, 2013.
+
+\bibitem[Gattani et~al.(2013)Gattani, Lamba, Garera, Tiwari, Chai, Das,
+  Subramaniam, Rajaraman, Harinarayan, and Doan]{gattani2013entity}
+Abhishek Gattani, Digvijay~S Lamba, Nikesh Garera, Mitul Tiwari, Xiaoyong Chai,
+  Sanjib Das, Sri Subramaniam, Anand Rajaraman, Venky Harinarayan, and AnHai
+  Doan.
+\newblock Entity extraction, linking, classification, and tagging for social
+  media: a wikipedia-based approach.
+\newblock \emph{Proceedings of the VLDB Endowment}, 6\penalty0 (11):\penalty0
+  1126--1137, 2013.
+
+\bibitem[Bilgic et~al.(2006)Bilgic, Licamele, Getoor, and
+  Shneiderman]{bilgic2006d}
+Mustafa Bilgic, Louis Licamele, Lise Getoor, and Ben Shneiderman.
+\newblock D-dupe: An interactive tool for entity resolution in social networks.
+\newblock In \emph{Visual Analytics Science And Technology, 2006 IEEE Symposium
+  On}, pages 43--50. IEEE, 2006.
+
+\bibitem[Kolb et~al.(2012)Kolb, Thor, and Rahm]{kolb2012dedoop}
+Lars Kolb, Andreas Thor, and Erhard Rahm.
+\newblock Dedoop: efficient deduplication with hadoop.
+\newblock \emph{Proceedings of the VLDB Endowment}, 5\penalty0 (12):\penalty0
+  1878--1881, 2012.
+
+\bibitem[Bouquet and Bortoli(2010)]{bouquet2010entity}
+Paolo Bouquet and Stefano Bortoli.
+\newblock Entity-centric social profile integration.
+\newblock In \emph{Proceedings of the International Workshop on Linking of User
+  Profiles and Applications in the Social Semantic Web (LUPAS 2010)}, pages
+  52--57, 2010.
+
+\bibitem[Bortoli et~al.(2007)Bortoli, Stoermer, Bouquet, and
+  Wache]{bortoli2007foaf}
+Stefano Bortoli, Heiko Stoermer, Paolo Bouquet, and Holger Wache.
+\newblock Foaf-o-matic-solving the identity problem in the foaf network.
+\newblock In \emph{SWAP}, 2007.
+
+\bibitem[Raad et~al.(2010)Raad, Chbeir, and Dipanda]{raad2010user}
+Elie Raad, Richard Chbeir, and Albert Dipanda.
+\newblock User profile matching in social networks.
+\newblock In \emph{Network-Based Information Systems (NBiS), 2010 13th
+  International Conference on}, pages 297--304. IEEE, 2010.
+
+\bibitem[Bouquet et~al.(2006)Bouquet, Stoermer, Mancioppi, and
+  Giacomuzzi]{bouquet2006okkam}
+Paolo Bouquet, Heiko Stoermer, Michele Mancioppi, and Daniel Giacomuzzi.
+\newblock Okkam: Towards a solution to the``identity crisis''on the semantic
+  web.
+\newblock In \emph{SWAP}, volume 201, 2006.
 
 \bibitem[Wei et~al.(2008)Wei, Li, Lu, and He]{wei2008query}
 Furu Wei, Wenjie Li, Qin Lu, and Yanxiang He.

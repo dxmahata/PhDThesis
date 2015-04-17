@@ -147,6 +147,16 @@
   organization = {ACM}
 }
 
+@INPROCEEDINGS{ananthakrishna2002eliminating,
+  author = {Ananthakrishna, Rohit and Chaudhuri, Surajit and Ganti, Venkatesh},
+  title = {Eliminating fuzzy duplicates in data warehouses},
+  booktitle = {Proceedings of the 28th international conference on Very Large Data
+	Bases},
+  year = {2002},
+  pages = {586--597},
+  organization = {VLDB Endowment}
+}
+
 @BOOK{anderson2008long,
   title = {Long Tail, The, Revised and Updated Edition: Why the Future of Business
 	is Selling Less of More},
@@ -159,6 +169,14 @@
   timestamp = {2015.04.10}
 }
 
+@BOOK{auer2007dbpedia,
+  title = {Dbpedia: A nucleus for a web of open data},
+  publisher = {Springer},
+  year = {2007},
+  author = {Auer, S{\"o}ren and Bizer, Christian and Kobilarov, Georgi and Lehmann,
+	Jens and Cyganiak, Richard and Ives, Zachary}
+}
+
 @BOOK{baeza1999modern,
   title = {Modern information retrieval},
   publisher = {ACM press New York},
@@ -167,6 +185,21 @@
   volume = {463},
   owner = {cisstudent},
   timestamp = {2015.04.09}
+}
+
+@ARTICLE{baldridge2005opennlp,
+  author = {Baldridge, Jason},
+  title = {The opennlp project},
+  journal = {URL: http://opennlp. apache. org/index. html,(accessed 2 February
+	2012)},
+  year = {2005}
+}
+
+@ARTICLE{baldwin2003lingpipe,
+  author = {Baldwin, Breck and Carpenter, Bob},
+  title = {LingPipe},
+  journal = {Available from World Wide Web: http://alias-i. com/lingpipe},
+  year = {2003}
 }
 
 @ARTICLE{barrons2012suleiman,
@@ -215,6 +248,29 @@
   pages = {12}
 }
 
+@INPROCEEDINGS{benjelloun2007d,
+  author = {Benjelloun, Omar and Garcia-Molina, Hector and Gong, Heng and Kawai,
+	Hideki and Larson, Tait Eliott and Menestrina, David and Thavisomboon,
+	Sutthipong},
+  title = {D-swoosh: A family of algorithms for generic, distributed entity
+	resolution},
+  booktitle = {Distributed Computing Systems, 2007. ICDCS'07. 27th International
+	Conference on},
+  year = {2007},
+  pages = {37--37},
+  organization = {IEEE}
+}
+
+@ARTICLE{benjelloun2006generic,
+  author = {Benjelloun, Omar and Garcia-Molina, Hector and Kawai, Hideki and
+	Larson, Tait Eliott and Menestrina, David and Su, Qi and Thavisomboon,
+	Sutthipong and Widom, Jennifer},
+  title = {Generic entity resolution in the serf project},
+  journal = {IEEE Data Engineering Bulletin, June 2006 Issue},
+  year = {2006},
+  publisher = {Stanford InfoLab}
+}
+
 @INPROCEEDINGS{benson2011event,
   author = {Benson, Edward and Haghighi, Aria and Barzilay, Regina},
   title = {Event discovery in social media feeds},
@@ -223,6 +279,49 @@
   year = {2011},
   pages = {389--398},
   organization = {Association for Computational Linguistics}
+}
+
+@ARTICLE{bilenko2003adaptive,
+  author = {Bilenko, Mikhail and Mooney, Raymond and Cohen, William and Ravikumar,
+	Pradeep and Fienberg, Stephen},
+  title = {Adaptive name matching in information integration},
+  journal = {IEEE Intelligent Systems},
+  year = {2003},
+  volume = {18},
+  pages = {16--23},
+  number = {5},
+  publisher = {IEEE Computer Society}
+}
+
+@INPROCEEDINGS{bilgic2006d,
+  author = {Bilgic, Mustafa and Licamele, Louis and Getoor, Lise and Shneiderman,
+	Ben},
+  title = {D-dupe: An interactive tool for entity resolution in social networks},
+  booktitle = {Visual Analytics Science And Technology, 2006 IEEE Symposium On},
+  year = {2006},
+  pages = {43--50},
+  organization = {IEEE}
+}
+
+@INPROCEEDINGS{bird2006nltk,
+  author = {Bird, Steven},
+  title = {NLTK: the natural language toolkit},
+  booktitle = {Proceedings of the COLING/ACL on Interactive presentation sessions},
+  year = {2006},
+  pages = {69--72},
+  organization = {Association for Computational Linguistics}
+}
+
+@INPROCEEDINGS{bollacker2008freebase,
+  author = {Bollacker, Kurt and Evans, Colin and Paritosh, Praveen and Sturge,
+	Tim and Taylor, Jamie},
+  title = {Freebase: a collaboratively created graph database for structuring
+	human knowledge},
+  booktitle = {Proceedings of the 2008 ACM SIGMOD international conference on Management
+	of data},
+  year = {2008},
+  pages = {1247--1250},
+  organization = {ACM}
 }
 
 @ARTICLE{bollen2009modeling,
@@ -250,6 +349,23 @@
   title = {Social Media and Information Overload: Survey Results},
   journal = {arXiv preprint arXiv:1306.0813},
   year = {2013}
+}
+
+@INPROCEEDINGS{bortoli2007foaf,
+  author = {Bortoli, Stefano and Stoermer, Heiko and Bouquet, Paolo and Wache,
+	Holger},
+  title = {Foaf-O-Matic-Solving the Identity Problem in the FOAF Network.},
+  booktitle = {SWAP},
+  year = {2007}
+}
+
+@INPROCEEDINGS{bouquet2010entity,
+  author = {Bouquet, Paolo and Bortoli, Stefano},
+  title = {Entity-centric Social Profile Integration},
+  booktitle = {Proceedings of the International Workshop on Linking of User Profiles
+	and Applications in the Social Semantic Web (LUPAS 2010)},
+  year = {2010},
+  pages = {52--57}
 }
 
 @ARTICLE{brin1998anatomy,
@@ -312,6 +428,27 @@
   publisher = {ACM}
 }
 
+@INPROCEEDINGS{cohen2000hardening,
+  author = {Cohen, William W and Kautz, Henry and McAllester, David},
+  title = {Hardening soft information sources},
+  booktitle = {Proceedings of the sixth ACM SIGKDD international conference on Knowledge
+	discovery and data mining},
+  year = {2000},
+  pages = {255--259},
+  organization = {ACM}
+}
+
+@ARTICLE{cunningham2002gate,
+  author = {Cunningham, Hamish},
+  title = {GATE, a general architecture for text engineering},
+  journal = {Computers and the Humanities},
+  year = {2002},
+  volume = {36},
+  pages = {223--254},
+  number = {2},
+  publisher = {Springer}
+}
+
 @INPROCEEDINGS{Damak2013,
   author = {Damak, Firas and Pinel-Sauvagnat, Karen and Boughanem, Mohand and
 	Cabanac, Guillaume},
@@ -331,6 +468,19 @@
   booktitle = {Proceedings of the 24th ACM Conference on Hypertext and Social Media},
   year = {2013},
   pages = {21--30},
+  organization = {ACM}
+}
+
+@INPROCEEDINGS{deshpande2013building,
+  author = {Deshpande, Omkar and Lamba, Digvijay S and Tourn, Michel and Das,
+	Sanjib and Subramaniam, Sri and Rajaraman, Anand and Harinarayan,
+	Venky and Doan, AnHai},
+  title = {Building, maintaining, and using knowledge bases: A report from the
+	trenches},
+  booktitle = {Proceedings of the 2013 ACM SIGMOD International Conference on Management
+	of Data},
+  year = {2013},
+  pages = {1209--1220},
   organization = {ACM}
 }
 
@@ -372,6 +522,18 @@
   timestamp = {2015.04.10}
 }
 
+@ARTICLE{elmagarmid2007duplicate,
+  author = {Elmagarmid, Ahmed K and Ipeirotis, Panagiotis G and Verykios, Vassilios
+	S},
+  title = {Duplicate record detection: A survey},
+  journal = {Knowledge and Data Engineering, IEEE Transactions on},
+  year = {2007},
+  volume = {19},
+  pages = {1--16},
+  number = {1},
+  publisher = {IEEE}
+}
+
 @ARTICLE{Erkan2004,
   author = {Erkan, G{\"u}nes and Radev, Dragomir R},
   title = {LexRank: graph-based lexical centrality as salience in text summarization},
@@ -380,6 +542,17 @@
   pages = {457--479},
   owner = {cisstudent},
   timestamp = {2015.04.09}
+}
+
+@ARTICLE{fellegi1969theory,
+  author = {Fellegi, Ivan P and Sunter, Alan B},
+  title = {A theory for record linkage},
+  journal = {Journal of the American Statistical Association},
+  year = {1969},
+  volume = {64},
+  pages = {1183--1210},
+  number = {328},
+  publisher = {Taylor \& Francis Group}
 }
 
 @INPROCEEDINGS{filatova2006automatic,
@@ -391,11 +564,42 @@
   organization = {Association for Computational Linguistics}
 }
 
+@MISC{finkel2007named,
+  author = {Finkel, Jenny Rose},
+  title = {Named Entity Recognition and the Stanford NER Software},
+  year = {2007},
+  journal = {2007-03-01]. http://nlp. stanford. edu/software/jenny-ner-2007. pdf}
+}
+
 @TECHREPORT{gao2011harnessing,
   author = {Gao, Huiji and Barbier, Geoffrey and Goolsby, Rebecca and Zeng, Daniel},
   title = {Harnessing the crowdsourcing power of social media for disaster relief},
   institution = {DTIC Document},
   year = {2011}
+}
+
+@INPROCEEDINGS{garcia2006pair,
+  author = {Garcia-Molina, Hector},
+  title = {Pair-wise entity resolution: overview and challenges},
+  booktitle = {Proceedings of the 15th ACM international conference on Information
+	and knowledge management},
+  year = {2006},
+  pages = {1--1},
+  organization = {ACM}
+}
+
+@ARTICLE{gattani2013entity,
+  author = {Gattani, Abhishek and Lamba, Digvijay S and Garera, Nikesh and Tiwari,
+	Mitul and Chai, Xiaoyong and Das, Sanjib and Subramaniam, Sri and
+	Rajaraman, Anand and Harinarayan, Venky and Doan, AnHai},
+  title = {Entity extraction, linking, classification, and tagging for social
+	media: a wikipedia-based approach},
+  journal = {Proceedings of the VLDB Endowment},
+  year = {2013},
+  volume = {6},
+  pages = {1126--1137},
+  number = {11},
+  publisher = {VLDB Endowment}
 }
 
 @ARTICLE{gayo2013nepotistic,
@@ -540,6 +744,35 @@
   number = {9}
 }
 
+@ARTICLE{hernandez1998real,
+  author = {Hern{\'a}ndez, Mauricio A and Stolfo, Salvatore J},
+  title = {Real-world data is dirty: Data cleansing and the merge/purge problem},
+  journal = {Data mining and knowledge discovery},
+  year = {1998},
+  volume = {2},
+  pages = {9--37},
+  number = {1},
+  publisher = {Springer}
+}
+
+@BOOK{herzog2007data,
+  title = {Data quality and record linkage techniques},
+  publisher = {Springer Science \& Business Media},
+  year = {2007},
+  author = {Herzog, Thomas N and Scheuren, Fritz J and Winkler, William E}
+}
+
+@ARTICLE{hua2012information,
+  author = {Hua, Wen and Huynh, Dat T and Hosseini, Saeid and Lu, Jiaheng and
+	Zhou, Xiaofang},
+  title = {Information extraction from microblogs: A survey},
+  journal = {Int. J. Soft. and Informatics},
+  year = {2012},
+  volume = {6},
+  pages = {495--522},
+  number = {4}
+}
+
 @INPROCEEDINGS{huang2011quality,
   author = {Huang, Minlie and Yang, Yi and Zhu, Xiaoyan},
   title = {Quality-biased Ranking of Short Texts in Microblogging Services.},
@@ -638,6 +871,17 @@
   owner = {cisstudent},
   publisher = {ACM},
   timestamp = {2015.04.10}
+}
+
+@ARTICLE{kolb2012dedoop,
+  author = {Kolb, Lars and Thor, Andreas and Rahm, Erhard},
+  title = {Dedoop: efficient deduplication with Hadoop},
+  journal = {Proceedings of the VLDB Endowment},
+  year = {2012},
+  volume = {5},
+  pages = {1878--1881},
+  number = {12},
+  publisher = {VLDB Endowment}
 }
 
 @INPROCEEDINGS{kumaran2004text,
@@ -845,6 +1089,17 @@
   timestamp = {2015.04.09}
 }
 
+@ARTICLE{nadeau2007survey,
+  author = {Nadeau, David and Sekine, Satoshi},
+  title = {A survey of named entity recognition and classification},
+  journal = {Lingvisticae Investigationes},
+  year = {2007},
+  volume = {30},
+  pages = {3--26},
+  number = {1},
+  publisher = {John Benjamins publishing company}
+}
+
 @INPROCEEDINGS{nagmoti2010ranking,
   author = {Nagmoti, Rinkesh and Teredesai, Ankur and De Cock, Martine},
   title = {Ranking approaches for microblog search},
@@ -856,6 +1111,19 @@
   organization = {IEEE Computer Society},
   owner = {cisstudent},
   timestamp = {2015.04.09}
+}
+
+@ARTICLE{newcombe1959automatic,
+  author = {Newcombe, Howard B and Kennedy, James M and Axford, SJ and James,
+	Allison P},
+  title = {Automatic Linkage of Vital Records Computers can be used to extract"
+	follow-up" statistics of families from files of routine records},
+  journal = {Science},
+  year = {1959},
+  volume = {130},
+  pages = {954--959},
+  number = {3381},
+  publisher = {American Association for the Advancement of Science}
 }
 
 @INPROCEEDINGS{nichols2012summarizing,
@@ -939,6 +1207,15 @@
   timestamp = {2015.04.09}
 }
 
+@INCOLLECTION{piskorski2013information,
+  author = {Piskorski, Jakub and Yangarber, Roman},
+  title = {Information extraction: Past, present and future},
+  booktitle = {Multi-source, multilingual information extraction and summarization},
+  publisher = {Springer},
+  year = {2013},
+  pages = {23--49}
+}
+
 @INPROCEEDINGS{Popescu2011,
   author = {Popescu, A.M. and others},
   title = {Extracting events and event descriptions from twitter},
@@ -981,6 +1258,16 @@
   year = {2013},
   owner = {cisstudent},
   timestamp = {2015.04.09}
+}
+
+@INPROCEEDINGS{raad2010user,
+  author = {Raad, Elie and Chbeir, Richard and Dipanda, Albert},
+  title = {User profile matching in social networks},
+  booktitle = {Network-Based Information Systems (NBiS), 2010 13th International
+	Conference on},
+  year = {2010},
+  pages = {297--304},
+  organization = {IEEE}
 }
 
 @INPROCEEDINGS{ramos2003using,
@@ -1120,6 +1407,27 @@
   organization = {ACM}
 }
 
+@ARTICLE{sarawagi2008information,
+  author = {Sarawagi, Sunita},
+  title = {Information extraction},
+  journal = {Foundations and trends in databases},
+  year = {2008},
+  volume = {1},
+  pages = {261--377},
+  number = {3},
+  publisher = {Now Publishers Inc.}
+}
+
+@INPROCEEDINGS{sarawagi2002interactive,
+  author = {Sarawagi, Sunita and Bhamidipaty, Anuradha},
+  title = {Interactive deduplication using active learning},
+  booktitle = {Proceedings of the eighth ACM SIGKDD international conference on
+	Knowledge discovery and data mining},
+  year = {2002},
+  pages = {269--278},
+  organization = {ACM}
+}
+
 @INPROCEEDINGS{sen2012identifying,
   author = {Sen, Fatih and Wigand, Rolf T and Agarwal, Nitin and Mahata, Debanjan
 	and Bisgin, Halil},
@@ -1195,6 +1503,22 @@
   year = {2010},
   pages = {365--370},
   organization = {IEEE}
+}
+
+@ARTICLE{talburt2007algebraic,
+  author = {Talburt, John and Wang, Richard and Hess, Kimberly and Kuo, Emily},
+  title = {An algebraic approach to data quality metrics for entity resolution
+	over large datasets},
+  journal = {Information quality management: Theory and applications},
+  year = {2007},
+  pages = {1--22}
+}
+
+@BOOK{talburt2011entity,
+  title = {Entity resolution and information quality},
+  publisher = {Elsevier},
+  year = {2011},
+  author = {Talburt, John R}
 }
 
 @ARTICLE{thelwall2011sentiment,
@@ -1286,6 +1610,17 @@
   journal = {The Guardian, October},
   year = {2013},
   volume = {6}
+}
+
+@INPROCEEDINGS{wang1989inter,
+  author = {Wang, Y Richard and Madnick, Stuart E},
+  title = {The inter-database instance identification problem in integrating
+	autonomous systems},
+  booktitle = {Data Engineering, 1989. Proceedings. Fifth International Conference
+	on},
+  year = {1989},
+  pages = {46--55},
+  organization = {IEEE}
 }
 
 @INPROCEEDINGS{wei2008query,
@@ -1384,6 +1719,15 @@
   owner = {cisstudent},
   publisher = {Springer},
   timestamp = {2015.04.10}
+}
+
+@INPROCEEDINGS{zhou2011entity,
+  author = {Zhou, Yinle and Talburt, John},
+  title = {Entity identity information management (EIIM)},
+  booktitle = {International Conference on Information Quality (ICIQ-11), Adelaide,
+	Australia},
+  year = {2011},
+  pages = {327--341}
 }
 
 @ELECTRONIC{pewresearch,

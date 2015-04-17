@@ -22,45 +22,45 @@
 \contentsline {section}{\numberline {3.2}Event Identification in Social Media}{9}{section.23}
 \contentsline {section}{\numberline {3.3}Information Quality in Social Media}{10}{section.24}
 \contentsline {section}{\numberline {3.4}Ranking and Summarization of Short Textual Social Media Posts}{10}{section.25}
-\contentsline {section}{\numberline {3.5}Reference Tracking and Entity Resolution}{11}{section.29}
-\contentsline {chapter}{\numberline {4}Event Identity Information Management (EIIM) Life Cycle for Social Media}{13}{chapter.31}
-\contentsline {section}{\numberline {4.1}Identity Integrity}{14}{section.33}
-\contentsline {section}{\numberline {4.2}Event Reference Collection}{14}{section.34}
-\contentsline {section}{\numberline {4.3}Event Reference Preparation}{15}{section.37}
-\contentsline {section}{\numberline {4.4}Event Information Quality}{16}{section.39}
-\contentsline {section}{\numberline {4.5}Event Identity Information Capture}{19}{section.44}
-\contentsline {section}{\numberline {4.6}Event Identity Information Structure}{20}{section.46}
-\contentsline {section}{\numberline {4.7}Event Identity Information Processing}{20}{section.48}
-\contentsline {subsection}{\numberline {4.7.1}TwitterEventInfoRank}{24}{subsection.52}
-\contentsline {section}{\numberline {4.8}Event Reference Resolution}{33}{section.75}
-\contentsline {section}{\numberline {4.9}Event Analytics}{33}{section.77}
-\contentsline {paragraph}{Top Five Event-specific Informative Hashtags for Sydney Siege Event}{33}{figure.caption.78}
-\contentsline {paragraph}{Top Five Event-specific Informative Text Units for Sydney Siege Event}{33}{Item.83}
-\contentsline {paragraph}{Top Five Event-specific Informative URLs for Sydney Siege Event}{34}{Item.88}
-\contentsline {paragraph}{Top Five Event-specific Informative Tweet Excerpts for Sydney Siege Event}{34}{Item.93}
-\contentsline {paragraph}{Three Randomly Selected Tweets for Top Three Event-specific Informative Users posting about Sydney Siege Event.}{35}{Item.98}
-\contentsline {paragraph}{Top Five Event-specific Informative Hashtags for Millions March NYC Event}{35}{Item.110}
-\contentsline {paragraph}{Top Five Event-specific Informative Text Units for Millions March NYC Event}{36}{Item.115}
-\contentsline {paragraph}{Top Five Event-specific Informative URLs for Millions March NYC Event}{36}{Item.120}
-\contentsline {paragraph}{Top Five Event-specific Informative Tweet Excerpts for Millions March NYC Event}{36}{Item.125}
-\contentsline {paragraph}{Three Randomly Selected Tweets for Top Three Event-specific Informative Users posting about Millions March NYC Event for a particular hour.}{37}{Item.130}
-\contentsline {chapter}{\numberline {5}Potential Applications of the EIIM Framework}{38}{chapter.143}
-\contentsline {section}{\numberline {5.1}Event Monitoring and Analysis}{38}{section.144}
-\contentsline {section}{\numberline {5.2}Event Information Retrieval}{39}{section.151}
-\contentsline {section}{\numberline {5.3}Opinion and Review Mining}{39}{section.153}
-\contentsline {section}{\numberline {5.4}Recommender Systems}{40}{section.164}
-\contentsline {section}{\numberline {5.5}Event Management and Marketing}{41}{section.165}
-\contentsline {section}{\numberline {5.6}Social Media Data Integration}{42}{section.167}
-\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{43}{chapter.169}
-\contentsline {section}{\numberline {6.1}Conclusion}{43}{section.170}
-\contentsline {section}{\numberline {6.2}Future Work}{43}{section.171}
-\contentsline {subsection}{\numberline {6.2.1}Summarizing Event Related Content}{43}{subsection.172}
-\contentsline {subsection}{\numberline {6.2.2}Identifying Insightful Opinionated Content Related to Events}{43}{subsection.173}
-\contentsline {subsection}{\numberline {6.2.3}Event Topic Modeling}{43}{subsection.174}
-\contentsline {subsection}{\numberline {6.2.4}Event-specific Recommendations}{43}{subsection.175}
-\contentsline {subsection}{\numberline {6.2.5}Distributed Processing of EventIdentityInfoGraph}{43}{subsection.176}
-\contentsline {subsection}{\numberline {6.2.6}Event Ontology for Social Media}{43}{subsection.177}
+\contentsline {section}{\numberline {3.5}Entity Resolution}{11}{section.29}
+\contentsline {chapter}{\numberline {4}Event Identity Information Management (EIIM) Life Cycle for Social Media}{14}{chapter.35}
+\contentsline {section}{\numberline {4.1}Identity Integrity}{15}{section.37}
+\contentsline {section}{\numberline {4.2}Event Reference Collection}{15}{section.38}
+\contentsline {section}{\numberline {4.3}Event Reference Preparation}{16}{section.41}
+\contentsline {section}{\numberline {4.4}Event Information Quality}{17}{section.43}
+\contentsline {section}{\numberline {4.5}Event Identity Information Capture}{20}{section.48}
+\contentsline {section}{\numberline {4.6}Event Identity Information Structure}{21}{section.50}
+\contentsline {section}{\numberline {4.7}Event Identity Information Processing}{21}{section.52}
+\contentsline {subsection}{\numberline {4.7.1}TwitterEventInfoRank}{25}{subsection.56}
+\contentsline {section}{\numberline {4.8}Event Reference Resolution}{34}{section.79}
+\contentsline {section}{\numberline {4.9}Event Analytics}{34}{section.81}
+\contentsline {paragraph}{Top Five Event-specific Informative Hashtags for Sydney Siege Event}{34}{figure.caption.82}
+\contentsline {paragraph}{Top Five Event-specific Informative Text Units for Sydney Siege Event}{34}{Item.87}
+\contentsline {paragraph}{Top Five Event-specific Informative URLs for Sydney Siege Event}{35}{Item.92}
+\contentsline {paragraph}{Top Five Event-specific Informative Tweet Excerpts for Sydney Siege Event}{35}{Item.97}
+\contentsline {paragraph}{Three Randomly Selected Tweets for Top Three Event-specific Informative Users posting about Sydney Siege Event.}{36}{Item.102}
+\contentsline {paragraph}{Top Five Event-specific Informative Hashtags for Millions March NYC Event}{36}{Item.114}
+\contentsline {paragraph}{Top Five Event-specific Informative Text Units for Millions March NYC Event}{37}{Item.119}
+\contentsline {paragraph}{Top Five Event-specific Informative URLs for Millions March NYC Event}{37}{Item.124}
+\contentsline {paragraph}{Top Five Event-specific Informative Tweet Excerpts for Millions March NYC Event}{37}{Item.129}
+\contentsline {paragraph}{Three Randomly Selected Tweets for Top Three Event-specific Informative Users posting about Millions March NYC Event for a particular hour.}{38}{Item.134}
+\contentsline {chapter}{\numberline {5}Potential Applications of the EIIM Framework}{39}{chapter.147}
+\contentsline {section}{\numberline {5.1}Event Monitoring and Analysis}{39}{section.148}
+\contentsline {section}{\numberline {5.2}Event Information Retrieval}{40}{section.155}
+\contentsline {section}{\numberline {5.3}Opinion and Review Mining}{40}{section.157}
+\contentsline {section}{\numberline {5.4}Recommender Systems}{41}{section.168}
+\contentsline {section}{\numberline {5.5}Event Management and Marketing}{42}{section.169}
+\contentsline {section}{\numberline {5.6}Social Media Data Integration}{43}{section.171}
+\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{44}{chapter.173}
+\contentsline {section}{\numberline {6.1}Conclusion}{44}{section.174}
+\contentsline {section}{\numberline {6.2}Future Work}{44}{section.175}
+\contentsline {subsection}{\numberline {6.2.1}Summarizing Event Related Content}{44}{subsection.176}
+\contentsline {subsection}{\numberline {6.2.2}Identifying Insightful Opinionated Content Related to Events}{44}{subsection.177}
+\contentsline {subsection}{\numberline {6.2.3}Event Topic Modeling}{44}{subsection.178}
+\contentsline {subsection}{\numberline {6.2.4}Event-specific Recommendations}{44}{subsection.179}
+\contentsline {subsection}{\numberline {6.2.5}Distributed Processing of EventIdentityInfoGraph}{44}{subsection.180}
+\contentsline {subsection}{\numberline {6.2.6}Event Ontology for Social Media}{44}{subsection.181}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendix Title Here}{44}{appendix.178}
+\contentsline {chapter}{\numberline {A}Appendix Title Here}{45}{appendix.182}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{45}{dummy.179}
+\contentsline {chapter}{Bibliography}{46}{dummy.183}
