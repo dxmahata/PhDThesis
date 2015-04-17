@@ -368,6 +368,16 @@
   pages = {52--57}
 }
 
+@INPROCEEDINGS{bouquet2006okkam,
+  author = {Bouquet, Paolo and Stoermer, Heiko and Mancioppi, Michele and Giacomuzzi,
+	Daniel},
+  title = {OkkaM: Towards a Solution to the``Identity Crisis''on the Semantic
+	Web.},
+  booktitle = {SWAP},
+  year = {2006},
+  volume = {201}
+}
+
 @ARTICLE{brin1998anatomy,
   author = {Brin, S. and others},
   title = {The anatomy of a large-scale hypertextual Web search engine},

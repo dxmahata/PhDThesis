@@ -1,4 +1,4 @@
-\begin{thebibliography}{87}
+\begin{thebibliography}{88}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -503,6 +503,12 @@ Lars Kolb, Andreas Thor, and Erhard Rahm.
 \newblock Dedoop: efficient deduplication with hadoop.
 \newblock \emph{Proceedings of the VLDB Endowment}, 5\penalty0 (12):\penalty0
   1878--1881, 2012.
+
+\bibitem[Talburt and Zhou(2015)]{talburt2015entity}
+John~R Talburt and Yinle Zhou.
+\newblock \emph{Entity Information Life Cycle for Big Data: Master Data
+  Management and Information Integration}.
+\newblock Morgan Kaufmann, 2015.
 
 \bibitem[Bouquet and Bortoli(2010)]{bouquet2010entity}
 Paolo Bouquet and Stefano Bortoli.
