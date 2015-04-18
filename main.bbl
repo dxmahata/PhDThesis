@@ -1,4 +1,4 @@
-\begin{thebibliography}{89}
+\begin{thebibliography}{107}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -114,6 +114,172 @@ Yinle Zhou and John Talburt.
 \newblock Entity identity information management (eiim).
 \newblock In \emph{International Conference on Information Quality (ICIQ-11),
   Adelaide, Australia}, pages 327--341, 2011.
+
+\bibitem[Benevenuto et~al.(2010)Benevenuto, Magno, Rodrigues, and
+  Almeida]{benevenuto2010detecting}
+Fabricio Benevenuto, Gabriel Magno, Tiago Rodrigues, and Virgilio Almeida.
+\newblock Detecting spammers on twitter.
+\newblock In \emph{Collaboration, electronic messaging, anti-abuse and spam
+  conference (CEAS)}, volume~6, page~12, 2010.
+
+\bibitem[Chhabra et~al.(2011)Chhabra, Aggarwal, Benevenuto, and
+  Kumaraguru]{chhabra2011phi}
+Sidharth Chhabra, Anupama Aggarwal, Fabricio Benevenuto, and Ponnurangam
+  Kumaraguru.
+\newblock Phi. sh/\$ ocial: the phishing landscape through short urls.
+\newblock In \emph{Proceedings of the 8th Annual Collaboration, Electronic
+  messaging, Anti-Abuse and Spam Conference}, pages 92--101. ACM, 2011.
+
+\bibitem[Grier et~al.(2010)Grier, Thomas, Paxson, and Zhang]{grier2010spam}
+Chris Grier, Kurt Thomas, Vern Paxson, and Michael Zhang.
+\newblock @ spam: the underground on 140 characters or less.
+\newblock In \emph{Proceedings of the 17th ACM conference on Computer and
+  communications security}, pages 27--37. ACM, 2010.
+
+\bibitem[Yardi et~al.(2009)Yardi, Romero, Schoenebeck,
+  et~al.]{yardi2009detecting}
+Sarita Yardi, Daniel Romero, Grant Schoenebeck, et~al.
+\newblock Detecting spam in a twitter network.
+\newblock \emph{First Monday}, 15\penalty0 (1), 2009.
+
+\bibitem[Tonkin et~al.(2012)Tonkin, Pfeiffer, and Tourte]{tonkin2012twitter}
+Emma Tonkin, Heather~D Pfeiffer, and Greg Tourte.
+\newblock Twitter, information sharing and the london riots?
+\newblock \emph{Bulletin of the American Society for Information Science and
+  Technology}, 38\penalty0 (2):\penalty0 49--57, 2012.
+
+\bibitem[Castillo et~al.(2011)Castillo, Mendoza, and
+  Poblete]{castillo2011information}
+Carlos Castillo, Marcelo Mendoza, and Barbara Poblete.
+\newblock Information credibility on twitter.
+\newblock In \emph{Proceedings of the 20th international conference on World
+  wide web}, pages 675--684. ACM, 2011.
+
+\bibitem[Agichtein et~al.(2008)Agichtein, Castillo, Donato, Gionis, and
+  Mishne]{agichtein2008finding}
+Eugene Agichtein, Carlos Castillo, Debora Donato, Aristides Gionis, and Gilad
+  Mishne.
+\newblock Finding high-quality content in social media.
+\newblock In \emph{Proceedings of the 2008 International Conference on Web
+  Search and Data Mining}, pages 183--194. ACM, 2008.
+
+\bibitem[Gupta et~al.(2012)Gupta, Zhao, and Han]{gupta2012evaluating}
+Manish Gupta, Peixiang Zhao, and Jiawei Han.
+\newblock Evaluating event credibility on twitter.
+\newblock In \emph{SDM}, pages 153--164. SIAM, 2012.
+
+\bibitem[Gupta and Kumaraguru(2012)]{gupta2012credibility}
+Aditi Gupta and Ponnurangam Kumaraguru.
+\newblock Credibility ranking of tweets during high impact events.
+\newblock In \emph{Proceedings of the 1st Workshop on Privacy and Security in
+  Online Social Media}, page~2. ACM, 2012.
+
+\bibitem[Ratkiewicz et~al.(2011)Ratkiewicz, Conover, Meiss, Gon{\c{c}}alves,
+  Patil, Flammini, and Menczer]{ratkiewicz2011truthy}
+Jacob Ratkiewicz, Michael Conover, Mark Meiss, Bruno Gon{\c{c}}alves, Snehal
+  Patil, Alessandro Flammini, and Filippo Menczer.
+\newblock Truthy: mapping the spread of astroturf in microblog streams.
+\newblock In \emph{Proceedings of the 20th international conference companion
+  on World wide web}, pages 249--252. ACM, 2011.
+
+\bibitem[Damak et~al.(2013)Damak, Pinel-Sauvagnat, Boughanem, and
+  Cabanac]{Damak2013}
+Firas Damak, Karen Pinel-Sauvagnat, Mohand Boughanem, and Guillaume Cabanac.
+\newblock Effectiveness of state-of-the-art features for microblog search.
+\newblock In \emph{Proceedings of the 28th Annual ACM Symposium on Applied
+  Computing}, pages 914--919. ACM, 2013.
+
+\bibitem[Nagmoti et~al.(2010)Nagmoti, Teredesai, and
+  De~Cock]{nagmoti2010ranking}
+Rinkesh Nagmoti, Ankur Teredesai, and Martine De~Cock.
+\newblock Ranking approaches for microblog search.
+\newblock In \emph{2010 IEEE/WIC/ACM International joint conference on Web
+  Intelligence-Intelligent Agent Technology (WI-IAT)}, volume~1, pages
+  153--157. IEEE Computer Society, 2010.
+
+\bibitem[Page et~al.(1999)Page, Brin, Motwani, and Winograd]{page1999pagerank}
+Lawrence Page, Sergey Brin, Rajeev Motwani, and Terry Winograd.
+\newblock The pagerank citation ranking: Bringing order to the web.
+\newblock 1999.
+
+\bibitem[Weng et~al.(2010)Weng, Lim, Jiang, and He]{weng2010twitterrank}
+Jianshu Weng, Ee-Peng Lim, Jing Jiang, and Qi~He.
+\newblock Twitterrank: finding topic-sensitive influential twitterers.
+\newblock In \emph{Proceedings of the third ACM international conference on Web
+  search and data mining}, pages 261--270. ACM, 2010.
+
+\bibitem[Tunkelang(2009)]{tunkelang2009twitter}
+D~Tunkelang.
+\newblock A twitter analog to pagerank.
+\newblock \emph{The Noisy Channel}, 2009.
+
+\bibitem[Hallberg et~al.(2012)Hallberg, Hjalmarsson, Puigcerver, Rydberg, and
+  Stjernberg]{hallberg2012adaptation}
+V~Hallberg, A~Hjalmarsson, J~Puigcerver, C~Rydberg, and J~Stjernberg.
+\newblock An adaptation of the pagerank algorithm to twitter world.
+\newblock 2012.
+
+\bibitem[Duan et~al.(2010)Duan, Jiang, Qin, Zhou, and Shum]{Duan2010}
+Yajuan Duan, Long Jiang, Tao Qin, Ming Zhou, and Heung-Yeung Shum.
+\newblock An empirical study on learning to rank of tweets.
+\newblock In \emph{Proceedings of the 23rd International Conference on
+  Computational Linguistics}, pages 295--303. Association for Computational
+  Linguistics, 2010.
+
+\bibitem[McCreadie and Macdonald(2013)]{mccreadie2013relevance}
+Richard McCreadie and Craig Macdonald.
+\newblock Relevance in microblogs: Enhancing tweet retrieval using hyperlinked
+  documents.
+\newblock In \emph{Proceedings of the 10th conference on open research areas in
+  information retrieval}, pages 189--196. LE CENTRE DE HAUTES ETUDES
+  INTERNATIONALES D'INFORMATIQUE DOCUMENTAIRE, 2013.
+
+\bibitem[Vosecky et~al.(2012)Vosecky, Leung, and Ng]{vosecky2012searching}
+Jan Vosecky, Kenneth Wai-Ting Leung, and Wilfred Ng.
+\newblock Searching for quality microblog posts: Filtering and ranking based on
+  content analysis and implicit links.
+\newblock In \emph{Database Systems for Advanced Applications}, pages 397--413.
+  Springer, 2012.
+
+\bibitem[Becker et~al.(2011{\natexlab{a}})Becker, Naaman, and
+  Gravano]{becker2011selecting}
+Hila Becker, Mor Naaman, and Luis Gravano.
+\newblock Selecting quality twitter content for events.
+\newblock \emph{ICWSM}, 11, 2011{\natexlab{a}}.
+
+\bibitem[Inouye and Kalita(2011)]{inouye2011comparing}
+David Inouye and Jugal~K Kalita.
+\newblock Comparing twitter summarization algorithms for multiple post
+  summaries.
+\newblock In \emph{Privacy, Security, Risk and Trust (PASSAT) and 2011 IEEE
+  Third Inernational Conference on Social Computing (SocialCom), 2011 IEEE
+  Third International Conference on}, pages 298--306. IEEE, 2011.
+
+\bibitem[Nichols et~al.(2012)Nichols, Mahmud, and
+  Drews]{nichols2012summarizing}
+Jeffrey Nichols, Jalal Mahmud, and Clemens Drews.
+\newblock Summarizing sporting events using twitter.
+\newblock In \emph{Proceedings of the 2012 ACM international conference on
+  Intelligent User Interfaces}, pages 189--198. ACM, 2012.
+
+\bibitem[Sharifi et~al.(2010)Sharifi, Hutton, and
+  Kalita]{sharifi2010experiments}
+Beaux Sharifi, M-A Hutton, and Jugal~K Kalita.
+\newblock Experiments in microblog summarization.
+\newblock In \emph{Social Computing (SocialCom), 2010 IEEE Second International
+  Conference on}, pages 49--56. IEEE, 2010.
+
+\bibitem[Erkan and Radev(2004)]{erkan2004lexrank}
+G{\"u}nes Erkan and Dragomir~R Radev.
+\newblock Lexrank: graph-based lexical centrality as salience in text
+  summarization.
+\newblock \emph{Journal of Artificial Intelligence Research}, pages 457--479,
+  2004.
+
+\bibitem[Mihalcea and Tarau(2004)]{mihalcea2004textrank}
+Rada Mihalcea and Paul Tarau.
+\newblock Textrank: Bringing order into texts.
+\newblock Association for Computational Linguistics, 2004.
 
 \bibitem[Fellegi and Sunter(1969)]{fellegi1969theory}
 Ivan~P Fellegi and Alan~B Sunter.
@@ -492,60 +658,12 @@ Hila Becker, Dan Iter, Mor Naaman, and Luis Gravano.
 \newblock In \emph{Proceedings of the fifth ACM international conference on Web
   search and data mining}, pages 533--542. ACM, 2012.
 
-\bibitem[Becker et~al.(2011)Becker, Chen, Iter, Naaman, and
+\bibitem[Becker et~al.(2011{\natexlab{b}})Becker, Chen, Iter, Naaman, and
   Gravano]{becker2011automatic}
 Hila Becker, Feiyang Chen, Dan Iter, Mor Naaman, and Luis Gravano.
 \newblock Automatic identification and presentation of twitter content for
   planned events.
-\newblock In \emph{ICWSM}, 2011.
-
-\bibitem[Benevenuto et~al.(2010)Benevenuto, Magno, Rodrigues, and
-  Almeida]{benevenuto2010detecting}
-Fabricio Benevenuto, Gabriel Magno, Tiago Rodrigues, and Virgilio Almeida.
-\newblock Detecting spammers on twitter.
-\newblock In \emph{Collaboration, electronic messaging, anti-abuse and spam
-  conference (CEAS)}, volume~6, page~12, 2010.
-
-\bibitem[Chhabra et~al.(2011)Chhabra, Aggarwal, Benevenuto, and
-  Kumaraguru]{chhabra2011phi}
-Sidharth Chhabra, Anupama Aggarwal, Fabricio Benevenuto, and Ponnurangam
-  Kumaraguru.
-\newblock Phi. sh/\$ ocial: the phishing landscape through short urls.
-\newblock In \emph{Proceedings of the 8th Annual Collaboration, Electronic
-  messaging, Anti-Abuse and Spam Conference}, pages 92--101. ACM, 2011.
-
-\bibitem[Grier et~al.(2010)Grier, Thomas, Paxson, and Zhang]{grier2010spam}
-Chris Grier, Kurt Thomas, Vern Paxson, and Michael Zhang.
-\newblock @ spam: the underground on 140 characters or less.
-\newblock In \emph{Proceedings of the 17th ACM conference on Computer and
-  communications security}, pages 27--37. ACM, 2010.
-
-\bibitem[Yardi et~al.(2009)Yardi, Romero, Schoenebeck,
-  et~al.]{yardi2009detecting}
-Sarita Yardi, Daniel Romero, Grant Schoenebeck, et~al.
-\newblock Detecting spam in a twitter network.
-\newblock \emph{First Monday}, 15\penalty0 (1), 2009.
-
-\bibitem[Tonkin et~al.(2012)Tonkin, Pfeiffer, and Tourte]{tonkin2012twitter}
-Emma Tonkin, Heather~D Pfeiffer, and Greg Tourte.
-\newblock Twitter, information sharing and the london riots?
-\newblock \emph{Bulletin of the American Society for Information Science and
-  Technology}, 38\penalty0 (2):\penalty0 49--57, 2012.
-
-\bibitem[Mendoza et~al.(2010)Mendoza, Poblete, and
-  Castillo]{mendoza2010twitter}
-Marcelo Mendoza, Barbara Poblete, and Carlos Castillo.
-\newblock Twitter under crisis: Can we trust what we rt?
-\newblock In \emph{Proceedings of the first workshop on social media
-  analytics}, pages 71--79. ACM, 2010.
-
-\bibitem[Ratkiewicz et~al.(2011)Ratkiewicz, Conover, Meiss, Gon{\c{c}}alves,
-  Patil, Flammini, and Menczer]{ratkiewicz2011truthy}
-Jacob Ratkiewicz, Michael Conover, Mark Meiss, Bruno Gon{\c{c}}alves, Snehal
-  Patil, Alessandro Flammini, and Filippo Menczer.
-\newblock Truthy: mapping the spread of astroturf in microblog streams.
-\newblock In \emph{Proceedings of the 20th international conference companion
-  on World wide web}, pages 249--252. ACM, 2011.
+\newblock In \emph{ICWSM}, 2011{\natexlab{b}}.
 
 \bibitem[Wei et~al.(2008)Wei, Li, Lu, and He]{wei2008query}
 Furu Wei, Wenjie Li, Qin Lu, and Yanxiang He.

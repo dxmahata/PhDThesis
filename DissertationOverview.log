@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.18)  18 APR 2015 14:35
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.18)  18 APR 2015 15:46
 entering extended mode
 **C:/Users/cisstudent/Documents/Phd*Defense/Thesis/DissertationOverview.tex
 ("C:/Users/cisstudent/Documents/Phd Defense/Thesis/DissertationOverview.tex"
@@ -849,6 +849,10 @@ Overfull \hbox (23.54573pt too wide) in paragraph at lines 54--55
  []
 
 [2 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIM.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+ []
+
 [3]
 LaTeX Font Info:    Try loading font information for U+msa on input line 98.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
@@ -877,7 +881,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 141.
 Here is how much of TeX's memory you used:
  14666 strings out of 493921
  207500 string characters out of 3144860
- 298851 words of memory out of 3000000
+ 299851 words of memory out of 3000000
  17746 multiletter control sequences out of 15000+200000
  12317 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -892,7 +896,7 @@ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Fil
 es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files
  (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (
 x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on DissertationOverview.pdf (8 pages, 1248663 bytes).
+Output written on DissertationOverview.pdf (8 pages, 1248670 bytes).
 PDF statistics:
  125 PDF objects out of 1000 (max. 8388607)
  27 named destinations out of 1000 (max. 500000)

@@ -111,6 +111,17 @@
   timestamp = {2015.04.10}
 }
 
+@INPROCEEDINGS{agichtein2008finding,
+  author = {Agichtein, Eugene and Castillo, Carlos and Donato, Debora and Gionis,
+	Aristides and Mishne, Gilad},
+  title = {Finding high-quality content in social media},
+  booktitle = {Proceedings of the 2008 International Conference on Web Search and
+	Data Mining},
+  year = {2008},
+  pages = {183--194},
+  organization = {ACM}
+}
+
 @INPROCEEDINGS{ahn2006stages,
   author = {Ahn, David},
   title = {The stages of event extraction},
@@ -684,6 +695,16 @@
   date-modified = {2013-04-14 13:39:53 -0500},
   owner = {cisstudent},
   timestamp = {2015.04.10}
+}
+
+@INPROCEEDINGS{grier2010spam,
+  author = {Grier, Chris and Thomas, Kurt and Paxson, Vern and Zhang, Michael},
+  title = {@ spam: the underground on 140 characters or less},
+  booktitle = {Proceedings of the 17th ACM conference on Computer and communications
+	security},
+  year = {2010},
+  pages = {27--37},
+  organization = {ACM}
 }
 
 @INPROCEEDINGS{gupta2012credibility,
