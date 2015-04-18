@@ -1,0 +1,104 @@
+\begin{thebibliography}{10}
+
+\bibitem{agarwal2012online}
+N.~Agarwal, M.~Lim, and R.~T. Wigand.
+\newblock Online collective action and the role of social media in mobilizing
+  opinions: A case study on women's right-to-drive campaigns in saudi arabia.
+\newblock In {\em Web 2.0 Technologies and Democratic Governance}, pages
+  99--123. Springer, 2012.
+
+\bibitem{agarwal2012raising}
+N.~Agarwal, M.~Lim, and R.~T. Wigand.
+\newblock Raising and rising voices in social media.
+\newblock {\em Business \& Information Systems Engineering}, 4(3):113--126,
+  2012.
+
+\bibitem{agarwal2014online}
+N.~Agarwal, M.~Lim, and R.~T. Wigand.
+\newblock {\em Online collective action: Dynamics of the crowd in social
+  media}.
+\newblock Springer, 2014.
+
+\bibitem{agarwal2013grouping}
+N.~Agarwal and D.~Mahata.
+\newblock Grouping the similar among the disconnected bloggers.
+\newblock {\em Social Media Mining and Social Network Analysis: Emerging
+  Research: Emerging Research}, page~54, 2013.
+
+\bibitem{agarwal2014time}
+N.~Agarwal, D.~Mahata, and H.~Liu.
+\newblock Time-and event-driven modeling of blogger influence.
+\newblock In {\em Encyclopedia of Social Network Analysis and Mining}, pages
+  2154--2165. Springer, 2014.
+
+\bibitem{allan1998line}
+J.~Allan, R.~Papka, and V.~Lavrenko.
+\newblock On-line new event detection and tracking.
+\newblock In {\em Proceedings of the 21st annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  37--45. ACM, 1998.
+
+\bibitem{kumaran2004text}
+G.~Kumaran and J.~Allan.
+\newblock Text classification and named entities for new event detection.
+\newblock In {\em Proceedings of the 27th annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  297--304. ACM, 2004.
+
+\bibitem{o2010tweets}
+B.~O'Connor, R.~Balasubramanyan, B.~R. Routledge, and N.~A. Smith.
+\newblock From tweets to polls: Linking text sentiment to public opinion time
+  series.
+\newblock {\em ICWSM}, 11:122--129, 2010.
+
+\bibitem{phelan2009using}
+O.~Phelan, K.~McCarthy, and B.~Smyth.
+\newblock Using twitter to recommend real-time topical news.
+\newblock In {\em Proceedings of the third ACM conference on Recommender
+  systems}, pages 385--388. ACM, 2009.
+
+\bibitem{popescu2011extracting}
+A.-M. Popescu, M.~Pennacchiotti, and D.~Paranjpe.
+\newblock Extracting events and event descriptions from twitter.
+\newblock In {\em Proceedings of the 20th international conference companion on
+  World wide web}, pages 105--106. ACM, 2011.
+
+\bibitem{purohit2013twitris}
+H.~Purohit and A.~P. Sheth.
+\newblock Twitris v3: From citizen sensing to analysis, coordination and
+  action.
+\newblock In {\em ICWSM}, 2013.
+
+\bibitem{sakaki2013tweet}
+T.~Sakaki, M.~Okazaki, and Y.~Matsuo.
+\newblock Tweet analysis for real-time event detection and earthquake reporting
+  system development.
+\newblock {\em Knowledge and Data Engineering, IEEE Transactions on},
+  25(4):919--931, 2013.
+
+\bibitem{sen2012identifying}
+F.~Sen, R.~T. Wigand, N.~Agarwal, D.~Mahata, and H.~Bisgin.
+\newblock Identifying focal patterns in social networks.
+\newblock In {\em CASoN}, pages 105--108, 2012.
+
+\bibitem{singh2010clustering}
+V.~K. Singh, R.~Adhikari, and D.~Mahata.
+\newblock A clustering and opinion mining approach to socio-political analysis
+  of the blogosphere.
+\newblock In {\em Computational Intelligence and Computing Research (ICCIC),
+  2010 IEEE International Conference on}, pages 1--4. IEEE, 2010.
+
+\bibitem{singh2010mining}
+V.~K. Singh, D.~Mahata, and R.~Adhikari.
+\newblock Mining the blogosphere from a socio-political perspective.
+\newblock In {\em Computer Information Systems and Industrial Management
+  Applications (CISIM), 2010 International Conference on}, pages 365--370.
+  IEEE, 2010.
+
+\bibitem{zhou2011entity}
+Y.~Zhou and J.~Talburt.
+\newblock Entity identity information management (eiim).
+\newblock In {\em International Conference on Information Quality (ICIQ-11),
+  Adelaide, Australia}, pages 327--341, 2011.
+
+\end{thebibliography}
