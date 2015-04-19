@@ -605,6 +605,14 @@
   timestamp = {2015.04.09}
 }
 
+@ARTICLE{erkan2004lexrank,
+  author = {Erkan, G{\"u}nes and Radev, Dragomir R},
+  title = {LexRank: graph-based lexical centrality as salience in text summarization},
+  journal = {Journal of Artificial Intelligence Research},
+  year = {2004},
+  pages = {457--479}
+}
+
 @ARTICLE{fellegi1969theory,
   author = {Fellegi, Ivan P and Sunter, Alan B},
   title = {A theory for record linkage},
@@ -916,6 +924,18 @@
   owner = {cisstudent},
   publisher = {SAGE Publications},
   timestamp = {2015.04.10}
+}
+
+@ARTICLE{kaplan2010users,
+  author = {Kaplan, Andreas M and Haenlein, Michael},
+  title = {Users of the world, unite! The challenges and opportunities of Social
+	Media},
+  journal = {Business horizons},
+  year = {2010},
+  volume = {53},
+  pages = {59--68},
+  number = {1},
+  publisher = {Elsevier}
 }
 
 @INPROCEEDINGS{kennedy2009less,

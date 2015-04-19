@@ -1,7 +1,11 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 The style file: unsrtnat.bst
 Database file #1: Bibliography.bib
-Repeated entry---line 1539 of file Bibliography.bib
+Repeated entry---line 762 of file Bibliography.bib
+ : @article{hamdy2012framing
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1563 of file Bibliography.bib
  : @inproceedings{sen2012identifying
  :                                  ,
 I'm skipping whatever remains of this entry
@@ -10,4 +14,4 @@ Warning--empty journal in page1999pagerank
 Warning--empty journal in hallberg2012adaptation
 Warning--empty booktitle in mihalcea2004textrank
 Warning--empty journal in hatzivassiloglou2003domain
-(There was 1 error message)
+(There were 2 error messages)

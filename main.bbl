@@ -1,4 +1,4 @@
-\begin{thebibliography}{107}
+\begin{thebibliography}{112}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -115,12 +115,60 @@ Yinle Zhou and John Talburt.
 \newblock In \emph{International Conference on Information Quality (ICIQ-11),
   Adelaide, Australia}, pages 327--341, 2011.
 
+\bibitem[Kaplan and Haenlein(2010)]{kaplan2010users}
+Andreas~M Kaplan and Michael Haenlein.
+\newblock Users of the world, unite! the challenges and opportunities of social
+  media.
+\newblock \emph{Business horizons}, 53\penalty0 (1):\penalty0 59--68, 2010.
+
+\bibitem[Hamdy and Gomaa(2012)]{hamdy2012framing}
+Naila Hamdy and Ehab~H Gomaa.
+\newblock Framing the egyptian uprising in arabic language newspapers and
+  social media.
+\newblock \emph{Journal of Communication}, 62\penalty0 (2):\penalty0 195--211,
+  2012.
+
+\bibitem[Hemp(2009)]{hemp2009death}
+Paul Hemp.
+\newblock Death by information overload.
+\newblock \emph{Harvard business review}, 87\penalty0 (9):\penalty0 82--89,
+  2009.
+
 \bibitem[Benevenuto et~al.(2010)Benevenuto, Magno, Rodrigues, and
   Almeida]{benevenuto2010detecting}
 Fabricio Benevenuto, Gabriel Magno, Tiago Rodrigues, and Virgilio Almeida.
 \newblock Detecting spammers on twitter.
 \newblock In \emph{Collaboration, electronic messaging, anti-abuse and spam
   conference (CEAS)}, volume~6, page~12, 2010.
+
+\bibitem[Bontcheva et~al.(2013)Bontcheva, Derczynski, Funk, Greenwood, Maynard,
+  and Aswani]{bontcheva2013twitie}
+Kalina Bontcheva, Leon Derczynski, Adam Funk, Mark~A Greenwood, Diana Maynard,
+  and Niraj Aswani.
+\newblock Twitie: An open-source information extraction pipeline for microblog
+  text.
+\newblock In \emph{RANLP}, pages 83--90, 2013.
+
+\bibitem[Prevost(1996)]{prevost1996information}
+Scott Prevost.
+\newblock An information structural approach to spoken language generation.
+\newblock In \emph{Proceedings of the 34th annual meeting on Association for
+  Computational Linguistics}, pages 294--301. Association for Computational
+  Linguistics, 1996.
+
+\bibitem[Derczynski et~al.(2013)Derczynski, Maynard, Aswani, and
+  Bontcheva]{derczynski2013microblog}
+Leon Derczynski, Diana Maynard, Niraj Aswani, and Kalina Bontcheva.
+\newblock Microblog-genre noise and impact on semantic annotation accuracy.
+\newblock In \emph{Proceedings of the 24th ACM Conference on Hypertext and
+  Social Media}, pages 21--30. ACM, 2013.
+
+\bibitem[Ritter et~al.(2011)Ritter, Clark, Etzioni, et~al.]{ritter2011named}
+Alan Ritter, Sam Clark, Oren Etzioni, et~al.
+\newblock Named entity recognition in tweets: an experimental study.
+\newblock In \emph{Proceedings of the Conference on Empirical Methods in
+  Natural Language Processing}, pages 1524--1534. Association for Computational
+  Linguistics, 2011.
 
 \bibitem[Chhabra et~al.(2011)Chhabra, Aggarwal, Benevenuto, and
   Kumaraguru]{chhabra2011phi}
@@ -574,20 +622,6 @@ Elena Filatova, Vasileios Hatzivassiloglou, and Kathleen McKeown.
 \newblock Automatic creation of domain templates.
 \newblock In \emph{Proceedings of the COLING/ACL on Main conference poster
   sessions}, pages 207--214. Association for Computational Linguistics, 2006.
-
-\bibitem[Derczynski et~al.(2013)Derczynski, Maynard, Aswani, and
-  Bontcheva]{derczynski2013microblog}
-Leon Derczynski, Diana Maynard, Niraj Aswani, and Kalina Bontcheva.
-\newblock Microblog-genre noise and impact on semantic annotation accuracy.
-\newblock In \emph{Proceedings of the 24th ACM Conference on Hypertext and
-  Social Media}, pages 21--30. ACM, 2013.
-
-\bibitem[Ritter et~al.(2011)Ritter, Clark, Etzioni, et~al.]{ritter2011named}
-Alan Ritter, Sam Clark, Oren Etzioni, et~al.
-\newblock Named entity recognition in tweets: an experimental study.
-\newblock In \emph{Proceedings of the Conference on Empirical Methods in
-  Natural Language Processing}, pages 1524--1534. Association for Computational
-  Linguistics, 2011.
 
 \bibitem[Weng and Lee(2011)]{weng2011event}
 Jianshu Weng and Bu-Sung Lee.
