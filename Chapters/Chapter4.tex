@@ -1,10 +1,10 @@
-% Chapter 4
+% Chapter 5
 
 \chapter{Event Identity Information Management (EIIM) Life Cycle for Social Media} % Main chapter title
 
 \label{eiim} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
-\lhead{Chapter 4. \emph{Event Identity Information Management (EIIM) Life Cycle for Social Media}} % This is for the header on each page - perhaps a shortened title
+\lhead{Chapter 5. \emph{Event Identity Information Management (EIIM) Life Cycle for Social Media}} % This is for the header on each page - perhaps a shortened title
 
 
 %\section{Background : Entity Identity Information Management}
@@ -21,7 +21,7 @@
 One of the fundamental goals of the proposed framework is to maintain a one-to-one correspondence between real-world events being monitored and the Event Identity Information Structure (EIIS) of the corresponding events for ensuring identity integrity. Therefore, a separate EIIS is maintained corresponding to each event. As new events are introduced to the framework, a unique identifier is assigned to them along with the allocation of individual EIIS structures. The framework is expected to maintain the integrity throughout the EIIM life cycle, by consistently assigning the same identifier to the references of a tracked event. Modules of this component assigns 12 byte unique integers known as ObjectId  to each event, and is also responsible for maintaining the same ObjectId for event ids of collected references and related EIIS. It is also the functionality of this component to assign the right identifier to the references resolved for an event by the Event Reference Resolution component.
 
 
-\section{Event Reference Collection}
+\section{Event Reference Collection\label{eventreferencecollection}}
 
 \begin{figure}[htbp]
   \caption{Event Reference Collection component of the EIIM life cycle.}
@@ -112,7 +112,7 @@ It performs deduplication of tweets using md5 hashing scheme. Redundant copies o
 A list of words expressing feelings in the internet, obtained from wefeelfine.org is used for detecting and extracting the feeling words from a tweet. Slang words commonly used in the internet and twitter specific slang publicly shared by FBI  is combined together for compiling a list of English slang words. The modules use this list for detecting and extracting the slang words from the tweets, hashtags and text units. Retweet counts, favorite counts, verification information, user follower count, time information and expanded form of the URLs shared in the tweets are extracted from the metadata associated with each tweet, as retrieved using the Twitter API. 
 
 
-\section{Event Information Quality}
+\section{Event Information Quality\label{eventinfoquality}}
 
 \begin{figure}[htbp]
   \caption{Event Information Quality component of the EIIM life cycle.}
@@ -692,5 +692,8 @@ Since, our proposed framework takes a hybrid approach by using both supervised a
 \end{enumerate}
 
 \end{enumerate}
+
+
+\section{Event Identity Information Processing\label{eventidentityinformationprocessing}}
 
 

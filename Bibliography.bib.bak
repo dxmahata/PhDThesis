@@ -111,6 +111,14 @@
   timestamp = {2015.04.10}
 }
 
+@INPROCEEDINGS{agarwal2010information,
+  author = {Agarwal, Nitin and Yiliyasi, Yusuf},
+  title = {Information quality challenges in social media},
+  booktitle = {International Conference on Information Quality (ICIQ 2010), Little
+	Rock, Arkansas},
+  year = {2010}
+}
+
 @INPROCEEDINGS{agichtein2008finding,
   author = {Agichtein, Eugene and Castillo, Carlos and Donato, Debora and Gionis,
 	Aristides and Mishne, Gilad},
@@ -196,6 +204,16 @@
   volume = {463},
   owner = {cisstudent},
   timestamp = {2015.04.09}
+}
+
+@INPROCEEDINGS{bakshy2012role,
+  author = {Bakshy, Eytan and Rosenn, Itamar and Marlow, Cameron and Adamic,
+	Lada},
+  title = {The role of social networks in information diffusion},
+  booktitle = {Proceedings of the 21st international conference on World Wide Web},
+  year = {2012},
+  pages = {519--528},
+  organization = {ACM}
 }
 
 @ARTICLE{baldridge2005opennlp,
@@ -613,6 +631,17 @@
   pages = {457--479}
 }
 
+@ARTICLE{eyrich2008pr,
+  author = {Eyrich, Nina and Padman, Monica L and Sweetser, Kaye D},
+  title = {PR practitioners' use of social media tools and communication technology},
+  journal = {Public relations review},
+  year = {2008},
+  volume = {34},
+  pages = {412--414},
+  number = {4},
+  publisher = {Elsevier}
+}
+
 @ARTICLE{fellegi1969theory,
   author = {Fellegi, Ivan P and Sunter, Alan B},
   title = {A theory for record linkage},
@@ -745,6 +774,18 @@
   year = {2012},
   owner = {cisstudent},
   timestamp = {2015.04.09}
+}
+
+@ARTICLE{hamdy2012framing,
+  author = {Hamdy, Naila and Gomaa, Ehab H},
+  title = {Framing the Egyptian uprising in Arabic language newspapers and social
+	media},
+  journal = {Journal of Communication},
+  year = {2012},
+  volume = {62},
+  pages = {195--211},
+  number = {2},
+  publisher = {Wiley Online Library}
 }
 
 @ARTICLE{hamdy2012framing,
@@ -1122,6 +1163,17 @@
   publisher = {Springer}
 }
 
+@ARTICLE{mangold2009social,
+  author = {Mangold, W Glynn and Faulds, David J},
+  title = {Social media: The new hybrid element of the promotion mix},
+  journal = {Business horizons},
+  year = {2009},
+  volume = {52},
+  pages = {357--365},
+  number = {4},
+  publisher = {Elsevier}
+}
+
 @INPROCEEDINGS{marcus2011twitinfo,
   author = {Marcus, A. and others},
   title = {Twitinfo: aggregating and visualizing microblogs for event exploration},
@@ -1155,6 +1207,16 @@
   year = {2010},
   pages = {71--79},
   organization = {ACM}
+}
+
+@ARTICLE{metzgar2009social,
+  author = {Metzgar, Emily and Maruggi, Albert},
+  title = {Social media and the 2008 US presidential election},
+  journal = {Journal of New Communications Research},
+  year = {2009},
+  volume = {4},
+  pages = {141--165},
+  number = {1}
 }
 
 @ARTICLE{metzgar2009social,
@@ -1294,6 +1356,13 @@
   year = {2010},
   pages = {181--189},
   organization = {Association for Computational Linguistics}
+}
+
+@ARTICLE{petrovic2013can,
+  author = {Petrovic, Sasa and Osborne, Miles and McCreadie, Richard and Macdonald,
+	Craig and Ounis, Iadh},
+  title = {Can Twitter replace Newswire for breaking news?},
+  year = {2013}
 }
 
 @INPROCEEDINGS{phelan2009using,
@@ -1860,6 +1929,11 @@
   pages = {327--341}
 }
 
+@ARTICLE{,
+  owner = {cisstudent},
+  timestamp = {2015.04.19}
+}
+
 @ELECTRONIC{pewresearch,
   year = {2014},
   title = {Social Networking Fact Sheet},
@@ -1867,6 +1941,14 @@
   url = {http://www.pewinternet.org/fact-sheets/social-networking-fact-sheet/},
   owner = {cisstudent},
   timestamp = {2015.04.16}
+}
+
+@ELECTRONIC{socialmediaforevents,
+  year = {2014},
+  title = {Social Media for Events},
+  url = {http://socialmediaforeventsebook.com/},
+  owner = {cisstudent},
+  timestamp = {2015.04.19}
 }
 
 @OTHER{difflib,
@@ -1880,5 +1962,30 @@
   timestamp = {2015.04.10},
   url = {http://docs.python.org/2/library/difflib.html},
   year = {2013}
+}
+
+@ELECTRONIC{coloradoshooting,
+  year = {2012},
+  title = {Theater shooting unfolds in real time on social media},
+  url = {http://www.cnn.com/2012/07/20/tech/social-media/colorado-shooting-social-media/},
+  owner = {cisstudent},
+  timestamp = {2015.04.19}
+}
+
+@ELECTRONIC{egyptianrevinternetblackout,
+  year = {2011},
+  title = {Google and Twitter launch service enabling Egyptians to tweet by
+	phone},
+  url = {http://www.theguardian.com/technology/2011/feb/01/google-twitter-egypt},
+  owner = {cisstudent},
+  timestamp = {2015.04.19}
+}
+
+@ELECTRONIC{ladendeathnews,
+  year = {2011},
+  title = {How bin Laden news spread on Twitter},
+  url = {http://www.cnn.com/2011/TECH/social.media/05/02/osama.bin.laden.twitter/},
+  owner = {cisstudent},
+  timestamp = {2015.04.19}
 }
 
