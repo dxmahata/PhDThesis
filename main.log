@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.18)  18 APR 2015 18:08
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.18)  18 APR 2015 20:44
 entering extended mode
 **C:/Users/cisstudent/Documents/Phd*Defense/Thesis/main.tex
 ("C:/Users/cisstudent/Documents/Phd Defense/Thesis/main.tex"
@@ -916,25 +916,25 @@ Chapter 1.
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 17.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 16.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
 
 <Figures/EIIM.jpg, id=463, 2727.43968pt x 1183.42125pt>
 File: Figures/EIIM.jpg Graphic file (type jpg)
  <use Figures/EIIM.jpg>
-Package pdftex.def Info: Figures/EIIM.jpg used on input line 34.
+Package pdftex.def Info: Figures/EIIM.jpg used on input line 33.
 (pdftex.def)             Requested size: 441.0188pt x 199.15651pt.
 
-Overfull \hbox (23.54573pt too wide) in paragraph at lines 34--35
+Overfull \hbox (23.54573pt too wide) in paragraph at lines 33--34
  [][] 
  []
 
 [2] [3 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIM.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
@@ -1342,7 +1342,7 @@ type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (69 pages, 4223909 bytes).
+Output written on main.pdf (69 pages, 4223604 bytes).
 PDF statistics:
  1204 PDF objects out of 1440 (max. 8388607)
  366 named destinations out of 1000 (max. 500000)
