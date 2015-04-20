@@ -53,21 +53,13 @@
 \contentsline {section}{\numberline {5.5}Event Identity Information Capture}{43}{section.110}
 \contentsline {section}{\numberline {5.6}Event Identity Information Structure}{45}{section.112}
 \contentsline {section}{\numberline {5.7}Event Identity Information Processing}{45}{section.114}
-\contentsline {subsection}{\numberline {5.7.1}TwitterEventInfoRank}{49}{subsection.135}
-\contentsline {section}{\numberline {5.8}Event Reference Resolution}{53}{section.158}
-\contentsline {section}{\numberline {5.9}Event Analytics}{53}{section.160}
-\contentsline {paragraph}{Top Five Event-specific Informative Hashtags for Sydney Siege Event}{53}{figure.caption.161}
-\contentsline {paragraph}{Top Five Event-specific Informative Text Units for Sydney Siege Event}{59}{Item.166}
-\contentsline {paragraph}{Top Five Event-specific Informative URLs for Sydney Siege Event}{59}{Item.171}
-\contentsline {paragraph}{Top Five Event-specific Informative Tweet Excerpts for Sydney Siege Event}{59}{Item.176}
-\contentsline {paragraph}{Three Randomly Selected Tweets for Top Three Event-specific Informative Users posting about Sydney Siege Event.}{60}{Item.181}
-\contentsline {paragraph}{Top Five Event-specific Informative Hashtags for Millions March NYC Event}{61}{Item.193}
-\contentsline {paragraph}{Top Five Event-specific Informative Text Units for Millions March NYC Event}{61}{Item.198}
-\contentsline {paragraph}{Top Five Event-specific Informative URLs for Millions March NYC Event}{61}{Item.203}
-\contentsline {paragraph}{Top Five Event-specific Informative Tweet Excerpts for Millions March NYC Event}{62}{Item.208}
-\contentsline {paragraph}{Three Randomly Selected Tweets for Top Three Event-specific Informative Users posting about Millions March NYC Event for a particular hour.}{62}{Item.213}
-\contentsline {section}{\numberline {5.10}Event Identity Information Processing}{63}{section.226}
-\contentsline {chapter}{\numberline {6}Evaluations}{64}{chapter.227}
+\contentsline {subsection}{\numberline {5.7.1}EventIdentityInfoRank}{49}{subsection.135}
+\contentsline {section}{\numberline {5.8}Event Reference Resolution}{53}{section.150}
+\contentsline {section}{\numberline {5.9}Event Analytics}{53}{section.152}
+\contentsline {paragraph}{Top Five Event-specific Informative Tweet Excerpts for Millions March NYC Event}{57}{Item.200}
+\contentsline {paragraph}{Three Randomly Selected Tweets for Top Three Event-specific Informative Users posting about Millions March NYC Event for a particular hour.}{58}{Item.205}
+\contentsline {section}{\numberline {5.10}Event Identity Information Processing}{59}{section.218}
+\contentsline {chapter}{\numberline {6}Evaluations}{60}{chapter.219}
 \contentsline {chapter}{\numberline {7}Potential Applications of the EIIM Framework}{65}{chapter.228}
 \contentsline {section}{\numberline {7.1}Event Monitoring and Analysis}{65}{section.229}
 \contentsline {section}{\numberline {7.2}Event Information Retrieval}{66}{section.236}

@@ -414,13 +414,13 @@ Whenever two vertices are associated, there are two edges between them that are 
 
 We do not consider an edge between two vertices of same type. That is, we don't connect a tweet with another tweet. Similarly, for hashtags, text units, users and URLs. This constraint was imposed in order to deal with the nepotistic relationships between high quality content and low quality content introduced by the malicious users for promoting the low quality content. We observe these malicious side effects in the results obtained for \textit{TextRank} explained in Section 6.5.  
 
-Next, we explain \textit{TwitterEventInfoRank}.
+Next, we explain \textit{EventIdentityInfoRank}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%                                       TwitterEventInfoRank Subsection                    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{TwitterEventInfoRank\label{twitterEventInfoRank}}
+\subsection{EventIdentityInfoRank\label{twitterEventInfoRank}}
 In this section, we introduce an iterative algorithm that takes into account the mutually reinforcing relationships between the vertices of \textit{TwitterEventInfoGraph} as explained in the previous section and propagates event-specific scores of each vertex to connected vertices across the graph for ranking its vertices ($\scriptstyle \in V$) in terms of event-specific informativeness.
 
 We first assign a event-specific score to all the vertices of the graph. Event-specific scores for vertices $(\in H_{E_{i}}, W_{E_{i}}, U_{E_{i}}, L_{E_{i}})$ are calculated using equations (1-4) as presented in Table \ref{edgescores}. The tweets  $(\in M_{E_{i}})$ are assigned an initial informativeness score as obtained from the logistic regression model explained in Section 3. The event-specific scores for vertices $(\in H_{E_{i}}, W_{E_{i}}, U_{E_{i}}, L_{E_{i}})$ and informativeness score for vertices $(\in M_{E_{i}})$ gives an initial ranking of all the vertices of \textit{TwitterEventInfoGraph}. We aim to refine the initial scores and assign a final score for ranking the vertices by leveraging the mutually reinforcing relationships between them.
@@ -592,80 +592,6 @@ Since, our proposed framework takes a hybrid approach by using both supervised a
 
 
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[height=4.5in,width=6in]{Figures/Chapter4Figures/MillionsMarchNycEventIdentityInfoRankPerformance.jpg}
-\caption{\small Performance comparison of ranking techniques using NDCG scores.}
-\label{millionsmarchndcg}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[height=4.5in,width=6in]{Figures/Chapter4Figures/SydneySiegeEventIdentityInfoRankPerformance.jpg}
-\caption{\small Performance comparison of ranking techniques using NDCG scores.}
-\label{sydneysiegendcg}
-\end{figure}
-
-
-\begin{table}[htbp]
-\centering
-\caption{Avg IIC scores and total avg scores of annotations for Millions March NYC event.}
-\label{avgiicMillionsMarchNyc}
-\begin{tabular}{|c|c|c|}
-\hline
-\textbf{\begin{tabular}[c]{@{}c@{}}Millions March \\ NYC\end{tabular}} & \textbf{IIC} & \textbf{\begin{tabular}[c]{@{}c@{}}Total Avg \\ Score (1-3)\end{tabular}} \\ \hline
-\textbf{\begin{tabular}[c]{@{}c@{}}Top 50 event-specific\\ informative Hashtags\end{tabular}} & 0.786 & 1.980 \\ \hline
-\textbf{\begin{tabular}[c]{@{}c@{}}Top 50 event-specific\\ informative Text Units\end{tabular}} & 0.880 & 1.320 \\ \hline
-\textbf{\begin{tabular}[c]{@{}c@{}}Top 50 event-specific\\ informative URLs\end{tabular}} & 0.926 & 2.560 \\ \hline
-\textbf{\begin{tabular}[c]{@{}c@{}}Top 50 event-specific\\ informative Users\end{tabular}} & 0.700 & 2.386 \\ \hline
-\textbf{\begin{tabular}[c]{@{}c@{}}Top 100 event-specific\\ informative Tweets\end{tabular}} & 0.760 & 2.59 \\ \hline
-\end{tabular}
-\end{table}
-
-
-
-\begin{table}[htbp]
-\centering
-\caption{Avg IIC scores and total avg scores of annotations for Sydney Siege event.}
-\label{avgiicSydneySiege}
-\begin{tabular}{|c|c|c|}
-\hline
-\textbf{Sydney Siege} & \textbf{IIC} & \textbf{\begin{tabular}[c]{@{}c@{}}Total Avg\\ Score (1-3)\end{tabular}} \\ \hline
-\textbf{\begin{tabular}[c]{@{}c@{}}Top 50 event-specific\\ informative Hashtags\end{tabular}} & 0.880 & 2.027 \\ \hline
-\textbf{\begin{tabular}[c]{@{}c@{}}Top 50 event-specific\\ informative Text Units\end{tabular}} & 0.986 & 1.487 \\ \hline
-\textbf{\begin{tabular}[c]{@{}c@{}}Top 50 event-specific\\ informative URLs\end{tabular}} & 0.893 & 2.413 \\ \hline
-\textbf{\begin{tabular}[c]{@{}c@{}}Top 50 event-specific\\ informative Users\end{tabular}} & 0.646 & 2.353 \\ \hline
-\textbf{\begin{tabular}[c]{@{}c@{}}Top 100 event-specific\\ informative Tweets\end{tabular}} & 0.83 & 2.62 \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[height=3.5in,width=5.5in]{Figures/millionsmarchnycndcg.jpg}
-\caption{\small Performance comparison of ranking techniques using NDCG scores.}
-\label{millionsmarchndcg}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[height=3.5in,width=5.5in]{Figures/sydneysiegendcg.jpg}
-\caption{\small Performance comparison of ranking techniques using NDCG scores.}
-\label{sydneysiegendcg}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[height=3.5in,width=5.5in]{Figures/millionsmarchnycprecision.jpg}
-\caption{\small Performance comparison of ranking techniques using precision scores.}
-\label{millionsmarchnycprecision}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[height=3.5in,width=5.5in]{Figures/sydneysiegeprecision.jpg}
-\caption{\small Performance comparison of ranking techniques using precision scores.}
-\label{sydneysiegeprecision}
-\end{figure}
 
 
 \section{Event Reference Resolution}
@@ -683,7 +609,7 @@ Since, our proposed framework takes a hybrid approach by using both supervised a
     \includegraphics[width=14cm,height=11cm]{Figures/EIIMComponents/EventAnalytics.jpg}
 \end{figure}
 
-\paragraph{Top Five Event-specific Informative Hashtags for Sydney Siege Event}
+\textbf{Top Five Event-specific Informative Hashtags for Sydney Siege Event}
 \begin{enumerate}
 \item \#sydneysiege 
 \item \#SydneySiege
@@ -692,7 +618,7 @@ Since, our proposed framework takes a hybrid approach by using both supervised a
 \item \#9News                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 \end{enumerate}
 
-\paragraph{Top Five Event-specific Informative Text Units for Sydney Siege Event}
+\textbf{Top Five Event-specific Informative Text Units for Sydney Siege Event}
 \begin{enumerate}
 \item police
 \item sydney
@@ -701,7 +627,7 @@ Since, our proposed framework takes a hybrid approach by using both supervised a
 \item isis                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 \end{enumerate}
 
-\paragraph{Top Five Event-specific Informative URLs for Sydney Siege Event}
+\textbf{Top Five Event-specific Informative URLs for Sydney Siege Event}
 \begin{enumerate}
 \item http://www.cnn.com/2014/12/15/world/asia/australia-sydney-hostage-situation/\\index.html
 \item http://www.bbc.co.uk/news/world-australia-30474089
@@ -710,7 +636,7 @@ Since, our proposed framework takes a hybrid approach by using both supervised a
 \item http://www.newsroompost.com/138766/sydney-cafe-siege-ends-gunman-among-two-killed                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 \end{enumerate}
 
-\paragraph{Top Five Event-specific Informative Tweet Excerpts for Sydney Siege Event}
+\textbf{Top Five Event-specific Informative Tweet Excerpts for Sydney Siege Event}
 \begin{enumerate}
 \item RT @faithcnn: Hostage taker in Sydney cafe has demanded 2 things: ISIS flag and; phone call with Australia PM Tony Abbott \#SydneySiege http://t.co/a2vgrn30Xh
 \item Aussie grand mufti and; Imam Council condemn \#Sydneysiege hostage capture http://t.co/ED98YKMxqM - LIVE UPDATES http://t.c...
@@ -720,7 +646,7 @@ Since, our proposed framework takes a hybrid approach by using both supervised a
 \end{enumerate}
 
 
-\paragraph{Three Randomly Selected Tweets for Top Three Event-specific Informative Users posting about Sydney Siege Event.}
+\textbf{Three Randomly Selected Tweets for Top Three Event-specific Informative Users posting about Sydney Siege Event.}
 \begin{enumerate}
 \item \textbf{User 1}
 \begin{enumerate}
@@ -745,7 +671,7 @@ Since, our proposed framework takes a hybrid approach by using both supervised a
 
 \end{enumerate}
 
-\paragraph{Top Five Event-specific Informative Hashtags for Millions March NYC Event}
+\textbf{Top Five Event-specific Informative Hashtags for Millions March NYC Event}
 \begin{enumerate}
 \item \#MillionsMarchNYC
 \item \#BlackLivesMatter
@@ -754,7 +680,7 @@ Since, our proposed framework takes a hybrid approach by using both supervised a
 \item \#millionsmarchnyc                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 \end{enumerate}
 
-\paragraph{Top Five Event-specific Informative Text Units for Millions March NYC Event}
+\textbf{Top Five Event-specific Informative Text Units for Millions March NYC Event}
 \begin{enumerate}
 \item police
 \item nyc
@@ -763,7 +689,7 @@ Since, our proposed framework takes a hybrid approach by using both supervised a
 \item nypd                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 \end{enumerate}
 
-\paragraph{Top Five Event-specific Informative URLs for Millions March NYC Event}
+\textbf{Top Five Event-specific Informative URLs for Millions March NYC Event}
 \begin{enumerate}
 \item http://rt.com/usa/214203-protests-police-brutality-nationwide/\\index.html
 \item http://mashable.com/2014/12/13/time-lapse-new-york-protest-march/?utm\_cid=mash-com-Tw-main-link

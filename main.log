@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.18)  20 APR 2015 11:06
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.18)  20 APR 2015 11:13
 entering extended mode
 **C:/Users/cisstudent/Documents/Phd*Defense/Thesis/main.tex
 ("C:/Users/cisstudent/Documents/Phd Defense/Thesis/main.tex"
@@ -874,13 +874,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--132
 ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\main.toc" [5
 
 
-]
-Overfull \hbox (6.44469pt too wide) in paragraph at lines 66--66
- [][] [][]\OT1/cmr/m/n/10.95 Top Five Event-specific In-for-ma-tive URLs for Mi
-l-lions March 
- []
-
-[6])
+] [6])
 \tf@toc=\write4
  [7]
 ------------------------------------------------------------------------------
@@ -923,7 +917,7 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
 
-<Figures/EIIM.jpg, id=608, 2727.43968pt x 1183.42125pt>
+<Figures/EIIM.jpg, id=560, 2727.43968pt x 1183.42125pt>
 File: Figures/EIIM.jpg Graphic file (type jpg)
  <use Figures/EIIM.jpg>
 Package pdftex.def Info: Figures/EIIM.jpg used on input line 33.
@@ -961,14 +955,14 @@ Overfull \hbox (1.41801pt too wide) in paragraph at lines 104--104
 t
  []
 
-[12] <Figures/originalEIIM.jpg, id=721, 411.78844pt x 219.82124pt>
+[12] <Figures/originalEIIM.jpg, id=673, 411.78844pt x 219.82124pt>
 File: Figures/originalEIIM.jpg Graphic file (type jpg)
 
 <use Figures/originalEIIM.jpg>
 Package pdftex.def Info: Figures/originalEIIM.jpg used on input line 120.
 (pdftex.def)             Requested size: 341.43243pt x 170.72194pt.
 
-<Figures/identityIntegrityMDM1.jpg, id=722, 231.86626pt x 183.68625pt>
+<Figures/identityIntegrityMDM1.jpg, id=674, 231.86626pt x 183.68625pt>
 File: Figures/identityIntegrityMDM1.jpg Graphic file (type jpg)
 
 <use Figures/identityIntegrityMDM1.jpg>
@@ -976,7 +970,7 @@ Package pdftex.def Info: Figures/identityIntegrityMDM1.jpg used on input line 1
 43.
 (pdftex.def)             Requested size: 199.17465pt x 142.27406pt.
 
-<Figures/identityIntegrityMDM2.jpg, id=723, 231.86626pt x 183.68625pt>
+<Figures/identityIntegrityMDM2.jpg, id=675, 231.86626pt x 183.68625pt>
 File: Figures/identityIntegrityMDM2.jpg Graphic file (type jpg)
 
 <use Figures/identityIntegrityMDM2.jpg>
@@ -987,14 +981,14 @@ Package pdftex.def Info: Figures/identityIntegrityMDM2.jpg used on input line 1
 >] [14 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/identityIntegr
 ityMDM1.jpg> <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/identity
 IntegrityMDM2.jpg>]
-<Figures/eventIdentity.jpg, id=739, 427.5975pt x 421.575pt>
+<Figures/eventIdentity.jpg, id=691, 427.5975pt x 421.575pt>
 File: Figures/eventIdentity.jpg Graphic file (type jpg)
 
 <use Figures/eventIdentity.jpg>
 Package pdftex.def Info: Figures/eventIdentity.jpg used on input line 168.
 (pdftex.def)             Requested size: 284.52493pt x 284.53154pt.
  [15]
-<Figures/EventResolutionMappings.jpg, id=748, 804.75656pt x 653.44125pt>
+<Figures/EventResolutionMappings.jpg, id=700, 804.75656pt x 653.44125pt>
 File: Figures/EventResolutionMappings.jpg Graphic file (type jpg)
 
 <use Figures/EventResolutionMappings.jpg>
@@ -1044,8 +1038,7 @@ Overfull \hbox (8.23701pt too wide) in paragraph at lines 48--60
  [][] 
  []
 
-[29]
-<Figures/Chapter3Figures/touchgraph.jpg, id=1025, 736.1904pt x 455.7828pt>
+[29] <Figures/Chapter3Figures/touchgraph.jpg, id=977, 736.1904pt x 455.7828pt>
 File: Figures/Chapter3Figures/touchgraph.jpg Graphic file (type jpg)
 
 <use Figures/Chapter3Figures/touchgraph.jpg>
@@ -1053,8 +1046,8 @@ Package pdftex.def Info: Figures/Chapter3Figures/touchgraph.jpg used on input l
 ine 76.
 (pdftex.def)             Requested size: 325.20537pt x 252.94159pt.
 
-<Figures/Chapter3Figures/LongTailVsShortHead.jpg, id=1026, 649.67719pt x 356.83
-313pt>
+<Figures/Chapter3Figures/LongTailVsShortHead.jpg, id=978, 649.67719pt x 356.833
+13pt>
 File: Figures/Chapter3Figures/LongTailVsShortHead.jpg Graphic file (type jpg)
  <use Figures/Chapter3Figures/LongTailVsShortHead.jpg>
 Package pdftex.def Info: Figures/Chapter3Figures/LongTailVsShortHead.jpg used o
@@ -1063,7 +1056,7 @@ n input line 86.
  [30] [31 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/Chapter3Fig
 ures/touchgraph.jpg> <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/
 Chapter3Figures/LongTailVsShortHead.jpg>]
-<Figures/Chapter3Figures/comp.pdf, id=1053, 1931.215pt x 680.5425pt>
+<Figures/Chapter3Figures/comp.pdf, id=1005, 1931.215pt x 680.5425pt>
 File: Figures/Chapter3Figures/comp.pdf Graphic file (type pdf)
 
 <use Figures/Chapter3Figures/comp.pdf>
@@ -1085,7 +1078,7 @@ Chapter 5.
  5 Event Identity Information Management (EIIM) Life Cycle for Social Media
 ------------------------------------------------------------------------------
 
-<Figures/EIIMComponents/IdentityIntegrity.jpg, id=1108, 687.31781pt x 528.47438
+<Figures/EIIMComponents/IdentityIntegrity.jpg, id=1060, 687.31781pt x 528.47438
 pt>
 File: Figures/EIIMComponents/IdentityIntegrity.jpg Graphic file (type jpg)
  <use Figures/EIIMComponents/IdentityIntegrity.jpg>
@@ -1096,7 +1089,7 @@ nput line 17.
 
  <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIMComponents/Ident
 ityIntegrity.jpg>]
-<Figures/EIIMComponents/EventReferenceCollection.jpg, id=1113, 686.565pt x 529.
+<Figures/EIIMComponents/EventReferenceCollection.jpg, id=1065, 686.565pt x 529.
 98pt>
 File: Figures/EIIMComponents/EventReferenceCollection.jpg Graphic file (type jp
 g)
@@ -1113,7 +1106,7 @@ Package Fancyhdr Warning: \headheight is too small (20.0pt):
 
 [36 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIMComponents/Ev
 entReferenceCollection.jpg>] [37]
-<Figures/EIIMComponents/EventReferencePreparation.jpg, id=1132, 686.565pt x 529
+<Figures/EIIMComponents/EventReferencePreparation.jpg, id=1084, 686.565pt x 529
 .98pt>
 File: Figures/EIIMComponents/EventReferencePreparation.jpg Graphic file (type j
 pg)
@@ -1123,7 +1116,7 @@ sed on input line 109.
 (pdftex.def)             Requested size: 398.3337pt x 312.98468pt.
  [38] [39 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIMCompone
 nts/EventReferencePreparation.jpg>]
-<Figures/EIIMComponents/EventInformationQuality.jpg, id=1142, 686.565pt x 529.9
+<Figures/EIIMComponents/EventInformationQuality.jpg, id=1094, 686.565pt x 529.9
 8pt>
 File: Figures/EIIMComponents/EventInformationQuality.jpg Graphic file (type jpg
 )
@@ -1133,7 +1126,7 @@ d on input line 149.
 (pdftex.def)             Requested size: 398.3337pt x 312.98468pt.
  [40] [41 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIMCompone
 nts/EventInformationQuality.jpg>]
-<Figures/InformationAnalysisTable.jpg, id=1153, 1040.38687pt x 298.11375pt>
+<Figures/InformationAnalysisTable.jpg, id=1105, 1040.38687pt x 298.11375pt>
 File: Figures/InformationAnalysisTable.jpg Graphic file (type jpg)
 
 <use Figures/InformationAnalysisTable.jpg>
@@ -1146,7 +1139,7 @@ Overfull \hbox (9.31056pt too wide) in paragraph at lines 194--195
  []
 
 
-<Figures/EIIMComponents/EventIdentityInformationCapture.jpg, id=1154, 722.7pt x
+<Figures/EIIMComponents/EventIdentityInformationCapture.jpg, id=1106, 722.7pt x
  535.2497pt>
 File: Figures/EIIMComponents/EventIdentityInformationCapture.jpg Graphic file (
 type jpg)
@@ -1158,7 +1151,7 @@ Package pdftex.def Info: Figures/EIIMComponents/EventIdentityInformationCapture
 [42 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/InformationAnalys
 isTable.jpg>] [43 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EII
 MComponents/EventIdentityInformationCapture.jpg>]
-<Figures/EIIMComponents/EventIdentityInformationStructure.jpg, id=1163, 686.565
+<Figures/EIIMComponents/EventIdentityInformationStructure.jpg, id=1115, 686.565
 pt x 529.98pt>
 File: Figures/EIIMComponents/EventIdentityInformationStructure.jpg Graphic file
  (type jpg)
@@ -1168,7 +1161,7 @@ Package pdftex.def Info: Figures/EIIMComponents/EventIdentityInformationStructu
 re.jpg used on input line 225.
 (pdftex.def)             Requested size: 398.3337pt x 312.98468pt.
 
-<Figures/EIIMComponents/EventIdentityInformationProcessing.jpg, id=1164, 686.56
+<Figures/EIIMComponents/EventIdentityInformationProcessing.jpg, id=1116, 686.56
 5pt x 529.98pt>
 File: Figures/EIIMComponents/EventIdentityInformationProcessing.jpg Graphic fil
 e (type jpg)
@@ -1181,7 +1174,7 @@ ing.jpg used on input line 235.
 [45 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIMComponents/Ev
 entIdentityInformationStructure.jpg>] [46 <C:/Users/cisstudent/Documents/Phd De
 fense/Thesis/Figures/EIIMComponents/EventIdentityInformationProcessing.jpg>]
-<Figures/TwitterEventInfoGraph.jpg, id=1189, 914.66719pt x 746.79pt>
+<Figures/TwitterEventInfoGraph.jpg, id=1141, 914.66719pt x 746.79pt>
 File: Figures/TwitterEventInfoGraph.jpg Graphic file (type jpg)
 
 <use Figures/TwitterEventInfoGraph.jpg>
@@ -1217,173 +1210,171 @@ r-tices ($\OML/cmm/m/it/10.95 R[]; R[]; R[]; R[]; R[]$\OT1/cmr/m/n/10.95 )
  []
 
 [52]
+<Figures/EIIMComponents/EventReferenceResolution.jpg, id=1195, 686.565pt x 529.
+98pt>
+File: Figures/EIIMComponents/EventReferenceResolution.jpg Graphic file (type jp
+g)
+ <use Figures/EIIMComponents/EventReferenceResolution.jpg>
+Package pdftex.def Info: Figures/EIIMComponents/EventReferenceResolution.jpg us
+ed on input line 602.
+(pdftex.def)             Requested size: 398.3337pt x 312.98468pt.
+
+<Figures/EIIMComponents/EventAnalytics.jpg, id=1196, 689.57625pt x 529.22719pt>
+File: Figures/EIIMComponents/EventAnalytics.jpg Graphic file (type jpg)
+<use Figures/EIIMComponents/EventAnalytics.jpg>
+Package pdftex.def Info: Figures/EIIMComponents/EventAnalytics.jpg used on inpu
+t line 609.
+(pdftex.def)             Requested size: 398.34462pt x 312.98427pt.
+ [53] [54 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIMCompone
+nts/EventReferenceResolution.jpg> <C:/Users/cisstudent/Documents/Phd Defense/Th
+esis/Figures/EIIMComponents/EventAnalytics.jpg>]
+Overfull \hbox (0.81747pt too wide) in paragraph at lines 632--633
+[]\OT1/cmr/m/n/10.95 http://www.cnn.com/2014/12/15/world/asia/australia-sydney-
+hostage-situation/ 
+ []
+
+
+Overfull \hbox (13.562pt too wide) in paragraph at lines 636--637
+[]\OT1/cmr/m/n/10.95 http://www.newsroompost.com/138766/sydney-cafe-siege-ends-
+gunman-among-two-
+ []
+
+[55]
+Overfull \hbox (7.18864pt too wide) in paragraph at lines 667--668
+\OT1/cmr/m/n/10.95 eye-wit-ness http://t.co/m51P8dUPhB #Syd-neySiege http://t.c
+o/NvJzFsGrFN 
+ []
+
+[56]
+Overfull \hbox (28.45409pt too wide) in paragraph at lines 695--696
+[]\OT1/cmr/m/n/10.95 http://mashable.com/2014/12/13/time-lapse-new-york-protest
+-march/?utm[]cid=mash-
+ []
+
+
+Overfull \hbox (3.31154pt too wide) in paragraph at lines 696--697
+[]\OT1/cmr/m/n/10.95 http://www.cbsnews.com/news/eric-garner-ferguson-missouri-
+protesters-converge-
+ []
+
+
+Overfull \hbox (151.20374pt too wide) in paragraph at lines 697--698
+[]\OT1/cmr/m/n/10.95 http://www.huffingtonpost.com/2014/12/13/millions-march-ny
+c[]n[]6320348.html?ncid=tweetlnkushpmg00000051 
+ []
+
+
+Package hyperref Warning: Difference (3) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 701.
+
+[57]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 709.
+
+
+Overfull \hbox (21.1043pt too wide) in paragraph at lines 713--714
+\OT1/cmr/m/n/10.95 protests http://t.co/zhqHpkDLk1 #Mil-lion-s-March-NYC http:/
+/t.co/WktxssAfDp 
+ []
+
+
+Overfull \hbox (22.48703pt too wide) in paragraph at lines 715--716
+\OT1/cmr/m/n/10.95 ton Square Park #Mil-lion-s-March-NYC #The-Root-MOW http://t
+.co/IwkQG1KjFg 
+ []
+
+
+Overfull \hbox (21.1043pt too wide) in paragraph at lines 727--728
+\OT1/cmr/m/n/10.95 protests http://t.co/zhqHpkDLk1 #Mil-lion-s-March-NYC http:/
+/t.co/WktxssAfDp 
+ []
+
+
+Overfull \hbox (27.90747pt too wide) in paragraph at lines 729--730
+\OT1/cmr/m/n/10.95 hat-tan Sky-line be-hind. #Mil-lion-s-March-NYC #ICant-Breat
+he http://t.co/UPvN... 
+ []
+
+) ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\Chapters/Evaluations.tex"
+[58] [59]
+Chapter 6.
+------------------------------------------------------------------------------
+ 6 Evaluations
+------------------------------------------------------------------------------
+
 <Figures/Chapter4Figures/MillionsMarchNycEventIdentityInfoRankPerformance.jpg, 
-id=1243, 667.74469pt x 465.99094pt>
+id=1290, 667.74469pt x 465.99094pt>
 File: Figures/Chapter4Figures/MillionsMarchNycEventIdentityInfoRankPerformance.
 jpg Graphic file (type jpg)
 
 <use Figures/Chapter4Figures/MillionsMarchNycEventIdentityInfoRankPerformance.j
 pg>
 Package pdftex.def Info: Figures/Chapter4Figures/MillionsMarchNycEventIdentityI
-nfoRankPerformance.jpg used on input line 597.
+nfoRankPerformance.jpg used on input line 27.
 (pdftex.def)             Requested size: 433.63153pt x 325.22441pt.
 
-Overfull \hbox (16.15846pt too wide) in paragraph at lines 597--598
+Overfull \hbox (16.15846pt too wide) in paragraph at lines 27--28
  [][] 
  []
 
 
 <Figures/Chapter4Figures/SydneySiegeEventIdentityInfoRankPerformance.jpg, id=12
-44, 666.99188pt x 471.26062pt>
+91, 666.99188pt x 471.26062pt>
 File: Figures/Chapter4Figures/SydneySiegeEventIdentityInfoRankPerformance.jpg G
 raphic file (type jpg)
 
 <use Figures/Chapter4Figures/SydneySiegeEventIdentityInfoRankPerformance.jpg>
 Package pdftex.def Info: Figures/Chapter4Figures/SydneySiegeEventIdentityInfoRa
-nkPerformance.jpg used on input line 604.
+nkPerformance.jpg used on input line 34.
 (pdftex.def)             Requested size: 433.63118pt x 325.22052pt.
 
-Overfull \hbox (16.15811pt too wide) in paragraph at lines 604--605
+Overfull \hbox (16.15811pt too wide) in paragraph at lines 34--35
  [][] 
  []
 
-<Figures/millionsmarchnycndcg.jpg, id=1245, 809.27344pt x 395.22656pt>
+<Figures/millionsmarchnycndcg.jpg, id=1292, 809.27344pt x 395.22656pt>
 File: Figures/millionsmarchnycndcg.jpg Graphic file (type jpg)
 
 <use Figures/millionsmarchnycndcg.jpg>
-Package pdftex.def Info: Figures/millionsmarchnycndcg.jpg used on input line 64
-4.
+Package pdftex.def Info: Figures/millionsmarchnycndcg.jpg used on input line 74
+.
 (pdftex.def)             Requested size: 397.48595pt x 252.94412pt.
 
-<Figures/sydneysiegendcg.jpg, id=1246, 809.27344pt x 395.22656pt>
+<Figures/sydneysiegendcg.jpg, id=1293, 809.27344pt x 395.22656pt>
 File: Figures/sydneysiegendcg.jpg Graphic file (type jpg)
 
 <use Figures/sydneysiegendcg.jpg>
-Package pdftex.def Info: Figures/sydneysiegendcg.jpg used on input line 651.
+Package pdftex.def Info: Figures/sydneysiegendcg.jpg used on input line 81.
 (pdftex.def)             Requested size: 397.48595pt x 252.94412pt.
 
-<Figures/millionsmarchnycprecision.jpg, id=1247, 809.27344pt x 395.22656pt>
+<Figures/millionsmarchnycprecision.jpg, id=1294, 809.27344pt x 395.22656pt>
 File: Figures/millionsmarchnycprecision.jpg Graphic file (type jpg)
 
 <use Figures/millionsmarchnycprecision.jpg>
 Package pdftex.def Info: Figures/millionsmarchnycprecision.jpg used on input li
-ne 658.
+ne 88.
 (pdftex.def)             Requested size: 397.48595pt x 252.94412pt.
 
-<Figures/sydneysiegeprecision.jpg, id=1248, 809.27344pt x 395.22656pt>
+<Figures/sydneysiegeprecision.jpg, id=1295, 809.27344pt x 395.22656pt>
 File: Figures/sydneysiegeprecision.jpg Graphic file (type jpg)
 
 <use Figures/sydneysiegeprecision.jpg>
-Package pdftex.def Info: Figures/sydneysiegeprecision.jpg used on input line 66
-5.
+Package pdftex.def Info: Figures/sydneysiegeprecision.jpg used on input line 95
+.
 (pdftex.def)             Requested size: 397.48595pt x 252.94412pt.
-
-<Figures/EIIMComponents/EventReferenceResolution.jpg, id=1249, 686.565pt x 529.
-98pt>
-File: Figures/EIIMComponents/EventReferenceResolution.jpg Graphic file (type jp
-g)
- <use Figures/EIIMComponents/EventReferenceResolution.jpg>
-Package pdftex.def Info: Figures/EIIMComponents/EventReferenceResolution.jpg us
-ed on input line 676.
-(pdftex.def)             Requested size: 398.3337pt x 312.98468pt.
-
-<Figures/EIIMComponents/EventAnalytics.jpg, id=1250, 689.57625pt x 529.22719pt>
-File: Figures/EIIMComponents/EventAnalytics.jpg Graphic file (type jpg)
-<use Figures/EIIMComponents/EventAnalytics.jpg>
-Package pdftex.def Info: Figures/EIIMComponents/EventAnalytics.jpg used on inpu
-t line 683.
-(pdftex.def)             Requested size: 398.34462pt x 312.98427pt.
-
-
-Package hyperref Warning: Difference (3) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 686.
-
-[53] [54 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/Chapter4Figu
-res/MillionsMarchNycEventIdentityInfoRankPerformance.jpg>] [55 <C:/Users/cisstu
-dent/Documents/Phd Defense/Thesis/Figures/Chapter4Figures/SydneySiegeEventIdent
-ityInfoRankPerformance.jpg>] [56 <C:/Users/cisstudent/Documents/Phd Defense/The
-sis/Figures/millionsmarchnycndcg.jpg> <C:/Users/cisstudent/Documents/Phd Defens
-e/Thesis/Figures/sydneysiegendcg.jpg>] [57 <C:/Users/cisstudent/Documents/Phd D
-efense/Thesis/Figures/millionsmarchnycprecision.jpg> <C:/Users/cisstudent/Docum
-ents/Phd Defense/Thesis/Figures/sydneysiegeprecision.jpg>] [58 <C:/Users/cisstu
-dent/Documents/Phd Defense/Thesis/Figures/EIIMComponents/EventReferenceResoluti
-on.jpg> <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/EIIMComponent
-s/EventAnalytics.jpg>]
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 695.
-
-
-Overfull \hbox (0.81747pt too wide) in paragraph at lines 706--707
-[]\OT1/cmr/m/n/10.95 http://www.cnn.com/2014/12/15/world/asia/australia-sydney-
-hostage-situation/ 
- []
-
-
-Overfull \hbox (13.562pt too wide) in paragraph at lines 710--711
-[]\OT1/cmr/m/n/10.95 http://www.newsroompost.com/138766/sydney-cafe-siege-ends-
-gunman-among-two-
- []
-
-[59]
-Overfull \hbox (7.18864pt too wide) in paragraph at lines 741--742
-\OT1/cmr/m/n/10.95 eye-wit-ness http://t.co/m51P8dUPhB #Syd-neySiege http://t.c
-o/NvJzFsGrFN 
- []
-
-[60]
-Overfull \hbox (28.45409pt too wide) in paragraph at lines 769--770
-[]\OT1/cmr/m/n/10.95 http://mashable.com/2014/12/13/time-lapse-new-york-protest
--march/?utm[]cid=mash-
- []
-
-
-Overfull \hbox (3.31154pt too wide) in paragraph at lines 770--771
-[]\OT1/cmr/m/n/10.95 http://www.cbsnews.com/news/eric-garner-ferguson-missouri-
-protesters-converge-
- []
-
-
-Overfull \hbox (151.20374pt too wide) in paragraph at lines 771--772
-[]\OT1/cmr/m/n/10.95 http://www.huffingtonpost.com/2014/12/13/millions-march-ny
-c[]n[]6320348.html?ncid=tweetlnkushpmg00000051 
- []
-
-[61]
-Overfull \hbox (21.1043pt too wide) in paragraph at lines 787--788
-\OT1/cmr/m/n/10.95 protests http://t.co/zhqHpkDLk1 #Mil-lion-s-March-NYC http:/
-/t.co/WktxssAfDp 
- []
-
-
-Overfull \hbox (22.48703pt too wide) in paragraph at lines 789--790
-\OT1/cmr/m/n/10.95 ton Square Park #Mil-lion-s-March-NYC #The-Root-MOW http://t
-.co/IwkQG1KjFg 
- []
-
-[62]
-Overfull \hbox (21.1043pt too wide) in paragraph at lines 801--802
-\OT1/cmr/m/n/10.95 protests http://t.co/zhqHpkDLk1 #Mil-lion-s-March-NYC http:/
-/t.co/WktxssAfDp 
- []
-
-
-Overfull \hbox (27.90747pt too wide) in paragraph at lines 803--804
-\OT1/cmr/m/n/10.95 hat-tan Sky-line be-hind. #Mil-lion-s-March-NYC #ICant-Breat
-he http://t.co/UPvN... 
- []
-
-) ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\Chapters/Evaluations.tex"
-[63]
-Chapter 6.
-------------------------------------------------------------------------------
- 6 Evaluations
-------------------------------------------------------------------------------
 )
 ("C:\Users\cisstudent\Documents\Phd Defense\Thesis\Chapters/PotentialApplicatio
-ns.tex" [64
+ns.tex" [60
 
-]
+ <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figures/Chapter4Figures/Mill
+ionsMarchNycEventIdentityInfoRankPerformance.jpg>] [61 <C:/Users/cisstudent/Doc
+uments/Phd Defense/Thesis/Figures/Chapter4Figures/SydneySiegeEventIdentityInfoR
+ankPerformance.jpg>] [62 <C:/Users/cisstudent/Documents/Phd Defense/Thesis/Figu
+res/millionsmarchnycndcg.jpg> <C:/Users/cisstudent/Documents/Phd Defense/Thesis
+/Figures/sydneysiegendcg.jpg>] [63 <C:/Users/cisstudent/Documents/Phd Defense/T
+hesis/Figures/millionsmarchnycprecision.jpg> <C:/Users/cisstudent/Documents/Phd
+ Defense/Thesis/Figures/sydneysiegeprecision.jpg>] [64]
 Chapter 7.
 ------------------------------------------------------------------------------
  7 Potential Applications of the EIIM Framework
@@ -1466,7 +1457,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 376.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 376.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 376.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C5E8626B4E2C642D5F0A3FBFC0B2B8DD;21820.
+(rerunfilecheck)             Checksum: 2A46C4649C7B3CDDA2F9F8CA4E8BEE84;18161.
 
 
 LaTeX Warning: There were undefined references.
@@ -1477,10 +1468,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 376.
  ) 
 Here is how much of TeX's memory you used:
- 15857 strings out of 493921
- 232485 string characters out of 3144860
- 322047 words of memory out of 3000000
- 18392 multiletter control sequences out of 15000+200000
+ 15849 strings out of 493921
+ 232395 string characters out of 3144860
+ 318042 words of memory out of 3000000
+ 18384 multiletter control sequences out of 15000+200000
  19635 words of font info for 72 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  49i,15n,45p,3214b,684s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1506,9 +1497,9 @@ e1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (94 pages, 5168163 bytes).
+Output written on main.pdf (94 pages, 5158816 bytes).
 PDF statistics:
- 1670 PDF objects out of 1728 (max. 8388607)
+ 1629 PDF objects out of 1728 (max. 8388607)
  491 named destinations out of 1000 (max. 500000)
- 811 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 747 words of extra memory for PDF output out of 10000 (max. 10000000)
 
