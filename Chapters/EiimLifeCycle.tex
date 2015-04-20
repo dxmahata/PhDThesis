@@ -31,17 +31,15 @@ One of the fundamental goals of the proposed framework is to maintain a one-to-o
 
 This component allows the framework to collect event references from different social media websites using its publicly available APIs (Application Programming Interface), and store them in the database after processing them using the next two components of the EIIM life cycle. Due to the semi-structured nature of the collected data, a NOSQL document oriented database management system (MongoDb ) is used for storage. The choice of MongoDb was also driven by its ability to scale horizontally and perform operations on large volumes of data. A query interface is implemented that allows an user of the system to pass query parameters (for example event related hashtags and key words) that bootstraps the data collection and event tracking process. As already shown in Table \ref{socialmediametadata} most of the popular social media channels allow hashtags, the data for the experiments were collected using a popular hashtag for the respective events. 
 
-For performing the experiments, data was collected from two types of social media websites, 
-\begin{itemize}
-\item \textbf{Blogs} - representing the longer genre of textual references.
-\item \textbf{Microblogs} - representing the shorter genre of textual references.
-\end{itemize}
+%For performing the experiments, data was collected from two types of social media websites, 
+%\begin{itemize}
+%\item \textbf{Blogs} - representing the longer genre of textual references.
+%\item \textbf{Microblogs} - representing the shorter genre of textual references.
+%\end{itemize}
 
-The query interface for blogs was implemented separately from the other social media channels as blogs don't provide any API for collecting data. Either one has to scrap data from search engines or monitor the RSS feeds of a pre-specified list of blogs. Details of the data collected is presented next. 
+%The query interface for blogs was implemented separately from the other social media channels as blogs don't provide any API for collecting data. Either one has to scrap data from search engines or monitor the RSS feeds of a pre-specified list of blogs. Details of the data collected is presented next. 
 
-%\noindent \textbf{\textit{Motivation behind source selection:}} For many people blogs have become popular social media sources for satisfying interpersonal communication needs. Blogs act as a platform for masses to share their likes and dislikes, voice their opinions, provide suggestions and report news. Over the years blogging has matured from personal diaries to citizen journalistic sources providing live coverage of events beyond the professional newsrooms. Often mainstream media rely on blogs for reporting first-hand accounts of an event \cite{ekdale2007expression}. Other social media platforms like microblogs, social networks etc., also promote such activities. But, these platforms have very little scope to elaborately discuss about the events due to the limitations in the length of content allowed to be posted. However, these alternative platforms act as good sources for studying and tracking dissemination of information during real-life events. This motivated us to perform our experiments on sources collected from the blogging platforms instead of other social media websites.
-
-\subsection{Microblog Reference Collection}
+%\noindent \textbf{\textit{Motivation behind source selection:}} For many people blogs have become popular social media sources for satisfying interpersonal communication needs. Blogs act as a platform for masses to share their likes and dislikes, voice their opinions, provide suggestions and report news. Over the years blogging has matured from personal diaries to citizen journalistic sources providing live coverage of events beyond the professional newsrooms. Often mainstream media rely on blogs for reporting first-hand accounts of an event \cite{ekdale2007expression}. Other social media platforms like microblogs, social networks etc., also promote such activities. But, these platforms have very little scope to elaborately discuss about the events due to the limitations in the length of content allowed to be posted. However, these alternative platforms act as good sources for studying and tracking dissemination of information during real-life events. This motivated us to perform our experiments on sources collected from the blogging platforms instead of other social media webs
 
 Due to extreme popularity of Twitter, data from it was collected for representing the microblog genre and short textual social media references. Four million tweets (approx) related to five different events were collected. Details of the collected event references are provided in Table \ref{informationcuedata}. The tweets were collected over the given period of time, by providing a popular hashtag to the Twitter streaming API  as shown in Table \ref{informationcuedata} (for details about Twitter Data Collection please refer Appendix \ref{AppendixA}).
 
@@ -62,44 +60,44 @@ Due to extreme popularity of Twitter, data from it was collected for representin
 
 
 
-\subsection{Blog Reference Collection}
-
-\begin{table}[htbp]
-\centering
-\caption{Details of Data Collected.}
-\label{tab:table1}
-\begin{tabular}{|c|c|c| }
-\hline
-\textbf{Service Used} & \textbf{Event} & \textbf{Number of Blog Posts} \\ [0.5ex]
-\hline
-GlobalVoices & Egyptian Revolution & 234 \\
-&Libyan Revolution & 86 \\
-&Tunisian Revolution & 77\\
-\hline 
-Google Blogger & Egyptian Revolution & 579 \\
-&Libyan Revolution & 600 \\
-&Tunisian Revolution & 484 \\
-\hline
-Icerocket Blog Search & Egyptian Revolution & 5900 \\ 
-&Libyan Revolution & 2198 \\
-&Tunisian Revolution & 1220 \\
-\hline
-\end{tabular}
-\end{table}
-
-%The blog writers, also known as bloggers, loosely form their special interest communities where they debate and discuss issues, spread awareness, gather support, organize and mobilize campaigns - utilizing and in many ways demonstrating the democratic nature of the Internet. 
-
+%\subsection{Blog Reference Collection}
 %
-%\paragraph
-%\noindent \textit{\textbf{Sources:}}
-Blog posts from GlobalVoices, Blogger\footnote{http://blogger.com} and Icerocket Blog Search\footnote{http://icerocket.com} respectively, were collected for the study. The details of the dataset used is given in Table ~\ref{tab:table1}. The dataset includes 11,378 blog posts from various blogging platforms like blogspot.com, wordpress.com, livejournal.com, typepad.com, etc. We also filter out the non-english blogs. The data from GlobalVoices is used for constructing event dictionaries, as explained later in Section \ref{infocapture}. We collect blog posts related to the three events from Blogger using Google Search, and from other blogging platforms using Icerocket blog search. After passing a event related popular word to the query interface, the search engines provided a ranked list of results. The links of the blog posts along with their ranks were obtained by writing a script for screen scraping and stored in the database.
-
-
-%We perform our experiments on the references retrieved by the search engines due to the lack of ground truth and take the references along with the ranks assigned to them by the search engines as our baseline. 
-
-%The collected blog posts are parsed for extracting various information. However, we use the following information for our study: \textit{URL} of the blog and blogpost), \textit{blog text}, \textit{entities}, \textit{language}, and \textit{rank} of the post in the respective search engines used for collecting it. We use AlchemyAPI in order to extract entities. These datasets would be made available on request.
-
-
+%\begin{table}[htbp]
+%\centering
+%\caption{Details of Data Collected.}
+%\label{tab:table1}
+%\begin{tabular}{|c|c|c| }
+%\hline
+%\textbf{Service Used} & \textbf{Event} & \textbf{Number of Blog Posts} \\ [0.5ex]
+%\hline
+%GlobalVoices & Egyptian Revolution & 234 \\
+%&Libyan Revolution & 86 \\
+%&Tunisian Revolution & 77\\
+%\hline 
+%Google Blogger & Egyptian Revolution & 579 \\
+%&Libyan Revolution & 600 \\
+%&Tunisian Revolution & 484 \\
+%\hline
+%Icerocket Blog Search & Egyptian Revolution & 5900 \\ 
+%&Libyan Revolution & 2198 \\
+%&Tunisian Revolution & 1220 \\
+%\hline
+%\end{tabular}
+%\end{table}
+%
+%%The blog writers, also known as bloggers, loosely form their special interest communities where they debate and discuss issues, spread awareness, gather support, organize and mobilize campaigns - utilizing and in many ways demonstrating the democratic nature of the Internet. 
+%
+%%
+%%\paragraph
+%%\noindent \textit{\textbf{Sources:}}
+%Blog posts from GlobalVoices, Blogger\footnote{http://blogger.com} and Icerocket Blog Search\footnote{http://icerocket.com} respectively, were collected for the study. The details of the dataset used is given in Table ~\ref{tab:table1}. The dataset includes 11,378 blog posts from various blogging platforms like blogspot.com, wordpress.com, livejournal.com, typepad.com, etc. We also filter out the non-english blogs. The data from GlobalVoices is used for constructing event dictionaries, as explained later in Section \ref{infocapture}. We collect blog posts related to the three events from Blogger using Google Search, and from other blogging platforms using Icerocket blog search. After passing a event related popular word to the query interface, the search engines provided a ranked list of results. The links of the blog posts along with their ranks were obtained by writing a script for screen scraping and stored in the database.
+%
+%
+%%We perform our experiments on the references retrieved by the search engines due to the lack of ground truth and take the references along with the ranks assigned to them by the search engines as our baseline. 
+%
+%%The collected blog posts are parsed for extracting various information. However, we use the following information for our study: \textit{URL} of the blog and blogpost), \textit{blog text}, \textit{entities}, \textit{language}, and \textit{rank} of the post in the respective search engines used for collecting it. We use AlchemyAPI in order to extract entities. These datasets would be made available on request.
+%
+%
 
 \section{Event Reference Preparation}
 
@@ -109,17 +107,45 @@ Blog posts from GlobalVoices, Blogger\footnote{http://blogger.com} and Icerocket
     \includegraphics[width=14cm,height=11cm]{Figures/EIIMComponents/EventReferencePreparation.jpg}
 \end{figure}
 
-Preprocessing the raw references is an important stage of any data intensive application. This component performs a series of data preparation steps on the collected event references in order to make them suitable for further processing by the other components of the EIIM life cycle. 
+Preprocessing the raw references is an important stage of any data intensive application. This component performs a series of data preparation steps on the collected event references in order to make them suitable for further processing by the other components of the EIIM life cycle. Several resources are compiled in order to tackle the challenges posed by short informal text prevalent in social media. 
 
 %\subsection{Microblog Reference Preparation}
 
 The tweets collected using the previous component goes through the following pre-processing steps:
 
 \begin{itemize}
-\item \textbf{Parts-of-speech tagging} - 
+\item \textbf{Parts-of-speech tagging} - The Natural Language Toolkit (http://nltk.org) POS tagger is used for tagging the raw text of the tweets. All the words of a tweet is assigned one of the following parts-of-speech:
+\begin{itemize}
+\item Noun
+\item Adjective
+\item Verb
+\item Adverb
+\item Preposition
+\item Interjection
+\end{itemize}
+
+The tagged tweet is also separately stored and maintained. These tags are used later in different components down the pipeline. The Penn Treebank tags\footnote{https://www.ling.upenn.edu/courses/Fall\_2003/ling001/penn\_treebank\_pos.html} are used for tagging and is parsed accordingly for identifying words with a certain parts-of-speech.
+
+\item \textbf{Special Character Detection}
+All the special characters that are not alphanumeric are detected and the total number of special characters in a tweet is stored.
+
+
+\item \textbf{Data Cleansing} - The raw text of the tweet is extracted and cleaned. All the user mentions, retweet symbols, URLs and special characters are removed and the entire tweet is converted into lowercase. 
+
+\item \textbf{Duplicate Detection}- The tweets after cleaning are assigned a md5 hash code, which helps in detecting duplicate tweets. Tweets having the same hash code are considered to be redundant copies of each other and only a single copy of the tweet is finally stored in the database. This technique also helps in detecting the retweets of a tweet that contain the same content. Also there are certain tweets that are shared with the same content but has different user mentions and with different combination of the words expressing the content. For example, the following tweets talks about the same video shared by mashable and does not present any new information. 
+
+\begin{itemize}
+\item RT @mashable: Timelapse video reveals massive size of New York City protests http://t.co/zhqHpkDLk1 \#MillionsMarchNYC http://t.co/WktxssAfDp
+\item RT @dianebhartford: ``@mashable: Timelapse video reveals massive size of New York City protests http://t.co/CE0VIyHnLe \#MillionsMarchNYC htt…
+\end{itemize}
+
+
+After the data cleansing step, the duplicate detection scheme identifies both the tweets to be same and only maintain a single copy. This process occurs in real-time. A hashtable is maintained in the memory that is constantly searched for the presence of 
+
+
+
 \item \textbf{Tokenization} - 
 \item \textbf{Stop Word Elimination} - 
-\item \textbf{Duplicate Detection}- All the collected tweets are assigned a md5 hash code, which helps in detecting duplicate tweets. Tweets having the same hash code are considered to be redundant copies of each other and only a single copy of the tweet is finally stored in the database.
 \item \textbf{Slang Word Extraction} -
 \item \textbf{Feeling Word Extraction} - 
 \item \textbf{Tweet Meta-data Extraction} - 
@@ -150,12 +176,12 @@ A list of words expressing feelings in the internet, obtained from wefeelfine.or
 \end{figure}
 
 
-\subsection{Annotated Dataset}
-
-\subsection{Feature Selection and Training}
-
-\subsection{Model Evaluation}
-This component examines the quality of information present in the tweets collected for the events. It segregates the references having high likelihood of containing good quality event related information from the ones that are less likely to contain or point to good quality information. In order to make a generic module for identifying high quality event related informative references we implemented a logistic regression classifier trained on a publicly available annotated dataset provided by \cite{olteanu2014crisislex}. The tweets labeled as ‘related and informative’ were assigned a score of 1 and all the other tweets labeled as ‘related-but not informative’, and ‘not related’ were assigned a score of 0. Table 3 lists the features extracted from each tweet. The choice of features was governed by previous works related to identifying high quality information from Twitter as already pointed in the Related Work section. 10-fold cross validation was performed resulting in a model with an accuracy of 76.64%. Table 4 lists the evaluation measures obtained while training the classifier.
+%\subsection{Annotated Dataset}
+%
+%\subsection{Feature Selection and Training}
+%
+%\subsection{Model Evaluation}
+This component examines the quality of information present in the tweets collected for the events. It segregates the references having high likelihood of containing good quality event related information from the ones that are less likely to contain or point to good quality information. In order to make a generic module for identifying high quality event related informative references we implemented a logistic regression classifier trained on a publicly available annotated dataset provided by \cite{olteanu2014crisislex}. The tweets labeled as ‘related and informative’ were assigned a score of 1 and all the other tweets labeled as ‘related-but not informative’, and ‘not related’ were assigned a score of 0. Table \ref{tweetfeature} lists the features extracted from each tweet. The choice of features was governed by previous works related to identifying high quality information from Twitter as already pointed in the Literature Survey. 10-fold cross validation was performed resulting in a model with an accuracy of 76.64\%. Table \ref{logregreseval} lists the evaluation measures obtained while training the classifier.
 
 The trained model is used for assigning a score between 0 (least informative) and 1 (most informative) to the tweets in real-time. Both the ‘Event Reference Preparation’ and the ‘Event Information Quality’ components work in collaboration with the ‘Event Reference Collection’ component in order to collect, prepare, assign quality score and store the tweets related to an event, obtained from Twitter streaming API, in real-time.
 
@@ -196,7 +222,7 @@ characters, No. of special characters, Favorite count, Retweet \\ count, Formali
     \label{infoanalysis}
 \end{figure}
 
-\subsection{Analysis of Informative and Non-informative Content in Twitter}
+%\subsection{Analysis of Informative and Non-informative Content in Twitter}
 
 \section{Event Identity Information Capture\label{infocapture}}
 
@@ -210,7 +236,7 @@ It is the component that aids in extracting event identity information units (ex
 In order to understand what might consist of the event identity information units that would represent the EIIS, we conducted a detailed analysis of 3.8 million tweets collected for three events. Details of the data collected are provided in Table 6. The data collection task was accomplished by Event Reference Collection component and was then preprocessed by the Event Reference Preparation component.
 
 The logistic regression model developed for the Event Information Quality component was used for assigning scores to all the 3.8 million tweets in the dataset. The tweets getting a score greater than 0.7 were considered as instances of high quality informative tweets. Those getting a score lesser than 0.3 were considered as instances of low quality non-informative tweets. Average values of different content characteristics of the tweets were calculated. Top ten percent of the frequently occurring hashtags and nouns were considered as top hashtags and top nouns respectively, for the analysis. Some of the characteristics that were prominently different for informative and non-informative tweets are listed in Table 5.
-As presented in the table, for all the three events, on an average the informative tweets are marked by a higher number of tokens per tweet and greater occurrence of top nouns. The average length of informative tweets is also more than the non-informative ones. The percentage of informative tweets having URLs is strikingly high. A greater use of slang words is observed in non-informative tweets. However, greater occurrence of top hashtags in non-informative tweets intrigued us to look into the content and obtain a detailed view of it. We observed that a lot of non-informative tweets have used popular hashtags with unrelated content and URLs directing to irrelevant information. This is typical of spam tweets as already reported by [30]. Although not shown due to space constraints, the average number of follower counts for users posting informative tweets was also observed to be higher than the ones posting non-informative ones. The average number of feeling words used in informative tweets were also relatively higher than the feeling words used in the non-informative tweets. 
+As presented in the table, for all the three events, on an average the informative tweets are marked by a higher number of tokens per tweet and greater occurrence of top nouns. The average length of informative tweets is also more than the non-informative ones. The percentage of informative tweets having URLs is strikingly high. A greater use of slang words is observed in non-informative tweets. However, greater occurrence of top hashtags in non-informative tweets intrigued us to look into the content and obtain a detailed view of it. We observed that a lot of non-informative tweets have used popular hashtags with unrelated content and URLs directing to irrelevant information. This is typical of spam tweets as already pointed out in Chapter \ref{challenges}. Although not shown due to space constraints, the average number of follower counts for users posting informative tweets was also observed to be higher than the ones posting non-informative ones. The average number of feeling words used in informative tweets were also relatively higher than the feeling words used in the non-informative tweets. 
 
 The above observations gave us an idea of how high quality informative content related to events is produced in Twitter and the characteristics that differentiate them from low quality non- informative content. It is now intuitive that the informative tweets are more expressive, formal and lengthier, marked by higher presence of nouns. The high presence of nouns indicates that these tweets also contain information about people, places, organizations, etc, associated with the events, which is vital information about any event and is ideal for representing its identity. Due to the limitations imposed by Twitter on the number of characters in a tweet, the users tend to share URLs along with the textual content that might lead to more information about the event. Also, users with high follower counts tend to post informative tweets. This can also be concluded by the fact that as they have more followers they are encouraged to share informative content. Conversely, since they share informative content they are followed by a large number of other users interested in the content shared by them.
 Based on the above analysis we decided to build the EIIS for an event composed of the following event identity information units:
@@ -218,6 +244,12 @@ Based on the above analysis we decided to build the EIIS for an event composed o
 
 
 \section{Event Identity Information Structure}
+This is the component that maintains a persistent EIIS for each individual event tracked by the framework and updates the metadata of the EIIS after a fixed interval of time which is configurable. Due to the unstructured nature of the social media references and evolving nature of the events, we store the event identity information units extracted by the previous component in a persistent graph data structure.
+
+
+We propose a novel graph structure for representing the event identity information units extracted by the previous component and call it EventIdentityInfoGraph as shown in Figure 2.  The graph is dynamically generated from the extracted units of the previous component that acts as the vertices of the graph, after a fixed interval of time representing the snapshot of the event identity information units for a particular time period. Each vertex of the graph is assigned an initial event-specific score reflecting the importance of the vertices for a specific event. The score assigned to the tweets in the Event Information Quality component are used for the tweets. Due to the limited scope and focus of the paper, details of the calculations for the other type of vertices are not explained. The relationships between the heterogeneous vertices of the graph have special semantics that enables the framework to rank them in the next component. The semantics represent the following intuitive mutually reinforcing relationships between the vertices:
+For an event  
+
 
 \begin{figure}[htbp]
   \caption{Event Identity Information Structure component of the EIIM life cycle.}
@@ -228,6 +260,8 @@ Based on the above analysis we decided to build the EIIS for an event composed o
 
 
 \section{Event Identity Information Processing\label{EventIdentityInformationProcessing}}
+
+\subsection{EventIdentityInfoGraph\label{eventidentityinfograph}}
 
 \begin{figure}[htbp]
   \caption{Event Identity Information Processing component of the EIIM life cycle.}
@@ -420,7 +454,7 @@ Next, we explain \textit{EventIdentityInfoRank}.
 %%%%%%%%%%%%%%%%%                                       TwitterEventInfoRank Subsection                    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{EventIdentityInfoRank\label{twitterEventInfoRank}}
+\subsection{EventIdentityInfoRank\label{eventidentityinforank}}
 In this section, we introduce an iterative algorithm that takes into account the mutually reinforcing relationships between the vertices of \textit{TwitterEventInfoGraph} as explained in the previous section and propagates event-specific scores of each vertex to connected vertices across the graph for ranking its vertices ($\scriptstyle \in V$) in terms of event-specific informativeness.
 
 We first assign a event-specific score to all the vertices of the graph. Event-specific scores for vertices $(\in H_{E_{i}}, W_{E_{i}}, U_{E_{i}}, L_{E_{i}})$ are calculated using equations (1-4) as presented in Table \ref{edgescores}. The tweets  $(\in M_{E_{i}})$ are assigned an initial informativeness score as obtained from the logistic regression model explained in Section 3. The event-specific scores for vertices $(\in H_{E_{i}}, W_{E_{i}}, U_{E_{i}}, L_{E_{i}})$ and informativeness score for vertices $(\in M_{E_{i}})$ gives an initial ranking of all the vertices of \textit{TwitterEventInfoGraph}. We aim to refine the initial scores and assign a final score for ranking the vertices by leveraging the mutually reinforcing relationships between them.
