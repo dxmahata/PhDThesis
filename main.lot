@@ -7,13 +7,12 @@
 \contentsline {table}{\numberline {4.1}{\ignorespaces Examples of different event related tweets.\relax }}{28}{table.caption.71}
 \contentsline {table}{\numberline {4.2}{\ignorespaces Presence of different meta-data in popular social media websites.\relax }}{29}{table.caption.76}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Details of Data Collected.\relax }}{37}{table.caption.94}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Details of data collected for analyzing event related tweet content.\relax }}{38}{table.caption.98}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Tweet features for content informativeness.\relax }}{41}{table.caption.103}
-\contentsline {table}{\numberline {5.4}{\ignorespaces Evaluation measures for logistic regression model.\relax }}{41}{table.caption.104}
-\contentsline {table}{\numberline {5.5}{\ignorespaces Affinity scores of edges between vertices of TwitterEventInfoGraph\relax }}{45}{table.caption.112}
-\contentsline {table}{\numberline {5.6}{\ignorespaces Avg IIC scores and total avg scores of annotations for Millions March NYC event.\relax }}{51}{table.caption.131}
-\contentsline {table}{\numberline {5.7}{\ignorespaces Avg IIC scores and total avg scores of annotations for Sydney Siege event.\relax }}{52}{table.caption.132}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Details of data collected for analyzing event related tweet content.\relax }}{38}{table.caption.94}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Details of Data Collected.\relax }}{38}{table.caption.96}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Tweet features for content informativeness.\relax }}{42}{table.caption.106}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Evaluation measures for logistic regression model.\relax }}{42}{table.caption.107}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Avg IIC scores and total avg scores of annotations for Millions March NYC event.\relax }}{54}{table.caption.152}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Avg IIC scores and total avg scores of annotations for Sydney Siege event.\relax }}{55}{table.caption.153}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

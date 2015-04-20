@@ -41,6 +41,27 @@ The query interface for blogs was implemented separately from the other social m
 
 %\noindent \textbf{\textit{Motivation behind source selection:}} For many people blogs have become popular social media sources for satisfying interpersonal communication needs. Blogs act as a platform for masses to share their likes and dislikes, voice their opinions, provide suggestions and report news. Over the years blogging has matured from personal diaries to citizen journalistic sources providing live coverage of events beyond the professional newsrooms. Often mainstream media rely on blogs for reporting first-hand accounts of an event \cite{ekdale2007expression}. Other social media platforms like microblogs, social networks etc., also promote such activities. But, these platforms have very little scope to elaborately discuss about the events due to the limitations in the length of content allowed to be posted. However, these alternative platforms act as good sources for studying and tracking dissemination of information during real-life events. This motivated us to perform our experiments on sources collected from the blogging platforms instead of other social media websites.
 
+\subsection{Microblog Reference Collection}
+
+Due to extreme popularity of Twitter, data from it was collected for representing the microblog genre and short textual social media references. Four million tweets (approx) related to five different events were collected. Details of the collected event references are provided in Table \ref{informationcuedata}. The tweets were collected over the given period of time, by providing a popular hashtag to the Twitter streaming API  as shown in Table \ref{informationcuedata} (for details about Twitter Data Collection please refer Appendix \ref{AppendixA}).
+
+\begin{table}[htbp]
+\center
+\caption{Details of data collected for analyzing event related tweet content.}
+\label{informationcuedata}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Event} & \textbf{Query Hashtag}                          & \shortstack{\textbf{No. of} \\ \textbf{Tweets}} & \shortstack{\textbf{Time Period}}                               \\ \hline
+\shortstack{Sochi Winter\\ Games 2014 \\ ($http://goo.gl/sG4Rqd$)}& \#sochi2014 & 1958220 & \shortstack{11th Feb,2014\\ to\\ 3rd March, 2014} \\ \hline
+\begin{tabular}[c]{@{}c@{}}SXSW 2014  \\ ($http://goo.gl/b6Nd6X$)\end{tabular} & \#sxsw2014                                  & 1880557                                                            & \begin{tabular}[c]{@{}c@{}}8th March, 2014\\ to\\ 16th March, 2014\end{tabular} \\ \hline
+\begin{tabular}[c]{@{}c@{}}CPAC 2014 \\ ($http://goo.gl/9o1KUx$)\end{tabular} & \#cpac2014 & 18104                                                              & \begin{tabular}[c]{@{}c@{}}7th March, 2014\\ to\\ 16th March, 2014\end{tabular} \\ \hline
+\shortstack{Millions March NYC \\ ($http://goo.gl/I8WR4B$)} & \#millionsmarchnyc  & 56927 & \shortstack{13th Dec, 2014\\ 20:25:43\\ to\\ 14th Dec, 2014\\ 03:30:41} \\ \hline
+\begin{tabular}[c]{@{}c@{}}Sydney Siege \\ ($http://goo.gl/qLguvG$)\end{tabular} & \#sydneysiege                                  & 398204                                                            & \begin{tabular}[c]{@{}c@{}}15th Dec, 2014\\ 07:21:16\\ to\\ 15th Dec, 2014\\ 22:46:45\end{tabular} \\ \hline
+\end{tabular}
+\end{table} 
+
+
+
 \subsection{Blog Reference Collection}
 
 \begin{table}[htbp]
@@ -79,25 +100,6 @@ Blog posts from GlobalVoices, Blogger\footnote{http://blogger.com} and Icerocket
 %The collected blog posts are parsed for extracting various information. However, we use the following information for our study: \textit{URL} of the blog and blogpost), \textit{blog text}, \textit{entities}, \textit{language}, and \textit{rank} of the post in the respective search engines used for collecting it. We use AlchemyAPI in order to extract entities. These datasets would be made available on request.
 
 
-\subsection{Microblog Reference Collection}
-
-Due to extreme popularity of Twitter, data from it was collected for representing the microblog genre and short textual social media references. Four million tweets (approx) related to five different events were collected. Details of the collected event references are provided in Table \ref{informationcuedata}. The tweets were collected over the given period of time, by providing a popular hashtag to the Twitter streaming API  as shown in Table \ref{informationcuedata} (for details about Twitter Data Collection please refer Appendix \ref{AppendixA}).
-
-\begin{table}[htbp]
-\center
-\caption{Details of data collected for analyzing event related tweet content.}
-\label{informationcuedata}
-\begin{tabular}{|c|c|c|c|}
-\hline
-\textbf{Event} & \textbf{Query Hashtag}                          & \shortstack{\textbf{No. of} \\ \textbf{Tweets}} & \shortstack{\textbf{Time Period}}                               \\ \hline
-\shortstack{Sochi Winter\\ Games 2014 \\ ($http://goo.gl/sG4Rqd$)}& \#sochi2014 & 1958220 & \shortstack{11th Feb,2014\\ to\\ 3rd March, 2014} \\ \hline
-\begin{tabular}[c]{@{}c@{}}SXSW 2014  \\ ($http://goo.gl/b6Nd6X$)\end{tabular} & \#sxsw2014                                  & 1880557                                                            & \begin{tabular}[c]{@{}c@{}}8th March, 2014\\ to\\ 16th March, 2014\end{tabular} \\ \hline
-\begin{tabular}[c]{@{}c@{}}CPAC 2014 \\ ($http://goo.gl/9o1KUx$)\end{tabular} & \#cpac2014 & 18104                                                              & \begin{tabular}[c]{@{}c@{}}7th March, 2014\\ to\\ 16th March, 2014\end{tabular} \\ \hline
-\shortstack{Millions March NYC \\ ($http://goo.gl/I8WR4B$)} & \#millionsmarchnyc  & 56927 & \shortstack{13th Dec, 2014\\ 20:25:43\\ to\\ 14th Dec, 2014\\ 03:30:41} \\ \hline
-\begin{tabular}[c]{@{}c@{}}Sydney Siege \\ ($http://goo.gl/qLguvG$)\end{tabular} & \#sydneysiege                                  & 398204                                                            & \begin{tabular}[c]{@{}c@{}}15th Dec, 2014\\ 07:21:16\\ to\\ 15th Dec, 2014\\ 22:46:45\end{tabular} \\ \hline
-\end{tabular}
-\end{table} 
-
 
 \section{Event Reference Preparation}
 
@@ -108,6 +110,31 @@ Due to extreme popularity of Twitter, data from it was collected for representin
 \end{figure}
 
 Preprocessing the raw references is an important stage of any data intensive application. This component performs a series of data preparation steps on the collected event references in order to make them suitable for further processing by the other components of the EIIM life cycle. 
+
+%\subsection{Microblog Reference Preparation}
+
+The tweets collected using the previous component goes through the following pre-processing steps:
+
+\begin{itemize}
+\item \textbf{Parts-of-speech tagging} - 
+\item \textbf{Tokenization} - 
+\item \textbf{Stop Word Elimination} - 
+\item \textbf{Duplicate Detection}- All the collected tweets are assigned a md5 hash code, which helps in detecting duplicate tweets. Tweets having the same hash code are considered to be redundant copies of each other and only a single copy of the tweet is finally stored in the database.
+\item \textbf{Slang Word Extraction} -
+\item \textbf{Feeling Word Extraction} - 
+\item \textbf{Tweet Meta-data Extraction} - 
+\begin{itemize}
+\item \textbf{URLs} - 
+\item \textbf{Hashtags} - 
+\item \textbf{Retweet Counts} - 
+\item \textbf{Favorite Counts} - 
+\item \textbf{User Mentions} - 
+\item \textbf{User Follower Counts}
+\item \textbf{Verification Information} - 
+\item \textbf{Time Information} - 
+\end{itemize}
+\end{itemize}
+
 
 It performs deduplication of tweets using md5 hashing scheme. Redundant copies of a tweet are filtered out keeping a single copy in the database. Parts-of-speech tagging is done using the default POS tagger available in the NLTK  module. A standard list of English stop words is used for eliminating the stop words from the tweet text. All the characters of a tweet are converted into lower case and special characters are removed. The tweets are tokenized into unigram tokens. User mentions, retweet symbol and URLs are removed during tokenization and are not considered as tokens.
 
@@ -122,7 +149,14 @@ A list of words expressing feelings in the internet, obtained from wefeelfine.or
     \includegraphics[width=14cm,height=11cm]{Figures/EIIMComponents/EventInformationQuality.jpg}
 \end{figure}
 
-This component examines the quality of information present in the tweets collected for the events. It segregates the references having high likelihood of containing good quality event related information from the ones that are less likely to contain or point to good quality information. In order to make a generic module for identifying high quality event related informative references we implemented a logistic regression classifier trained on a publicly available annotated dataset provided by [28]. The tweets labeled as ‘related and informative’ were assigned a score of 1 and all the other tweets labeled as ‘related-but not informative’, and ‘not related’ were assigned a score of 0. Table 3 lists the features extracted from each tweet. The choice of features was governed by previous works related to identifying high quality information from Twitter as already pointed in the Related Work section. 10-fold cross validation was performed resulting in a model with an accuracy of 76.64%. Table 4 lists the evaluation measures obtained while training the classifier.
+
+\subsection{Annotated Dataset}
+
+\subsection{Feature Selection and Training}
+
+\subsection{Model Evaluation}
+This component examines the quality of information present in the tweets collected for the events. It segregates the references having high likelihood of containing good quality event related information from the ones that are less likely to contain or point to good quality information. In order to make a generic module for identifying high quality event related informative references we implemented a logistic regression classifier trained on a publicly available annotated dataset provided by \cite{olteanu2014crisislex}. The tweets labeled as ‘related and informative’ were assigned a score of 1 and all the other tweets labeled as ‘related-but not informative’, and ‘not related’ were assigned a score of 0. Table 3 lists the features extracted from each tweet. The choice of features was governed by previous works related to identifying high quality information from Twitter as already pointed in the Related Work section. 10-fold cross validation was performed resulting in a model with an accuracy of 76.64%. Table 4 lists the evaluation measures obtained while training the classifier.
+
 The trained model is used for assigning a score between 0 (least informative) and 1 (most informative) to the tweets in real-time. Both the ‘Event Reference Preparation’ and the ‘Event Information Quality’ components work in collaboration with the ‘Event Reference Collection’ component in order to collect, prepare, assign quality score and store the tweets related to an event, obtained from Twitter streaming API, in real-time.
 
 \begin{savenotes}
@@ -162,7 +196,7 @@ characters, No. of special characters, Favorite count, Retweet \\ count, Formali
     \label{infoanalysis}
 \end{figure}
 
-
+\subsection{Analysis of Informative and Non-informative Content in Twitter}
 
 \section{Event Identity Information Capture\label{infocapture}}
 
@@ -191,6 +225,8 @@ Based on the above analysis we decided to build the EIIS for an event composed o
     \includegraphics[width=14cm,height=11cm]{Figures/EIIMComponents/EventIdentityInformationStructure.jpg}
 \end{figure}
 
+
+
 \section{Event Identity Information Processing\label{EventIdentityInformationProcessing}}
 
 \begin{figure}[htbp]
@@ -200,36 +236,110 @@ Based on the above analysis we decided to build the EIIS for an event composed o
 \end{figure}
 
 
-\begin{table*}[ht]
-\caption{Affinity scores of edges between vertices of TwitterEventInfoGraph}
-\label{edgescores}
-\begin{tabular}{|l|}
-\hline 
-\underline{\textbf{\textit{Affinity scores (edge weights) between different vertices}} $\in M_{E_{i}}, H_{E_{i}}, W_{E_{i}}, U_{E_{i}},$} \\ \underline{\textbf{\textit{$L_{E_{i}}$:}}} \\ \\
-$P(h_{i} \mid w_{j}) = \frac{No. \, of \, tweets \, h_{i} \, and \, w_{j} \, occur \, together}{No. \, of \, tweets \, w_{j} \, occurs}$, $P(w_{i} \mid h_{j}) = \frac{No. \, of \, tweets \, w_{i} \, and \, h_{j} \, occur \, together}{No. \, of \, tweets \, h_{j} \, occurs}$, \\
+%\begin{table*}[ht]
+%\caption{Affinity scores of edges between vertices of TwitterEventInfoGraph}
+%\label{edgescores}
+%\begin{tabular}{|l|}
+%\hline 
+%\underline{\textbf{\textit{Affinity scores (edge weights) between different vertices}} $\in M_{E_{i}}, H_{E_{i}}, W_{E_{i}}, U_{E_{i}},$} \\ \underline{\textbf{\textit{$L_{E_{i}}$:}}} \\ \\
+%$P(h_{i} \mid w_{j}) = \frac{No. \, of \, tweets \, h_{i} \, and \, w_{j} \, occur \, together}{No. \, of \, tweets \, w_{j} \, occurs}$, $P(w_{i} \mid h_{j}) = \frac{No. \, of \, tweets \, w_{i} \, and \, h_{j} \, occur \, together}{No. \, of \, tweets \, h_{j} \, occurs}$, \\
+%
+%
+%$P(h_{i} \mid l_{j}) = \frac{No. \, of \, tweets \, h_{i} \, and \, l_{j} \, occur \, together}{No. \, of \, tweets \, l_{j} \, occurs}$,
+%$P(l_{i} \mid h_{j}) = \frac{No. \, of \, tweets \, l_{i} \, and \, h_{j} \, occur \, together}{No. \, of \, tweets  \, h_{j} \, occurs}$, \\
+%
+%$P(h_{i} \mid u_{j}) = \frac{No. \, of \, tweets  \, h_{i} \, and \, u_{j} \, occur \, together}{No. \, of \, tweets  \, u_{j} \, occurs}$,
+%$P(u_{i} \mid h_{j}) = \frac{No. \, of \, tweets  \, u_{i} \, and \, h_{j} \, occur \, together}{No. \, of \, tweets  \, h_{j} \, occurs}$,  \\
+%
+%$P(w_{i} \mid l_{j}) = \frac{No. \, of \, tweets  \, w_{i} \, and \, l_{j} \, occur \, together}{No. \, of \, tweets  \, l_{j} \, occurs}$, 
+%$P(l_{i} \mid w_{j}) = \frac{No. \, of \, tweets  \, l_{i} \, and \, w_{j} \, occur \, together}{No. \, of \, tweets  \, w_{j} \, occurs}$, \\ 
+%
+%$P(w_{i} \mid u_{j}) = \frac{No. \, of \, tweets  \, w_{i} \, and \, u_{j} \, occur \, together}{No. \, of \, tweets  \, u_{j} \, occurs}$,
+%$P(u_{i} \mid w_{j}) = \frac{No. \, of \, tweets  \, u_{i} \, and \, w_{j} \, occur \, together}{No. \, of \, tweets  \, w_{j} \, occurs}$, \\
+%
+%$P(u_{i} \mid l_{j}) = \frac{No. \, of \, tweets  \, u_{i} \, and \, l_{j} \, occur \, together}{No. \, of \, tweets  \, l_{j} \, occurs}$, 
+%$P(l_{i} \mid u_{j}) = \frac{No. \, of \, tweets  \, l_{i} \, and \, u_{j} \, occur \, together}{No. \, of \, tweets  \, u_{j} \, occurs}$, \\
+%
+%
+%$P(h_{i} \mid m_{j}) = P(m_{i} \mid h_{j}) = P(w_{i} \mid m_{j}) = P(m_{i} \mid w_{j}) = P(u_{i} \mid m_{j}) = P(m_{i} \mid u_{j}) =$ \\ $P(l_{i} \mid m_{j})= P(m_{i} \mid l_{j})= 1.0$  \\ \\ 
+%\textbf{Note:} $P(h_{i} \mid w_{j})$ should be read as the probability of occurrence of hashtag $h_{i}$ given \\ the occurrence of the text unit $w_{j}$ in the stream of  tweets $M_{E_{i}}$ related to event $E_{i}$ \\ collected over the time period $T_{E_{i}}$. Similarly, for others.\\
+%\hline 
+%\end{tabular}
+%\end{table*}
+
+\begin{equation}
+P(h_{i_{E_{i}}} \mid w_{j_{E_{i}}}) = \frac{No. \, of \, tweets \, h_{i_{E_{i}}} \, and \, w_{j_{E_{i}}} \, occur \, together}{No. \, of \, tweets \, w_{j_{E_{i}}} \, occurs}
+\end{equation}
+
+\begin{equation}
+P(w_{i_{E_{i}}} \mid h_{j_{E_{i}}}) = \frac{No. \, of \, tweets \, w_{i_{E_{i}}} \, and \, h_{j_{E_{i}}} \, occur \, together}{No. \, of \, tweets \, h_{j_{E_{i}}} \, occurs}
+\end{equation}
+
+\begin{equation}
+P(h_{i_{E_{i}}} \mid l_{j_{E_{i}}}) = \frac{No. \, of \, tweets \, h_{i_{E_{i}}} \, and \, l_{j_{E_{i}}} \, occur \, together}{No. \, of \, tweets \, l_{j_{E_{i}}} \, occurs}
+\end{equation}
+
+\begin{equation}
+P(l_{i_{E_{i}}} \mid h_{j_{E_{i}}}) = \frac{No. \, of \, tweets \, l_{i_{E_{i}}} \, and \, h_{j_{E_{i}}} \, occur \, together}{No. \, of \, tweets  \, h_{j_{E_{i}}} \, occurs}
+\end{equation}
+
+\begin{equation}
+P(h_{i_{E_{i}}} \mid u_{j_{E_{i}}}) = \frac{No. \, of \, tweets  \, h_{i_{E_{i}}} \, and \, u_{j_{E_{i}}} \, occur \, together}{No. \, of \, tweets  \, u_{j_{E_{i}}} \, occurs}
+\end{equation}
+
+\begin{equation}
+P(u_{i_{E_{i}}} \mid h_{j_{E_{i}}}) = \frac{No. \, of \, tweets  \, u_{i_{E_{i}}} \, and \, h_{j_{E_{i}}} \, occur \, together}{No. \, of \, tweets  \, h_{j_{E_{i}}} \, occurs}
+\end{equation}
+
+\begin{equation}
+P(w_{i_{E_{i}}} \mid l_{j_{E_{i}}}) = \frac{No. \, of \, tweets  \, w_{i_{E_{i}}} \, and \, l_{j_{E_{i}}} \, occur \, together}{No. \, of \, tweets  \, l_{j_{E_{i}}} \, occurs}
+\end{equation}
+
+\begin{equation}
+(l_{i_{E_{i}}} \mid w_{j_{E_{i}}}) = \frac{No. \, of \, tweets  \, l_{i_{E_{i}}} \, and \, w_{j_{E_{i}}} \, occur \, together}{No. \, of \, tweets  \, w_{j_{E_{i}}} \, occurs}
+\end{equation}
+
+\begin{equation}
+P(u_{i_{E_{i}}} \mid l_{j_{E_{i}}}) = \frac{No. \, of \, tweets  \, u_{i_{E_{i}}} \, and \, l_{j_{E_{i}}} \, occur \, together}{No. \, of \, tweets  \, l_{j_{E_{i}}} \, occurs}
+\end{equation}
+
+\begin{equation}
+P(l_{i_{E_{i}}} \mid u_{j_{E_{i}}}) = \frac{No. \, of \, tweets  \, l_{i_{E_{i}}} \, and \, u_{j_{E_{i}}} \, occur \, together}{No. \, of \, tweets  \, u_{j_{E_{i}}} \, occurs}
+\end{equation}
+
+\begin{equation}
+P(h_{i_{E_{i}}} \mid m_{j_{E_{i}}}) = 1.0
+\end{equation}
+
+\begin{equation}
+P(m_{i_{E_{i}}} \mid h_{j_{E_{i}}}) = 1.0
+\end{equation}
+
+\begin{equation}
+P(w_{i_{E_{i}}} \mid m_{j_{E_{i}}}) = 1.0
+\end{equation}
+
+\begin{equation}
+P(m_{i_{E_{i}}} \mid w_{j_{E_{i}}}) = 1.0
+\end{equation}
+
+\begin{equation}
+P(u_{i_{E_{i}}} \mid m_{j_{E_{i}}}) = 1.0
+\end{equation}
+
+\begin{equation}
+P(m_{i_{E_{i}}} \mid u_{j_{E_{i}}}) = 1.0
+\end{equation}
+
+\begin{equation}
+P(l_{i_{E_{i}}} \mid m_{j_{E_{i}}}) = 1.0
+\end{equation}
+
+\begin{equation}
+P(m_{i_{E_{i}}} \mid l_{j_{E_{i}}}) = 1.0
+\end{equation}
 
 
-$P(h_{i} \mid l_{j}) = \frac{No. \, of \, tweets \, h_{i} \, and \, l_{j} \, occur \, together}{No. \, of \, tweets \, l_{j} \, occurs}$,
-$P(l_{i} \mid h_{j}) = \frac{No. \, of \, tweets \, l_{i} \, and \, h_{j} \, occur \, together}{No. \, of \, tweets  \, h_{j} \, occurs}$, \\
-
-$P(h_{i} \mid u_{j}) = \frac{No. \, of \, tweets  \, h_{i} \, and \, u_{j} \, occur \, together}{No. \, of \, tweets  \, u_{j} \, occurs}$,
-$P(u_{i} \mid h_{j}) = \frac{No. \, of \, tweets  \, u_{i} \, and \, h_{j} \, occur \, together}{No. \, of \, tweets  \, h_{j} \, occurs}$,  \\
-
-$P(w_{i} \mid l_{j}) = \frac{No. \, of \, tweets  \, w_{i} \, and \, l_{j} \, occur \, together}{No. \, of \, tweets  \, l_{j} \, occurs}$, 
-$P(l_{i} \mid w_{j}) = \frac{No. \, of \, tweets  \, l_{i} \, and \, w_{j} \, occur \, together}{No. \, of \, tweets  \, w_{j} \, occurs}$, \\ 
-
-$P(w_{i} \mid u_{j}) = \frac{No. \, of \, tweets  \, w_{i} \, and \, u_{j} \, occur \, together}{No. \, of \, tweets  \, u_{j} \, occurs}$,
-$P(u_{i} \mid w_{j}) = \frac{No. \, of \, tweets  \, u_{i} \, and \, w_{j} \, occur \, together}{No. \, of \, tweets  \, w_{j} \, occurs}$, \\
-
-$P(u_{i} \mid l_{j}) = \frac{No. \, of \, tweets  \, u_{i} \, and \, l_{j} \, occur \, together}{No. \, of \, tweets  \, l_{j} \, occurs}$, 
-$P(l_{i} \mid u_{j}) = \frac{No. \, of \, tweets  \, l_{i} \, and \, u_{j} \, occur \, together}{No. \, of \, tweets  \, u_{j} \, occurs}$, \\
-
-
-$P(h_{i} \mid m_{j}) = P(m_{i} \mid h_{j}) = P(w_{i} \mid m_{j}) = P(m_{i} \mid w_{j}) = P(u_{i} \mid m_{j}) = P(m_{i} \mid u_{j}) =$ \\ $P(l_{i} \mid m_{j})= P(m_{i} \mid l_{j})= 1.0$  \\ \\ 
-\textbf{Note:} $P(h_{i} \mid w_{j})$ should be read as the probability of occurrence of hashtag $h_{i}$ given \\ the occurrence of the text unit $w_{j}$ in the stream of  tweets $M_{E_{i}}$ related to event $E_{i}$ \\ collected over the time period $T_{E_{i}}$. Similarly, for others.\\
-\hline 
-\end{tabular}
-\end{table*}
 
 
 \begin{figure}[htbp]

@@ -1,4 +1,4 @@
-\begin{thebibliography}{130}
+\begin{thebibliography}{131}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -807,6 +807,14 @@ S.~Brin et~al.
 \newblock The anatomy of a large-scale hypertextual web search engine.
 \newblock \emph{Computer networks and ISDN systems}, 30\penalty0 (1):\penalty0
   107--117, 1998.
+
+\bibitem[Olteanu et~al.(2014)Olteanu, Castillo, Diaz, and
+  Vieweg]{olteanu2014crisislex}
+Alexandra Olteanu, Carlos Castillo, Fernando Diaz, and Sarah Vieweg.
+\newblock Crisislex: A lexicon for collecting and filtering microblogged
+  communications in crises.
+\newblock In \emph{In Proceedings of the 8th International AAAI Conference on
+  Weblogs and Social Media (ICWSM" 14)}, number EPFL-CONF-203561, 2014.
 
 \bibitem[Wei et~al.(2008)Wei, Li, Lu, and He]{wei2008query}
 Furu Wei, Wenjie Li, Qin Lu, and Yanxiang He.
