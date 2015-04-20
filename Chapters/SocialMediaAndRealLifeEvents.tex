@@ -86,18 +86,18 @@ All the above social media websites exhibit certain common characteristics that 
 
 \end{enumerate}
 
-\section{Challenges in Social Media Mining}
+%\section{Challenges in Social Media Mining}
 
 
 
 
-\section{Events from Different Perspectives}
+\section{Defining Events from Different Perspectives}
 
-\subsection{Topic Detection and Tracking}
-
-\subsection{Automatic Content Extraction}
-
-\subsection{Multimedia Event Detection}
+%\subsection{Topic Detection and Tracking}
+%
+%\subsection{Automatic Content Extraction}
+%
+%\subsection{Multimedia Event Detection}
 
 \section{Events in Social Media}
 
@@ -171,13 +171,13 @@ The EIIM processes and life cycle is a step ahead of the basic record linking pr
 
 The definitions as given in the previous section also hold true for the work presented in this dissertation. The only differences are:
 \begin{enumerate}
-\item We consider a \textbf{real-life event $E_{i}$} as an individual \textbf{entity}, and assume that every \textbf{real-life event} also has a distinct identity.
+\item We consider a \textbf{real-life event $E_{i}$} as an individual \textbf{entity}, and assume that every \textbf{real-life event} also has a distinct identity. Only a pre-specified set of events $\Xi = \{E_{1},E_{2}, ... ,E_{n}\}$ are considered, with their ordered stream of references $M = \{m_{1_{E_{1}}}, m_{2_{E_{1}}}, ... ,m_{i_{E_{i}}}, ... ,m_{n_{E_{n}}}\}$ collected from social media instead of a fixed set of references already present in a closed information system.
 
 \item Instead of \textbf{Entity Identity Information}, we define \textbf{Event Identity Information} as a set of attributes that distinctly characterizes it and allows that event to be distinguished from all other events maintained by the framework. For example, names of the main active participants (people, organizations, etc), popular keywords, timespan of occurrence and place of occurrence could be identity information for a real-life event as shown in Figure \ref{eventidentity}.
 
-\item Instead of \textbf{Entity Identity Information Structure (EIIS)}, we define \textbf{Event Identity Information Structures (EIIS)}, for real-life events as a data structure that can persistently and efficiently store, retrieve, and manipulate entity identity information.
+\item Instead of \textbf{Entity Identity Information Structure (EIIS)}, we define \textbf{Event Identity Information Structures (EIIS)}, for real-life events as a data structure that can persistently and efficiently store, retrieve, and manipulate entity identity information. A set of EIIS, $S = \{s_{E_{1}},s_{E_{2}}, ... ,s_{E_{n}}\}$ is maintained, corresponding to each event $E_{i} \in \Xi$ 
 
-\item Lastly, this dissertation solves the problem of \textit{Event Identity Information Management} in the unstructured and open domain of social media, that gave rise to new challenges. It added complexity to the original problem of EIIM, for which following steps were taken:
+\item Lastly, this dissertation solves the problem of \textit{Event Identity Information Management} in the open and unstructured domain of social media, that gives rise to new challenges. It added complexity to the original problem of EIIM, for which following steps are taken (explained in Chapter \ref{eiim}):
 
 \begin{itemize}
 \item A completely new life cycle of data processing components had to be introduced that is more suitable for processing unstructured references of events in social media.
@@ -187,7 +187,7 @@ The definitions as given in the previous section also hold true for the work pre
 \end{enumerate}
 
 
-%$\Xi = \{E_{1},E_{2}, ... ,E_{n}\}$
+%
 %
 %$R = \{r_{1},r_{2}, ... ,r_{m}\}$
 %
@@ -202,23 +202,66 @@ The definitions as given in the previous section also hold true for the work pre
 
 %In this section, we give the definition of an event appropriate in the context of our problem, and then present a formal statement of the problem that we want to solve.
 
-Events have been defined from various perspectives and in different contexts. In the context of the work presented in this dissertation we adopt a definition similar to \cite{becker2011beyond}. 
+Events have been defined from various perspectives and in different contexts as already discussed in the previous section. In the context of the work presented in this dissertation we adopt a definition similar to \cite{becker2011beyond}. 
 
 
 \textbf{Event:} \textit{An event is defined as a real-world occurrence ($ E_{i}$) with an associated time period $T_{E_{i}}$ ($t^{start}_{E_{i}}$-$t^{end}_{E_{i}}$) and a time ordered stream of social media references $M_{E_{i}} = {\{m_{1_{E_{i}}},m_{2_{E_{i}}}, ... ,m_{n_{E_{i}}}, ... ,m_{z_{E_{i}}}\}}$, of substantial volume, discussing about the event and posted in time $T_{E_{i}}$}.
 
-%In the real-world scenario, users of social media generate the references with an intention to represent information about a particular entity. For example the tweet (#iPhone battery life driving you crazy ? {YES!} Here are a few simple fixes...) primarily talks about iPhone. There might be multiple references of iPhone being generated in social media. One of the main aims of the proposed framework would be to consolidate all the references of a particular entity and map it to its corresponding EIIS maintained by the framework. However, there might be a mismatch between the way an entity is interpreted in its social media reference by the creator and the way the proposed framework interprets the same in an automated fashion. This would result in loss of data integrity and increase the chances of erroneous results. Such problems are prevalent in the vanilla flavor of the EIIM as discussed in the previous section, giving rise to false negative and false positive errors. Since the EIIM framework 
-%
-%operates in an open environment of social media as discussed earlier, two new scenarios leading to erroneous conditions are observed:
-%
-%•	Noisy Entity: The first situation occurs when a reference gets mapped to an existing EIIS in the framework, although it refers to an entity, which is out of the pre-specified list of entities. Such a scenario is shown in Figure 6, where the entity ep (E) generates the reference rx (R), yet the external reference gets mapped to s1 ( S).
-%
-%•	Untracked reference: The second situation occurs when there is a reference, which the framework is unable to track and map it to a pre-specified list of entities although it refers to it. Such a scenario is shown in Figure 6, where the framework should have tracked the reference ry (R) and associate it with entity e3 (E), yet it is unable to do so and lose track of the reference in the EIIM process.
+Users in social media post about real-life events in huge volumes and with high velocity. This results in multiple footprints of an event in different social media channels. The footprints could be in the form of textual posts, images, videos or other types of multimedia documents. For example,
+following are three different tweets retrieved for the same event ``Sydney Siege Crisis":
+
+\begin{enumerate}
+\item RT @cnni: Hostage taker in Sydney cafe demands ISIS flag and call with Australian PM, Sky News reports. http://t.co/a2vgrn30Xh \#sydneysiege
+\item ``@carlyeinfeld: Whats with the barking dogs in the background of the briefing on the \#sydneysiege right now?!" Police dogs.
+\item @Channel4News The least you could do is to pixelate the faces in the window \#sydneysiege
+\end{enumerate}
+
+We consider these footprints as references to the event. One of the main aims of the proposed framework would be to consolidate all the references of a particular event and map it to its corresponding EIIS maintained by the framework. However, due to the noisy nature of social media references an additional problem arise. We call it the problem of noisy reference.
+
+\begin{itemize}
+\item \textbf{Noisy Reference:} The three tweets in the example above are different in terms of information content related to the event. While the first one is very informative, the other two are surely related to the event, but not informative. The non-informative tweets might be interesting to the users having a personal conversation related to the event, but it has no value in conveying useful information about the event, that can act as an identity of the event. We consider these event related non-informative references as noise and do not want to map these tweets to the EIIS of the corresponding event. 
+\end{itemize}
+
+Also, there might be a mismatch between the way an informative event reference is posted by an user and the way the proposed framework interprets the same in an automated fashion. This would result in loss of data integrity and increase the chances of erroneous results. Such problems are prevalent in the vanilla flavor of the EIIM as discussed in the previous section, giving rise to \textit{false negative} and \textit{false positive} errors. 
 
 
-Given a pre-specified finite set of real-life events, $\Xi = \{E_{1},E_{2}, ... ,E_{n}\}$ generating a finite ordered stream of references $M = \{m_{1_{E_{1}}}, m_{2_{E_{1}}}, ... ,m_{i_{E_{i}}}, ... ,m_{n_{E_{n}}}\}$ in social media, and a finite set of EIIS structures $S = \{s_{E_{1}},s_{E_{2}}, ... ,s_{E_{n}}\}$ corresponding to each real-life event $(E_{i} \in \Xi)$, the problem is to resolve references of an event $(E_{i})$, and to persistently extract, store and manage identity information of the event in its corresponding EIIS $s_{E_{i}}$.
+Since the Event Identity Information Management framework operates in an open environment of social media as discussed earlier, two new scenarios leading to erroneous conditions are observed:
+
+\begin{itemize}
+\item \textbf{Noisy Event} - The first situation occurs when a reference gets mapped to an existing EIIS in the framework, although it refers to an event, which is out of the pre-specified list of events that are being tracked. Such a scenario is shown in Figure \ref{eventresolutionmappings}, where the event $E_{p} \in \Xi$ generates the reference $m_{x_{E_{i}}} \in M_{E_{i}}$, yet the external reference gets mapped to $s_{E_{1}}$. 
+
+Spamming activity in social media channels can give rise to noisy events. For example, if we consider the following tweet:
+
+\begin{itemize}
+\item \textit{RT @BFDealz: http://t.co/TSJAigrVJI WHEELS SUPER TREASURE HUNT SUPERIZED HARLEY DAVIDSON FAT BOY LONG CARD 2014 \#cpac2014 \#sxsw}
+\end{itemize}
+
+The above tweet might have been posted in the context of the event SXSW 2014 in order to market a Harley Davidson bike, but it also appears in the set of references for an unrelated event CPAC 2014. This is probably due to the fact that both the events took place parallely and the user posting this reference wanted to make it more visible by using the hashtags for both the trending events. This is often the case of spamming activities as discussed in Chapter \ref{challenges}. The tweet might not be related to both the events, yet it can get tracked by the framework.
 
 
+\item \textbf{Untracked reference} - The second situation occurs when there is a reference, which the framework is unable to track and map it to a pre-specified list of events although it refers to it. Such a scenario is shown in Figure \ref{eventresolutionmappings}, where the framework should have tracked the reference $m_{y_{E_{3}}} \in M_{E_{3}}$ and associate it with event $E_{3} \in \Xi $, yet it is unable to do so and lose track of the reference in the process. This can happen due to the sampling bias as discussed in Chapter \ref{challenges}, which is one of the main challenges in collecting content from social media. The other reason could be errors in data collection process.
+
+\end{itemize}
+
+Therefore, the main broader problem that this dissertation solves is stated below.
+
+
+\textbf{Problem:} \textit{Given a pre-specified finite set of real-life events, $\Xi = \{E_{1},E_{2}, ... ,E_{n}\}$ generating a finite ordered stream of references $M = \{m_{1_{E_{1}}}, m_{2_{E_{1}}}, ... ,m_{i_{E_{i}}}, ... ,m_{n_{E_{n}}}\}$ in social media, and a finite set of EIIS structures $S = \{s_{E_{1}},s_{E_{2}}, ... ,s_{E_{n}}\}$ corresponding to each real-life event $(E_{i} \in \Xi)$, the problem is to resolve references of an event $(E_{i})$, and to persistently extract, store and manage identity information of the event in its corresponding EIIS $s_{E_{i}}$}.
+
+Towards the above objective, the dissertation seeks answers to the following questions:
+
+\begin{itemize}
+\item How to create the set of  EIIS (S) for the pre-specified set of events of interest ?
+\item How to collect reference to the events containing identity information of the event from different social media platforms ?
+\item How to extract event identity information from the social media references ?
+\item How to integrate the event identity information from the unstructured references into the appropriate EIIS ? 
+\item How to determine that new references from social media relates to an EIIS ?
+\item How to continuously integrate new information into the existing EIIS structures ?
+
+
+\end{itemize}
+
+Chapter \ref{eiim} presents the design and implementation of the entire Event Identity Information Management framework that explains the strategies and novel techniques contributed by this dissertation in order to find answers to the above questions.
 
 
 
