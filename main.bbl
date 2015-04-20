@@ -1,9 +1,15 @@
-\begin{thebibliography}{129}
+\begin{thebibliography}{130}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Zhou and Talburt(2011)]{zhou2011entity}
+Yinle Zhou and John Talburt.
+\newblock Entity identity information management (eiim).
+\newblock In \emph{International Conference on Information Quality (ICIQ-11),
+  Adelaide, Australia}, pages 327--341, 2011.
 
 \bibitem[Phelan et~al.(2009)Phelan, McCarthy, and Smyth]{phelan2009using}
 Owen Phelan, Kevin McCarthy, and Barry Smyth.
@@ -109,12 +115,6 @@ Giridhar Kumaran and James Allan.
   conference on Research and development in information retrieval}, pages
   297--304. ACM, 2004.
 
-\bibitem[Zhou and Talburt(2011)]{zhou2011entity}
-Yinle Zhou and John Talburt.
-\newblock Entity identity information management (eiim).
-\newblock In \emph{International Conference on Information Quality (ICIQ-11),
-  Adelaide, Australia}, pages 327--341, 2011.
-
 \bibitem[Kaplan and Haenlein(2010)]{kaplan2010users}
 Andreas~M Kaplan and Michael Haenlein.
 \newblock Users of the world, unite! the challenges and opportunities of social
@@ -183,6 +183,17 @@ Theater shooting unfolds in real time on social media, 2012.
 Google and twitter launch service enabling egyptians to tweet by phone, 2011.
 \newblock URL
   \url{http://www.theguardian.com/technology/2011/feb/01/google-twitter-egypt}.
+
+\bibitem[Talburt(2011)]{talburt2011entity}
+John~R Talburt.
+\newblock \emph{Entity resolution and information quality}.
+\newblock Elsevier, 2011.
+
+\bibitem[Becker et~al.(2011{\natexlab{a}})Becker, Naaman, and
+  Gravano]{becker2011beyond}
+Hila Becker, Mor Naaman, and Luis Gravano.
+\newblock Beyond trending topics: Real-world event identification on twitter.
+\newblock \emph{ICWSM}, 11:\penalty0 438--441, 2011{\natexlab{a}}.
 
 \bibitem[Benevenuto et~al.(2010)Benevenuto, Magno, Rodrigues, and
   Almeida]{benevenuto2010detecting}
@@ -310,11 +321,11 @@ Jan Vosecky, Kenneth Wai-Ting Leung, and Wilfred Ng.
 \newblock In \emph{Database Systems for Advanced Applications}, pages 397--413.
   Springer, 2012.
 
-\bibitem[Becker et~al.(2011{\natexlab{a}})Becker, Naaman, and
+\bibitem[Becker et~al.(2011{\natexlab{b}})Becker, Naaman, and
   Gravano]{becker2011selecting}
 Hila Becker, Mor Naaman, and Luis Gravano.
 \newblock Selecting quality twitter content for events.
-\newblock \emph{ICWSM}, 11, 2011{\natexlab{a}}.
+\newblock \emph{ICWSM}, 11, 2011{\natexlab{b}}.
 
 \bibitem[Inouye and Kalita(2011)]{inouye2011comparing}
 David Inouye and Jugal~K Kalita.
@@ -421,11 +432,6 @@ Hector Garcia-Molina.
 \newblock Pair-wise entity resolution: overview and challenges.
 \newblock In \emph{Proceedings of the 15th ACM international conference on
   Information and knowledge management}, pages 1--1. ACM, 2006.
-
-\bibitem[Talburt(2011)]{talburt2011entity}
-John~R Talburt.
-\newblock \emph{Entity resolution and information quality}.
-\newblock Elsevier, 2011.
 
 \bibitem[Benjelloun et~al.(2006)Benjelloun, Garcia-Molina, Kawai, Larson,
   Menestrina, Su, Thavisomboon, and Widom]{benjelloun2006generic}
@@ -727,12 +733,12 @@ Hila Becker, Dan Iter, Mor Naaman, and Luis Gravano.
 \newblock In \emph{Proceedings of the fifth ACM international conference on Web
   search and data mining}, pages 533--542. ACM, 2012.
 
-\bibitem[Becker et~al.(2011{\natexlab{b}})Becker, Chen, Iter, Naaman, and
+\bibitem[Becker et~al.(2011{\natexlab{c}})Becker, Chen, Iter, Naaman, and
   Gravano]{becker2011automatic}
 Hila Becker, Feiyang Chen, Dan Iter, Mor Naaman, and Luis Gravano.
 \newblock Automatic identification and presentation of twitter content for
   planned events.
-\newblock In \emph{ICWSM}, 2011{\natexlab{b}}.
+\newblock In \emph{ICWSM}, 2011{\natexlab{c}}.
 
 \bibitem[Hemp(2009)]{hemp2009death}
 Paul Hemp.

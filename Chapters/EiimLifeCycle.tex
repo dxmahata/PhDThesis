@@ -29,13 +29,15 @@ One of the fundamental goals of the proposed framework is to maintain a one-to-o
     \includegraphics[width=14cm,height=11cm]{Figures/EIIMComponents/EventReferenceCollection.jpg}
 \end{figure}
 
-This component allows the framework to collect event references from different social media websites using its publicly available APIs (Application Programming Interface), and store them in the database after processing them using the next two components of the EIIM life cycle. Due to the semi-structured nature of the collected data, a NOSQL document oriented database management system (MongoDb ) is used for storage. The choice of MongoDb was also driven by its ability to scale horizontally and perform operations on large volumes of data.
+This component allows the framework to collect event references from different social media websites using its publicly available APIs (Application Programming Interface), and store them in the database after processing them using the next two components of the EIIM life cycle. Due to the semi-structured nature of the collected data, a NOSQL document oriented database management system (MongoDb ) is used for storage. The choice of MongoDb was also driven by its ability to scale horizontally and perform operations on large volumes of data. A query interface is implemented that allows an user of the system to pass query parameters (for example event related hashtags and key words) that bootstraps the data collection and event tracking process. As already shown in Table \ref{socialmediametadata} most of the popular social media channels allow hashtags, the data for the experiments were collected using a popular hashtag for the respective events. 
 
 For performing the experiments, data was collected from two types of social media websites, 
 \begin{itemize}
-\item Blogs - representing the longer genre of textual references.
-\item Microblogs - representing the shorter genre of textual references.
+\item \textbf{Blogs} - representing the longer genre of textual references.
+\item \textbf{Microblogs} - representing the shorter genre of textual references.
 \end{itemize}
+
+The query interface for blogs was implemented separately from the other social media channels as blogs don't provide any API for collecting data. Either one has to scrap data from search engines or monitor the RSS feeds of a pre-specified list of blogs. Details of the data collected is presented next. 
 
 %\noindent \textbf{\textit{Motivation behind source selection:}} For many people blogs have become popular social media sources for satisfying interpersonal communication needs. Blogs act as a platform for masses to share their likes and dislikes, voice their opinions, provide suggestions and report news. Over the years blogging has matured from personal diaries to citizen journalistic sources providing live coverage of events beyond the professional newsrooms. Often mainstream media rely on blogs for reporting first-hand accounts of an event \cite{ekdale2007expression}. Other social media platforms like microblogs, social networks etc., also promote such activities. But, these platforms have very little scope to elaborately discuss about the events due to the limitations in the length of content allowed to be posted. However, these alternative platforms act as good sources for studying and tracking dissemination of information during real-life events. This motivated us to perform our experiments on sources collected from the blogging platforms instead of other social media websites.
 
@@ -69,7 +71,7 @@ Icerocket Blog Search & Egyptian Revolution & 5900 \\
 %
 %\paragraph
 %\noindent \textit{\textbf{Sources:}}
-Blog posts from GlobalVoices, Blogger\footnote{http://blogger.com} and Icerocket Blog Search\footnote{http://icerocket.com} respectively, were collected for the study. The details of the dataset used is given in Table ~\ref{tab:table1}. The dataset includes 11,378 blog posts from various blogging platforms like blogspot.com, wordpress.com, livejournal.com, typepad.com, etc. We also filter out the non-english blogs. The data from GlobalVoices is used for constructing event dictionaries, as explained later in Section \ref{infocapture}. We collect blog posts related to the three events from Blogger using Google Search, and from other blogging platforms using Icerocket blog search. 
+Blog posts from GlobalVoices, Blogger\footnote{http://blogger.com} and Icerocket Blog Search\footnote{http://icerocket.com} respectively, were collected for the study. The details of the dataset used is given in Table ~\ref{tab:table1}. The dataset includes 11,378 blog posts from various blogging platforms like blogspot.com, wordpress.com, livejournal.com, typepad.com, etc. We also filter out the non-english blogs. The data from GlobalVoices is used for constructing event dictionaries, as explained later in Section \ref{infocapture}. We collect blog posts related to the three events from Blogger using Google Search, and from other blogging platforms using Icerocket blog search. After passing a event related popular word to the query interface, the search engines provided a ranked list of results. The links of the blog posts along with their ranks were obtained by writing a script for screen scraping and stored in the database.
 
 
 %We perform our experiments on the references retrieved by the search engines due to the lack of ground truth and take the references along with the ranks assigned to them by the search engines as our baseline. 
@@ -79,7 +81,7 @@ Blog posts from GlobalVoices, Blogger\footnote{http://blogger.com} and Icerocket
 
 \subsection{Microblog Reference Collection}
 
-Due to extreme popularity of Twitter, data from it was collected for representing the microblog genre. Four million tweets (approx) related to five different events were collected. Details of the collected event references are provided in Table 2. The tweets were collected over the given period of time, by providing a popular hashtag to the Twitter streaming API  (for details about Twitter Data Collection please refer Appendix \ref{AppendixA}.
+Due to extreme popularity of Twitter, data from it was collected for representing the microblog genre and short textual social media references. Four million tweets (approx) related to five different events were collected. Details of the collected event references are provided in Table \ref{informationcuedata}. The tweets were collected over the given period of time, by providing a popular hashtag to the Twitter streaming API  as shown in Table \ref{informationcuedata} (for details about Twitter Data Collection please refer Appendix \ref{AppendixA}).
 
 \begin{table}[htbp]
 \center
@@ -89,7 +91,7 @@ Due to extreme popularity of Twitter, data from it was collected for representin
 \hline
 \textbf{Event} & \textbf{Query Hashtag}                          & \shortstack{\textbf{No. of} \\ \textbf{Tweets}} & \shortstack{\textbf{Time Period}}                               \\ \hline
 \shortstack{Sochi Winter\\ Games 2014 \\ ($http://goo.gl/sG4Rqd$)}& \#sochi2014 & 1958220 & \shortstack{11th Feb,2014\\ to\\ 3rd March, 2014} \\ \hline
-\begin{tabular}[c]{@{}c@{}}SXSW 2014  \\ ($http://goo.gl/b6Nd6X$)\end{tabular} & sxsw2014                                  & 1880557                                                            & \begin{tabular}[c]{@{}c@{}}8th March, 2014\\ to\\ 16th March, 2014\end{tabular} \\ \hline
+\begin{tabular}[c]{@{}c@{}}SXSW 2014  \\ ($http://goo.gl/b6Nd6X$)\end{tabular} & \#sxsw2014                                  & 1880557                                                            & \begin{tabular}[c]{@{}c@{}}8th March, 2014\\ to\\ 16th March, 2014\end{tabular} \\ \hline
 \begin{tabular}[c]{@{}c@{}}CPAC 2014 \\ ($http://goo.gl/9o1KUx$)\end{tabular} & \#cpac2014 & 18104                                                              & \begin{tabular}[c]{@{}c@{}}7th March, 2014\\ to\\ 16th March, 2014\end{tabular} \\ \hline
 \shortstack{Millions March NYC \\ ($http://goo.gl/I8WR4B$)} & \#millionsmarchnyc  & 56927 & \shortstack{13th Dec, 2014\\ 20:25:43\\ to\\ 14th Dec, 2014\\ 03:30:41} \\ \hline
 \begin{tabular}[c]{@{}c@{}}Sydney Siege \\ ($http://goo.gl/qLguvG$)\end{tabular} & \#sydneysiege                                  & 398204                                                            & \begin{tabular}[c]{@{}c@{}}15th Dec, 2014\\ 07:21:16\\ to\\ 15th Dec, 2014\\ 22:46:45\end{tabular} \\ \hline
