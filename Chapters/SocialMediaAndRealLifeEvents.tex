@@ -127,24 +127,12 @@ Some of the definitions as specified by the current EIIM model are:
 
 \item \textbf{Definition 2} \textit{\textbf{Entity Identity Information} is defined as a set of attributes of a given entity that distinctly characterizes it and allows that entity to be distinguished from all the other entities maintained by the framework.}
 
-\item \textbf{Definition 3.} \textit{An \textbf{Entity Identity Information Structure (EIIS)} ((\textbf{$s_{i}$})), is defined as a data structure that can persistently and efficiently store, retrieve, and manipulate entity identity information}.
+\item \textbf{Definition 3.} \textit{An \textbf{Entity Identity Information Structure (EIIS)} (\textbf{$s_{i}$}), is defined as a data structure that can persistently and efficiently store, retrieve, and manipulate entity identity information}.
 \end{itemize}
 
-\begin{figure}[htbp]
-  \caption{Misjudgments made by EIIM process.}
-\label{identityIntegrity2}
-  \centering
-    \includegraphics[width=10cm,height=10cm]{Figures/eventIdentity.jpg}
-\end{figure}
 
-These definitions also hold true for the work presented in this dissertation. The only differences are:
-\begin{itemize}
-\item We consider a \textbf{real-life event $E_{i}$} as an individual \textbf{entity}.
 
-\item Instead of \textbf{Entity Identity Information}, we define \textbf{Event Identity Information} as a set of attributes that distinctly characterizes it and allows that event to be distinguished from all other events maintained by the framework.
 
-\item Instead of \textbf{Entity Identity Information Structure (EIIS)}, we define 
-\end{itemize}
 
 
 
@@ -152,7 +140,7 @@ These definitions also hold true for the work presented in this dissertation. Th
   \caption{Entity Identity Integrity in EIIM process.}
 \label{identityIntegrity1}
   \centering
-    \includegraphics[width=8cm,height=6cm]{Figures/identityIntegrityMDM1.jpg}
+    \includegraphics[width=7cm,height=5cm]{Figures/identityIntegrityMDM1.jpg}
 \end{figure}
 
 
@@ -161,30 +149,80 @@ These definitions also hold true for the work presented in this dissertation. Th
   \caption{Misjudgments made by EIIM process.}
 \label{identityIntegrity2}
   \centering
-    \includegraphics[width=8cm,height=6cm]{Figures/identityIntegrityMDM2.jpg}
+    \includegraphics[width=7cm,height=5cm]{Figures/identityIntegrityMDM2.jpg}
 \end{figure}
 
 
-Therefore, ideally in an information system, if $E = \{e_{1},e_{2}, ... ,e_{n}\}$ represents a finite set of entities, $R = \{r_{1},r_{2}, ... ,r_{m}\}$ represents a finite set of references to the entities, and $S = \{s_{1},s_{2}, ... ,s_{n}\}$ represents a finite set of EIIS maintaining identity information of the entities then there should be one-to-one correspondence between the real-life entities ($\in E$) and the EIIS ($\in S$) representing their identity information. Also, the references ($\in R$) of a particular entity ($\in E$) should always map to one and only one EIIS ($\in S$) maintaining its identity information. This is shown in Figure 4. Such a situation ensures that the condition of entity identity integrity is satisfied by the information system. One of the main aims of EIIM is to satisfy the conditions of entity identity integrity along with persistently maintaining the entity identity information.
+Therefore, ideally in an information system, if $E = \{e_{1},e_{2}, ... ,e_{n}\}$ represents a finite set of entities, $R = \{r_{1},r_{2}, ... ,r_{m}\}$ represents a finite set of references to the entities, and $S = \{s_{1},s_{2}, ... ,s_{n}\}$ represents a finite set of EIIS maintaining identity information of the entities then there should be one-to-one correspondence between the real-life entities ($\in E$) and the EIIS ($\in S$) representing their identity information. Also, the references ($\in R$) of a particular entity ($\in E$) should always map to one and only one EIIS ($\in S$) maintaining its identity information. This is shown in Figure \ref{identityIntegrity1}. Such a situation ensures that the condition of entity identity integrity is satisfied by the information system. One of the main aims of EIIM is to satisfy the conditions of entity identity integrity along with persistently maintaining the entity identity information.
 
-The current EIIM model deals with a closed environment of an information system where there is fixed number of entities along with fixed number of references to them. In an ideal situation the EIIM process should always satisfy the conditions of entity identity integrity as shown in Figure \ref{identityIntegrity1}, and previously explained. However, in practice, all the references to an entity in the information system might not get mapped to the EIIS maintained for that particular entity due to misjudgments made by the automated processes as shown in Figure \ref{identityIntegrity2}. This might result in false negative and false positive errors. A false negative error arises when the system fails to map a reference of an entity to its corresponding EIIS. This is shown in Figure 5, where the system fails to map the reference $r_{h}$ ($\in R$) of entity $e_{n}$ ($\in E$) to an EIIS ($\in S$). A false positive error arises when the system maps two references of different entities to a single EIIS. This is shown in Figure 5, where the system wrongly maps reference $r_{5}$ ($\in R$) of entity $e_{2}$ ($\in E$), to the EIIS $s_{3}$ ($\in S$) being maintained for entity $e_{3}$ ($\in E$). Such a situation creates dissonance between the actual identity of the real-world entities being stored in the information system and their identities interpreted by the automated processes, resulting in low entity identity integrity of the system. Asserted resolutions are introduced in order to deal with such problems (shown in Figure 3.).
+The current EIIM model deals with a closed environment of an information system where there is fixed number of entities along with fixed number of references to them. In an ideal situation the EIIM process should always satisfy the conditions of entity identity integrity as shown in Figure \ref{identityIntegrity1}, and previously explained. However, in practice, all the references to an entity in the information system might not get mapped to the EIIS maintained for that particular entity due to misjudgments made by the automated processes as shown in Figure \ref{identityIntegrity2}. This might result in \textit{false negative} and \textit{false positive} errors. A \textit{false negative} error arises when the system fails to map a reference of an entity to its corresponding EIIS. This is shown in Figure \ref{identityIntegrity2}, where the system fails to map the reference $r_{h}$ ($\in R$) of entity $e_{n}$ ($\in E$) to an EIIS ($\in S$). A \textit{false positive} error arises when the system maps two references of different entities to a single EIIS. This is shown in Figure 5, where the system wrongly maps reference $r_{5}$ ($\in R$) of entity $e_{2}$ ($\in E$), to the EIIS $s_{3}$ ($\in S$) being maintained for entity $e_{3}$ ($\in E$). Such a situation creates dissonance between the actual identity of the real-world entities being stored in the information system and their identities interpreted by the automated processes, resulting in low entity identity integrity of the system. Asserted resolutions are introduced in order to deal with such problems (shown in Figure \ref{originalEIIM}.).
 
 The EIIM processes and life cycle is a step ahead of the basic record linking process that identifies references to same entities for a given dataset. The goal of EIIM is to consistently label references to the same entity with the same identifier across different datasets processed at different times. Through the management of persistent entity identity structures, EIIM provides an added functionality for an entity resolution system to create and assign persistent entity identifiers that do not change from process to process. The current EIIM can also be thought of as forming a nexus between ER and MDM by adding an explicit longitudinal dimension to the management of identity information. The EIIM model proposed in the presented research expands the current model into the unstructured domain of social media, bringing in new challenges and devising new techniques for solving them. The next section gives a detailed discussion and definition of the problem of extending the EIIM model to social media.
 
-\section{Problem of Event Identity Information Management in Social Media\label{problem}}
+\section{Problem of Event Identity Information Management (EIIM) in Social Media\label{problem}}
+
+\begin{figure}[htbp]
+  \caption{Event identity information for real-life event, `Egyptian Revolution 2011'.}
+\label{eventidentity}
+  \centering
+    \includegraphics[width=10cm,height=10cm]{Figures/eventIdentity.jpg}
+\end{figure}
+
+
+The definitions as given in the previous section also hold true for the work presented in this dissertation. The only differences are:
+\begin{enumerate}
+\item We consider a \textbf{real-life event $E_{i}$} as an individual \textbf{entity}, and assume that every \textbf{real-life event} also has a distinct identity.
+
+\item Instead of \textbf{Entity Identity Information}, we define \textbf{Event Identity Information} as a set of attributes that distinctly characterizes it and allows that event to be distinguished from all other events maintained by the framework. For example, names of the main active participants (people, organizations, etc), popular keywords, timespan of occurrence and place of occurrence could be identity information for a real-life event as shown in Figure \ref{eventidentity}.
+
+\item Instead of \textbf{Entity Identity Information Structure (EIIS)}, we define \textbf{Event Identity Information Structures (EIIS)}, for real-life events as a data structure that can persistently and efficiently store, retrieve, and manipulate entity identity information.
+
+\item Lastly, this dissertation solves the problem of \textit{Event Identity Information Management} in the unstructured and open domain of social media, that gave rise to new challenges. It added complexity to the original problem of EIIM, for which following steps were taken:
+
+\begin{itemize}
+\item A completely new life cycle of data processing components had to be introduced that is more suitable for processing unstructured references of events in social media.
+\item What consists of \textbf{Event Identity Information} became losely defined due to the unstructured and highly dynamic nature of the environment. This led to development of new techniques that can identify identity information of an event w.r.t time, extract it from the references and store them in the \textbf{Event Identity Information Structures (EIIS)}.
+\item A complete new representation of \textbf{Event Identity Information Structures (EIIS)} is proposed, which is more suitable for managing the identity information of events in a dynamic and unstructured environment.
+\end{itemize}
+\end{enumerate}
+
+
+%$\Xi = \{E_{1},E_{2}, ... ,E_{n}\}$
+%
+%$R = \{r_{1},r_{2}, ... ,r_{m}\}$
+%
+%$S = \{s_{1},s_{2}, ... ,s_{n}\}$
+
+\begin{figure}[htbp]
+  \caption{Relation between elements of $\Xi,M$ and $S$ in Event Identity Information Management from social media.}
+\label{eventresolutionmappings}
+  \centering
+    \includegraphics[width=12cm,height=10cm]{Figures/EventResolutionMappings.jpg}
+\end{figure}
+
+%In this section, we give the definition of an event appropriate in the context of our problem, and then present a formal statement of the problem that we want to solve.
+
+Events have been defined from various perspectives and in different contexts. In the context of the work presented in this dissertation we adopt a definition similar to \cite{becker2011beyond}. 
+
+
+\textbf{Event:} \textit{An event is defined as a real-world occurrence ($ E_{i}$) with an associated time period $T_{E_{i}}$ ($t^{start}_{E_{i}}$-$t^{end}_{E_{i}}$) and a time ordered stream of social media references $M_{E_{i}} = {\{m_{1_{E_{i}}},m_{2_{E_{i}}}, ... ,m_{n_{E_{i}}}, ... ,m_{z_{E_{i}}}\}}$, of substantial volume, discussing about the event and posted in time $T_{E_{i}}$}.
+
+%In the real-world scenario, users of social media generate the references with an intention to represent information about a particular entity. For example the tweet (#iPhone battery life driving you crazy ? {YES!} Here are a few simple fixes...) primarily talks about iPhone. There might be multiple references of iPhone being generated in social media. One of the main aims of the proposed framework would be to consolidate all the references of a particular entity and map it to its corresponding EIIS maintained by the framework. However, there might be a mismatch between the way an entity is interpreted in its social media reference by the creator and the way the proposed framework interprets the same in an automated fashion. This would result in loss of data integrity and increase the chances of erroneous results. Such problems are prevalent in the vanilla flavor of the EIIM as discussed in the previous section, giving rise to false negative and false positive errors. Since the EIIM framework 
+%
+%operates in an open environment of social media as discussed earlier, two new scenarios leading to erroneous conditions are observed:
+%
+%•	Noisy Entity: The first situation occurs when a reference gets mapped to an existing EIIS in the framework, although it refers to an entity, which is out of the pre-specified list of entities. Such a scenario is shown in Figure 6, where the entity ep (E) generates the reference rx (R), yet the external reference gets mapped to s1 ( S).
+%
+%•	Untracked reference: The second situation occurs when there is a reference, which the framework is unable to track and map it to a pre-specified list of entities although it refers to it. Such a scenario is shown in Figure 6, where the framework should have tracked the reference ry (R) and associate it with entity e3 (E), yet it is unable to do so and lose track of the reference in the EIIM process.
+
+
+Given a pre-specified finite set of real-life events, $\Xi = \{E_{1},E_{2}, ... ,E_{n}\}$ generating a finite ordered stream of references $M = \{m_{1_{E_{1}}}, m_{2_{E_{1}}}, ... ,m_{i_{E_{i}}}, ... ,m_{n_{E_{n}}}\}$ in social media, and a finite set of EIIS structures $S = \{s_{E_{1}},s_{E_{2}}, ... ,s_{E_{n}}\}$ corresponding to each real-life event $(E_{i} \in \Xi)$, the problem is to resolve references of an event $(E_{i})$, and to persistently extract, store and manage identity information of the event in its corresponding EIIS $s_{E_{i}}$.
 
 
 
-$\Xi = \{E_{1},E_{2}, ... ,E_{n}\}$
 
-$R = \{r_{1},r_{2}, ... ,r_{m}\}$
 
-$S = \{s_{1},s_{2}, ... ,s_{n}\}$
-
-In this section, we give the definition of an event appropriate in the context of our problem, and then present a formal statement of the problem that we want to solve.
-
-Events have been defined from various perspectives and in different contexts. In the context of our work we adopt a definition similar to \cite{becker2011beyond}. \textbf{Event:} An event is defined as a real-world occurrence ($\scriptstyle E_{i}$) with an associated time period $\scriptstyle T_{E_{i}}$ ($\scriptstyle t^{start}_{E_{i}}$-$\scriptstyle t^{end}_{E_{i}}$) and a time ordered stream of tweets $\scriptstyle M_{E_{i}}$, of substantial volume, discussing about the event and posted in time $\scriptstyle T_{E_{i}}$.
-The tweets are primarily composed of a set of hashtags ($\scriptstyle H_{E_{i}}$) used for annotating the tweets ($\scriptstyle \in M_{E_{i}}$), a set of text units ($\scriptstyle W_{E_{i}}$) used for sharing textual information in the tweets ($\scriptstyle \in M_{E_{i}}$), a set of URLs ($\scriptstyle L_{E_{i}}$) linking to external sources related to the event and a  set of users ($\scriptstyle U_{E_{i}}$) posting the tweets ($\scriptstyle \in M_{E_{i}}$).
+%The tweets are primarily composed of a set of hashtags ($\scriptstyle H_{E_{i}}$) used for annotating the tweets ($\scriptstyle \in M_{E_{i}}$), a set of text units ($\scriptstyle W_{E_{i}}$) used for sharing textual information in the tweets ($\scriptstyle \in M_{E_{i}}$), a set of URLs ($\scriptstyle L_{E_{i}}$) linking to external sources related to the event and a  set of users ($\scriptstyle U_{E_{i}}$) posting the tweets ($\scriptstyle \in M_{E_{i}}$).
 %\item a set of hashtags ($H_{E_{i}}$) used for annotating the tweets ($\in M_{E_{i}}$) related to the event.
 %\item a set of users ($U_{E_{i}}$) posting tweets ($\in M_{E_{i}}$) about the event.
 %\item a set of urls ($L_{E_{i}}$) linking to external sources related to the event, shared by the users ($\in U_{E_{i}}$) in the tweets ($\in M_{E_{i}}$) posted by them.
