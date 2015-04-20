@@ -41,7 +41,7 @@ This component allows the framework to collect event references from different s
 
 %\noindent \textbf{\textit{Motivation behind source selection:}} For many people blogs have become popular social media sources for satisfying interpersonal communication needs. Blogs act as a platform for masses to share their likes and dislikes, voice their opinions, provide suggestions and report news. Over the years blogging has matured from personal diaries to citizen journalistic sources providing live coverage of events beyond the professional newsrooms. Often mainstream media rely on blogs for reporting first-hand accounts of an event \cite{ekdale2007expression}. Other social media platforms like microblogs, social networks etc., also promote such activities. But, these platforms have very little scope to elaborately discuss about the events due to the limitations in the length of content allowed to be posted. However, these alternative platforms act as good sources for studying and tracking dissemination of information during real-life events. This motivated us to perform our experiments on sources collected from the blogging platforms instead of other social media webs
 
-Due to extreme popularity of Twitter, data from it was collected for representing the microblog genre and short textual social media references. Four million tweets (approx) related to five different events were collected. Details of the collected event references are provided in Table \ref{informationcuedata}. The tweets were collected over the given period of time, by providing a popular hashtag to the Twitter streaming API  as shown in Table \ref{informationcuedata} (for details about Twitter Data Collection please refer Appendix \ref{AppendixA}).
+Due to extreme popularity of Twitter, data from it was collected for representing the microblog genre and short textual social media references. Four million tweets (approx) related to five different events were collected. Details of the collected event references are provided in Table \ref{informationcuedata}. The tweets were collected over the given period of time, by providing a popular hashtag to the Twitter streaming API  as shown in Table \ref{informationcuedata} (for details about Twitter Data Collection please refer Appendix \ref{AppendixA}). Only English language tweets are considered for the experiments as the available natural language toolkits performs well for English, and the annotators used for different tasks are only proficient in English language.
 
 \begin{table}[htbp]
 \center
@@ -113,8 +113,9 @@ Preprocessing the raw references is an important stage of any data intensive app
 
 The tweets collected using the previous component goes through the following pre-processing steps:
 
-\begin{itemize}
-\item \textbf{Parts-of-speech tagging} - The Natural Language Toolkit (http://nltk.org) POS tagger is used for tagging the raw text of the tweets. All the words of a tweet is assigned one of the following parts-of-speech:
+
+\subsection{Parts-of-speech tagging} 
+The Natural Language Toolkit (http://nltk.org) POS tagger is used for tagging the raw text of the tweets. All the words of a tweet is assigned one of the following parts-of-speech:
 \begin{itemize}
 \item Noun
 \item Adjective
@@ -122,17 +123,21 @@ The tweets collected using the previous component goes through the following pre
 \item Adverb
 \item Preposition
 \item Interjection
+\item Pronoun
+\item Article
 \end{itemize}
 
 The tagged tweet is also separately stored and maintained. These tags are used later in different components down the pipeline. The Penn Treebank tags\footnote{https://www.ling.upenn.edu/courses/Fall\_2003/ling001/penn\_treebank\_pos.html} are used for tagging and is parsed accordingly for identifying words with a certain parts-of-speech.
 
-\item \textbf{Special Character Detection}
+\subsection{Special Character Detection}
 All the special characters that are not alphanumeric are detected and the total number of special characters in a tweet is stored.
 
 
-\item \textbf{Data Cleansing} - The raw text of the tweet is extracted and cleaned. All the user mentions, retweet symbols, URLs and special characters are removed and the entire tweet is converted into lowercase. 
+\subsection{Data Cleansing}
+The raw text of the tweet is extracted and cleaned. All the user mentions, hashtags, retweet symbols, URLs and special characters are removed and the entire tweet is converted into lowercase. 
 
-\item \textbf{Duplicate Detection}- The tweets after cleaning are assigned a md5 hash code, which helps in detecting duplicate tweets. Tweets having the same hash code are considered to be redundant copies of each other and only a single copy of the tweet is finally stored in the database. This technique also helps in detecting the retweets of a tweet that contain the same content. Also there are certain tweets that are shared with the same content but has different user mentions and with different combination of the words expressing the content. For example, the following tweets talks about the same video shared by mashable and does not present any new information. 
+\subsection{Duplicate Detection}
+The tweets after cleaning are assigned a md5 hash code, which helps in detecting duplicate content. Tweets having the same hash code are considered to be redundant copies of each other, and only a single copy of the tweet is finally stored in the database. This technique also helps in detecting the retweets of a tweet that contain the same content. Also there are certain tweets that are shared with the same content but has different user mentions and with different combination of the words expressing the content. For example, the following tweets talks about the same video shared by mashable and does not present any new information. 
 
 \begin{itemize}
 \item RT @mashable: Timelapse video reveals massive size of New York City protests http://t.co/zhqHpkDLk1 \#MillionsMarchNYC http://t.co/WktxssAfDp
@@ -140,31 +145,57 @@ All the special characters that are not alphanumeric are detected and the total 
 \end{itemize}
 
 
-After the data cleansing step, the duplicate detection scheme identifies both the tweets to be same and only maintain a single copy. This process occurs in real-time. A hashtable is maintained in the memory that is constantly searched for the presence of 
+After the data cleansing step, the duplicate detection scheme identifies both the tweets to be same and only maintain a single copy. This process occurs in real-time. Whenever, a new tweet is obtained from the straming API, the md5 hashcode is calculated after going through the previous data pre-processing steps. A hashtable is maintained in the memory that is constantly searched for the presence of the generated hashcode. If the hashcode is already present then the tweet is dropped and not stored.
 
-
-
-\item \textbf{Tokenization} - 
-\item \textbf{Stop Word Elimination} - 
-\item \textbf{Slang Word Extraction} -
-\item \textbf{Feeling Word Extraction} - 
-\item \textbf{Tweet Meta-data Extraction} - 
+\subsection{Stop Word Detection and Elimination}
+A list of English stop words is compiled that is publicly shared in the following URL :  
 \begin{itemize}
-\item \textbf{URLs} - 
-\item \textbf{Hashtags} - 
-\item \textbf{Retweet Counts} - 
-\item \textbf{Favorite Counts} - 
-\item \textbf{User Mentions} - 
-\item \textbf{User Follower Counts}
-\item \textbf{Verification Information} - 
-\item \textbf{Time Information} - 
+\item https://github.com/dxmahata/EIIMFramework/blob/master/CodeBase/\\EventIdentityInformationManagement/Resources/englishStopwords.txt
 \end{itemize}
+This list is used for detecting the stop words in English language tweets. The stop words are eliminated and the number of stop words detected is recorded.
+
+\subsection{Slang Word Detection}
+Slang words commonly used on the Internet and twitter specific slang publicly shared by FBI\footnote{https://www.documentcloud.org/documents/1199460-responsive-documents.html\#document/p1} is combined together for compiling a list of English slang words. This list is used for detecting and extracting the slang words from the tweets. The number of slang words detected is recorded. This list is also used later to detect the slang hashtags and slang text units.
+
+The compiled list of twitter specific slang words is publicly shared and can be obtained from the following URL : 
+\begin{itemize}
+\item https://github.com/dxmahata/EIIMFramework/blob/master/CodeBase/\\EventIdentityInformationManagement/Resources/slangWords.txt
 \end{itemize}
 
+\subsection{Feeling Word Detection} 
+A list of words expressing feelings on the Internet, obtained from wefeelfine.org is used for detecting and extracting the feeling words from a tweet. The number of feeling words detected is recorded and the extracted feeling words are stored. This list is also publicly available and can be obtained from the following URL :
+\begin{itemize}
+\item https://github.com/dxmahata/EIIMFramework/blob/master/CodeBase/\\EventIdentityInformationManagement/Resources/feelingWords.txt
+\end{itemize}
 
-It performs deduplication of tweets using md5 hashing scheme. Redundant copies of a tweet are filtered out keeping a single copy in the database. Parts-of-speech tagging is done using the default POS tagger available in the NLTK  module. A standard list of English stop words is used for eliminating the stop words from the tweet text. All the characters of a tweet are converted into lower case and special characters are removed. The tweets are tokenized into unigram tokens. User mentions, retweet symbol and URLs are removed during tokenization and are not considered as tokens.
+\subsection{Tokenization}
+The tweet obtained after performing the data cleansing steps and elimination of stop words are tokenized into unigram and bigram tokens using the tokenizer module available in NLTK. The set of tokens thus obtained are stored separately.
 
-A list of words expressing feelings in the internet, obtained from wefeelfine.org is used for detecting and extracting the feeling words from a tweet. Slang words commonly used in the internet and twitter specific slang publicly shared by FBI  is combined together for compiling a list of English slang words. The modules use this list for detecting and extracting the slang words from the tweets, hashtags and text units. Retweet counts, favorite counts, verification information, user follower count, time information and expanded form of the URLs shared in the tweets are extracted from the metadata associated with each tweet, as retrieved using the Twitter API. 
+\subsection{Stemming}
+The unigram tokens obtained after tokenization are stemmed and a separate list of stemmed tokens are stored. A standard Porter stemmer available with NLTK library is used for the purpose.
+
+
+\subsection{Tweet Meta-data Extraction}
+Several meta-data that are associated with each tweet obtained from the JSON response of the streaming API are extracted.  Some of these meta-data are :
+\begin{itemize}
+\item Expanded URLs  
+\item Hashtags 
+\item Retweet Counts 
+\item Favorite Counts
+\item User Mentions
+\item User Follower Counts
+\item Verification Information
+\item Time Information 
+\end{itemize}
+
+\subsection{Named Entity Extraction}
+Named entities such as name of persons, animals, places, cars and organizations are extracted from the raw tweets. For this purpose the entity extraction service of AlchemyAPI\footnote{http://alchemyapi.com} is used. 
+
+
+
+%It performs deduplication of tweets using md5 hashing scheme. Redundant copies of a tweet are filtered out keeping a single copy in the database. Parts-of-speech tagging is done using the default POS tagger available in the NLTK  module. A standard list of English stop words is used for eliminating the stop words from the tweet text. All the characters of a tweet are converted into lower case and special characters are removed. The tweets are tokenized into unigram tokens. User mentions, retweet symbol and URLs are removed during tokenization and are not considered as tokens.
+%
+%A list of words expressing feelings in the internet, obtained from wefeelfine.org is used for detecting and extracting the feeling words from a tweet. Slang words commonly used in the internet and twitter specific slang publicly shared by FBI  is combined together for compiling a list of English slang words. The modules use this list for detecting and extracting the slang words from the tweets, hashtags and text units. Retweet counts, favorite counts, verification information, user follower count, time information and expanded form of the URLs shared in the tweets are extracted from the metadata associated with each tweet, as retrieved using the Twitter API. 
 
 
 \section{Event Information Quality\label{eventinfoquality}}
@@ -184,6 +215,8 @@ A list of words expressing feelings in the internet, obtained from wefeelfine.or
 This component examines the quality of information present in the tweets collected for the events. It segregates the references having high likelihood of containing good quality event related information from the ones that are less likely to contain or point to good quality information. In order to make a generic module for identifying high quality event related informative references we implemented a logistic regression classifier trained on a publicly available annotated dataset provided by \cite{olteanu2014crisislex}. The tweets labeled as ‘related and informative’ were assigned a score of 1 and all the other tweets labeled as ‘related-but not informative’, and ‘not related’ were assigned a score of 0. Table \ref{tweetfeature} lists the features extracted from each tweet. The choice of features was governed by previous works related to identifying high quality information from Twitter as already pointed in the Literature Survey. 10-fold cross validation was performed resulting in a model with an accuracy of 76.64\%. Table \ref{logregreseval} lists the evaluation measures obtained while training the classifier.
 
 The trained model is used for assigning a score between 0 (least informative) and 1 (most informative) to the tweets in real-time. Both the ‘Event Reference Preparation’ and the ‘Event Information Quality’ components work in collaboration with the ‘Event Reference Collection’ component in order to collect, prepare, assign quality score and store the tweets related to an event, obtained from Twitter streaming API, in real-time.
+
+Formality\footnote{Formality = (\#nouns + \#adjectives + \#prepositions + \#articles - \#pronouns - \#verbs - \#adverbs - \#interjections + 100)/2}
 
 \begin{savenotes}
 \begin{table}[ht]

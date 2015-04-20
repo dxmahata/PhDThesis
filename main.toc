@@ -39,33 +39,44 @@
 \contentsline {section}{\numberline {5.1}Identity Integrity}{38}{section.89}
 \contentsline {section}{\numberline {5.2}Event Reference Collection}{38}{section.90}
 \contentsline {section}{\numberline {5.3}Event Reference Preparation}{40}{section.93}
-\contentsline {section}{\numberline {5.4}Event Information Quality}{42}{section.96}
-\contentsline {section}{\numberline {5.5}Event Identity Information Capture}{44}{section.101}
-\contentsline {section}{\numberline {5.6}Event Identity Information Structure}{45}{section.103}
-\contentsline {section}{\numberline {5.7}Event Identity Information Processing}{47}{section.105}
-\contentsline {subsection}{\numberline {5.7.1}EventIdentityInfoGraph}{47}{subsection.106}
-\contentsline {subsection}{\numberline {5.7.2}EventIdentityInfoRank}{51}{subsection.127}
-\contentsline {section}{\numberline {5.8}Event Reference Resolution}{55}{section.142}
-\contentsline {section}{\numberline {5.9}Event Analytics}{56}{section.144}
-\contentsline {section}{\numberline {5.10}Event Identity Information Processing}{60}{section.210}
-\contentsline {chapter}{\numberline {6}Evaluations}{61}{chapter.211}
-\contentsline {chapter}{\numberline {7}Potential Applications of the EIIM Framework}{66}{chapter.220}
-\contentsline {section}{\numberline {7.1}Event Monitoring and Analysis}{66}{section.221}
-\contentsline {section}{\numberline {7.2}Event Information Retrieval}{67}{section.228}
-\contentsline {section}{\numberline {7.3}Opinion and Review Mining}{67}{section.230}
-\contentsline {section}{\numberline {7.4}Recommender Systems}{68}{section.241}
-\contentsline {section}{\numberline {7.5}Event Management and Marketing}{69}{section.242}
-\contentsline {section}{\numberline {7.6}Social Media Data Integration}{70}{section.244}
-\contentsline {chapter}{\numberline {8}Conclusion and Future Work}{71}{chapter.246}
-\contentsline {section}{\numberline {8.1}Conclusion}{71}{section.247}
-\contentsline {section}{\numberline {8.2}Future Work}{71}{section.248}
-\contentsline {subsection}{\numberline {8.2.1}Summarizing Event Related Content}{71}{subsection.249}
-\contentsline {subsection}{\numberline {8.2.2}Identifying Insightful Opinionated Content Related to Events}{71}{subsection.250}
-\contentsline {subsection}{\numberline {8.2.3}Event Topic Modeling}{71}{subsection.251}
-\contentsline {subsection}{\numberline {8.2.4}Event-specific Recommendations}{71}{subsection.252}
-\contentsline {subsection}{\numberline {8.2.5}Distributed Processing of EventIdentityInfoGraph}{71}{subsection.253}
-\contentsline {subsection}{\numberline {8.2.6}Event Ontology for Social Media}{71}{subsection.254}
+\contentsline {subsection}{\numberline {5.3.1}Parts-of-speech tagging}{40}{subsection.95}
+\contentsline {subsection}{\numberline {5.3.2}Special Character Detection}{41}{subsection.97}
+\contentsline {subsection}{\numberline {5.3.3}Data Cleansing}{41}{subsection.98}
+\contentsline {subsection}{\numberline {5.3.4}Duplicate Detection}{41}{subsection.99}
+\contentsline {subsection}{\numberline {5.3.5}Stop Word Detection and Elimination}{42}{subsection.100}
+\contentsline {subsection}{\numberline {5.3.6}Slang Word Detection}{42}{subsection.101}
+\contentsline {subsection}{\numberline {5.3.7}Feeling Word Detection}{43}{subsection.103}
+\contentsline {subsection}{\numberline {5.3.8}Tokenization}{43}{subsection.104}
+\contentsline {subsection}{\numberline {5.3.9}Stemming}{43}{subsection.105}
+\contentsline {subsection}{\numberline {5.3.10}Tweet Meta-data Extraction}{43}{subsection.106}
+\contentsline {subsection}{\numberline {5.3.11}Named Entity Extraction}{44}{subsection.107}
+\contentsline {section}{\numberline {5.4}Event Information Quality}{44}{section.109}
+\contentsline {section}{\numberline {5.5}Event Identity Information Capture}{46}{section.115}
+\contentsline {section}{\numberline {5.6}Event Identity Information Structure}{47}{section.117}
+\contentsline {section}{\numberline {5.7}Event Identity Information Processing}{49}{section.119}
+\contentsline {subsection}{\numberline {5.7.1}EventIdentityInfoGraph}{49}{subsection.120}
+\contentsline {subsection}{\numberline {5.7.2}EventIdentityInfoRank}{53}{subsection.141}
+\contentsline {section}{\numberline {5.8}Event Reference Resolution}{57}{section.156}
+\contentsline {section}{\numberline {5.9}Event Analytics}{58}{section.158}
+\contentsline {section}{\numberline {5.10}Event Identity Information Processing}{62}{section.224}
+\contentsline {chapter}{\numberline {6}Evaluations}{63}{chapter.225}
+\contentsline {chapter}{\numberline {7}Potential Applications of the EIIM Framework}{68}{chapter.234}
+\contentsline {section}{\numberline {7.1}Event Monitoring and Analysis}{68}{section.235}
+\contentsline {section}{\numberline {7.2}Event Information Retrieval}{69}{section.242}
+\contentsline {section}{\numberline {7.3}Opinion and Review Mining}{69}{section.244}
+\contentsline {section}{\numberline {7.4}Recommender Systems}{70}{section.255}
+\contentsline {section}{\numberline {7.5}Event Management and Marketing}{71}{section.256}
+\contentsline {section}{\numberline {7.6}Social Media Data Integration}{72}{section.258}
+\contentsline {chapter}{\numberline {8}Conclusion and Future Work}{73}{chapter.260}
+\contentsline {section}{\numberline {8.1}Conclusion}{73}{section.261}
+\contentsline {section}{\numberline {8.2}Future Work}{73}{section.262}
+\contentsline {subsection}{\numberline {8.2.1}Summarizing Event Related Content}{73}{subsection.263}
+\contentsline {subsection}{\numberline {8.2.2}Identifying Insightful Opinionated Content Related to Events}{73}{subsection.264}
+\contentsline {subsection}{\numberline {8.2.3}Event Topic Modeling}{73}{subsection.265}
+\contentsline {subsection}{\numberline {8.2.4}Event-specific Recommendations}{73}{subsection.266}
+\contentsline {subsection}{\numberline {8.2.5}Distributed Processing of EventIdentityInfoGraph}{73}{subsection.267}
+\contentsline {subsection}{\numberline {8.2.6}Event Ontology for Social Media}{73}{subsection.268}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendix Title Here}{72}{appendix.255}
+\contentsline {chapter}{\numberline {A}Appendix Title Here}{74}{appendix.269}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{73}{dummy.256}
+\contentsline {chapter}{Bibliography}{75}{dummy.270}
