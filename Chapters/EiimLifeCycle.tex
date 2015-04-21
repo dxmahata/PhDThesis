@@ -206,32 +206,79 @@ Named entities such as name of persons, animals, places, cars and organizations 
     \includegraphics[width=14cm,height=11cm]{Figures/EIIMComponents/EventInformationQuality.jpg}
 \end{figure}
 
+This component examines the quality of information present in the tweets collected for the events. It segregates the references having high likelihood of containing good quality event related information from the ones that are less likely to contain or point to good quality information. In order to make a generic module for identifying high quality event related informative references we implemented a logistic regression classifier. Once the classifier is trained, it is used for assigning generic informativeness score to the tweets in real-time as they are collected using the streaming API. The component aids in solving the problem of information overload. Just like an user searching for relevant informative content about an event faces the challenging situation of information overload as discussed in Chapter \ref{challenges}, Section \ref{informationoverload}, it is also a challenge for automated systems to process the huge amount of content coming at high velocity and extract useful information out of it. By filtering out the tweets that are less likely to contain useful and high quality  information it solves the problem of information overload for the other components of the EIIM framework. 
 
-%\subsection{Annotated Dataset}
-%
-%\subsection{Feature Selection and Training}
-%
-%\subsection{Model Evaluation}
-This component examines the quality of information present in the tweets collected for the events. It segregates the references having high likelihood of containing good quality event related information from the ones that are less likely to contain or point to good quality information. In order to make a generic module for identifying high quality event related informative references we implemented a logistic regression classifier trained on a publicly available annotated dataset provided by \cite{olteanu2014crisislex}. The tweets labeled as ‘related and informative’ were assigned a score of 1 and all the other tweets labeled as ‘related-but not informative’, and ‘not related’ were assigned a score of 0. Table \ref{tweetfeature} lists the features extracted from each tweet. The choice of features was governed by previous works related to identifying high quality information from Twitter as already pointed in the Literature Survey. 10-fold cross validation was performed resulting in a model with an accuracy of 76.64\%. Table \ref{logregreseval} lists the evaluation measures obtained while training the classifier.
+\subsection{Annotated Dataset}
+We use a publicly available annotated dataset from the CrisisLex\footnote{http://crisislex.org/data-collections.html} website shared by Olteanu et al. \cite{olteanu2014crisislex}. The collection includes tweets collected during 26 large crisis events in 2012 and 2013, with about 1,000 tweets labeled per crisis for informativeness (i.e. ``informative", or ``not informative"), information type, and source. 28,000 tweets (about 1,000 in each collection) were labeled by crowdsourced workers according to informativeness (informative or not informative), information types (e.g. caution and advice, infrastructure damage), and information sources (e.g. governments, NGOs).
+
+For example, for the Colorado wildfire\footnote{http://en.wikipedia.org/wiki/2012\_Colorado\_wildfires} event, the following tweets were assigned labels of ``related and informative", ``related but not informative", and ``not related", respectively.
+
+\begin{itemize}
+\item \textit{Related and Informative} - \#Media Large wildfire in N. Colorado prompts evacuations: Crews are battling a fast-moving wildfire http://t.co/ju1BGTKH \#Politics \#News
+
+\item \textit{Related but not Informative} - RT @LarimerSheriff: \#HighParkFire update \\ http://t.co/hBy5shen
+
+\item \textit{Not Related} - \#Intern \#US \#TATTOO \#Wisconsin \#Ohio \#NC \#PA \#Florida \#Colorado \#Iowa \#Nevada \#Virginia \#NV \#mlb Travel Destinations ; \\ http://t.co/TIHBJKF2
+\end{itemize}
+
+Not all the tweets were in English language. We selected English language tweets for training the logistic regression model. There were only 9729 tweets. 
+
+\subsection{Feature Selection and Training}
+In order to train the model we assigned a score of 1 to the tweets that were labeled ‘related and informative’, and all the other tweets labeled as ‘related-but not informative’, and ‘not related’ were assigned a score of 0. The choice of features was governed by previous works related to identifying high quality information from Twitter \cite{castillo2011information,gupta2012credibility,vosecky2012searching,huang2011quality}. The list of features selected for the model are: 
+\begin{enumerate}
+\item \textbf{Has URL} - has a value of 1 if the tweet contains URL or else has a value of 0.
+\item \textbf{Number of Words} - total number of unigram tokens extracted from the raw tweet text.
+\item \textbf{Number of Stop Words} - total number of English stop words detected in the raw tweet.
+\item \textbf{Number of Feeling Words} - total number of feeling words detected in the raw tweet.
+\item \textbf{Number of Slang Words} - total number of slang words detected in the raw tweet.
+\item \textbf{Number of Hashtags} - total number of hashtags used in the raw tweet.
+\item \textbf{Number of User Mentions} - total number of user mentions detected in the raw tweet.
+\item \textbf{Tweet Length} - total number of characters used in the raw tweet.
+\item \textbf{Unique Characters} - total number of unique characters used in the raw tweet.
+\item \textbf{Special Characters} - total number of special characters detected in the tweet.
+\item \textbf{Favorite Count} - total number of favorite count of the tweet at the time it was collected.
+\item \textbf{Retweet Count} - total number of retweet count of the tweet at the time it was collected.
+\item \textbf{Verified} - has a value of 1 if the user posting the tweet is a verified user by Twitter or else has a value of 0.
+\item \textbf{Number of Nouns} - total number of nouns detected in the tweet, without considering the hashtags and the user mentions whenever they are tagged as nouns.
+\item \textbf{Number of Adjectives} - total number of adjectives detected in the tweet, without considering the hashtags and the user mentions whenever they are tagged as adjectives.
+\item \textbf{Number of Verbs} - total number of verbs detected in the tweet, without considering the hashtags and the user mentions whenever they are tagged as verbs.
+\item \textbf{Number of Adverbs} - total number of adverbs detected in the tweet, without considering the hashtags and the user mentions whenever they are tagged as adverbs.
+\item \textbf{Number of Pronouns} - total number of pronouns detected in the tweet, without considering the hashtags and the user mentions whenever they are tagged as pronouns.
+\item \textbf{Number of Interjections} - total number of interjections detected in the tweet, without considering the hashtags and the user mentions whenever they are tagged as interjections.
+\item \textbf{Number of Articles} - total number of articles detected in the tweet, without considering the hashtags and the user mentions whenever they are tagged as articles.
+\item \textbf{Number of Prepositions} - total number of prepositions detected in the tweet, without considering the hashtags and the user mentions whenever they are tagged as prepositions.
+\item \textbf{Formality} - which is defined as follows,
+Formality\footnote{Formality = (\#nouns + \#adjectives + \#prepositions + \#articles - \#pronouns - \#verbs - \#adverbs - \#interjections + 100)/2}
+and is proposed in \cite{alejandro2011use}. \#nouns, denotes the number of nouns detected in the tweet, and so on.
+
+\end{enumerate}
+
+
+
+
+\subsection{Model Evaluation}
+
+10-fold cross validation was performed, with `l1' penalty, resulting in a model with an accuracy of 76.64\%. Table \ref{logregreseval} lists the evaluation measures obtained while training the classifier. The ROC AUC Score of the classifier is 0.6934.
+
 
 The trained model is used for assigning a score between 0 (least informative) and 1 (most informative) to the tweets in real-time. Both the ‘Event Reference Preparation’ and the ‘Event Information Quality’ components work in collaboration with the ‘Event Reference Collection’ component in order to collect, prepare, assign quality score and store the tweets related to an event, obtained from Twitter streaming API, in real-time.
 
-Formality\footnote{Formality = (\#nouns + \#adjectives + \#prepositions + \#articles - \#pronouns - \#verbs - \#adverbs - \#interjections + 100)/2}
 
-\begin{savenotes}
-\begin{table}[ht]
-\centering
-\caption{Tweet features for content informativeness.}
-\label{tweetfeature}
-\begin{tabular}{|l|}
-\hline
-Has Url, No. of words, No. of stopwords, No. of feeling words, No. of slang \\ 
-words, No. of hashtags, No. of user mentions, Tweet  length (No. of characters),\\  No. of unique 
-characters, No. of special characters, Favorite count, Retweet \\ count, Formality, Is tweet verified, No. of nouns, No. of adjectives, No. of \\ verbs, No. of adverbs, No. of pronouns, No. of interjections, No. of articles, \\ No. of prepositions.
- \\ \hline
-\end{tabular}
-\end{table}
-\end{savenotes}
+
+%\begin{savenotes}
+%\begin{table}[ht]
+%\centering
+%\caption{Tweet features for content informativeness.}
+%\label{tweetfeature}
+%\begin{tabular}{|l|}
+%\hline
+%Has Url, No. of words, No. of stopwords, No. of feeling words, No. of slang \\ 
+%words, No. of hashtags, No. of user mentions, Tweet  length (No. of characters),\\  No. of unique 
+%characters, No. of special characters, Favorite count, Retweet \\ count, Formality, Is tweet verified, No. of nouns, No. of adjectives, No. of \\ verbs, No. of adverbs, No. of pronouns, No. of interjections, No. of articles, \\ No. of prepositions.
+% \\ \hline
+%\end{tabular}
+%\end{table}
+%\end{savenotes}
 
 \begin{table}[ht]
 \centering
@@ -668,6 +715,7 @@ Since, our proposed framework takes a hybrid approach by using both supervised a
   \centering
     \includegraphics[width=14cm,height=11cm]{Figures/EIIMComponents/EventReferenceResolution.jpg}
 \end{figure}
+The output of the previous component assigns a final ranked event-specific informativeness scores to the hashtags as well as the text units. These scores are specific to an event and are different for the same text unit or hashtag when they appear in EIIS of some other event.  A threshold is set for filtering out the hashtags and text units that are highly ranked. These hashtags and text units are used for assigning scores to the incoming tweets after tokenizing them to its constituent text units and hashtags. Another threshold is set to decide the acceptable score of a tweet in order to consider it as a high quality informative tweet related to an event tracked by the framework. In this way the incoming real-time tweets are resolved against a particular event, which are stored with a reference to the respective event identifier. These tweets are further processed in the EIIM life cycle.
 
 \section{Event Analytics}
 \begin{figure}[htbp]

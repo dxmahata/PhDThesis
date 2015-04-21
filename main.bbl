@@ -1,4 +1,4 @@
-\begin{thebibliography}{131}
+\begin{thebibliography}{133}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -815,6 +815,16 @@ Alexandra Olteanu, Carlos Castillo, Fernando Diaz, and Sarah Vieweg.
   communications in crises.
 \newblock In \emph{In Proceedings of the 8th International AAAI Conference on
   Weblogs and Social Media (ICWSM" 14)}, number EPFL-CONF-203561, 2014.
+
+\bibitem[Huang et~al.(2011)Huang, Yang, and Zhu]{huang2011quality}
+Minlie Huang, Yi~Yang, and Xiaoyan Zhu.
+\newblock Quality-biased ranking of short texts in microblogging services.
+\newblock In \emph{IJCNLP}, pages 373--382, 2011.
+
+\bibitem[Alejandro and Paloma(2011)]{alejandro2011use}
+Mosquera Alejandro and Moreda Paloma.
+\newblock The use of metrics for measuring informality levels in web 2.0 texts.
+\newblock 2011.
 
 \bibitem[Wei et~al.(2008)Wei, Li, Lu, and He]{wei2008query}
 Furu Wei, Wenjie Li, Qin Lu, and Yanxiang He.
