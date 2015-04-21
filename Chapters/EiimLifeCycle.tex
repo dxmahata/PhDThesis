@@ -376,12 +376,48 @@ Our second step was to use the logistic regression model developed for the `Even
     \label{infoanalysis}
 \end{figure}
 
-As presented in the table, for all the three events, on an average the informative tweets are marked by a higher number of tokens per tweet and greater occurrence of top nouns. The average length of informative tweets is also more than the non-informative ones. The percentage of informative tweets having URLs is strikingly high. A greater use of slang words is observed in non-informative tweets. However, greater occurrence of top hashtags in non-informative tweets intrigued us to look into the content and obtain a detailed view of it. We observed that a lot of non-informative tweets have used popular hashtags with unrelated content and URLs directing to irrelevant information. This is typical of spam tweets as already pointed out in Chapter \ref{challenges}. Although not shown due to space constraints, the average number of follower counts for users posting informative tweets was also observed to be higher than the ones posting non-informative ones. The average number of feeling words used in informative tweets were also relatively higher than the feeling words used in the non-informative tweets. 
+As presented in the table, some of the observations for all the three events are, 
 
-The above observations gave us an idea of how high quality informative content related to events is produced in Twitter and the characteristics that differentiate them from low quality non- informative content. It is now intuitive that the informative tweets are more expressive, formal and lengthier, marked by higher presence of nouns. The high presence of nouns indicates that these tweets also contain information about people, places, organizations, etc, associated with the events, which is vital information about any event and is ideal for representing its identity. Due to the limitations imposed by Twitter on the number of characters in a tweet, the users tend to share URLs along with the textual content that might lead to more information about the event. Also, users with high follower counts tend to post informative tweets. This can also be concluded by the fact that as they have more followers they are encouraged to share informative content. Conversely, since they share informative content they are followed by a large number of other users interested in the content shared by them.
-Based on the above analysis we decided to build the EIIS for an event composed of the following event identity information units:
+\begin{itemize}
+\item On an average the informative tweets are marked by a higher number of tokens per tweet and greater occurrence of top nouns. 
+\item The average length of informative tweets is also more than the non-informative ones. 
+\item The percentage of informative tweets having URLs is strikingly high. 
+\item A greater use of slang words is observed in non-informative tweets. 
+\item Greater occurrence of top hashtags in non-informative tweets intrigued us to look into the content and obtain a detailed view of it. We observed that a lot of non-informative tweets have used popular hashtags with unrelated content and URLs directing to irrelevant information. This is typical of spam tweets as already pointed out in Chapter \ref{challenges}, Section \ref{veracity}. 
+\item The average number of follower counts for users posting informative tweets was also observed to be higher than the ones posting non-informative ones. 
+\item The average number of feeling words used in informative tweets were also relatively higher than the feeling words used in the non-informative tweets. 
+\end{itemize}
 
+The above observations gave us an idea of how high quality informative content related to events is produced in Twitter and the characteristics that differentiate them from low quality non-informative content. We made the following conclusions based on the observations:
+\begin{itemize}
+\item It is now intuitive that the informative tweets are more expressive, formal and lengthier, marked by higher presence of nouns. 
+\item The high presence of nouns indicates that these tweets also contain information about people, places, organizations, etc, associated with the events, which is vital information about any event and is ideal for representing its identity. 
+\item Due to the limitations imposed by Twitter on the number of characters in a tweet, the users tend to share URLs along with the textual content that might lead to more information about the event. 
+\item Also, users with high follower counts tend to post informative tweets. This can also be concluded by the fact that as they have more followers they are encouraged to share informative content. Conversely, since they share informative content they are followed by a large number of other users interested in the content shared by them.
+\end{itemize}
 
+\subsection{Event Identity Information Units}
+After the observations in the previous section we conclude that the informative tweets in general are characterized by wordiness, occurrences of URLs and are posted by users with high follower count. These characteristics are also the primary features that distinguish informative from non-informative content. Although, presence of hashtags is not a good indicator of informativeness, yet it is a strong identifier of a topic as already pointed by \cite{laniado2010making}. Popular hashtags for an event might be used maliciously. On the other hand, the presence of a popular hashtag in a wordy tweet consisting of words popular for the event, along with a popular URL, posted by an influential user is highly likely to contain event-specific content. Therefore, it is intuitive that given a stream of tweets for an event an optimal combination of event related popular text units (words, unigrams, bigrams etc),  hashtags, and URLs, posted by an influential user in a tweet, is one of the key indicators for identifying event-specific informative content. It would be highly unlikely for a tweet to contain all of these and yet not convey useful event-specific information. Based on the above analysis we decided to build the EIIS for an event $E_{i}$, composed of the following event identity information units:
+
+\begin{enumerate}
+\item A set of tweets $M_{E_{i}} = {\{m_{1_{E_{i}}},m_{2_{E_{i}}}, ... ,m_{n_{E_{i}}}\}}$, related to the event $E_{i}$, having high chances of containing informative content.
+\item A set of hashtags $H_{E_{i}} = \{h_{1_{E_{i}}},h_{2_{E_{i}}},..., h_{p_{E_{i}}} \}$, used for annotating the tweets ($\in M_{E_{i}}$) related to event $E_{i}$.
+\item A set of text units $W_{E_{i}} = \{w_{1_{E_{i}}},w_{2_{E_{i}}},..., w_{r_{E_{i}}} \}$, used for expressing textual content in tweets ($\in M_{E_{i}}$), related to event $E_{i}$.
+\item A set of URLs $L_{E_{i}} = \{l_{1_{E_{i}}},l_{2_{E_{i}}},..., l_{t_{E_{i}}} \}$, shared in the tweets ($\in M_{E_{i}}$) related to event $E_{i}$.
+\item A set of users $U_{E_{i}} = \{u_{1_{E_{i}}},u_{2_{E_{i}}},..., u_{s_{E_{i}}} \}$, tweeting the tweets ($\in M_{E_{i}}$), about the event $E_{i}$.
+\end{enumerate}
+
+\subsection{Extracting Event Identity Information Units}
+The event identity information units for an event $E_{i}$, as defined above are extracted from the event dataset. Following steps are taken:
+\begin{itemize}
+\item A threshold for the informativeness score assigned in the previous component is set between 0.0-1.0, for extracting the tweets ($\in M_{E_{i}}$). We set a threshold of 0.7. Therefore, the tweets having an informativeness score greater than or equal to 0.7 are filtered out and comprises the set $M_{E_{i}}$.
+\item The hashtags that were extracted in the `Event Reference Preparation' step from the tweets $\in M_{E_{i}}$, are used for populating the set $H_{E_{i}}$. However, the hashtags that matches the slang words and stop words are not considered. This is done in order to ensure good quality of information contextualized by the hashtags.
+\item The nouns that were extracted in the `Event Reference Preparation' step from the tweets $\in M_{E_{i}}$, are considered as the text units ($\in W_{E_{i}}$). The nouns that matches the slang words are not considered. This is done in order to ensure good quality of textual content represented by the nouns. In another experiment, we considered the extracted named entities as the text units. We report our results and compare the results obtained in both the cases in the next Chapter.
+\item The expanded URLs from the meta-data of the tweets $\in M_{E_{i}}$ populates the set $L_{E_{i}}$.
+\item The meta-information of the users posting the tweets $\in M_{E_{i}}$, represented by their user ids, is extracted for populating the set $U_{E_{i}}$ 
+\end{itemize}  
+
+These event identity information units forms the Event Identity Information Structure (EIIS), as explained next.
 
 \section{Event Identity Information Structure}
 This is the component that maintains a persistent EIIS for each individual event tracked by the framework and updates the metadata of the EIIS after a fixed interval of time which is configurable. Due to the unstructured nature of the social media references and evolving nature of the events, we store the event identity information units extracted by the previous component in a persistent graph data structure.
