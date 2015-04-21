@@ -9,7 +9,7 @@
 
 %\section{Background : Entity Identity Information Management}
 
-
+This chapter discusses about the Event Identity Information Management framework in order to solve the problems posed in Chapter \ref{events}, Section \ref{problem}
 
 \begin{figure}[htbp]
   \caption{Identity Integrity component of the EIIM life cycle.}
@@ -818,7 +818,31 @@ Since the algorithm uses power iteration method for ranking the vertices of a gr
   \centering
     \includegraphics[width=14cm,height=11cm]{Figures/EIIMComponents/EventReferenceResolution.jpg}
 \end{figure}
-The output of the previous component assigns a final ranked event-specific informativeness scores to the hashtags as well as the text units. These scores are specific to an event and are different for the same text unit or hashtag when they appear in EIIS of some other event.  A threshold is set for filtering out the hashtags and text units that are highly ranked. These hashtags and text units are used for assigning scores to the incoming tweets after tokenizing them to its constituent text units and hashtags. Another threshold is set to decide the acceptable score of a tweet in order to consider it as a high quality informative tweet related to an event tracked by the framework. In this way the incoming real-time tweets are resolved against a particular event, which are stored with a reference to the respective event identifier. These tweets are further processed in the EIIM life cycle.
+
+One of the main aims of the EIIM framework is to assign the reference of an event $E_{i}$ to its corresponding Entity Identity Information Structure ($s_{E_{i}}$). This aim is executed by this component. The main functions are as follows:
+
+\begin{itemize}
+\item The output of the previous component assigns a final ranked event-specific informativeness scores to the tweets. Using this score the component allows to choose top k tweets ranked in terms of their event-specific informative content. This enable the identification and resolution of high quality tweets providing useful information about the event $E_{i}$, solving the problems of \textit{noisy events} and \textit{noisy references} as already discussed in Chapter \ref{events}, Section \ref{problem}. The tweets after the top K are thrown away from the EIIS. This results in extremely high quality, event-specific informative tweets in the EIIS. We performed our experiment on the two events:
+
+\begin{itemize}
+\item Sydney Siege Crisis
+\item Millions March NYC
+\end{itemize}
+
+Excerpts of the top 5 tweets identified for both the events are given below.
+
+\textbf{Top Five Event-specific Informative Tweet Excerpts for Sydney Siege Event}
+\begin{enumerate}
+\item RT @faithcnn: Hostage taker in Sydney cafe has demanded 2 things: ISIS flag and; phone call with Australia PM Tony Abbott \#SydneySiege http://t.co/a2vgrn30Xh
+\item Aussie grand mufti and; Imam Council condemn \#Sydneysiege hostage capture http://t.co/ED98YKMxqM - LIVE UPDATES http://t.c...
+\item RT @PatDollard: \#SydneySiege: Hostages Held By Jihadis In Australian Cafe - WATCH LIVE VIDEO COVERAGE http://t.co/uGxmd7zLpc \#tcot \#pjnet \\ sydney-siege-scene/index.html
+\item RT @FoxNews: MORE: Police confirm 3 hostages escape Sydney cafe, unknown number remain inside http://t.co/pcAt91LIdS \#Sydneysiege
+\item Watch \#sydneysiege police conference live as hostages are still being held inside a central Sydney cafe http://t.co/OjulBqM7w2 \#c4news
+\end{enumerate}
+
+\item The other task that can be achieved using this component is the extraction of extremely informative features from the ranked results of the previous component and use them to form an evolutionary classifier or a feature vector for constantly tracking the event tweets w.r.t time. But the feature may get updated as the event progresses and a new set of ranked features needs to be obtained from the previous component after an interval of time that should be configurable. This, functionality of the component is currently not implemented and tested. We consider it as one of our future works.
+\end{itemize}
+
 
 \section{Event Analytics}
 \begin{figure}[htbp]
@@ -826,6 +850,8 @@ The output of the previous component assigns a final ranked event-specific infor
   \centering
     \includegraphics[width=14cm,height=11cm]{Figures/EIIMComponents/EventAnalytics.jpg}
 \end{figure}
+
+The outputs of the Event Identity Information Processing component after processing the EventIdentityInfoGraph of a particular event is used for generating different analytics related to the event for the chosen time period, by this component. Some of the immediately available analytics that help in extracting deeper insights from the event related content are shown below for our sample events.
 
 \textbf{Top Five Event-specific Informative Hashtags for Sydney Siege Event}
 \begin{enumerate}
@@ -854,14 +880,8 @@ The output of the previous component assigns a final ranked event-specific infor
 \item http://www.newsroompost.com/138766/sydney-cafe-siege-ends-gunman-among-two-killed                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 \end{enumerate}
 
-\textbf{Top Five Event-specific Informative Tweet Excerpts for Sydney Siege Event}
-\begin{enumerate}
-\item RT @faithcnn: Hostage taker in Sydney cafe has demanded 2 things: ISIS flag and; phone call with Australia PM Tony Abbott \#SydneySiege http://t.co/a2vgrn30Xh
-\item Aussie grand mufti and; Imam Council condemn \#Sydneysiege hostage capture http://t.co/ED98YKMxqM - LIVE UPDATES http://t.c...
-\item RT @PatDollard: \#SydneySiege: Hostages Held By Jihadis In Australian Cafe - WATCH LIVE VIDEO COVERAGE http://t.co/uGxmd7zLpc \#tcot \#pjnet \\ sydney-siege-scene/index.html
-\item RT @FoxNews: MORE: Police confirm 3 hostages escape Sydney cafe, unknown number remain inside http://t.co/pcAt91LIdS \#Sydneysiege
-\item Watch \#sydneysiege police conference live as hostages are still being held inside a central Sydney cafe http://t.co/OjulBqM7w2 \#c4news
-\end{enumerate}
+
+
 
 
 \textbf{Three Randomly Selected Tweets for Top Three Event-specific Informative Users posting about Sydney Siege Event.}
@@ -916,13 +936,6 @@ The output of the previous component assigns a final ranked event-specific infor
 \item https://www.youtube.com/watch?v=Iz7hkfNmfTY\&feature=youtu.be                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 \end{enumerate}
 
-\textbf{Top Five Event-specific Informative Tweet Excerpts for Millions March NYC Event}
-\begin{enumerate}
-\item RT @rightnowio\_feed: Timelapse video reveals massive size of New York City prot... http://t.co/oHtIhEK969 \#Soho \#Millionsmarchnyc \#NEWYorkC..
-\item "@Breaking911: BREAKING NOW: \#NYPD OFFICER INJURED ON THE BROOKLYN BRIDGE BY PROTESTERS THROWING ITEMS AT OFFICERS \#MillionsMarchNYC" Great
-\item RT @mohkeit: MT @WSJ: march to NYPD headquarters to protest police brutality \#MillionsMarchNYC http://t.co/zhNSngjbkN http://t.co/YLMJ8uJnJ
-\item RT @NaomiCampbell: Peaceful March Saturday Dec 13th Washington Square Park NYC 2:00pm march   Tell everyone U know \#MillionsMarchNYC
-\item RT @anregarret: Incredible day! \#MillionsMarchNYC On NYPD Headquarters To Protest Police Killings http://t.co/P2QHvxl9xb via @blackvoices \end{enumerate}
 
 \textbf{Three Randomly Selected Tweets for Top Three Event-specific Informative Users posting about Millions March NYC Event for a particular hour.}
 \begin{enumerate}
@@ -950,6 +963,14 @@ The output of the previous component assigns a final ranked event-specific infor
 \end{enumerate}
 
 
-\section{Event Identity Information Processing\label{eventidentityinformationprocessing}}
+Some of the other event analytics that can be readily done using the \textit{EventIdentityInfoGraph}, and we would like to explore in the near future are:
+\begin{itemize}
+\item Topic modeling.
+\item Event-specific recommendations.
+\item Clustering and Cluster Analysis.
+\item Community detection.
+\item Trend Analysis.
+\end{itemize}
 
+The event related data stored in the database by the `Event Reference Collection' would allow to do all types of analysis that are popular in social media.
 
