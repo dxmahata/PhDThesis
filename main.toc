@@ -59,10 +59,10 @@
 \contentsline {subsection}{\numberline {5.5.1}Content Analysis of Event Related Tweets}{49}{subsection.142}
 \contentsline {subsection}{\numberline {5.5.2}Event Identity Information Units}{54}{subsection.148}
 \contentsline {subsection}{\numberline {5.5.3}Extracting Event Identity Information Units}{54}{subsection.154}
-\contentsline {section}{\numberline {5.6}Event Identity Information Structure}{55}{section.155}
-\contentsline {section}{\numberline {5.7}Event Identity Information Processing}{56}{section.157}
-\contentsline {subsection}{\numberline {5.7.1}EventIdentityInfoGraph}{56}{subsection.158}
-\contentsline {subsection}{\numberline {5.7.2}EventIdentityInfoRank}{60}{subsection.179}
+\contentsline {section}{\numberline {5.6}Event Identity Information Structure (EIIS)}{55}{section.155}
+\contentsline {section}{\numberline {5.7}Event Identity Information Processing}{57}{section.157}
+\contentsline {subsection}{\numberline {5.7.1}EventIdentityInfoGraph}{57}{subsection.158}
+\contentsline {subsection}{\numberline {5.7.2}EventIdentityInfoRank}{61}{subsection.179}
 \contentsline {section}{\numberline {5.8}Event Reference Resolution}{65}{section.194}
 \contentsline {section}{\numberline {5.9}Event Analytics}{66}{section.196}
 \contentsline {section}{\numberline {5.10}Event Identity Information Processing}{70}{section.262}
