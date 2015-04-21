@@ -9,7 +9,15 @@
 
 %\section{Background : Entity Identity Information Management}
 
-This chapter discusses about the Event Identity Information Management framework in order to solve the problems posed in Chapter \ref{events}, Section \ref{problem}
+This chapter discusses about the Event Identity Information Management framework in order to solve the problems posed in Chapter \ref{events}, Section \ref{problem}. A high level view of the EIIM components and processes for social media is shown in Figure \ref{eiimcycle}. These components provide a generic framework on which any EIIM system based on social media references could be built. The various components of the framework go through cycles of interactions with each other over time, which is known as EIIM life cycle. At the heart of the framework lies the Event Identity Information Structure (EIIS) and Event Identity Information Processing, which manages the identity information related to a particular event and also helps in resolving high quality, informative references to the event from social media. Next, we give a detailed explanation of each component.
+
+\begin{figure}[htbp]
+  \caption{Event Identity Information Management Life Cycle for Textual Content in Social Media.}
+	\label{eiimcycle}
+  \centering
+    \includegraphics[width=16cm,height=8cm]{Figures/EIIMpic.jpg}
+\end{figure}
+
 
 \begin{figure}[htbp]
   \caption{Identity Integrity component of the EIIM life cycle.}
@@ -26,7 +34,7 @@ One of the fundamental goals of the proposed framework is to maintain a one-to-o
 \begin{figure}[htbp]
   \caption{Event Reference Collection component of the EIIM life cycle.}
   \centering
-    \includegraphics[width=14cm,height=11cm]{Figures/EIIMComponents/EventReferenceCollection.jpg}
+    \includegraphics[width=14cm,height=11cm]{Figures/EventReferenceCollection.jpg}
 \end{figure}
 
 This component allows the framework to collect event references from different social media websites using its publicly available APIs (Application Programming Interface), and store them in the database after processing them using the next two components of the EIIM life cycle. Due to the semi-structured nature of the collected data, a NOSQL document oriented database management system (MongoDb ) is used for storage. The choice of MongoDb was also driven by its ability to scale horizontally and perform operations on large volumes of data. A query interface is implemented that allows an user of the system to pass query parameters (for example event related hashtags and key words) that bootstraps the data collection and event tracking process. As already shown in Table \ref{socialmediametadata} most of the popular social media channels allow hashtags, the data for the experiments were collected using a popular hashtag for the respective events. 
@@ -302,7 +310,7 @@ The trained model is used for assigning a score between 0 (least informative) an
 \begin{figure}[htbp]
   \caption{Event Identity Information Capture component of the EIIM life cycle.}
   \centering
-    \includegraphics[width=14cm,height=11cm]{Figures/EIIMComponents/EventIdentityInformationCapture.jpg}
+    \includegraphics[width=14cm,height=11cm]{Figures/EventIdentityCapture.jpg}
 \end{figure}
 
 The main functions of this component are:
@@ -432,7 +440,7 @@ This is the component that maintains a persistent EIIS as introduced in Chapter 
 \begin{figure}[htbp]
   \caption{Event Identity Information Structure component of the EIIM life cycle.}
   \centering
-    \includegraphics[width=14cm,height=11cm]{Figures/EIIMComponents/EventIdentityInformationStructure.jpg}
+    \includegraphics[width=14cm,height=11cm]{Figures/EIIS.jpg}
 \end{figure}
 
 
@@ -816,7 +824,7 @@ Since the algorithm uses power iteration method for ranking the vertices of a gr
 \begin{figure}[htbp]
   \caption{Event Reference Resolution component of the EIIM life cycle.}
   \centering
-    \includegraphics[width=14cm,height=11cm]{Figures/EIIMComponents/EventReferenceResolution.jpg}
+    \includegraphics[width=14cm,height=11cm]{Figures/EventReferenceResolution.jpg}
 \end{figure}
 
 One of the main aims of the EIIM framework is to assign the reference of an event $E_{i}$ to its corresponding Entity Identity Information Structure ($s_{E_{i}}$). This aim is executed by this component. The main functions are as follows:
