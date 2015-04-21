@@ -420,15 +420,13 @@ The event identity information units for an event $E_{i}$, as defined above are 
 These event identity information units forms the Event Identity Information Structure (EIIS), as explained next.
 
 \section{Event Identity Information Structure (EIIS)}
-This is the component that maintains a persistent EIIS as introduced in Chapter \ref{events}, Section \ref{problem}, for each individual event tracked by the framework and updates the metadata of the EIIS after a fixed interval of time which is configurable. Due to the unstructured nature of the social media references and evolving nature of the events, we store the event identity information units extracted by the previous component along with their associated meta-data, in a persistent graph data structure stored in the database. We update the meta-data related to each node of the graph using the normal database updation queries. Adjacency lists are used for representing the graph. The choice of storing the event identity information units in a graph structure is also motivated by the wide array of graph processing algorithms used for natural language processing and text mining operations. We show the efficacy and the advantages of a graph in the next section. 
+This is the component that maintains a persistent EIIS as introduced in Chapter \ref{events}, Section \ref{problem}, for each individual event tracked by the framework and updates the metadata of the EIIS throughout the EIIM life cycle. Due to the unstructured nature of the social media references and evolving nature of the events, we store the event identity information units extracted by the previous component along with their associated meta-data, in a persistent graph data structure stored in the database. We update the meta-data related to each node of the graph using the normal database updation queries. Adjacency lists are used for representing the graph. The choice of storing the event identity information units in a graph structure is also motivated by the wide array of graph processing algorithms used for natural language processing and text mining operations. We show the efficacy and the advantages of a graph in the next section. 
 
 \begin{itemize}
-\item Therefore the EIIS is a graph $\textbf{G = (V,D)}$, where $\mathbf{V = M_{E_{i}} \cup H_{E_{i}} \cup W_{E_{i}} \cup U_{E_{i}} \cup}$ \\  $\mathbf{L_{E_{i}}}$, is the set of vertices and $\mathbf{D}$ is the set of directed edges between different vertices. Whenever two vertices are associated, there are two edges between them that are oppositely directed. For example, if a tweets consist of hashtags, text units, URLs and is posted by an user, then there are bi-directed edges between each one of them. 
+\item Therefore the EIIS is a graph $\mathbf{G_{E_{i}} = (V_{E_{i}},D_{E_{i}})}$, where $\mathbf{V_{E_{i}} = M_{E_{i}} \cup H_{E_{i}} \cup W_{E_{i}} \cup U_{E_{i}} \cup}$ \\  $\mathbf{L_{E_{i}}}$, is the set of vertices and $\mathbf{D_{E_{i}}}$ is the set of directed edges between different vertices. Whenever two vertices are associated, there are two edges between them that are oppositely directed. For example, if a tweets consist of hashtags, text units, URLs and is posted by an user, then there are bi-directed edges between each one of them. 
 \end{itemize}
 
 
-We propose a novel graph structure for representing the event identity information units extracted by the previous component and call it EventIdentityInfoGraph as shown in Figure 2.  The graph is dynamically generated from the extracted units of the previous component that acts as the vertices of the graph, after a fixed interval of time representing the snapshot of the event identity information units for a particular time period. Each vertex of the graph is assigned an initial event-specific score reflecting the importance of the vertices for a specific event. The score assigned to the tweets in the Event Information Quality component are used for the tweets. Due to the limited scope and focus of the paper, details of the calculations for the other type of vertices are not explained. The relationships between the heterogeneous vertices of the graph have special semantics that enables the framework to rank them in the next component. The semantics represent the following intuitive mutually reinforcing relationships between the vertices:
-For an event  
 
 
 \begin{figure}[htbp]
@@ -438,48 +436,86 @@ For an event
 \end{figure}
 
 
-
-\section{Event Identity Information Processing\label{EventIdentityInformationProcessing}}
-
-\subsection{EventIdentityInfoGraph\label{eventidentityinfograph}}
-
 \begin{figure}[htbp]
   \caption{Event Identity Information Processing component of the EIIM life cycle.}
   \centering
     \includegraphics[width=14cm,height=11cm]{Figures/EIIMComponents/EventIdentityInformationProcessing.jpg}
 \end{figure}
 
+\section{Event Identity Information Processing\label{EventIdentityInformationProcessing}}
+This is the most important processing component of the EIIM life cycle and is at the heart of the entire framework. We make our most novel contributions in this component. The component is mainly divided into two sub-components:
+\begin{itemize}
+\item \textbf{EventIdentityInfoGraph} - that represents and defines novel relationships between the vertices of the graph $\mathbf{G}$ representing the EIIS.
+\item \textbf{EventIdentityInfoProcess} - processes the \textit{EventIdentityInfoGraph} in order to rank its nodes and identify the top most informative event identity information units that acts as inputs to the next two components of the EIIM life cycle.
+\end{itemize}
 
-%\begin{table*}[ht]
-%\caption{Affinity scores of edges between vertices of TwitterEventInfoGraph}
-%\label{edgescores}
-%\begin{tabular}{|l|}
-%\hline 
-%\underline{\textbf{\textit{Affinity scores (edge weights) between different vertices}} $\in M_{E_{i}}, H_{E_{i}}, W_{E_{i}}, U_{E_{i}},$} \\ \underline{\textbf{\textit{$L_{E_{i}}$:}}} \\ \\
-%$P(h_{i} \mid w_{j}) = \frac{No. \, of \, tweets \, h_{i} \, and \, w_{j} \, occur \, together}{No. \, of \, tweets \, w_{j} \, occurs}$, $P(w_{i} \mid h_{j}) = \frac{No. \, of \, tweets \, w_{i} \, and \, h_{j} \, occur \, together}{No. \, of \, tweets \, h_{j} \, occurs}$, \\
-%
-%
-%$P(h_{i} \mid l_{j}) = \frac{No. \, of \, tweets \, h_{i} \, and \, l_{j} \, occur \, together}{No. \, of \, tweets \, l_{j} \, occurs}$,
-%$P(l_{i} \mid h_{j}) = \frac{No. \, of \, tweets \, l_{i} \, and \, h_{j} \, occur \, together}{No. \, of \, tweets  \, h_{j} \, occurs}$, \\
-%
-%$P(h_{i} \mid u_{j}) = \frac{No. \, of \, tweets  \, h_{i} \, and \, u_{j} \, occur \, together}{No. \, of \, tweets  \, u_{j} \, occurs}$,
-%$P(u_{i} \mid h_{j}) = \frac{No. \, of \, tweets  \, u_{i} \, and \, h_{j} \, occur \, together}{No. \, of \, tweets  \, h_{j} \, occurs}$,  \\
-%
-%$P(w_{i} \mid l_{j}) = \frac{No. \, of \, tweets  \, w_{i} \, and \, l_{j} \, occur \, together}{No. \, of \, tweets  \, l_{j} \, occurs}$, 
-%$P(l_{i} \mid w_{j}) = \frac{No. \, of \, tweets  \, l_{i} \, and \, w_{j} \, occur \, together}{No. \, of \, tweets  \, w_{j} \, occurs}$, \\ 
-%
-%$P(w_{i} \mid u_{j}) = \frac{No. \, of \, tweets  \, w_{i} \, and \, u_{j} \, occur \, together}{No. \, of \, tweets  \, u_{j} \, occurs}$,
-%$P(u_{i} \mid w_{j}) = \frac{No. \, of \, tweets  \, u_{i} \, and \, w_{j} \, occur \, together}{No. \, of \, tweets  \, w_{j} \, occurs}$, \\
-%
-%$P(u_{i} \mid l_{j}) = \frac{No. \, of \, tweets  \, u_{i} \, and \, l_{j} \, occur \, together}{No. \, of \, tweets  \, l_{j} \, occurs}$, 
-%$P(l_{i} \mid u_{j}) = \frac{No. \, of \, tweets  \, l_{i} \, and \, u_{j} \, occur \, together}{No. \, of \, tweets  \, u_{j} \, occurs}$, \\
-%
-%
-%$P(h_{i} \mid m_{j}) = P(m_{i} \mid h_{j}) = P(w_{i} \mid m_{j}) = P(m_{i} \mid w_{j}) = P(u_{i} \mid m_{j}) = P(m_{i} \mid u_{j}) =$ \\ $P(l_{i} \mid m_{j})= P(m_{i} \mid l_{j})= 1.0$  \\ \\ 
-%\textbf{Note:} $P(h_{i} \mid w_{j})$ should be read as the probability of occurrence of hashtag $h_{i}$ given \\ the occurrence of the text unit $w_{j}$ in the stream of  tweets $M_{E_{i}}$ related to event $E_{i}$ \\ collected over the time period $T_{E_{i}}$. Similarly, for others.\\
-%\hline 
-%\end{tabular}
-%\end{table*}
+\subsection{EventIdentityInfoGraph\label{eventidentityinfograph}}
+
+We implement a novel graph structure - \textit{EventIdentityInfoGraph}, which is dynamically generated from the graph $\mathbf{G}$ (EIIS), after a configurable interval of time, using following assumptions.
+  
+For an event $E_{i}$ 
+\begin{itemize} 
+\item a \textit{tweet is an event-specific informative tweet} if it is strongly associated with:
+\begin{itemize}
+\item[\textbf{(a)}] \textit{event-specific informative hashtags}, 
+\item[\textbf{(b)}] \textit{event-specific informative text units}, 
+\item[\textbf{(c)}] \textit{event-specific informative users},
+\item[\textbf{(d)}] \textit{event-specific informative URLs}. 
+\end{itemize}
+\end{itemize}
+
+\begin{itemize} 
+\item a \textit{hashtag is an event-specific informative hashtag} if it is strongly associated with:
+\begin{itemize}
+\item[\textbf{(a)}] \textit{event-specific informative tweets},
+\item[\textbf{(b)}] \textit{event-specific informative text units},
+\item[\textbf{(c)}] \textit{event-specific informative users},
+\item[\textbf{(d)}] \textit{event-specific informative URLs}.
+\end{itemize}
+\end{itemize}
+
+\begin{itemize} 
+\item a \textit{text unit is an event-specific informative text unit} if it is strongly associated with:
+\begin{itemize}
+\item[\textbf{(a)}] \textit{event-specific informative tweets}, 
+\item[\textbf{(b)}] \textit{event-specific informative hashtags}, 
+\item[\textbf{(c)}] \textit{event-specific informative users}, 
+\item[\textbf{(d)}] \textit{event-specific informative URLs}. 
+\end{itemize}
+\end{itemize}
+
+\begin{itemize} 
+\item a \textit{user is an event-specific informative user} if it is strongly associated with:
+\begin{itemize}
+\item[\textbf{(a)}] \textit{event-specific informative tweets}, 
+\item[\textbf{(b)}] \textit{event-specific informative hashtags}, 
+\item[\textbf{(c)}] \textit{event-specific informative text units},
+\item[\textbf{(d)}] \textit{event-specific informative URLs}. 
+\end{itemize}
+\end{itemize}
+
+\begin{itemize} \item a \textit{URL is an event-specific informative URL} if it is strongly associated with:
+\begin{itemize}
+\item[\textbf{(a)}] \textit{event-specific informative tweets}, 
+\item[\textbf{(b)}] \textit{event-specific informative hashtags}, 
+\item[\textbf{(c)}] \textit{event-specific informative text units},
+\item[\textbf{(d)}] \textit{event-specific informative users}. 
+\end{itemize}
+\end{itemize}
+
+%\end{itemize}
+
+The relationships for an event $E_{i}$ as stated above, forms a \textit{Mutual Reinforcement Chain} \cite{wei2008query} for the event $E_{i}$ as shown in Figure \ref{mrc}. We represent this relationship in a graph $\mathbf{G_{E_{i}(t)} = (V_{E_{i}(t)},D_{E_{i}(t)})}$, which we call as \textit{EventIdentityInfoGraph}, where $V_{E_{i}(t)} = M_{E_{i}} \cup H_{E_{i}} \cup W_{E_{i}} \cup U_{E_{i}} \cup L_{E_{i}}$, is the set of vertices and $\mathbf{D_{E_{i}(t)}}$ is the set of directed edges between different vertices. The graph $G_{E_{i}(t)}$ is basically, a snapshot of the EIIS structure of the event $E_{i}$ at time t. 
+
+\begin{figure}[htbp]
+\centering
+\caption{\small Mutual Reinforcement Chains in Twitter for an event.}    
+\includegraphics[width=16cm,height=12cm]{Figures/TwitterEventInfoGraph.jpg}
+\label{mrc}
+\end{figure}
+ 
+
+Whenever two vertices are associated, there are two edges between them that are oppositely directed. Each directed edge is assigned a weight, which determines the degree of association of one vertex with the other. The weights for each edge is calculated according to the conditional probabilities as given by equations 5.1-5.18. 
 
 \begin{equation}
 P(h_{i_{E_{i}}} \mid w_{j_{E_{i}}}) = \frac{No. \, of \, tweets \, h_{i_{E_{i}}} \, and \, w_{j_{E_{i}}} \, occur \, together}{No. \, of \, tweets \, w_{j_{E_{i}}} \, occurs}
@@ -554,79 +590,49 @@ P(m_{i_{E_{i}}} \mid l_{j_{E_{i}}}) = 1.0
 \end{equation}
 
 
-
-
-\begin{figure}[htbp]
-\centering
-\caption{\small Mutual Reinforcement Chains in Twitter for an event.}    
-\includegraphics[width=16cm,height=12cm]{Figures/TwitterEventInfoGraph.jpg}
-\label{mrc}
-\end{figure}
+We do not consider an edge between two vertices of same type. That is, we don't connect a tweet with another tweet. Similarly, for hashtags, text units, users and URLs. This constraint was imposed in order to deal with the nepotistic relationships between high quality content and low quality content introduced by the malicious users for promoting the low quality content as explained in Chapter \ref{challenges}, Section \ref{veracity}.  
 
 
 
+%\begin{table*}[ht]
+%\caption{Affinity scores of edges between vertices of TwitterEventInfoGraph}
+%\label{edgescores}
+%\begin{tabular}{|l|}
+%\hline 
+%\underline{\textbf{\textit{Affinity scores (edge weights) between different vertices}} $\in M_{E_{i}}, H_{E_{i}}, W_{E_{i}}, U_{E_{i}},$} \\ \underline{\textbf{\textit{$L_{E_{i}}$:}}} \\ \\
+%$P(h_{i} \mid w_{j}) = \frac{No. \, of \, tweets \, h_{i} \, and \, w_{j} \, occur \, together}{No. \, of \, tweets \, w_{j} \, occurs}$, $P(w_{i} \mid h_{j}) = \frac{No. \, of \, tweets \, w_{i} \, and \, h_{j} \, occur \, together}{No. \, of \, tweets \, h_{j} \, occurs}$, \\
+%
+%
+%$P(h_{i} \mid l_{j}) = \frac{No. \, of \, tweets \, h_{i} \, and \, l_{j} \, occur \, together}{No. \, of \, tweets \, l_{j} \, occurs}$,
+%$P(l_{i} \mid h_{j}) = \frac{No. \, of \, tweets \, l_{i} \, and \, h_{j} \, occur \, together}{No. \, of \, tweets  \, h_{j} \, occurs}$, \\
+%
+%$P(h_{i} \mid u_{j}) = \frac{No. \, of \, tweets  \, h_{i} \, and \, u_{j} \, occur \, together}{No. \, of \, tweets  \, u_{j} \, occurs}$,
+%$P(u_{i} \mid h_{j}) = \frac{No. \, of \, tweets  \, u_{i} \, and \, h_{j} \, occur \, together}{No. \, of \, tweets  \, h_{j} \, occurs}$,  \\
+%
+%$P(w_{i} \mid l_{j}) = \frac{No. \, of \, tweets  \, w_{i} \, and \, l_{j} \, occur \, together}{No. \, of \, tweets  \, l_{j} \, occurs}$, 
+%$P(l_{i} \mid w_{j}) = \frac{No. \, of \, tweets  \, l_{i} \, and \, w_{j} \, occur \, together}{No. \, of \, tweets  \, w_{j} \, occurs}$, \\ 
+%
+%$P(w_{i} \mid u_{j}) = \frac{No. \, of \, tweets  \, w_{i} \, and \, u_{j} \, occur \, together}{No. \, of \, tweets  \, u_{j} \, occurs}$,
+%$P(u_{i} \mid w_{j}) = \frac{No. \, of \, tweets  \, u_{i} \, and \, w_{j} \, occur \, together}{No. \, of \, tweets  \, w_{j} \, occurs}$, \\
+%
+%$P(u_{i} \mid l_{j}) = \frac{No. \, of \, tweets  \, u_{i} \, and \, l_{j} \, occur \, together}{No. \, of \, tweets  \, l_{j} \, occurs}$, 
+%$P(l_{i} \mid u_{j}) = \frac{No. \, of \, tweets  \, l_{i} \, and \, u_{j} \, occur \, together}{No. \, of \, tweets  \, u_{j} \, occurs}$, \\
+%
+%
+%$P(h_{i} \mid m_{j}) = P(m_{i} \mid h_{j}) = P(w_{i} \mid m_{j}) = P(m_{i} \mid w_{j}) = P(u_{i} \mid m_{j}) = P(m_{i} \mid u_{j}) =$ \\ $P(l_{i} \mid m_{j})= P(m_{i} \mid l_{j})= 1.0$  \\ \\ 
+%\textbf{Note:} $P(h_{i} \mid w_{j})$ should be read as the probability of occurrence of hashtag $h_{i}$ given \\ the occurrence of the text unit $w_{j}$ in the stream of  tweets $M_{E_{i}}$ related to event $E_{i}$ \\ collected over the time period $T_{E_{i}}$. Similarly, for others.\\
+%\hline 
+%\end{tabular}
+%\end{table*}
 
 
 
 
 
-For an event $E_{i}$ 
-\begin{itemize} 
-\item a \textit{tweet is an event-specific informative tweet} if it is strongly associated with:
-\begin{itemize}
-\item[\textbf{(a)}] \textit{event-specific informative hashtags}, 
-\item[\textbf{(b)}] \textit{event-specific informative text units}, 
-\item[\textbf{(c)}] \textit{event-specific informative users},
-\item[\textbf{(d)}] \textit{event-specific informative URLs}. 
-\end{itemize}
-\end{itemize}
 
-\begin{itemize} 
-\item a \textit{hashtag is an event-specific informative hashtag} if it is strongly associated with:
-\begin{itemize}
-\item[\textbf{(a)}] \textit{event-specific informative tweets},
-\item[\textbf{(b)}] \textit{event-specific informative text units},
-\item[\textbf{(c)}] \textit{event-specific informative users},
-\item[\textbf{(d)}] \textit{event-specific informative URLs}.
-\end{itemize}
-\end{itemize}
 
-\begin{itemize} 
-\item a \textit{text unit is an event-specific informative text unit} if it is strongly associated with:
-\begin{itemize}
-\item[\textbf{(a)}] \textit{event-specific informative tweets}, 
-\item[\textbf{(b)}] \textit{event-specific informative hashtags}, 
-\item[\textbf{(c)}] \textit{event-specific informative users}, 
-\item[\textbf{(d)}] \textit{event-specific informative URLs}. 
-\end{itemize}
-\end{itemize}
 
-\begin{itemize} 
-\item a \textit{user is an event-specific informative user} if it is strongly associated with:
-\begin{itemize}
-\item[\textbf{(a)}] \textit{event-specific informative tweets}, 
-\item[\textbf{(b)}] \textit{event-specific informative hashtags}, 
-\item[\textbf{(c)}] \textit{event-specific informative text units},
-\item[\textbf{(d)}] \textit{event-specific informative URLs}. 
-\end{itemize}
-\end{itemize}
 
-\begin{itemize} \item a \textit{URL is an event-specific informative URL} if it is strongly associated with:
-\begin{itemize}
-\item[\textbf{(a)}] \textit{event-specific informative tweets}, 
-\item[\textbf{(b)}] \textit{event-specific informative hashtags}, 
-\item[\textbf{(c)}] \textit{event-specific informative text units},
-\item[\textbf{(d)}] \textit{event-specific informative users}. 
-\end{itemize}
-\end{itemize}
-
-%\end{itemize}
-
-The relationships for an event $\scriptstyle E_{i}$ as stated above, forms a \textit{Mutual Reinforcement Chain} \cite{wei2008query} for the event $E_{i}$ as shown in Figure \ref{mrc}. We represent this relationship in a graph $\textbf{G = (V,D)}$, which we call as \textit{TwitterEventInfoGraph}, where $\mathbf{V = M_{E_{i}} \cup H_{E_{i}} \cup W_{E_{i}} \cup U_{E_{i}} \cup L_{E_{i}}}$, is the set of vertices and $\mathbf{D}$ is the set of directed edges between different vertices. 
-
-Whenever two vertices are associated, there are two edges between them that are oppositely directed. Each directed edge is assigned a weight, which determines the degree of association of one vertex with the other. The weights for each edge is calculated according to the conditional probabilities given in Table \ref{edgescores}. 
-
-We do not consider an edge between two vertices of same type. That is, we don't connect a tweet with another tweet. Similarly, for hashtags, text units, users and URLs. This constraint was imposed in order to deal with the nepotistic relationships between high quality content and low quality content introduced by the malicious users for promoting the low quality content. We observe these malicious side effects in the results obtained for \textit{TextRank} explained in Section 6.5.  
 
 Next, we explain \textit{EventIdentityInfoRank}.
 
@@ -635,30 +641,30 @@ Next, we explain \textit{EventIdentityInfoRank}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{EventIdentityInfoRank\label{eventidentityinforank}}
-In this section, we introduce an iterative algorithm that takes into account the mutually reinforcing relationships between the vertices of \textit{TwitterEventInfoGraph} as explained in the previous section and propagates event-specific scores of each vertex to connected vertices across the graph for ranking its vertices ($\scriptstyle \in V$) in terms of event-specific informativeness.
+\textit{EventIdentityInfoRank} is an iterative algorithm that takes into account the mutually reinforcing relationships between the vertices of \textit{EventIdentityInfoGraph} as explained in the previous section and propagates event-specific scores of each vertex to connected vertices across the graph for ranking its vertices ($\in V_{E_{i}(t)}$) in terms of event-specific informativeness.
 
-We first assign a event-specific score to all the vertices of the graph. Event-specific scores for vertices $(\in H_{E_{i}}, W_{E_{i}}, U_{E_{i}}, L_{E_{i}})$ are calculated using equations (1-4) as presented in Table \ref{edgescores}. The tweets  $(\in M_{E_{i}})$ are assigned an initial informativeness score as obtained from the logistic regression model explained in Section 3. The event-specific scores for vertices $(\in H_{E_{i}}, W_{E_{i}}, U_{E_{i}}, L_{E_{i}})$ and informativeness score for vertices $(\in M_{E_{i}})$ gives an initial ranking of all the vertices of \textit{TwitterEventInfoGraph}. We aim to refine the initial scores and assign a final score for ranking the vertices by leveraging the mutually reinforcing relationships between them.
+We first assign a event-specific score to all the vertices of the graph. Event-specific scores for vertices $(\in H_{E_{i}}, W_{E_{i}}, U_{E_{i}}, L_{E_{i}})$ are calculated using equations 5.19-5.22. The tweets  $(\in M_{E_{i}})$ are assigned an initial informativeness score as obtained from the logistic regression model in `Event Information Quality' component. The event-specific scores for vertices $(\in H_{E_{i}}, W_{E_{i}}, U_{E_{i}}, L_{E_{i}})$ and informativeness score for vertices $(\in M_{E_{i}})$ gives an initial ranking of all the vertices of \textit{EventIdentityInfoGraph}. We aim to refine the initial scores and assign a final score for ranking the vertices by leveraging the mutually reinforcing relationships between them.
 \begin{equation}
-Score(h_{i}) = \frac{freq(h_{i})}{max\{freq(h_{1}),freq(h_{2}),...,freq(h_{p})\}}
+Score(h_{i_{E_{i}}}) = \frac{freq(h_{i})}{max\{freq(h_{1}),freq(h_{2}),...,freq(h_{p})\}}
 \end{equation}
 
 \begin{equation}
-Score(w_{i}) = \frac{freq(w_{i})}{max\{freq(w_{1}),freq(w_{2}),...,freq(w_{r})\}}
+Score(w_{i_{E_{i}}}) = \frac{freq(w_{i})}{max\{freq(w_{1}),freq(w_{2}),...,freq(w_{r})\}}
 \end{equation}
 
 \begin{equation}
-Score(u_{i}) = \frac{followers(u_{i})}{max\{followers(u_{1}),...,followers(u_{r})\}}
+Score(u_{i_{E_{i}}}) = \frac{followers(u_{i})}{max\{followers(u_{1}),...,followers(u_{r})\}}
 \end{equation}
 
 \begin{equation}
-Score(l_{i}) = \frac{freq(l_{i})}{max\{freq(l_{1}),freq(l_{2}),...,freq(l_{r})\}}
+Score(l_{i_{E_{i}}}) = \frac{freq(l_{i})}{max\{freq(l_{1}),freq(l_{2}),...,freq(l_{r})\}}
 \end{equation}
 
 
-The relationships between two different subsets of vertices in graph $\scriptstyle \mathbf{G}$ is denoted by an affinity matrix. For e.g., $\mathbf{A_{E_{i}}^{MH}}$ denotes the $\mathbf{M_{E_{i}}-H_{E_{i}}}$ affinity matrix for event $E_{i}$, where $\mathbf{(i,j)^{th}}$ entry is the edge weight quantifying the association between $i^{th}$ tweet ($\in M_{E_{i}}$) and $j^{th}$ hashtag ($\in H_{E_{i}}$), calculated using Table \ref{edgescores}. Similarly, $\mathbf{A_{E_{i}}^{WH}}$ denotes the $\mathbf{W_{E_{i}}-H_{E_{i}}}$ affinity matrix between set of text units $W_{E_{i}}$ and set of hashtags $H_{E_{i}}$ for event $E_{i}$, and so on.
+The relationships between two different subsets of vertices in graph $\mathbf{G_{E_{i}(t)}}$ is denoted by an affinity matrix. For e.g., $\mathbf{A_{E_{i}}^{MH}}$ denotes the $\mathbf{M_{E_{i}}-H_{E_{i}}}$ affinity matrix for event $E_{i}$, where $\mathbf{(i,j)^{th}}$ entry is the edge weight quantifying the association between $i^{th}$ tweet ($\in M_{E_{i}}$) and $j^{th}$ hashtag ($\in H_{E_{i}}$), calculated using equations 5.1-5.18. Similarly, $\mathbf{A_{E_{i}}^{WH}}$ denotes the $\mathbf{W_{E_{i}}-H_{E_{i}}}$ affinity matrix between set of text units $W_{E_{i}}$ and set of hashtags $H_{E_{i}}$ for event $E_{i}$, and so on.
 
 
-The rankings of \textit{tweets}, \textit{hashtags}, \textit{text units}, \textit{users} and \textit{URLs} in terms of event-specific informativeness, can be iteratively derived from the Mutual Reinforcement Chain for the event. Let $R_{{E_{i}}}^{M}$, $R_{{E_{i}}}^{H}$, $R_{{E_{i}}}^{W}$, $R_{{E_{i}}}^{U}$ and $\scriptstyle R_{{E_{i}}}^{L}$ denote the ranking scores for the set of tweets ($\in M_{E_{}}$), set of  hashtags $(\in H_{E_{i}})$, set of text units $(\in W_{E_{i}})$, set of users $(\in U_{E_{i}})$, and set of URLs $(\in L_{E_{i}})$, respectively. Therefore, the Mutual Reinforcement Chain ranking for the $k^{th}$ iteration can be formulated as follows:
+The rankings of \textit{tweets}, \textit{hashtags}, \textit{text units}, \textit{users} and \textit{URLs} in terms of event-specific informativeness, can be iteratively derived from the Mutual Reinforcement Chain for the event. Let $R_{{E_{i}}}^{M}$, $R_{{E_{i}}}^{H}$, $R_{{E_{i}}}^{W}$, $R_{{E_{i}}}^{U}$ and $R_{{E_{i}}}^{L}$ denote the ranking scores for the set of tweets ($\in M_{E_{}}$), set of  hashtags $(\in H_{E_{i}})$, set of text units $(\in W_{E_{i}})$, set of users $(\in U_{E_{i}})$, and set of URLs $(\in L_{E_{i}})$, respectively. Therefore, the Mutual Reinforcement Chain ranking for the $k^{th}$ iteration can be formulated as follows:
  
 
 %\begin{equation}
@@ -762,14 +768,15 @@ and normalize $R_{E_{i}}^{0}$ such that $\mid \mid R_{E_{i}}^{0}\mid \mid_{1} = 
 
 \end{itemize}
 
-The final ordered subsets $\scriptstyle \mathbf{\hat{M}_{E_{i}}, \hat{H}_{E_{i}}, \hat{W}_{E_{i}}, \hat{L}_{E_{i}}, \hat{U}_{E_{i}}}$,  thus obtained are the tweets, hashtags, text units, URLs and users, ranked in terms of their event-specific informativeness. 
+The final ordered subsets $\mathbf{\hat{M}_{E_{i}}, \hat{H}_{E_{i}}, \hat{W}_{E_{i}}, \hat{L}_{E_{i}}, \hat{U}_{E_{i}}}$,  thus obtained are the tweets, hashtags, text units, URLs and users, ranked in terms of their event-specific informativeness. The entire procedure is presented step-by-step in an Algorithm \ref{algo}.
 
 \begin{algorithm}
+\caption{EventIdentityInfoRank algorithm}
 \label{algo}
 \SetKwData{Left}{left}\SetKwData{This}{this}\SetKwData{Up}{up}
 \SetKwFunction{Union}{Union}\SetKwFunction{FindCompress}{FindCompress}
 \SetKwInOut{Input}{Input}\SetKwInOut{Output}{Output}
-\Input{Sets of vertices $M_{E_{i}},H_{E_{i}}, W_{E_{i}}, U_{E_{i}}, L_{E_{i}}$ of graph G, $\alpha=0.85$, $\varepsilon=1e-08$.}
+\Input{Sets of vertices $M_{E_{i}},H_{E_{i}}, W_{E_{i}}, U_{E_{i}}, L_{E_{i}}$ of graph $G_{E_{i}(t)}$, $\alpha=0.85$, $\varepsilon=1e-08$.}
 \BlankLine
 \Output{Ordered set of vertices $\hat{M}_{E_{i}}$, containing tweets ranked in order of event-specific informative content sharing information about event related entities.}
 \BlankLine
@@ -798,14 +805,10 @@ return $\hat{M}_{E_{i}}$,$\hat{H}_{E_{i}}$,$\hat{W}_{E_{i}}$,$\hat{U}_{E_{i}}$,$
 %\caption{\scriptsize Algorithm for ranking the nodes of G}\label{algo_disjdecomp}
 \end{algorithm}\DecMargin{1em}
 
-During the implementation of the \textit{TwitterEventInfoRank} algorithm the slang hashtags were removed. We only considered nouns as the text units and removed the slang words. We already reported in our analysis that non-informative tweets have higher slang content. Therefore, removal of slang hashtags and text units was done in order to obtain high quality results. We also showed higher occurrence of nouns in informative tweets. Also, the occurrence of a noun in a tweet intuitively suggests that the tweet has information about a person, place, or thing. Thus, we only considered the set of nouns extracted from the tweets as the set of text units. 
+%During the implementation of the \textit{TwitterEventInfoRank} algorithm the slang hashtags were removed. We only considered nouns as the text units and removed the slang words. We already reported in our analysis that non-informative tweets have higher slang content. Therefore, removal of slang hashtags and text units was done in order to obtain high quality results. We also showed higher occurrence of nouns in informative tweets. Also, the occurrence of a noun in a tweet intuitively suggests that the tweet has information about a person, place, or thing. Thus, we only considered the set of nouns extracted from the tweets as the set of text units. 
 
-The text units are generic units in the framework and can be changed according to specific requirements. Entities extracted from the textual content of tweets could be experimented, in place of nouns. Since the algorithm uses power iteration method for ranking the vertices of the graph, it could be easily made scalable using mapreduce paradigm \cite{lin2010design}. We plan to work on it in the future and implement our framework using hadoop and mapreduce environment. 
-
-Since, our proposed framework takes a hybrid approach by using both supervised and unsupervised component, it is easily applicable in situations where an event needs to be tracked over time. The supervised portion assigns an initial generic informativeness score to the tweets for bootstrapping an unsupervised process that finally assigns event-specific informativeness scores. When applied over a time period the method for assigning the initial supervised scores might remain the same and the unsupervised process can change the rankings of the tweet contents as the event evolves. 
-
-
-
+%The text units are generic units in the framework and can be changed according to specific requirements. Entities extracted from the textual content of tweets could be experimented, in place of nouns. 
+Since the algorithm uses power iteration method for ranking the vertices of a graph, it could be easily made scalable using mapreduce paradigm \cite{lin2010design}. We plan to work on it in the future and implement our framework using hadoop and mapreduce environment. Also, the EIIM framework takes a hybrid approach by using both supervised and unsupervised component, it is easily applicable in situations where an event needs to be tracked over time. The supervised portion assigns an initial generic informativeness score to the tweets for bootstrapping an unsupervised process that finally assigns event-specific informativeness scores. When applied over a time period the method for assigning the initial supervised scores might remain the same and the unsupervised process can change the rankings of the tweet contents as the event evolves. 
 
 
 \section{Event Reference Resolution}
