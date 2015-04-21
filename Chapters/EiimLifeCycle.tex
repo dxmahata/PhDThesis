@@ -248,19 +248,32 @@ In order to train the model we assigned a score of 1 to the tweets that were lab
 \item \textbf{Number of Articles} - total number of articles detected in the tweet, without considering the hashtags and the user mentions whenever they are tagged as articles.
 \item \textbf{Number of Prepositions} - total number of prepositions detected in the tweet, without considering the hashtags and the user mentions whenever they are tagged as prepositions.
 \item \textbf{Formality} - which is defined as follows,
-Formality\footnote{Formality = (\#nouns + \#adjectives + \#prepositions + \#articles - \#pronouns - \#verbs - \#adverbs - \#interjections + 100)/2}
+Formality = (\#nouns + \#adjectives + \#prepositions + \#articles - \#pronouns - \#verbs - \#adverbs - \#interjections + 100)/2
 and is proposed in \cite{alejandro2011use}. \#nouns, denotes the number of nouns detected in the tweet, and so on.
 
 \end{enumerate}
 
 
+\begin{table}[htbp]
+\centering
+\caption{Evaluation measures for logistic regression model.}
+\label{logregreseval}
+\begin{tabular}{c|c|c|c|}
+\cline{2-4}
+\multicolumn{1}{l|}{}                          & \textbf{Precision} & \textbf{Recall}       & \textbf{F1-score}     \\ \hline
+\multicolumn{1}{|c|}{\textbf{Non-informative} (0)} & 0.70               & 0.49                  & 0.57                  \\ \hline
+\multicolumn{1}{|c|}{\textbf{Informative} (1)}     & 0.78               & 0.90                  & 0.84                  \\ \hline
+\multicolumn{1}{|c|}{\textbf{Avg/Total}}       & 0.76               & 0.77                  & 0.75                  \\ \hline
+\multicolumn{1}{|c}{\textbf{Accuracy}} =  & \multicolumn{1}{l}{} 76.64\%            & \multicolumn{1}{l}{} & \multicolumn{1}{l|}{} \\ \hline
+\end{tabular}
+\end{table}
 
 
 \subsection{Model Evaluation}
 
 10-fold cross validation was performed, with `l1' penalty, resulting in a model with an accuracy of 76.64\%. Table \ref{logregreseval} lists the evaluation measures obtained while training the classifier. The ROC AUC Score of the classifier is 0.6934.
 
-
+\subsection{Assignment of Generic Informativeness Score}
 The trained model is used for assigning a score between 0 (least informative) and 1 (most informative) to the tweets in real-time. Both the ‘Event Reference Preparation’ and the ‘Event Information Quality’ components work in collaboration with the ‘Event Reference Collection’ component in order to collect, prepare, assign quality score and store the tweets related to an event, obtained from Twitter streaming API, in real-time.
 
 
@@ -280,27 +293,7 @@ The trained model is used for assigning a score between 0 (least informative) an
 %\end{table}
 %\end{savenotes}
 
-\begin{table}[ht]
-\centering
-\caption{Evaluation measures for logistic regression model.}
-\label{logregreseval}
-\begin{tabular}{c|c|c|c|}
-\cline{2-4}
-\multicolumn{1}{l|}{}                          & \textbf{Precision} & \textbf{Recall}       & \textbf{F1-score}     \\ \hline
-\multicolumn{1}{|c|}{\textbf{Non-informative} (0)} & 0.70               & 0.49                  & 0.57                  \\ \hline
-\multicolumn{1}{|c|}{\textbf{Informative} (1)}     & 0.78               & 0.90                  & 0.84                  \\ \hline
-\multicolumn{1}{|c|}{\textbf{Avg/Total}}       & 0.76               & 0.77                  & 0.75                  \\ \hline
-\multicolumn{1}{|c}{\textbf{Accuracy}} =  & \multicolumn{1}{l}{} 76.64\%            & \multicolumn{1}{l}{} & \multicolumn{1}{l|}{} \\ \hline
-\end{tabular}
-\end{table}
 
-\begin{figure}[htbp]
-\centering
-\caption{Content characteristics of informative and non-informative tweets related to events.}
-    \includegraphics[width=15cm,height=5.5cm]{Figures/InformationAnalysisTable.jpg}
-    
-    \label{infoanalysis}
-\end{figure}
 
 %\subsection{Analysis of Informative and Non-informative Content in Twitter}
 
@@ -312,10 +305,77 @@ The trained model is used for assigning a score between 0 (least informative) an
     \includegraphics[width=14cm,height=11cm]{Figures/EIIMComponents/EventIdentityInformationCapture.jpg}
 \end{figure}
 
-It is the component that aids in extracting event identity information units (explained later) from the already processed tweets and build the Event Identity Information Structure (EIIS) for an event. It also enables the framework to set a threshold between 0.0-1.0 for differentiating between high quality informative tweets from low quality non-informative ones related to an event. The event identity information units are then extracted from the high quality informative tweets. 
-In order to understand what might consist of the event identity information units that would represent the EIIS, we conducted a detailed analysis of 3.8 million tweets collected for three events. Details of the data collected are provided in Table 6. The data collection task was accomplished by Event Reference Collection component and was then preprocessed by the Event Reference Preparation component.
+The main functions of this component are:
+\begin{itemize}
+\item This component aids in extracting event identity information units (explained later) from the already processed tweets and build the Event Identity Information Structure (EIIS) for an event.
+\item It enables the framework to set a threshold between 0.0-1.0 for differentiating between high quality informative tweets from low quality non-informative ones related to an event. The event identity information units are then extracted from the high quality informative tweets.
+\end{itemize}
+  
+In order to understand what might consist of the event identity information units that would represent the EIIS, we conducted a detailed analysis of 3.8 million tweets collected for following three events. 
+\begin{itemize}
+\item CPAC 2014.
+\item SXSW 2014.
+\item Sochi Winter Games 2014.
+\end{itemize}
+The analysis and the conclusions we made from it, is presented next.
 
-The logistic regression model developed for the Event Information Quality component was used for assigning scores to all the 3.8 million tweets in the dataset. The tweets getting a score greater than 0.7 were considered as instances of high quality informative tweets. Those getting a score lesser than 0.3 were considered as instances of low quality non-informative tweets. Average values of different content characteristics of the tweets were calculated. Top ten percent of the frequently occurring hashtags and nouns were considered as top hashtags and top nouns respectively, for the analysis. Some of the characteristics that were prominently different for informative and non-informative tweets are listed in Table 5.
+\subsection{Content Analysis of Event Related Tweets}
+Details of the data collected for the analysis are provided in Table \ref{informationcuedata}. The data collection task was accomplished by `Event Reference Collection' component and was then preprocessed by the `Event Reference Preparation' component.
+
+Twitter allows its users to post short messages with a limitation of 140 characters. Users not only post plain textual content in their messages but also share URLs, linking to other external websites, images and videos. The images and videos are 
+labeled as media elements by Twitter. Apart from curating new content, the users also share content produced by others. This activity is known as \textit{retweeting}, and such tweets are preceded by the special characters \textit{RT}.
+The messages are normally written by a single person and are read by many. The readers in the context of Twitter are known as \textit{followers}, and the user whom the other users follow is considered as their \textit{friend}. Any user with good intent either share messages 
+that might be of interest to his followers, or for joining conversations on topics of his interest. The `@' symbol followed by the username commonly known as \textit{user mentions}, is used for mentioning other users in tweets for initiating conversation with them. 
+
+The concise and informal content of a tweet is often contextualized by the use of a crowdsourced annotation scheme called \textit{hashtags}. Hashtags are a sequence of characters in any language prefixed by the symbol `\#' (for e.g. \#icwsm2015). They are widely used
+by the users in order to add context to the tweets, categorizing the content based on a topic, join conversations related to a topic, and to make the tweets easily searchable by other interested users. They also act as strong identifiers of topics \cite{laniado2010making}. When tweeting about real-life
+events the users also tend to use hashtags in order to post event-specific content. For example `\#Egypt' and `\#Jan25', were among the most popular hashtags in Twitter used for spreading, organizing and analyzing information related to `Egyptian Revolution of 2011' \cite{barrons2012suleiman}. 
+
+Given the mechanisms of user interactions and content production in Twitter, we started our analysis with the assumption that the content of a tweet is primarily composed of hashtags, words for expressing and conveying information, and URLs that lead to additional information about the content. We plotted the distribution of occurrences of all the hashtags, tokens and shared URLs for each event. Due to the short length of the tweets we only considered unigram tokens. We also plotted the distribution of the number of tweets posted by the users.
+We observed a power law distribution for all of them (refer Figures \ref{hashtagdist}, \ref{tokendist}, \ref{urldist} and \ref{userdist}). This gave us an intuition that there are skewed sets of hashtags and tokens that are widely used for posting content related to an event. 
+%We call them \textit{event-specific hashtags} and \textit{event-specific text units}. 
+There is also a specific set of URLs that become popular in comparison to others and a set of users who are more active than others in posting event related content. 
+
+\begin{figure}[htbp]
+  \caption{Distribution of hashtags in event related tweets.}
+	\label{hashtagdist}
+  \centering
+    \includegraphics[width=14cm,height=11cm]{Figures/HashTagDistribution.jpeg}
+\end{figure}
+
+\begin{figure}[htbp]
+  \caption{Distribution of tokens in event related tweets.}
+\label{tokendist}
+  \centering
+    \includegraphics[width=14cm,height=11cm]{Figures/TokenDistribution.jpeg}
+\end{figure}
+
+\begin{figure}[htbp]
+  \caption{Distribution of URLs in event related tweets.}
+\label{urldist}
+  \centering
+    \includegraphics[width=14cm,height=11cm]{Figures/UrlDistribution.jpeg}
+\end{figure}
+
+\begin{figure}[htbp]
+  \caption{Distribution of users in event related tweets.}
+\label{userdist}
+  \centering
+    \includegraphics[width=14cm,height=11cm]{Figures/UserDistribution.jpeg}
+\end{figure}
+
+
+
+Our second step was to use the logistic regression model developed for the `Event Information Quality' component and assign informativeness scores to all the 3.8 million tweets in the dataset. The tweets getting a score greater than 0.7 were considered as instances of high quality informative tweets. Those getting a score lesser than 0.3 were considered as instances of low quality non-informative tweets. We calculated the average values of different content characteristics of the tweets. Top ten percent of the frequently occurring hashtags and nouns were considered as top hashtags and top nouns respectively, for the analysis. Some of the characteristics that were prominently different for informative and non-informative tweets are listed in Table \ref{infoanalysis}.
+
+\begin{figure}[htbp]
+\centering
+\caption{Content characteristics of informative and non-informative tweets related to events.}
+    \includegraphics[width=15cm,height=5cm]{Figures/InformationAnalysisTable.jpg}
+    
+    \label{infoanalysis}
+\end{figure}
+
 As presented in the table, for all the three events, on an average the informative tweets are marked by a higher number of tokens per tweet and greater occurrence of top nouns. The average length of informative tweets is also more than the non-informative ones. The percentage of informative tweets having URLs is strikingly high. A greater use of slang words is observed in non-informative tweets. However, greater occurrence of top hashtags in non-informative tweets intrigued us to look into the content and obtain a detailed view of it. We observed that a lot of non-informative tweets have used popular hashtags with unrelated content and URLs directing to irrelevant information. This is typical of spam tweets as already pointed out in Chapter \ref{challenges}. Although not shown due to space constraints, the average number of follower counts for users posting informative tweets was also observed to be higher than the ones posting non-informative ones. The average number of feeling words used in informative tweets were also relatively higher than the feeling words used in the non-informative tweets. 
 
 The above observations gave us an idea of how high quality informative content related to events is produced in Twitter and the characteristics that differentiate them from low quality non- informative content. It is now intuitive that the informative tweets are more expressive, formal and lengthier, marked by higher presence of nouns. The high presence of nouns indicates that these tweets also contain information about people, places, organizations, etc, associated with the events, which is vital information about any event and is ideal for representing its identity. Due to the limitations imposed by Twitter on the number of characters in a tweet, the users tend to share URLs along with the textual content that might lead to more information about the event. Also, users with high follower counts tend to post informative tweets. This can also be concluded by the fact that as they have more followers they are encouraged to share informative content. Conversely, since they share informative content they are followed by a large number of other users interested in the content shared by them.
