@@ -63,51 +63,7 @@ Due to unavailability of proper baseline techniques for ranking hashtags, text u
 \section{Evaluation Setup and Objectives}
 We evaluated the rankings obtained using \textit{EventIdentityInfoRank} on the  datasets (refer Chapter \ref{eiim}, `Event Reference Collection' component), collected for events: ``Millions March NYC'' and ``Sydney Siege Crisis", by comparing its performance with the selected baselines. A subset of tweets for each event for a given time period (one hour) was selected. The choice of the time period was made on the basis of the interesecton of the time period of the tweets collected by us and that provided by Seen for the same event. There were 21641 tweets for Millions March NYC and 37429 tweets for Sydney Siege, respectively. We obtained the ranked tweets for all the seven approaches. For all the approaches except \textit{SeenRank} the tweets were sorted in decreasing order on the basis of the ranking scores as the primary key and time of posting as the secondary key. This was done in order to get the most informative yet recent tweets at the top of the order. For \textit{SeenRank} we sorted the tweets in terms of the scores assigned to them by Seen, as showing recent informative tweets for an event is one of the features of their platform.
 
-We then followed a standard user evaluation approach to judge the event-specific informativeness of ranked tweets and also the hashtags, text units, URLs, and users.  A team of three independent annotators comprising of graduate students, having taken the course of Information Retrieval, were assigned the task of annotation. Necessary background of the events were given to the annotators along with suitable resources for learning more about the events.
-
-\noindent \textit{\textbf{Tweet Annotations:}} The ranked tweets were annotated on an event-specific informativeness-scale of 1 to 3 by the three independent annotators. We provide sample tweets for each of them taking the Sydney Siege event as our example. The value of 1 was assigned to tweets that does not contain any event related information (for e.g. \textit{\scriptsize SteveSmith becomes Australias 45th Test captain http://t.co/nYh9DqRXxh \#sydneysiege \#MartinPlace Lindt \#MYEFO \#siege Ray Hadley Muslims ISIS}). Value of 2 was assigned to tweets that were related to the event yet they did not provide useful event-specific information (for e.g. \textit{\scriptsize RT @TheDavidStevens: It wasn't just the policeman grabbing that girl in his arms, it was every Australian watching on too \#sydneysiege} ). A value of 3 was assigned to tweets that not only provided useful event-specific informative content but also led the user to more detailed information following the URLs mentioned in the tweet (for e.g. \textit{\scriptsize RT @FoxNews: MORE: Police confirm 3 hostages escape Sydney cafe, unknown number remain inside http://t.co/pcAt91LIdS \#Sydneysiege}).  The annotators assigned scores to top 100 tweets ranked according to each of the seven strategies. Thereafter, we computed \textit{Inter Indexer Consistency} (IIC) values \cite{rolling1981indexing} for the annotations of the two datasets. The average IIC scores obtained are shown in Table \ref{avgannotationscores}. The IIC values for both the events fall in the acceptable range of accuracy of annotations. A tweet might be assigned three different scores by the annotators. In that scenario we find the average of the three scores and round it off to the smallest positive integer and assign a single score to each tweet. We also report the total average scores for top 100 tweets for both the events in Table \ref{avgannotationscores}. 
-
-\noindent \textit{\textbf{Hashtags, Text Units and URL Annotations}}: A similar annotation strategy was taken for annotating the top 50 hashtags, text units and URLs obtained using \text{TwitterEventInfoRank}. For hashtags and text units the annotators were asked to look at the tweets that consisted them. If the tweets primarily led to event-specific informative content then a score of 3 was assigned. If the tweets led to related but not so informative content about the event then they were assigned a score of 2. Hashtags and text units that were irrelevant and did not lead to any event related content, were assigned a score of 1. Similarly, the annotators visited the links for each URL, and based on the content they assigned them a score between 1-3. If the URLs were videos and images, then they further visited the tweet containing them in order to understand the context and scored them accordingly. Table \ref{avgannotationscores} shows their average IIC scores and total average scores for top 50 ranks. 
-
-\noindent \textit{\textbf{User Annotations:}} For annotating users we selected 5 random tweets for each of the top 50 users ranked according to \textit{TwitterEventInfoRank}. An user was assigned a score of 3 if more than three of his tweets out of five got a score of 3 in the event-specific informativeness scale as already explained earlier. If three of his tweets get a score of 3 then the user gets a score of 2. Otherwise, a score of 1 is assigned to the user. Table \ref{avgannotationscores} shows average IIC scores and total average scores for top 50 users.
-
- 
-\noindent \textit{\textbf{NDCG@n and Precision@n}}: After being assured about consistency and accuracy of annotations, we moved to compute the \textit{Normalized Discounted Cumulative Gain} (NDCG) \cite{jarvelin2002cumulated} and Precision \cite{baeza1999modern} values at each of the hundred recall levels. The NDCG values consider both the position and event-specific informativeness scores of the tweets. The NDCG value up-to position $\scriptstyle p$ in the ranking is given by equation 10, where $\scriptstyle DCG_{p}$ denotes the \textit{discounted cumulative gain up-to position p} and is calculated using equation 9, and $\scriptstyle IDCG_{p}$ denotes the \textit{ideal discounted cumulative gain} value till position $\scriptstyle p$ in the ranking, or in other words the maximum possible $\scriptstyle DCG_{p}$ value till position $\scriptstyle p$. $\scriptstyle rel_{i}$ denotes the graded relevance of the result at position $\scriptstyle i$. In the context of our evaluation $\scriptstyle rel_{i}$ represents the average rounded score in the scale of (1-3) that has been assigned by the annotators to the tweet at position  $\scriptstyle i$ in the ranked list of top 100 tweets.
-
-\begin{equation}
-\scriptstyle
-DCG_{p} = \sum_{i=1}^{p}\frac{2^{rel_{i}}-1}{log(i+1)}
-\end{equation}
-
-\begin{equation}
-\scriptstyle
-nDCG_{p} = \frac{DCG_{p}}{IDCG_{p}} 
-\end{equation}
-
-Precision@n is measured using equation 11. A tweet was considered to be relevant if it has a score of either 3 or 2 and was considered irrelevant if it has a score of 1.
-
-\begin{equation}
-\scriptstyle
-\frac{No.\,of\, relevant\, tweets\, at\, position\, n}{n}
-\end{equation}
-
-
-
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[height=4.5in,width=6in]{Figures/Chapter4Figures/MillionsMarchNycEventIdentityInfoRankPerformance.jpg}
-\caption{\small Performance comparison of ranking techniques using NDCG scores.}
-\label{millionsmarchndcg}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[height=4.5in,width=6in]{Figures/Chapter4Figures/SydneySiegeEventIdentityInfoRankPerformance.jpg}
-\caption{\small Performance comparison of ranking techniques using NDCG scores.}
-\label{sydneysiegendcg}
-\end{figure}
-
+We then followed a standard user evaluation approach to judge the event-specific informativeness of ranked tweets and also the hashtags, text units, URLs, and users.  A team of three independent annotators comprising of graduate students, having taken the course of Information Retrieval, were assigned the task of annotation. Necessary background of the events were given to the annotators along with suitable resources for learning more about the events. Next, we present the annotation schemes.
 
 \begin{table}[htbp]
 \centering
@@ -124,8 +80,6 @@ Precision@n is measured using equation 11. A tweet was considered to be relevant
 \end{tabular}
 \end{table}
 
-
-
 \begin{table}[htbp]
 \centering
 \caption{Avg IIC scores and total avg scores of annotations for Sydney Siege event.}
@@ -141,36 +95,108 @@ Precision@n is measured using equation 11. A tweet was considered to be relevant
 \end{tabular}
 \end{table}
 
+\subsection{Tweet Annotation} 
+The ranked tweets were annotated on an event-specific informativeness-scale of 1 to 3 by the three independent annotators. We provide sample tweets for each of them taking the Sydney Siege event as our example. 
+
+\begin{itemize}
+\item The value of 1 was assigned to tweets that does not contain any event related information (for e.g. \textit{SteveSmith becomes Australias 45th Test captain http://t.co/nYh9DqRXxh \#sydneysiege \#MartinPlace Lindt \#MYEFO \#siege Ray Hadley Muslims ISIS}). 
+\item Value of 2 was assigned to tweets that were related to the event yet they did not provide useful event-specific information (for e.g. \textit{RT @TheDavidStevens: It wasn't just the policeman grabbing that girl in his arms, it was every Australian watching on too \#sydneysiege} ). 
+\item A value of 3 was assigned to tweets that not only provided useful event-specific informative content but also led the user to more detailed information following the URLs mentioned in the tweet (for e.g. \textit{RT @FoxNews: MORE: Police confirm 3 hostages escape Sydney cafe, unknown number remain inside http://t.co/pcAt91LIdS \#Sydneysiege}).  
+\end{itemize}
+
+
+
+The annotators assigned scores to top 100 tweets ranked according to each of the seven strategies. Thereafter, we computed \textit{Inter Indexer Consistency} (IIC) values \cite{rolling1981indexing} for the annotations of the two datasets. The average IIC scores obtained for the two events are are shown in Table \ref{avgiicMillionsMarchNyc} and Table \ref{avgiicSydneySiege}, respectively. The IIC values for both the events fall in the acceptable range of accuracy of annotations. A tweet might be assigned three different scores by the annotators. In that scenario we find the average of the three scores and round it off to the smallest positive integer and assign a single score to each tweet. We also report the total average scores for top 100 tweets for both the events in the tables. 
+
+\subsection{Hashtags, Text Units and URL Annotations}
+A similar annotation strategy was taken for annotating the top 50 hashtags, text units and URLs obtained using \text{EventIdentityInfoRank}. For hashtags and text units the annotators were asked to look at the tweets that consisted them. Following strategy was followed for scoring.
+
+\begin{itemize}
+\item If the tweets containing them primarily led to event-specific informative content then a score of 3 was assigned.
+
+\item If the tweets containing them led to related but not so informative content about the event then they were assigned a score of 2.
+
+\item Hashtags and text units that were irrelevant and did not lead to any event related content, were assigned a score of 1.
+\end{itemize}
+
+Similarly, the annotators visited the links for each URL, and based on the content they assigned them a score between 1-3. If the URLs were videos and images, then they further visited the tweet containing them in order to understand the context and scored them accordingly. Table \ref{avgiicMillionsMarchNyc} and Table \ref{avgiicSydneySiege} shows their average IIC scores and total average scores for top 50 ranks. 
+
+\subsection{User Annotations} 
+For annotating users we selected 5 random tweets for each of the top 50 users ranked according to \textit{EventIdentityInfoRank}. An user was assigned a score of 3 if more than three of his tweets out of five got a score of 3 in the event-specific informativeness scale as already explained earlier. If three of his tweets get a score of 3 then the user gets a score of 2. Otherwise, a score of 1 is assigned to the user. Table \ref{avgiicMillionsMarchNyc} and Table \ref{avgiicSydneySiege} shows average IIC scores and total average scores for top 50 users.
+
+ 
+\subsection{NDCG@n and Precision@n}
+After being assured about consistency and accuracy of annotations, we moved to compute the \textit{Normalized Discounted Cumulative Gain} (NDCG) \cite{jarvelin2002cumulated} and Precision \cite{baeza1999modern} values at each of the hundred recall levels. The NDCG values consider both the position and event-specific informativeness scores of the tweets. The NDCG value up-to position $p$ in the ranking is given by equation \ref{eq62}, where $DCG_{p}$ denotes the \textit{discounted cumulative gain up-to position p} and is calculated using equation \ref{eq61}, and $IDCG_{p}$ denotes the \textit{ideal discounted cumulative gain} value till position $p$ in the ranking, or in other words the maximum possible $DCG_{p}$ value till position $p$. $rel_{i}$ denotes the graded relevance of the result at position $i$. In the context of our evaluation $rel_{i}$ represents the average rounded score in the scale of (1-3) that has been assigned by the annotators to the tweet at position  $i$ in the ranked list of top 100 tweets.
+
+\begin{equation}
+\label{eq61}
+DCG_{p} = \sum_{i=1}^{p}\frac{2^{rel_{i}}-1}{log(i+1)}
+\end{equation}
+
+\begin{equation}
+\label{eq62}
+nDCG_{p} = \frac{DCG_{p}}{IDCG_{p}} 
+\end{equation}
+
+Precision@n is measured using equation \ref{eq63}. A tweet was considered to be relevant if it has a score of either 3 or 2 and was considered irrelevant if it has a score of 1.
+
+\begin{equation}
+\label{eq63}
+\frac{No.\,of\, relevant\, tweets\, at\, position\, n}{n}
+\end{equation}
+
+NDCG@n and Precision@n values were calculated for all the seven approaches for each of the datasets. Figures \ref{millionsmarchndcg} and \ref{sydneysiegendcg} shows the NDCG curves for all the seven approaches on the Millions March NYC and the Sydney Siege events, respectively, for up-to 20 recall levels. Tables \ref{sydneysiegendcgtable} and \ref{sydneysiegeprecisiontable} presents the NDCG@n values and Precision@n values for different recall levels upto 100 for the Sydney Siege Crisis event. Similarly, Tables \ref{millionsmarchndcgtable} and \ref{millionsmarchnycprecisiontable} presents the NDCG@n values and Precision@n values for different recall levels upto 100 for the Millions March Nyc event.It is quite evident from the figures and the tables that EventIdentityInfoRank approach outperforms all the baselines including the state-of-the-art approach of \textit{SeenRank} in gaining event-specific information.
+
+
+
 \begin{figure}[htbp]
 \centering
-\includegraphics[height=3.5in,width=5.5in]{Figures/millionsmarchnycndcg.jpg}
+\includegraphics[height=4.5in,width=6in]{Figures/EventIdentityInfoRankPerformanceMillionsMarchNyc.jpg}
 \caption{\small Performance comparison of ranking techniques using NDCG scores.}
 \label{millionsmarchndcg}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[height=3.5in,width=5.5in]{Figures/sydneysiegendcg.jpg}
+\includegraphics[height=4.5in,width=6in]{Figures/EventIdentityInfoRankPerformanceSydneySiege.jpg}
 \caption{\small Performance comparison of ranking techniques using NDCG scores.}
 \label{sydneysiegendcg}
 \end{figure}
 
+
+
+
+
+
 \begin{figure}[htbp]
 \centering
-\includegraphics[height=3.5in,width=5.5in]{Figures/millionsmarchnycprecision.jpg}
-\caption{\small Performance comparison of ranking techniques using precision scores.}
-\label{millionsmarchnycprecision}
+\includegraphics[height=3in,width=5.5in]{Figures/MillionsMarchNycCorrectedNDCG.jpg}
+\caption{\small Performance comparison of ranking techniques using NDCG scores.}
+\label{millionsmarchndcgtable}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[height=3.5in,width=5.5in]{Figures/sydneysiegeprecision.jpg}
+\includegraphics[height=3in,width=5.5in]{Figures/sydneysiegecorrectedndcg.jpg}
+\caption{\small Performance comparison of ranking techniques using NDCG scores.}
+\label{sydneysiegendcgtable}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=3in,width=5.5in]{Figures/MillionsMarchNycCorrectedPrecision.jpg}
 \caption{\small Performance comparison of ranking techniques using precision scores.}
-\label{sydneysiegeprecision}
+\label{millionsmarchnycprecisiontable}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=3in,width=5.5in]{Figures/sydneysiegeprecisioncorrected.jpg}
+\caption{\small Performance comparison of ranking techniques using precision scores.}
+\label{sydneysiegeprecisiontable}
 \end{figure}
 
 On considering only the top 10 tweets we observed a substantial information gain of our algorithm over the state-of-the-art (\textit{SeenRank}) and the baseline that performed second best for both the events. On comparing the values of NDCG@10 for the two events we found that our algorithm performs 13.96\% (Millions March NYC) and 34.07\% (Sydney Siege) better than the second best baseline technique, in identifying event-specific informative tweets. When compared with \textit{SeenRank}, our algorithm was 64.53\% (Millions March NYC) and 56.59\% (Sydney Siege) better. 
 
-We also reasoned about the poor performance of \textit{TextRank} in both the events. Since \textit{TextRank} allowed random walks between homogeneous nodes, the strong association of non-informative nodes with the informative ones might have lowered the final scores of the informative nodes. The strong association of non-informative nodes with informative ones can be attributed to the spamming activity as already explained earlier in the paper. This also proves that our framework is robust against spams and is very effective in retrieving the most informative content related to events from the noisy stream of tweets in Twitter. 
+We also reasoned about the poor performance of \textit{TextRank} in both the events. Since \textit{TextRank} allowed random walks between homogeneous nodes, the strong association of non-informative nodes with the informative ones might have lowered the final scores of the informative nodes. The strong association of non-informative nodes with informative ones can be attributed to the spamming activity as already explained earlier Chapter \ref{review}, Section \ref{veracity} This also proves that our framework is robust against spams and is very effective in identifying the most informative content related to events from the noisy stream of tweets in Twitter. 
 
-We also show the top 5 event-specific informative hashtags, text units, URLs and tweets for the Sydney Siege event in Table \ref{top5sydneysiege}, and three randomly selected tweets for top three event-specific informative users for the same event in Table \ref{sydneysiegeusers}. Due to space constraints we do not present similar tables for Millions March NYC.
