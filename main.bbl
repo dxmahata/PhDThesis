@@ -1,4 +1,4 @@
-\begin{thebibliography}{135}
+\begin{thebibliography}{139}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -852,6 +852,30 @@ Jimmy Lin and Michael Schatz.
 \newblock Design patterns for efficient graph algorithms in mapreduce.
 \newblock In \emph{Proceedings of the Eighth Workshop on Mining and Learning
   with Graphs}, pages 78--85. ACM, 2010.
+
+\bibitem[Mihalcea et~al.(2004)]{Mihalcea2004}
+R.~Mihalcea et~al.
+\newblock Textrank: Bringing order into texts.
+\newblock In \emph{Proceedings of EMNLP}, volume~4, pages 404--411. Barcelona,
+  Spain, 2004.
+
+\bibitem[Rolling(1981)]{rolling1981indexing}
+L~Rolling.
+\newblock Indexing consistency, quality and efficiency.
+\newblock \emph{Information Processing \& Management}, 17\penalty0
+  (2):\penalty0 69--76, 1981.
+
+\bibitem[J{\"a}rvelin and Kek{\"a}l{\"a}inen(2002)]{jarvelin2002cumulated}
+Kalervo J{\"a}rvelin and Jaana Kek{\"a}l{\"a}inen.
+\newblock Cumulated gain-based evaluation of ir techniques.
+\newblock \emph{ACM Transactions on Information Systems (TOIS)}, 20\penalty0
+  (4):\penalty0 422--446, 2002.
+
+\bibitem[Baeza-Yates et~al.(1999)Baeza-Yates, Ribeiro-Neto,
+  et~al.]{baeza1999modern}
+Ricardo Baeza-Yates, Berthier Ribeiro-Neto, et~al.
+\newblock \emph{Modern information retrieval}, volume 463.
+\newblock ACM press New York, 1999.
 
 \bibitem[Gao et~al.(2011)Gao, Barbier, Goolsby, and Zeng]{gao2011harnessing}
 Huiji Gao, Geoffrey Barbier, Rebecca Goolsby, and Daniel Zeng.

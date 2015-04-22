@@ -613,16 +613,6 @@
   publisher = {IEEE}
 }
 
-@ARTICLE{Erkan2004,
-  author = {Erkan, G{\"u}nes and Radev, Dragomir R},
-  title = {LexRank: graph-based lexical centrality as salience in text summarization},
-  journal = {Journal of Artificial Intelligence Research},
-  year = {2004},
-  pages = {457--479},
-  owner = {cisstudent},
-  timestamp = {2015.04.09}
-}
-
 @ARTICLE{erkan2004lexrank,
   author = {Erkan, G{\"u}nes and Radev, Dragomir R},
   title = {LexRank: graph-based lexical centrality as salience in text summarization},
