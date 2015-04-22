@@ -11,12 +11,67 @@
 \section{Future Work}
 
 \subsection{Summarizing Event Related Content}
+Given the huge amount of content produced in social media related to real-life events, summarization of the content can be very useful in such a scenario. It can help the users to overcome the problem of information overload. One of the most important characteristics of the summarization techniques is to identify the most salient units of information from the textual posts. The \textit{EventIdentityInfoGraph} and the \textit{EventIdentityInfoRank} algorithm as proposed and implemented in this dissertation can be tuned for such a purpose. One of the steps that needs to be taken is to find how the salient event identity information units obtained as an output of \textit{EventIdentityInfoRank} can be used for constructing event summaries from short textual social media messages. We have started looking into this problem and look forward to solve it using the framework as proposed in this dissertation. One of the main advantages and novelty in solving this problem using the EIIM framework would be the capability of generating event summaries as the event evolves. 
 
 \subsection{Identifying Insightful Opinionated Content Related to Events}
+Users often share insightful opinionated content about different topics, people, organizations in social media. Such content is also generated in the context of an event. For example, in a sporting event the fans may post a lot of opinionated content about the players. Not all of them will be insightful. Similarly, in a product launch event, the prospective customers, or the reviewers may post very insightful and opinionated reviews about the new product. This type of content is extremely useful for the prospective customers, targeted marketing and for automated systems in order to identify the positive and negative aspects of the product that is creating buzz in social media. Identification of such insightful opinionated tweets can lead to the discovery of very useful and strategic information. On considering a mix of named entities and unigram opinionated words as text units in the \textit{EventIdentityInfoGraph} we obtained some preliminary encouraging results. A glimpse of the results obtained for a basketball game ''Miami Heats VS Cleveland Cavaliers", played on 25th December, 2014 is as follows:
 
-\subsection{Event Topic Modeling}
+Top 10 insightful and opinionated tweets for an hour related to the game
+\begin{enumerate}
+
+\item	Good win for the Heat tonight against Cavs and Lebron. Great game for Wade and Deng. Just imagine if Bosh were healthy. \#HeatvsCavs
+
+\item	Good work Dwayne Wade. Good work Miami Heat. LeBron is embarrassed. It's all over his face. \#NBA \#heatvscavs
+
+\item	Great game on Christmas Heat Showed up and spoiled Lebron Return to MIA! \#Wade County \#HeatvsCavs \#NBAChristmas
+
+\item	Lebron leaves Miami high and dry and they cheer his return. Some even cheering cavs. Embarrassing bandwagon fan base. \#heatv…
+
+\item	I totally understand LBJ move to Cleveland and like it. But if I'm a \#Miami fan, I would boo LeBron like crazy today. \#heatvscavs \#CLEvsMIA
+
+\item	Stay classy \#Miami. Good game vs. Lebron and; Cavs. \#NBA \#MIAvsCLE \#HeatvsCavs \#Heat \#HeatNation
+
+\item Loul Deng playing both ends of the floor. He's playing good D to LBJ \#heatvscavs
+
+\item	Heat fans ; Cavs fans. Class vs no class. No burning a jersey in Miami \#heatvscavs \#HeatNation
+
+\item	WE FUCKING WON!!!!!! LETS GO HEAT \#HEATgame \#HeatNation \#HeatvsCavs Wade with 31 points 5 assist 5 rebounds! Good shit MIAMI
+
+\item	Kevin Love is overrated. Big fish, small pond in MN and injury prone. \#HeatvsCavs \#NBAXmas
+
+\end{enumerate}
+
+The above tweets point to the reactions of the viewers on the game as well as the players participating in the event. We plan to work on this and take steps to tune our framework in order to make it better than the state-of-the-art techniques, for identifying insightful opinionated content from social media. This useful content once identified and ranked can also be used for generating opinion summaries. 
+
+
+
+
+
+
 
 \subsection{Event-specific Recommendations}
+The graph based data structure used for storing the EIIS can be used for generating event related informative recommendations in near real-time. The graph structure aids in exploring relationships between tweets, text units, hashtags, users and URLs. Moreover, the `Event Identity Information Process' component processes the EIIS and assigns event-specific informativeness scores to its vertices. These scores combined with the relationships between the vertices can be leveraged for recommending users to other users who are producing event-specific informative content. Similarly, event-specific informative tweets, URLs and hashtags can be recommended. A naive approach has been implemented. For example following is a refined tweet recommendation for an event obtained from a snapshot of the \textit{EventIdentityInfoGraph} created for the event: “BlackLivesMatter”: Protest movement against the killing of Eric Garner.
+
+\textbf{Original Tweet:}
+
+\begin{itemize}
+\item \#BREAKING \#NEWS | New York City Mayor Says, \#BlackLivesMatter \\ http://t.co/qYvp8L8gDh | \#BLACK  \@HCP520
+\end{itemize}
+
+\textbf{Recommended Tweets:}
+
+\begin{itemize}
+
+\item New York: What's the plan? Where are the protests happening tonight? \#EricGarner \#BlackLivesMatter \#MichaelBrown \#ICantBreathe
+
+\item Brooklyn District Attorney to Convene Grand Jury in Case of \#AkaiGurley NBC New York http://t.co/mLlYPy39Pa \#BlackLivesMatter
+
+\item New York Today! \#ShutItDown \#economicshutdown \#BlackLivesMatter \#ICantBreathe \#EricGarner \#nojusticenoprofits http://t.co/F0TrZtx2Y5
+
+\end{itemize}
+
+Similarly an user can get other recommended users who are talking on the same topic. Hashtags and topics can also be recommended. It can further lead to clustering of similar content and discovery of communities around different topics related to the event. We wish to work on this in the future.
+
 
 \subsection{Distributed Processing of EventIdentityInfoGraph}
 

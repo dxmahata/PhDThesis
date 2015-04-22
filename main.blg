@@ -1,30 +1,14 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 The style file: unsrtnat.bst
 Database file #1: Bibliography.bib
-Repeated entry---line 791 of file Bibliography.bib
- : @article{hamdy2012framing
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1222 of file Bibliography.bib
- : @article{metzgar2009social
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1620 of file Bibliography.bib
- : @inproceedings{sen2012identifying
- :                                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1629 of file Bibliography.bib
- : @inproceedings{sen2012identifying
- :                                  ,
-I'm skipping whatever remains of this entry
 Warning--entry type for "socialmediaforevents" isn't style-file defined
---line 1955 of file Bibliography.bib
+--line 1963 of file Bibliography.bib
 Warning--entry type for "coloradoshooting" isn't style-file defined
---line 1976 of file Bibliography.bib
-Warning--entry type for "egyptianrevinternetblackout" isn't style-file defined
 --line 1984 of file Bibliography.bib
+Warning--entry type for "egyptianrevinternetblackout" isn't style-file defined
+--line 1992 of file Bibliography.bib
 Warning--entry type for "ladendeathnews" isn't style-file defined
---line 1993 of file Bibliography.bib
+--line 2001 of file Bibliography.bib
 Warning--I didn't find a database entry for "tsur2012s"
 Warning--empty journal in petrovic2013can
 Warning--empty journal in page1999pagerank
@@ -33,4 +17,4 @@ Warning--empty booktitle in mihalcea2004textrank
 Warning--empty journal in hatzivassiloglou2003domain
 Warning--there's a number but no series in olteanu2014crisislex
 Warning--empty journal in alejandro2011use
-(There were 4 error messages)
+(There were 12 warnings)

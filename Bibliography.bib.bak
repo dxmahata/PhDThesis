@@ -613,16 +613,6 @@
   publisher = {IEEE}
 }
 
-@ARTICLE{Erkan2004,
-  author = {Erkan, G{\"u}nes and Radev, Dragomir R},
-  title = {LexRank: graph-based lexical centrality as salience in text summarization},
-  journal = {Journal of Artificial Intelligence Research},
-  year = {2004},
-  pages = {457--479},
-  owner = {cisstudent},
-  timestamp = {2015.04.09}
-}
-
 @ARTICLE{erkan2004lexrank,
   author = {Erkan, G{\"u}nes and Radev, Dragomir R},
   title = {LexRank: graph-based lexical centrality as salience in text summarization},
@@ -776,7 +766,7 @@
   timestamp = {2015.04.09}
 }
 
-@ARTICLE{hamdy2012framing,
+@ARTICLE{Hamdy2012,
   author = {Hamdy, Naila and Gomaa, Ehab H},
   title = {Framing the Egyptian uprising in Arabic language newspapers and social
 	media},
@@ -1209,7 +1199,7 @@
   organization = {ACM}
 }
 
-@ARTICLE{metzgar2009social,
+@ARTICLE{Metzgar2009,
   author = {Metzgar, Emily and Maruggi, Albert},
   title = {Social media and the 2008 US presidential election},
   journal = {Journal of New Communications Research},
@@ -1608,7 +1598,16 @@
   organization = {ACM}
 }
 
-@INPROCEEDINGS{sen2012identifying,
+@INPROCEEDINGS{Sen2012,
+  author = {Sen, Fatih and Wigand, Rolf T and Agarwal, Nitin and Mahata, Debanjan
+	and Bisgin, Halil},
+  title = {Identifying focal patterns in social networks.},
+  booktitle = {CASoN},
+  year = {2012},
+  pages = {105--108}
+}
+
+@INPROCEEDINGS{Sen2012a,
   author = {Sen, Fatih and Wigand, Rolf T and Agarwal, Nitin and Mahata, Debanjan
 	and Bisgin, Halil},
   title = {Identifying focal patterns in social networks.},
@@ -1896,6 +1895,13 @@
   date-modified = {2013-04-14 13:43:29 -0500},
   owner = {cisstudent},
   timestamp = {2015.04.10}
+}
+
+@MISC{zalta2003stanford,
+  author = {Zalta, Edward N and Abramsky, Samson},
+  title = {Stanford encyclopedia of philosophy},
+  year = {2003},
+  publisher = {Stanford University. The Metaphysics Research Lab}
 }
 
 @INPROCEEDINGS{zhang2007new,

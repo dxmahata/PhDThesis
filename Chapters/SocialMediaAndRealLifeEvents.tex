@@ -91,7 +91,7 @@ All the above social media websites exhibit certain common characteristics that 
 
 
 
-\section{Defining Events from Different Perspectives}
+
 
 %\subsection{Topic Detection and Tracking}
 %
@@ -100,6 +100,46 @@ All the above social media websites exhibit certain common characteristics that 
 %\subsection{Multimedia Event Detection}
 
 \section{Events in Social Media}
+
+
+
+Events have been discussed from different perspectives and have gained attention in various areas of academics. Right from philosophy \cite{zalta2003stanford} to psychology \cite{zacks2001event} events have been defined in various ways. In the context of this dissertation we define events as defined by Becker et al. \cite{becker2011beyond}.
+
+ 
+
+%The definition of event has received substantial attention across various academic areas, from philosophy (Zalta and Abramsky, 2003) to psychology (Zacks and Tversky,
+%2001), over the years. An event is often defined as an abstract concept (Zalta and Abramsky, 2003), or with respect to its manifestation in a specific domain (e.g.,
+%textual news \cite{allan2002topic}, video and audio clips (Westermann and Jain, 2007), social media \cite{becker2011beyond}.  In this
+%dissertation, instead of providing yet another definition of an event, we define specific type of events in the context of Twitter (note that events on other social media
+%platforms can be defined in a similar way), based on the traditional event definition (Troncy et al., 2010; Xie et al., 2008; Yang et al., 1998; Allan, 2002). We provide the
+%following definitions:
+
+\textbf{Event:} \textit{An event is defined as a real-world occurrence ($ E_{i}$) with an associated time period $T_{E_{i}}$ ($t^{start}_{E_{i}}$-$t^{end}_{E_{i}}$) and a time ordered stream of social media references $M_{E_{i}} = {\{m_{1_{E_{i}}},m_{2_{E_{i}}}, ... ,m_{n_{E_{i}}}, ... ,m_{z_{E_{i}}}\}}$, of substantial volume, discussing about the event and posted in time $T_{E_{i}}$}.
+
+Although, this definition of event was originally proposed for the domain of Twitter, it can be applicable to all types of social media platforms as all of them fulfill the basic requirements of the above definition. Becker et al. \cite{becker2011beyond}, further categorizes events in social media into two categories, planned and unplanned, depending on whether the context of an event (e.g., topic or hashtags on Twitter, time, location) is available or not.
+
+
+
+%Next, following the event categorization in (Becker et al., 2011), we classify the
+%events in Twitter into two categories – planned events and unplanned events – depending on whether the context of an event (e.g., topic or hashtags on Twitter, time,
+%location) is available to our toolbox.
+
+\textbf{Planned event}: A planned event $PE_{i}$ is an event in Twitter with preknown corresponding event context information consisting both 
+\begin{itemize}
+\item topic or hashtags of the event.
+\item time, at which $PE_{i}$ is planned to occur.
+\end{itemize}
+
+We only track planned events in this dissertation whose topics and hashtags are already known to us. For all the data collection efforts, an already known and event related popular hashtag is provided for bootstrapping the process of collecting event related messages. We consider all the messages in this stream as related to the event for which the query is placed and concentrate all our efforts to segregate high quality event-specific informative content from the non-informative ones. 
+
+
+Next, in contrast to the planned event, there is no information about an unplanned event. To characterize and define such events, we have to rely on other signals that could indicate their presence. Such events are often known as trending events and is defined as follows for the domain of Twitter.
+
+\textbf{Unplanned trending event}: An unplanned trending event is an event in Twitter with one or more features (e.g., terms) of the corresponding Twitter messages exhibiting bursty patterns during the event's time period.
+
+We don't consider the trending events for this dissertation as don't intend to solve the task of identifying a trending event from streams of social media messages.
+
+
 
 \section{Background: Entity Identity Information Management (EIIM) in Master Data Management}
 The idea of Entity Identity Information Management (EIIM) as defined by Zhou et al. \cite{zhou2011entity}, is the collection and management of identity information of real-world entities with the goal of sustaining \textit{entity identity integrity}. \textit{Entity identity integrity} is one of the basic tenets of data quality that applies to the representation of a given domain of real-world entities in an information system \cite{talburt2011entity}. In order to maintain the property of \textit{entity identity integrity} following conditions should be satisfied:

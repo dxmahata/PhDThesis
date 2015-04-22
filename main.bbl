@@ -1,4 +1,4 @@
-\begin{thebibliography}{139}
+\begin{thebibliography}{141}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -127,12 +127,11 @@ Nitin Agarwal and Yusuf Yiliyasi.
 \newblock In \emph{International Conference on Information Quality (ICIQ 2010),
   Little Rock, Arkansas}, 2010.
 
-\bibitem[Hamdy and Gomaa(2012)]{hamdy2012framing}
-Naila Hamdy and Ehab~H Gomaa.
+\bibitem[Hamdy et~al.(2012)]{hamdy2012framing}
+N.~Hamdy et~al.
 \newblock Framing the egyptian uprising in arabic language newspapers and
   social media.
-\newblock \emph{Journal of Communication}, 62\penalty0 (2):\penalty0 195--211,
-  2012.
+\newblock \emph{Journal of Communication}, 2012.
 
 \bibitem[Bakshy et~al.(2012)Bakshy, Rosenn, Marlow, and Adamic]{bakshy2012role}
 Eytan Bakshy, Itamar Rosenn, Cameron Marlow, and Lada Adamic.
@@ -184,16 +183,25 @@ Google and twitter launch service enabling egyptians to tweet by phone, 2011.
 \newblock URL
   \url{http://www.theguardian.com/technology/2011/feb/01/google-twitter-egypt}.
 
-\bibitem[Talburt(2011)]{talburt2011entity}
-John~R Talburt.
-\newblock \emph{Entity resolution and information quality}.
-\newblock Elsevier, 2011.
+\bibitem[Zalta and Abramsky(2003)]{zalta2003stanford}
+Edward~N Zalta and Samson Abramsky.
+\newblock Stanford encyclopedia of philosophy, 2003.
+
+\bibitem[Zacks and Tversky(2001)]{zacks2001event}
+Jeffrey~M Zacks and Barbara Tversky.
+\newblock Event structure in perception and conception.
+\newblock \emph{Psychological bulletin}, 127\penalty0 (1):\penalty0 3, 2001.
 
 \bibitem[Becker et~al.(2011{\natexlab{a}})Becker, Naaman, and
   Gravano]{becker2011beyond}
 Hila Becker, Mor Naaman, and Luis Gravano.
 \newblock Beyond trending topics: Real-world event identification on twitter.
 \newblock \emph{ICWSM}, 11:\penalty0 438--441, 2011{\natexlab{a}}.
+
+\bibitem[Talburt(2011)]{talburt2011entity}
+John~R Talburt.
+\newblock \emph{Entity resolution and information quality}.
+\newblock Elsevier, 2011.
 
 \bibitem[Benevenuto et~al.(2010)Benevenuto, Magno, Rodrigues, and
   Almeida]{benevenuto2010detecting}
