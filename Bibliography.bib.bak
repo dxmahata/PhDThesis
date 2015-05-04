@@ -436,6 +436,11 @@
   volume = {201}
 }
 
+@MISC{breslinsemantically,
+  author = {Breslin, JG and Bojars, U},
+  title = {Semantically-Interlinked Online Communities}
+}
+
 @ARTICLE{brin1998anatomy,
   author = {Brin, S. and others},
   title = {The anatomy of a large-scale hypertextual Web search engine},
@@ -1684,6 +1689,13 @@
   organization = {IEEE}
 }
 
+@ARTICLE{smith2002basic,
+  author = {Smith, Barry and Grenon, P},
+  title = {Basic formal ontology},
+  journal = {Draft. Downloadable at http://ontology. buffalo. edu/bfo},
+  year = {2002}
+}
+
 @ARTICLE{talburt2007algebraic,
   author = {Talburt, John and Wang, Richard and Hess, Kimberly and Kuo, Emily},
   title = {An algebraic approach to data quality metrics for entity resolution
@@ -1895,6 +1907,17 @@
   date-modified = {2013-04-14 13:43:29 -0500},
   owner = {cisstudent},
   timestamp = {2015.04.10}
+}
+
+@ARTICLE{zacks2001event,
+  author = {Zacks, Jeffrey M and Tversky, Barbara},
+  title = {Event structure in perception and conception.},
+  journal = {Psychological bulletin},
+  year = {2001},
+  volume = {127},
+  pages = {3},
+  number = {1},
+  publisher = {American Psychological Association}
 }
 
 @MISC{zalta2003stanford,

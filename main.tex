@@ -25,7 +25,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt, oneside]{Thesis} % The default font size and one-sided printing (no margin offsets)
+\documentclass[12pt, oneside]{Thesis} % The default font size and one-sided printing (no margin offsets)
 
 \graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
 
@@ -36,6 +36,7 @@
 \usepackage{booktabs}
 %\usepackage{hyperref}
 \usepackage{footnote}
+\usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{algorithm2e}
 \usepackage{amssymb}
@@ -71,32 +72,49 @@
 
 \begin{titlepage}
 \begin{center}
+%\HRule \\[0.4cm] % Horizontal line
+%{\huge \bfseries A Framework for Collecting, Extracting and Managing Event Identity Information from Textual Content in Social Media}\\[0.4cm] % Thesis title
+%\HRule \\[1.5cm] % Horizontal line
 
-\textsc{\LARGE University of Arkansas at Little Rock}\\[1.5cm] % University name
-\textsc{\Large Doctoral Dissertation}\\[0.5cm] % Thesis type
+\textsc{\large A FRAMEWORK FOR COLLECTING, EXTRACTING AND MANAGING EVENT IDENTITY INFORMATION FROM TEXTUAL CONTENT IN SOCIAL MEDIA}\\[1.5cm]
 
-\HRule \\[0.4cm] % Horizontal line
-{\huge \bfseries A Framework for Collecting, Extracting and Managing Event Identity Information from Textual Content in Social Media}\\[0.4cm] % Thesis title
-\HRule \\[1.5cm] % Horizontal line
+
+\large A Dissertation Submitted \\ to the Graduate School \\ University of Arkansas at Little Rock\\[1.5cm] % University name
+
+in partial fulfillment of requirements \\ for the degree of \\[1.5cm]
+
+\textsc{DOCTOR OF PHILOSOPHY}\\[1cm]
+
+in Integrated Computing\\[1.5cm]
+
+in the Department of Information Science \\ of the Donaghey College of Engineering and Information Technology \\[1.5cm]
+
+May 2015 \\[1.5cm]
+
+Debanjan Mahata \\
+M.S in Computer Science, Banaras Hindu University, 2010 \\
+B.S in Computer Science, Banaras Hindu University, 2008
+%\textsc{\Large Doctoral Dissertation}\\[0.5cm] % Thesis type
+
  
-\begin{minipage}{0.4\textwidth}
-\begin{flushleft} \large
-\emph{Author:}\\
-\href{https://sites.google.com/a/ualr.edu/debanjan-mahata/home}{Debanjan Mahata} % Author name - remove the \href bracket to remove the link
-\end{flushleft}
-\end{minipage}
-\begin{minipage}{0.4\textwidth}
-\begin{flushright} \large
-\emph{Supervisor:} \\
-\href{http://ualr.edu/technologyinnovation/faculty/john-talburt/}{Dr. John R. Talburt} % Supervisor name - remove the \href bracket to remove the link  
-\end{flushright}
-\end{minipage}\\[3cm]
+%\begin{minipage}{0.4\textwidth}
+%\begin{flushleft} \large
+%\emph{Author:}\\
+%\href{https://sites.google.com/a/ualr.edu/debanjan-mahata/home}{Debanjan Mahata} % Author name - remove the \href bracket to remove the link
+%\end{flushleft}
+%\end{minipage}
+%\begin{minipage}{0.4\textwidth}
+%\begin{flushright} \large
+%\emph{Supervisor:} \\
+%\href{http://ualr.edu/technologyinnovation/faculty/john-talburt/}{Dr. John R. Talburt} % Supervisor name - remove the \href bracket to remove the link  
+%\end{flushright}
+%\end{minipage}\\[3cm]
+% 
+%\large \textit{A dissertation submitted in fulfilment of the requirements\\ for the degree of \degreename}\\[0.3cm] % University requirement text
+%\textit{in}\\[0.4cm]
+%Integrated Computing \\ Information Quality Track \\ Department of Information Science \\[2cm] % Research group name and department name
  
-\large \textit{A dissertation submitted in fulfilment of the requirements\\ for the degree of \degreename}\\[0.3cm] % University requirement text
-\textit{in}\\[0.4cm]
-Integrated Computing \\ Information Quality Track \\ Department of Information Science \\[2cm] % Research group name and department name
- 
-{\large \today}\\[4cm] % Date
+%{\large \today}\\[4cm] % Date
 %\includegraphics{Logo} % University/department logo - uncomment to place it
  
 \vfill
@@ -104,32 +122,107 @@ Integrated Computing \\ Information Quality Track \\ Department of Information S
 
 \end{titlepage}
 
+\clearpage
+
+%........................................................................................
+%Copyright Page
+%........................................................................................
+\begin{center} \large \copyright \; Copyright by \\
+Debanjan Mahata \\
+2015
+\end{center}
+\clearpage
+
+\normalsize This dissertation, ``A Framework for Collecting, Extracting and Managing Event Identity Information from Textual Content in Social Media", by Debanjan Mahata, is approved by: \\
+
+Dissertation Advisor: \hspace{1cm} \hrulefill  \\
+\hspace*{5.1cm} John R. Talburt \\
+\hspace*{5.1cm} Professor of Information Science \\
+
+Dissertation Committee: \hspace{0.4cm} \hrulefill  \\
+\hspace*{5.1cm} Elizabeth Pierce \\
+\hspace*{5.1cm} Associate Professor of Information Science \\
+
+\hspace{5.1cm} \hrulefill \\
+\hspace*{5.1cm} Russel Bruhn \\
+\hspace*{5.1cm} Professor of Information Science \\
+
+\hspace{5.1cm} \hrulefill \\
+\hspace*{5.1cm} Ningning Wu \\
+\hspace*{5.1cm} Professor of Information Science \\
+
+\hspace{5.1cm} \hrulefill \\
+\hspace*{5.1cm} Mathias Brochhausen \\
+\hspace*{5.1cm} Assistant Professor of the Division of Biomedical \\ 
+\hspace*{5.1cm} Informatics at UAMS \\
+
+Program Coordinator: \hspace{0.8cm} \hrulefill  \\
+\hspace*{5.1cm} Ningning Wu \\
+\hspace*{5.1cm} Professor of Information Science \\
+
+Graduate Dean: \hspace{1.9cm} \hrulefill  \\
+\hspace*{5.1cm} Paula J. Casey \\
+\hspace*{5.1cm} Professor of Law \\
+
+\clearpage
+
+\begin{center}
+\large \textbf{Fair Use}
+\end{center}
+This thesis is protected by the Copyright Laws of the United States (Public Law 94-553, revised in 1976). Consistent with fair use as defined in the Copyright Laws, brief quotations from this material are allowed with proper acknowledgment. Use of this material for financial gain without the author's express written permission is not allowed. \\[8cm]
+
+\begin{center}
+\large \textbf{Duplication}
+\end{center}
+I authorize the Head of Interlibrary Loan or the Head of Archives at the Ottenheimer Library at the University of Arkansas at Little Rock to arrange for duplication of this thesis for educational or scholarly purposes when so requested by a library user. The duplication will be at the user's expense. \\[2cm]
+
+Signature: \hspace{1cm} \hrulefill
+
+\clearpage
+
 %----------------------------------------------------------------------------------------
-%	DECLARATION PAGE
-%	Your institution may give you a different text to place here
+%	ABSTRACT PAGE
 %----------------------------------------------------------------------------------------
+\large  ``\textbf{A FRAMEWORK FOR COLLECTING, EXTRACTING AND MANAGING EVENT IDENTITY INFORMATION FROM TEXTUAL CONTENT IN SOCIAL MEDIA}", \textbf{by Debanjan Mahata, May 2015.}
 
-\Declaration{
+\doublespacing
+\addtotoc{ABSTRACT} % Add the "Abstract" page entry to the Contents
 
-\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
+\abstract{
+%\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
 
-I, Debanjan Mahata, declare that this thesis titled, '\ttitle' and the work presented in it are my own. I confirm that:
+With the popularity of social media platforms such as Facebook, Twitter and Google Plus, there has been voluminous growth in the digital footprints of real-life events on the Internet. The user-generated colloquial and concise textual content related to different types of real-life events, available in these websites, acts as an extremely useful source for researchers and organizations for extracting valuable and insightful information. There has been significant improvement in natural language processing techniques for mining formal and long textual content commonly found in newspapers. It is still a challenging task to mine textual information from the social media channels producing terse, informal and noisy text with an unusual grammatical structure. For a real-life event of interest it is necessary to detect and store informative event-specific signals from the noisy social media channels that allows to distinctly identify the event among all others, and characterizes it for extracting actionable insights. These event-specific cues also form its identity in the unstructured domain of social media. This identity information when mined and analyzed in a timely manner has tremendous applications in the areas of real-life event analysis, opinion mining, data journalism, cyber security, event management, among others. Thus, there is a need of a generic framework that can collect the textual content related to a real-life event, extract event-specific information from it and persistently maintain the information for tracking newly produced content as the event evolves, and provide updated event analytics. The patent-pending work presented in this dissertation establishes the design and implementation of an extendable framework that enables collection, extraction and persistent management of identity information of real-life events from short textual content produced in social media. Towards this objective a pipeline of data processing components going through repeated processing cycles - \textit{Event Identity Information Management Life Cyle} (EIIM) is proposed. A novel persistent graph data structure - \textit{EventIdentityInfoGraph} representing the identity information structure of an event is implemented that forms the critical component of the EIIM life cycle. Mutually reinforcing relationships between event-specific social media posts, hashtags, text units, URLs and users, forming the vertices of the graph and denoting \textit{event identity information units}, are defined and quantified. An iterative and scalable algorithm - \textit{EventIdentityInfoRank} is proposed that processes the vertices of the graph and ranks them in terms of event-specific informativeness by leveraging the mutually reinforcing relationships. The ranked \textit{event identity information units} are further used in tracking new event related content and extracting valuable event-specific information. Different components of the framework are tested and validated. The work is concluded by discussing about its novel contributions, practical applications in various other domains and envisaging future directions.}
 
-\begin{itemize} 
-\item[\tiny{$\blacksquare$}] This work was done wholly or mainly while in candidature for a research degree at this University.
-\item[\tiny{$\blacksquare$}] Where any part of this thesis has previously been submitted for a degree or any other qualification at this University or any other institution, this has been clearly stated.
-\item[\tiny{$\blacksquare$}] Where I have consulted the published work of others, this is always clearly attributed.
-\item[\tiny{$\blacksquare$}] Where I have quoted from the work of others, the source is always given. With the exception of such quotations, this thesis is entirely my own work.
-\item[\tiny{$\blacksquare$}] I have acknowledged all main sources of help.
-\item[\tiny{$\blacksquare$}] Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others and what I have contributed myself.\\
-\end{itemize}
- 
-Signed:\\
-\rule[1em]{25em}{0.5pt} % This prints a line for the signature
- 
-Date:\\
-\rule[1em]{25em}{0.5pt} % This prints a line to write the date
-}
+
+\clearpage % Start a new page
+
+
+%%----------------------------------------------------------------------------------------
+%%	DECLARATION PAGE
+%%	Your institution may give you a different text to place here
+%%----------------------------------------------------------------------------------------
+%
+%\Declaration{
+%
+%\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
+%
+%I, Debanjan Mahata, declare that this thesis titled, '\ttitle' and the work presented in it are my own. I confirm that:
+%
+%\begin{itemize} 
+%\item[\tiny{$\blacksquare$}] This work was done wholly or mainly while in candidature for a research degree at this University.
+%\item[\tiny{$\blacksquare$}] Where any part of this thesis has previously been submitted for a degree or any other qualification at this University or any other institution, this has been clearly stated.
+%\item[\tiny{$\blacksquare$}] Where I have consulted the published work of others, this is always clearly attributed.
+%\item[\tiny{$\blacksquare$}] Where I have quoted from the work of others, the source is always given. With the exception of such quotations, this thesis is entirely my own work.
+%\item[\tiny{$\blacksquare$}] I have acknowledged all main sources of help.
+%\item[\tiny{$\blacksquare$}] Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others and what I have contributed myself.\\
+%\end{itemize}
+% 
+%Signed:\\
+%\rule[1em]{25em}{0.5pt} % This prints a line for the signature
+% 
+%Date:\\
+%\rule[1em]{25em}{0.5pt} % This prints a line to write the date
+%}
 
 \clearpage % Start a new page
 
@@ -151,20 +244,6 @@ Ronald Coase, Economics, Nobel Prize Laureate
 
 \clearpage % Start a new page
 
-%----------------------------------------------------------------------------------------
-%	ABSTRACT PAGE
-%----------------------------------------------------------------------------------------
-
-\addtotoc{Abstract} % Add the "Abstract" page entry to the Contents
-
-\abstract{
-%\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
-
-With the popularity of social media platforms such as Facebook, Twitter and Google Plus, there has been voluminous growth in the digital footprints of real-life events on the Internet. The user-generated colloquial and concise textual content related to different types of real-life events, available in these websites, acts as an extremely useful source for researchers and organizations for extracting valuable and insightful information. There has been significant improvement in natural language processing techniques for mining formal and long textual content commonly found in newspapers. It is still a challenging task to mine textual information from the social media channels producing terse, informal and noisy text with an unusual grammatical structure. For a real-life event of interest it is necessary to detect and store informative event-specific signals from the noisy social media channels that allows to distinctly identify the event among all others, and characterizes it for extracting actionable insights. These event-specific cues also form its identity in the unstructured domain of social media. This identity information when mined and analyzed in a timely manner has tremendous applications in the areas of real-life event analysis, opinion mining, data journalism, cyber security, event management, among others. Thus, there is a need of a generic framework that can collect the textual content related to a real-life event, extract event-specific information from it and persistently maintain the information for tracking newly produced content as the event evolves, and provide updated event analytics. The patent-pending work presented in this dissertation establishes the design and implementation of an extendable framework that enables collection, extraction and persistent management of identity information of real-life events from short textual content produced in social media. Towards this objective a pipeline of data processing components going through repeated processing cycles - \textit{Event Identity Information Management Life Cyle} (EIIM) is proposed. A novel persistent graph data structure - \textit{EventIdentityInfoGraph} representing the identity information structure of an event is implemented that forms the critical component of the EIIM life cycle. Mutually reinforcing relationships between event-specific social media posts, hashtags, text units, URLs and users, forming the vertices of the graph and denoting \textit{event identity information units}, are defined and quantified. An iterative and scalable algorithm - \textit{EventIdentityInfoRank} is proposed that processes the vertices of the graph and ranks them in terms of event-specific informativeness by leveraging the mutually reinforcing relationships. The ranked \textit{event identity information units} are further used in tracking new event related content and extracting valuable event-specific information. Different components of the framework are tested and validated. The work is concluded by discussing about its novel contributions, practical applications in various other domains and envisaging future directions.}
-
-
-
-\clearpage % Start a new page
 
 %----------------------------------------------------------------------------------------
 %	ACKNOWLEDGEMENTS
@@ -173,7 +252,8 @@ With the popularity of social media platforms such as Facebook, Twitter and Goog
 \setstretch{1.3} % Reset the line-spacing to 1.3 for body text (if it has changed)
 
 \acknowledgements{\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
-
+\doublespacing
+\setlength{\parindent}{1cm}
 I would like to express the deepest appreciation to my committee chair Dr. John R. Talburt, who has shown the attitude and the substance of a genius. He continiously and persuasively conveyed a spirit of adventure in regard to research and scholarship, and an excitement in regard to directing innovation towards practical problems. Without his supervision and constant support this dissertation would not have been possible.
 
    I would like to thank my committee members, Dr. Elizabeth Pierce, Dr. Ningning Wu, Dr. Russel Bruhn and Dr. Mathias Brochhausen, whose high quality contributions in the field of Information Science and Information Quality have inspired me to set high standards in my work, and kept me motivated. I would specially thank Dr. Mathias Brochhausen for devoting his valuable time for discussing about possible applications of ontologies in representing real-life events and the related information content in social media. I strongly consider it as one of the future directions of my research.
