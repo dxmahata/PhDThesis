@@ -70,11 +70,11 @@
 \contentsline {subsection}{\numberline {6.2.3}User Annotations}{138}{subsection.304}
 \contentsline {subsection}{\numberline {6.2.4}NDCG@n and Precision@n}{138}{subsection.305}
 \contentsline {chapter}{\numberline {7}Potential Applications of the EIIM Framework}{144}{chapter.315}
-\contentsline {section}{\numberline {7.1}Event Monitoring and Analysis}{144}{section.316}
-\contentsline {section}{\numberline {7.2}Event Information Retrieval}{145}{section.323}
-\contentsline {section}{\numberline {7.3}Opinion and Review Mining}{146}{section.325}
-\contentsline {section}{\numberline {7.4}Event Management and Marketing}{147}{section.326}
-\contentsline {section}{\numberline {7.5}Social Media Data Integration}{148}{section.328}
+\contentsline {section}{\numberline {7.1}Event Monitoring and Analysis}{145}{section.316}
+\contentsline {section}{\numberline {7.2}Event Information Retrieval}{146}{section.323}
+\contentsline {section}{\numberline {7.3}Opinion and Review Mining}{147}{section.325}
+\contentsline {section}{\numberline {7.4}Event Management and Marketing}{148}{section.326}
+\contentsline {section}{\numberline {7.5}Social Media Data Integration}{149}{section.328}
 \contentsline {chapter}{\numberline {8}Conclusion and Future Work}{150}{chapter.330}
 \contentsline {section}{\numberline {8.1}Conclusion}{150}{section.331}
 \contentsline {section}{\numberline {8.2}Future Work}{150}{section.332}

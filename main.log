@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.21)  31 JUL 2015 12:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.21)  31 JUL 2015 16:41
 entering extended mode
 **C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/main.tex
 (C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/main.tex
@@ -1708,17 +1708,12 @@ Chapter 7.
 [144
 
 ] [145] [146]
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
 [][][]\OT1/cmr/m/n/10 http://oursocialtimes.com/using-social-media-to-make-your
 -event-a-dazzling-success-
  []
 
-[147]
-
-Package natbib Warning: Citation `tsur2012s' on page 148 undefined on input lin
-e 117.
-
-)
+[147])
 (C:\Users\Jyoti\Documents\PhD-Thesis\PhDThesis\Chapters/ConclusionAndFutureWork
 .tex [148] [149]
 Chapter 8.
@@ -1814,13 +1809,11 @@ Underfull \hbox (badness 1648) in paragraph at lines 621--625
  []
 
 [175] [176] [177] [178] [179] [180] [181] [182])
-
-Package natbib Warning: There were undefined citations.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 464.
-[183]
+ [183]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 464.
- (C:\Users\Jyoti\Documents\PhD-Thesis\PhDThesis\main.aux)
+
+(C:\Users\Jyoti\Documents\PhD-Thesis\PhDThesis\main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 464.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 464.
 Package rerunfilecheck Info: File `main.out' has not changed.
@@ -1832,10 +1825,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 464.
  ) 
 Here is how much of TeX's memory you used:
- 16211 strings out of 493921
- 237039 string characters out of 3144876
- 318067 words of memory out of 3000000
- 18529 multiletter control sequences out of 15000+200000
+ 16214 strings out of 493921
+ 237093 string characters out of 3144876
+ 318106 words of memory out of 3000000
+ 18531 multiletter control sequences out of 15000+200000
  20646 words of font info for 76 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  49i,15n,45p,2721b,718s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1860,9 +1853,9 @@ type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (201 pages, 6640592 bytes).
+Output written on main.pdf (201 pages, 6641623 bytes).
 PDF statistics:
- 2366 PDF objects out of 2487 (max. 8388607)
- 698 named destinations out of 1000 (max. 500000)
+ 2368 PDF objects out of 2487 (max. 8388607)
+ 699 named destinations out of 1000 (max. 500000)
  836 words of extra memory for PDF output out of 10000 (max. 10000000)
 

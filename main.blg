@@ -2,14 +2,13 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 The style file: unsrtnat.bst
 Database file #1: Bibliography.bib
 Warning--entry type for "socialmediaforevents" isn't style-file defined
---line 1984 of file Bibliography.bib
+--line 1931 of file Bibliography.bib
 Warning--entry type for "coloradoshooting" isn't style-file defined
---line 2005 of file Bibliography.bib
+--line 1953 of file Bibliography.bib
 Warning--entry type for "egyptianrevinternetblackout" isn't style-file defined
---line 2013 of file Bibliography.bib
+--line 1962 of file Bibliography.bib
 Warning--entry type for "ladendeathnews" isn't style-file defined
---line 2022 of file Bibliography.bib
-Warning--I didn't find a database entry for "tsur2012s"
+--line 1971 of file Bibliography.bib
 Warning--empty journal in petrovic2013can
 Warning--empty journal in page1999pagerank
 Warning--empty journal in hallberg2012adaptation
@@ -18,4 +17,4 @@ Warning--empty journal in hatzivassiloglou2003domain
 Warning--there's a number but no series in olteanu2014crisislex
 Warning--empty journal in alejandro2011use
 Warning--empty year in breslinsemantically
-(There were 13 warnings)
+(There were 12 warnings)

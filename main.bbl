@@ -1,4 +1,4 @@
-\begin{thebibliography}{145}
+\begin{thebibliography}{146}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -920,6 +920,13 @@ Onook Oh, Manish Agrawal, and H~Raghav Rao.
   attack through twitter.
 \newblock \emph{Information Systems Frontiers}, 13\penalty0 (1):\penalty0
   33--43, 2011.
+
+\bibitem[Tsur and Rappoport(2012)]{tsur2012s}
+Oren Tsur and Ari Rappoport.
+\newblock What's in a hashtag?: content based prediction of the spread of ideas
+  in microblogging communities.
+\newblock In \emph{Proceedings of the fifth ACM international conference on Web
+  search and data mining}, pages 643--652. ACM, 2012.
 
 \bibitem[Troncy et~al.(2010)]{troncy2010linking}
 Rapha{\"e}l Troncy et~al.
