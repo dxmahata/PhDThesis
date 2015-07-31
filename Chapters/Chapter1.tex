@@ -15,37 +15,43 @@ Social media is a paradigm shift in the way people communicate with each other. 
 \indent With the popularity of social media there has been proliferation of unstructured textual content on the Internet about different real-life events. Tracking social media for useful content such as live reporting of an event and recent updates can be harnessed to identify important nuggets of information. It can lead to identification and analysis of insightful user-generated information about named entities (people, place, organization, etc). Event summaries can be generated from the identified event-specific informative content. Actionable event-specific insights can be extracted such as, ``what is happening", ``who is involved", ``where is it happening", ``when did it happen", and so on. There are tremendous applications in the areas of real-life event analysis, data journalism, event management, opinion mining, online targeted marketing, cyber security, among others. Thus, there is a need of a generic framework that has the following capabilities:
 \begin{itemize}
 \item Collecting different types of textual content produced in social media related to an event.
-\item Extracting information that acts as an identity of the event used for characterizing it
+\item Extracting information that acts as an identity of the event used for characterizing it.
 \item Maintaining the extracted event identity information persistently for resolving constantly produced new content and discovering important event-specific information. 
 \end{itemize}
 
 
-\indent The problem of collecting and extracting event identity information from social media is very similar to the task of event detection and tracking from newswires \cite{allan1998line,kumaran2004text}. However, in this dissertation, we add new components that creates persistent identity structures of an event and update it with new information over time. In order to make our task well-defined we focus on the problem of tracking a pre-specified set of events. Also, the domain of social media poses additional challenges. News articles most often adhere to grammatical, syntactical and formal structures of writing, that are not common in the realm of social media. The user-generated content in social media is most often colloquial, short, noisy, and lacks proper grammatical structure. This makes it a challenging task for even the state-of-the-art natural language processing techniques to extract useful information and to perform tasks like entity extraction and parts-of-speech tagging that lies at the core of the previous research on event detection and tracking.
+\indent The problem of collecting and extracting event identity information from social media is similar to the task of event detection and tracking from newswires \cite{allan1998line,kumaran2004text}. However, in this dissertation, we add new components that creates persistent identity structures of an event and update it with new information over time. In order to make our task well-defined we focus on the problem of tracking a pre-specified set of events. Also, the domain of social media poses additional challenges. News articles most often adhere to grammatical, syntactical and formal structures of writing, that are not common in the realm of social media. The user-generated content in social media is most often colloquial, short, noisy, and lacks proper grammatical structure. This makes it a challenging task for even the state-of-the-art natural language processing techniques to extract useful information and to perform tasks like entity extraction and parts-of-speech tagging that lies at the core of the previous research on event detection and tracking.
 
 \indent The work presented in this dissertation establishes the conceptual design and implementation of a framework capable of collecting, extracting and persistently managing event identity information from user-generated short textual content shared in social media (shown in Figure 1.1). The approach of the presented work is from the perspective of Entity Identity Information Management (EIIM) \cite{zhou2011entity}, with basic tenets of information quality at its core. Towards this objective, different challenges of mining high quality information from social media text is discussed and a patent-pending, novel approach to the challenges of identifying event-specific informative content is explained. This approach is a critical component of the framework. The dissertation further explores the applications of the research and concludes by discussing future directions of the work.
 
 
 %The thesis introduces the problem of Event Identity Information Management in social media, discusses the prevalent challenges and presents the implementation design of a framework capable of managing persistent identity information of pre-specified set of real-life events. It further explores the applications of the research and concludes by pointing to different future directions of the work. 
 
-\begin{figure}[htbp]
+\begin{sidewaysfigure}[htbp]
 \label{eiim}
   \caption{Event Identity Information Management (EIIM) Life Cycle for user generated textual content in social media}
-  \centering
-    \includegraphics[width=15cm,height=7cm]{Figures/EIIMpic.jpg}
-\end{figure}
+    \includegraphics[width=24cm,height=14cm]{Figures/NewEIIM.jpg}
+\end{sidewaysfigure}
+
+%\begin{figure}[htbp]
+%\label{eiim}
+%  \caption{Event Identity Information Management (EIIM) Life Cycle for user generated textual content in social media}
+%  \centering
+%    \includegraphics[width=15cm,height=7cm]{Figures/NewEIIM.jpg}
+%\end{figure}
 
 Some of the main contributions of the work are:
 
-\begin{itemize}
-\item Extending the Entity Identity Information Management (EIIM) model  \cite{zhou2011entity} from the closed world domain of Master Data Management (MDM) to the open and unstructured domain of social media.
+\begin{enumerate}
+\item Extending the \textit{Entity Identity Information Management} (EIIM) model  \cite{zhou2011entity} from the closed world domain of \textit{Master Data Management} (MDM) to the open and unstructured domain of social media.
 
 \item The design and implementation of an \textit{Event Identity Information Management} framework that is capable of tracking and identifying event-specific information from short user-generated textual content in social media. Towards this objective a data processing pipeline named \textit{Event Identity Information Management Life Cycle} is developed, which is capable of :
 \begin{itemize}
 \item Collecting event related real-time content generated in social media.
 \item Pre-processing them using natural language processing techniques.
-\item Identifying high-quality sources of information.
+\item Identifying high-quality references to information.
 \item Extracting event-specific information in order to create \textit{Event Identity Information Structures} (EIIS) for persistently storing and characterizing the salient and high-quality event related information. 
-\item Identifying event-specific informative content produced in social media.
+\item Identifying and ranking event-specific informative content produced in social media.
 \end{itemize}
 
 
@@ -55,13 +61,15 @@ Some of the main contributions of the work are:
 
 %\item A novel model that leverages mutually reinforcing relationships between blog posts and named entities mentioned in them, and simultaneously ranks blogs as well as the named entities, allowing identification of event-specific content and further analysis of event-specific information.
 
-\item A novel model based on the principle of mutual reinforcement that takes into account the semantics of relationships between short textual \textit{social media messages}, \textit{hashtags}, \textit{text units}, \textit{URLs} and \textit{users}, and represent them in a graph structure - \textit{EvenIdentitytInfoGraph}. A scalable graph processing iterative algorithm -\textit{EventIdentityInfoRank}, is implemented for ranking the nodes of the \textit{EventIdentityInfoGraph}. The algorithm is capable of simultaneously ranking \textit{social media messages}, \textit{hashtags}, \textit{text units}, \textit{URLs} and \textit{users} in terms of event-specific informativeness providing deeper insights into the identity of an event.
+\item A novel model based on the principle of mutual reinforcement that takes into account the semantics of relationships between short textual \textit{social media messages}, \textit{hashtags}, \textit{text units}, \textit{URLs} and \textit{users}, and represent them in a graph structure - \textit{EvenIdentitytInfoGraph}. 
 
-\item Evaluation of the proposed techniques against popularly used baseline techniques using large scale datasets.
+\item A scalable graph processing iterative algorithm - \\ \textit{EventIdentityInfoRank}, implemented for ranking the nodes of the \textit{EventIdentityInfoGraph}. The algorithm is capable of simultaneously ranking \textit{social media messages}, \textit{hashtags}, \textit{text units}, \textit{URLs} and \textit{users} in terms of event-specific informativeness providing deeper insights into the identity of an event.
 
-\end{itemize}
+\item Evaluation of the proposed technique against popularly used baseline techniques using large scale datasets.
 
-Already published work as well as upcoming publications that represents our contributions related to specific topics covered by the broad area of research as presented in this dissertation are given below. \\ 
+\end{enumerate}
+
+Already published work that represents our contributions related to specific topics covered by the broad area of research as presented in this dissertation are given below.
 
 \textbf{\LARGE Related Filed Patent}
 \begin{itemize}
@@ -74,7 +82,14 @@ Already published work as well as upcoming publications that represents our cont
 \end{itemize}
 
 \textbf{\LARGE Related Publications}
+
 \begin{itemize}
+
+\item \textbf{Debanjan Mahata}, John R. Talburt and Vivek Kumar Singh; \textit{A Framework for Collecting, Extracting and Managing Event Identity Information from Twitter}. $20^{th}$ International Conference on Information Quality, M.I.T, Boston.
+
+\item \textbf{Debanjan Mahata}, John R. Talburt and Vivek Kumar Singh; \textit{From Chirps to Whistles : Discovering Event-specific Informative Content from Twitter}. Proceedings of the $7^{th}$ Annual ACM Web Science Conference. ACM, 2015, Oxford, England.
+
+
 \item \textbf{Debanjan Mahata}, John R. Talburt and Vivek Kumar Singh; \textit{Identifying and Ranking of Event-specific Entity-centric Informative Content from Twitter}. $20^{th}$ International Conference On Applications Of Natural Language To Information Systems (NLDB 2015), Passau, Germany. $17^{th}-19^{th}$ June, 2015.
 
 \item \textbf{Debanjan Mahata} and John R. Talburt; \textit{A Framework for Collecting and Managing Entity Identity Information from Social Media}. $19^{th}$ International Conference on Information Quality, Xi'An, China.
@@ -98,23 +113,6 @@ Already published work as well as upcoming publications that represents our cont
 
 \end{itemize}
 
-\textbf{\LARGE Related Submitted Publications}
-
-\begin{itemize}
-\item \textbf{Debanjan Mahata}, John R. Talburt, Vivek Kumar Singh and Rajesh Piryani; \textit{Chatter that Matter: A Framework for Identifying and Ranking Event-specific Informative Tweets}. $18^{th}$ International Conference on Text, Speech and Dialogue, Plzen, Czech Republic (Notification Due: May 10, 2015)
-
-\item \textbf{Debanjan Mahata}, John R. Talburt and Vivek Kumar Singh; \textit{A Framework for Collecting, Extracting and Managing Event Identity Information from Twitter}. $20^{th}$ International Conference on Information Quality, M.I.T, Boston (Notification Due: April 30, 2015)
-
-\item \textbf{Debanjan Mahata}, John R. Talburt and Vivek Kumar Singh; \textit{From Chirps to Whistles : Discovering Event-specific Informative Content from Twitter}. Proceedings of the $7^{th}$ Annual ACM Web Science Conference. ACM, 2015, Oxford, England (Notification Due: April 30, 2015)
-
-\end{itemize}
-  
-
-
-
-
-
- 
 
 %Twitter alone has 284 million monthly users,  posting 500 million tweets per day produces a variety of content\footnote{\tiny http://about.twitter.com/company}. A significant proportion of it are related to different real-life events (e.g, football matches, conferences, music shows, etc). Majority of this content are personal updates (e.g.  \textit{Thanks for the memories Sochi! I've had the time of my life \#Sochi2014 \#sochiselfie http://t.co/DqkLEaAMpo}), pointless babbles (e.g. \textit{Ted Cruz is a dangerous man. Crazy and gaining support. Megalomaniac leaders are bad, mkay. \#CPAC \#politics \#joke}) and spams (e.g \textit{New post: Sochi Was For Suckers - Laugh Studios/ http://t.co/cWQJCBp3Ow \#lol \#funny \#rofl \#funnypic \#wtf.}). Personal views and conversations might be of interest to a specific group of people. However, they are meaningless and provides no information to the general audience. On the other hand there are tweets that presents newsworthy content, recent updates and real-time coverage of on-going events (e.g. \textit{In \#Sochi, the Dutch are dominating the overall Olympic medal count http://t.co/jMR1WUqEK4 (Reuters) http://t.co/dAfDhEgTGA}). These tweets provide event-specific informative content and are more useful for general audience interested to know about the event. We call them as event-specific informative references. Table \ref{tweetsample} presents some examples of different types of tweets shared during real-life events.
 %
@@ -167,19 +165,19 @@ Already published work as well as upcoming publications that represents our cont
 %\section{Research Contributions}
 %
 
-The rest of the thesis is organized as follows:
+The rest of the dissertation is organized as follows:
 
-Chapter \ref{events} gives an overview of the different social media websites and their common characteristics. It also looks at the different perspectives of defining an event and gives the definition of events in social media as accepted by the presented work. Finally, it defines the problem of Event Identity Information Management from Social Media whose solution and application is extensively discussed throughout the rest of the dissertation.
+Chapter \ref{events} gives an overview of the different social media websites and their common characteristics. It also gives the definition of events in social media as accepted by the presented work. Finally, it introduces the problem of Event Identity Information Management from Social Media.
 
-Chapter \ref{review} reviews the existing literature related to the topic of the dissertation and highlights the challenges in applying previously available techniques to the domain of social media. It also discusses the similarities and dissimilarities of our work with the previous ones, and identifies the areas of our novel contributions that makes it different from the available techniques.
+Chapter \ref{review} reviews the existing literature related to the topic of the dissertation and highlights the challenges in applying previously available techniques to the domain of social media. It also discusses the similarities and dissimilarities of the work presented in this dissertation with the previous ones, and identifies the novel contributions that makes it different from the state-of-the-art techniques.
 
-Chapter \ref{challenges} gives a detailed explanation of the challenges that are relevant to the problem of this dissertation. It discusses different scenarios in which these problems occur and point to their solutions as proposed in this dissertation.
+Chapter \ref{challenges} gives a detailed discussion of the challenges that are relevant to the problem of this dissertation. It discusses different scenarios in which these problems occur and point to their solutions as proposed in this dissertation.
 
 
-Chapter \ref{eiim} presents a detailed discussion of the \textit{Event Identity Information Management Life Cycle}, that is proposed as a solution to the problem that is posed in this dissertation. It goes through all the components of the life cycle and gives a detailed explanation of the design choices, implementation and their working.
+Chapter \ref{eiim} presents a detailed explanation of the \textit{Event Identity Information Management Life Cycle}, that is proposed as a solution to the problem that is posed in this dissertation. It goes through all the components of the life cycle and gives a detailed explanation of the design choices, implementation and their working.
 
-Chapter \ref{eval} discusses about the baselines selected for evaluating the approaches presented in the dissertation and compares their performance with them. 
+Chapter \ref{eval} discusses the baselines selected for evaluating the approach presented in this dissertation and compares its performance with them. 
 
-Chapter \ref{applications} highlights the potential real-life application of the \textit{Event Identity Information Management} framework implemented in this thesis. 
+Chapter \ref{applications} highlights the potential real-life application of the \textit{Event Identity Information Management} framework implemented in this dissertation. 
 
-Chapter \ref{Conclusion} draws conclusions of the work presented in this thesis and points to future directions of the work.
+Chapter \ref{Conclusion} draws conclusions of the work presented in this dissertation and points to future directions of the work.
