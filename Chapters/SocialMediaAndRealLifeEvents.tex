@@ -81,7 +81,7 @@ All the above social media websites exhibit certain common characteristics that 
 
 \item \textbf{Recency:} The time lag at which communication can take place and information can flow is almost zero for the social media websites. Content is produced and communicated in real-time. Once this content is consumed, the users discuss about it instantaneously. Due to the reach and recency of social media it can make people aware of newsworthy events at a faster pace than traditional maintream media \cite{phelan2009using,petrovic2013can}. It might take hours, days, or sometimes months to present news or an event through mainstream media like newspapers, magazines and television. For example, the death of Bin Laden and the entire covert opertation was reported in Twitter even before the US president made an official announcement in the mainstream media \cite{ladendeathnews}. The users in social media were not only aware of the event but were also sharing and discussing it with great zeal.  Another example is of the theater shootings in Colorado \cite{coloradoshooting}. The shooting incident was reported, covered and analyzed in real-time, with traditional news media lagging behind social media by several minutes.
 
-\item \textbf{Usability:} Social media sites are extremely easy to use and are user-friendly. An user does not require special training or skills to create content in a social media website. Whoever, can use a device connected to the Internet can share information in social media. Therefore, the operational cost of any social media application is mostly negligible. This is not the case for mainstream media. In order to report an event one needs to be skilled and specially trained. Also, the printing and telecasting of any event has to go through many other processes and has to be finally approved by the editor. This makes traditional media unusable by common people. The use of social media at the time of Internet blackout during the ``Egyptian Revolution of 2011" is a great example of its usability \cite{egyptianrevinternetblackout}. The Egyptian government had throttled the Internet connection and there was an Internet blackout for hours in order to stop the spreading of messages in social media, which was the major media of communication that led to the protest movements and finally to the revolution. In order to counterattack the government and to allow the Egyptians to use social media for giving latest updates, Google and Twitter launched a service that enabled them to leave a voicemail on a specific number. This voicemail was then posted in Twitter as a text message. Thus, people who didn't have a smart phone or didn't know how to use one could also post messages in social media.
+\item \textbf{Usability:} Social media sites are extremely easy to use and are user-friendly. An user does not require special training or skills to create content in a social media website. Whoever, can use a device connected to the Internet can share information in social media. Therefore, the operational cost of any social media application is mostly negligible. This is not the case for mainstream media. In order to report an event one needs to be skilled and specially trained. Also, the printing and telecasting of any event has to go through many other processes and has to be finally approved by the editor. This makes traditional media unusable by common people. The use of social media at the time of Internet blackout during the ``Egyptian Revolution of 2011" is a great example of its usability \cite{egyptianrevinternetblackout}. The Egyptian government had throttled the Internet connection and there was an Internet blackout for hours to stop the spread of messages in social media, which was the major media of communication leading to the protest movements and finally to the revolution. In order to counterattack the government and to allow the Egyptians to use social media for communicating latest updates, Google and Twitter launched a service that enabled them to leave a voicemail on a specific number. This voicemail was then posted in Twitter as a text message. Thus, people who didn't have a smart phone or didn't know how to use one could also post messages in social media.
 
 %\item \textbf{Event-specific Information Content:} 
 
@@ -100,49 +100,10 @@ All the above social media websites exhibit certain common characteristics that 
 %
 %\subsection{Multimedia Event Detection}
 
-\section{Events in Social Media}
 
 
 
-Events have been discussed from different perspectives and have gained attention in various areas of academics. Right from philosophy \cite{zalta2003stanford} to psychology \cite{zacks2001event} events have been defined in various ways. In the context of this dissertation we define events as defined by Becker et al. \cite{becker2011beyond}.
-
- 
-
-%The definition of event has received substantial attention across various academic areas, from philosophy (Zalta and Abramsky, 2003) to psychology (Zacks and Tversky,
-%2001), over the years. An event is often defined as an abstract concept (Zalta and Abramsky, 2003), or with respect to its manifestation in a specific domain (e.g.,
-%textual news \cite{allan2002topic}, video and audio clips (Westermann and Jain, 2007), social media \cite{becker2011beyond}.  In this
-%dissertation, instead of providing yet another definition of an event, we define specific type of events in the context of Twitter (note that events on other social media
-%platforms can be defined in a similar way), based on the traditional event definition (Troncy et al., 2010; Xie et al., 2008; Yang et al., 1998; Allan, 2002). We provide the
-%following definitions:
-
-\textbf{Event:} \textit{An event is defined as a real-world occurrence ($ E_{i}$) with an associated time period $T_{E_{i}}$ ($t^{start}_{E_{i}}$-$t^{end}_{E_{i}}$) and a time ordered stream of social media references $M_{E_{i}} = {\{m_{1_{E_{i}}},m_{2_{E_{i}}}, ... ,m_{n_{E_{i}}}, ... ,m_{z_{E_{i}}}\}}$, of substantial volume, discussing about the event and posted in time $T_{E_{i}}$}.
-
-Although, this definition of event was originally proposed for the domain of Twitter, it can be applicable to all types of social media platforms as all of them fulfill the basic requirements of the above definition. Becker et al. \cite{becker2011beyond}, further categorizes events in social media into two categories, planned and unplanned, depending on whether the context of an event (e.g., topic or hashtags on Twitter, time, location) is available or not.
-
-
-
-%Next, following the event categorization in (Becker et al., 2011), we classify the
-%events in Twitter into two categories – planned events and unplanned events – depending on whether the context of an event (e.g., topic or hashtags on Twitter, time,
-%location) is available to our toolbox.
-
-\textbf{Planned event}: A planned event $PE_{i}$ is an event in Twitter with preknown corresponding event context information consisting both 
-\begin{itemize}
-\item topic or hashtags of the event.
-\item time, at which $PE_{i}$ is planned to occur.
-\end{itemize}
-
-We only track planned events in this dissertation whose topics and hashtags are already known to us. For all the data collection efforts, an already known and event related popular hashtag is provided for bootstrapping the process of collecting event related messages. We consider all the messages in this stream as related to the event for which the query is placed and concentrate all our efforts to segregate high quality event-specific informative content from the non-informative ones. 
-
-
-Next, in contrast to the planned event, there is no information about an unplanned event. To characterize and define such events, we have to rely on other signals that could indicate their presence. Such events are often known as trending events and is defined as follows for the domain of Twitter.
-
-\textbf{Unplanned trending event}: An unplanned trending event is an event in Twitter with one or more features (e.g., terms) of the corresponding Twitter messages exhibiting bursty patterns during the event's time period.
-
-We don't consider the trending events for this dissertation as don't intend to solve the task of identifying a trending event from streams of social media messages.
-
-
-
-\section{Background: Entity Identity Information Management (EIIM) in Master Data Management}
+\section{Background: Entity Identity Information Management (EIIM) in Master Data Management\label{backgroundEIIM}}
 The idea of Entity Identity Information Management (EIIM) as defined by Zhou et al. \cite{zhou2011entity}, is the collection and management of identity information of real-world entities with the goal of sustaining \textit{entity identity integrity}. \textit{Entity identity integrity} is one of the basic tenets of data quality that applies to the representation of a given domain of real-world entities in an information system \cite{talburt2011entity}. In order to maintain the property of \textit{entity identity integrity} following conditions should be satisfied:
 
 \begin{enumerate}
@@ -158,7 +119,7 @@ Their model of EIIM was motivated by the problem of entity resolution in informa
   \caption{EIIM components and their interactions as proposed in \cite{zhou2011entity}}
 \label{originalEIIM}
   \centering
-    \includegraphics[width=12cm,height=6cm]{Figures/originalEIIM.jpg}
+    \includegraphics[width=15cm,height=9cm]{Figures/originalEIIM.jpg}
 \end{figure}
 
 Some of the definitions as specified by the current EIIM model are:
@@ -181,7 +142,7 @@ Some of the definitions as specified by the current EIIM model are:
   \caption{Entity Identity Integrity in EIIM process.}
 \label{identityIntegrity1}
   \centering
-    \includegraphics[width=7cm,height=5cm]{Figures/identityIntegrityMDM1.jpg}
+    \includegraphics[width=14cm,height=9.5cm]{Figures/identityIntegrityMDM1.jpg}
 \end{figure}
 
 
@@ -190,33 +151,78 @@ Some of the definitions as specified by the current EIIM model are:
   \caption{Misjudgments made by EIIM process.}
 \label{identityIntegrity2}
   \centering
-    \includegraphics[width=7cm,height=5cm]{Figures/identityIntegrityMDM2.jpg}
+    \includegraphics[width=14cm,height=9.5cm]{Figures/identityIntegrityMDM2.jpg}
 \end{figure}
 
 
 Therefore, ideally in an information system, if $E = \{e_{1},e_{2}, ... ,e_{n}\}$ represents a finite set of entities, $R = \{r_{1},r_{2}, ... ,r_{m}\}$ represents a finite set of references to the entities, and $S = \{s_{1},s_{2}, ... ,s_{n}\}$ represents a finite set of EIIS maintaining identity information of the entities then there should be one-to-one correspondence between the real-life entities ($\in E$) and the EIIS ($\in S$) representing their identity information. Also, the references ($\in R$) of a particular entity ($\in E$) should always map to one and only one EIIS ($\in S$) maintaining its identity information. This is shown in Figure \ref{identityIntegrity1}. Such a situation ensures that the condition of entity identity integrity is satisfied by the information system. One of the main aims of EIIM is to satisfy the conditions of entity identity integrity along with persistently maintaining the entity identity information.
 
-The current EIIM model deals with a closed environment of an information system where there is fixed number of entities along with fixed number of references to them. In an ideal situation the EIIM process should always satisfy the conditions of entity identity integrity as shown in Figure \ref{identityIntegrity1}, and previously explained. However, in practice, all the references to an entity in the information system might not get mapped to the EIIS maintained for that particular entity due to misjudgments made by the automated processes as shown in Figure \ref{identityIntegrity2}. This might result in \textit{false negative} and \textit{false positive} errors. A \textit{false negative} error arises when the system fails to map a reference of an entity to its corresponding EIIS. This is shown in Figure \ref{identityIntegrity2}, where the system fails to map the reference $r_{h}$ ($\in R$) of entity $e_{n}$ ($\in E$) to an EIIS ($\in S$). A \textit{false positive} error arises when the system maps two references of different entities to a single EIIS. This is shown in Figure 5, where the system wrongly maps reference $r_{5}$ ($\in R$) of entity $e_{2}$ ($\in E$), to the EIIS $s_{3}$ ($\in S$) being maintained for entity $e_{3}$ ($\in E$). Such a situation creates dissonance between the actual identity of the real-world entities being stored in the information system and their identities interpreted by the automated processes, resulting in low entity identity integrity of the system. Asserted resolutions are introduced in order to deal with such problems (shown in Figure \ref{originalEIIM}.).
+The current EIIM model deals with a closed environment of an information system where there is fixed number of entities along with fixed number of references to them. In an ideal situation the EIIM process should always satisfy the conditions of entity identity integrity as shown in Figure \ref{identityIntegrity1}, and previously explained. However, in practice, all the references to an entity in the information system might not get mapped to the EIIS maintained for that particular entity due to misjudgments made by the automated processes as shown in Figure \ref{identityIntegrity2}. This might result in \textit{false negative} and \textit{false positive} errors. A \textit{false negative} error arises when the system fails to map a reference of an entity to its corresponding EIIS. This is shown in Figure \ref{identityIntegrity2}, where the system fails to map the reference $r_{h}$ ($\in R$) of entity $e_{n}$ ($\in E$) to an EIIS ($\in S$). A \textit{false positive} error arises when the system maps two references of different entities to a single EIIS. This is shown in Figure \ref{identityIntegrity2}, where the system wrongly maps reference $r_{5}$ ($\in R$) of entity $e_{2}$ ($\in E$), to the EIIS $s_{3}$ ($\in S$) being maintained for entity $e_{3}$ ($\in E$). Such a situation creates dissonance between the actual identity of the real-world entities being stored in the information system and their identities interpreted by the automated processes, resulting in low entity identity integrity of the system. Asserted resolutions are introduced in order to deal with such problems (shown in Figure \ref{originalEIIM}.).
 
-The EIIM processes and life cycle is a step ahead of the basic record linking process that identifies references to same entities for a given dataset. The goal of EIIM is to consistently label references to the same entity with the same identifier across different datasets processed at different times. Through the management of persistent entity identity structures, EIIM provides an added functionality for an entity resolution system to create and assign persistent entity identifiers that do not change from process to process. The current EIIM can also be thought of as forming a nexus between ER and MDM by adding an explicit longitudinal dimension to the management of identity information. The EIIM model proposed in the presented research expands the current model into the unstructured domain of social media, bringing in new challenges and devising new techniques for solving them. The next section gives a detailed discussion and definition of the problem of extending the EIIM model to social media.
+The EIIM processes and life cycle is a step ahead of the basic record linking process (refer Chapter \ref{review} Section \ref{entityResolutionRelatedWork}), that identifies references to same entities for a given dataset. The goal of EIIM is to consistently label references to the same entity with the same identifier across different datasets processed at different times. Through the management of persistent entity identity structures, EIIM provides an added functionality for an entity resolution system to create and assign persistent entity identifiers that do not change from process to process. The current EIIM can also be thought of as forming a nexus between ER and MDM by adding an explicit longitudinal dimension to the management of identity information. The EIIM model proposed in the presented research expands the current model into the unstructured domain of social media, bringing in new challenges and devising new techniques for solving them. The next section gives a detailed discussion and definition of the problem of extending the EIIM model to social media.
+
 
 \section{Problem of Event Identity Information Management (EIIM) in Social Media\label{problem}}
+
+
+\subsection{Events in Social Media}
+
+
+
+Events have been discussed from different perspectives and have gained attention in various areas of academics. Right from philosophy \cite{zalta2003stanford} to psychology \cite{zacks2001event} events have been defined in various ways. In the context of this dissertation we define events as defined by Becker et al. \cite{becker2011beyond}.
+
+ 
+
+%The definition of event has received substantial attention across various academic areas, from philosophy (Zalta and Abramsky, 2003) to psychology (Zacks and Tversky,
+%2001), over the years. An event is often defined as an abstract concept (Zalta and Abramsky, 2003), or with respect to its manifestation in a specific domain (e.g.,
+%textual news \cite{allan2002topic}, video and audio clips (Westermann and Jain, 2007), social media \cite{becker2011beyond}.  In this
+%dissertation, instead of providing yet another definition of an event, we define specific type of events in the context of Twitter (note that events on other social media
+%platforms can be defined in a similar way), based on the traditional event definition (Troncy et al., 2010; Xie et al., 2008; Yang et al., 1998; Allan, 2002). We provide the
+%following definitions:
+
+\noindent \textbf{Event:} \textit{An event is defined as a real-world occurrence ($ E_{i}$) with an associated time period $T_{E_{i}}$ ($t^{start}_{E_{i}}$-$t^{end}_{E_{i}}$) and a time ordered stream of social media references $M_{E_{i}} = {\{m_{1_{E_{i}}},m_{2_{E_{i}}}, ... ,m_{n_{E_{i}}}, ... ,m_{z_{E_{i}}}\}}$, of substantial volume, discussing about the event and posted in time $T_{E_{i}}$}.
+
+Although, this definition of event was originally proposed for the domain of Twitter, it can be applicable to all types of social media platforms as all of them fulfill the basic requirements of the above definition. Since, this dissertation primarily deals with social media data collected from Twitter, the above defintion of an event was the most suitable one. Becker et al. \cite{becker2011beyond}, further categorizes events in social media into two categories, unplanned and planned, depending on whether the context of an event (e.g., topic or hashtags on Twitter, time, location) is available or not.
+
+
+
+%Next, following the event categorization in (Becker et al., 2011), we classify the
+%events in Twitter into two categories – planned events and unplanned events – depending on whether the context of an event (e.g., topic or hashtags on Twitter, time,
+%location) is available to our toolbox.
+
+
+\noindent \textbf{Planned event}: \textit{A planned event $PE_{i}$ is an event in social media with pre-known corresponding event context information consisting both 
+\begin{itemize}
+\item topic or hashtags of the event.
+\item time, at which $PE_{i}$ is planned to occur.
+\end{itemize}}
+
+Only planned events are considered in this dissertation whose topics and hashtags are already known. For all the data collection efforts, an already known and popular hashtag is provided for bootstrapping the process of collecting event related messages/references. All the messages in the responses of the queries as returned by the social media channels are assumed to be references to the event for which the query is made. One of the main concentration of this dissertation is to segregate high quality event-specific informative content in these stream of references, from the non-informative ones. 
+
+
+In contrast to the planned events, there is no information about an unplanned event. To characterize and define such events, one has to rely on other signals that could indicate their presence. Such events are often known as trending events and is defined as follows for the domain of social media.
+
+\noindent \textbf{Unplanned trending event}: \textit{An unplanned trending event is an event in social media with one or more features (e.g., terms) of the corresponding social media references exhibiting bursty patterns during the event's time period}.
+
+This dissertation does not consider trending events and does not intend to solve the problem of identifying events from streams of social media messages.
+
+\subsection{Redefining EIIM}
 
 \begin{figure}[htbp]
   \caption{Event identity information for real-life event, `Egyptian Revolution 2011'.}
 \label{eventidentity}
   \centering
-    \includegraphics[width=10cm,height=10cm]{Figures/eventIdentity.jpg}
+    \includegraphics[width=15cm,height=15cm]{Figures/eventIdentity.jpg}
 \end{figure}
 
 
-The definitions as given in the previous section also hold true for the work presented in this dissertation. The only differences are:
+The definitions as given in the previous section (Section \ref{backgroundEIIM}) also hold true for the work presented in this dissertation. The only differences are:
 \begin{enumerate}
 \item We consider a \textbf{real-life event $E_{i}$} as an individual \textbf{entity}, and assume that every \textbf{real-life event} also has a distinct identity. Only a pre-specified set of events $\Xi = \{E_{1},E_{2}, ... ,E_{n}\}$ are considered, with their ordered stream of references $M = \{m_{1_{E_{1}}}, m_{2_{E_{1}}}, ... ,m_{i_{E_{i}}}, ... ,m_{n_{E_{n}}}\}$ collected from social media instead of a fixed set of references already present in a closed information system.
 
 \item Instead of \textbf{Entity Identity Information}, we define \textbf{Event Identity Information} as a set of attributes that distinctly characterizes it and allows that event to be distinguished from all other events maintained by the framework. For example, names of the main active participants (people, organizations, etc), popular keywords, timespan of occurrence and place of occurrence could be identity information for a real-life event as shown in Figure \ref{eventidentity}.
 
-\item Instead of \textbf{Entity Identity Information Structure (EIIS)}, we define \textbf{Event Identity Information Structures (EIIS)}, for real-life events as a data structure that can persistently and efficiently store, retrieve, and manipulate entity identity information. A set of EIIS, $S = \{s_{E_{1}},s_{E_{2}}, ... ,s_{E_{n}}\}$ is maintained, corresponding to each event $E_{i} \in \Xi$ 
+\item Instead of \textbf{Entity Identity Information Structure (EIIS)}, we define \textbf{Event Identity Information Structures (EIIS)}, for real-life events as a data structure that can persistently and efficiently store, retrieve, and manipulate event identity information. A set of EIIS, $S = \{s_{E_{1}},s_{E_{2}}, ... ,s_{E_{n}}\}$ is maintained, corresponding to each event $E_{i} \in \Xi$ 
 
 \item Lastly, this dissertation solves the problem of \textit{Event Identity Information Management} in the open and unstructured domain of social media, that gives rise to new challenges. It added complexity to the original problem of EIIM, for which following steps are taken (explained in Chapter \ref{eiim}):
 
@@ -243,10 +249,10 @@ The definitions as given in the previous section also hold true for the work pre
 
 %In this section, we give the definition of an event appropriate in the context of our problem, and then present a formal statement of the problem that we want to solve.
 
-Events have been defined from various perspectives and in different contexts as already discussed in the previous section. In the context of the work presented in this dissertation we adopt a definition similar to \cite{becker2011beyond}. 
-
-
-\textbf{Event:} \textit{An event is defined as a real-world occurrence ($ E_{i}$) with an associated time period $T_{E_{i}}$ ($t^{start}_{E_{i}}$-$t^{end}_{E_{i}}$) and a time ordered stream of social media references $M_{E_{i}} = {\{m_{1_{E_{i}}},m_{2_{E_{i}}}, ... ,m_{n_{E_{i}}}, ... ,m_{z_{E_{i}}}\}}$, of substantial volume, discussing about the event and posted in time $T_{E_{i}}$}.
+%Events have been defined from various perspectives and in different contexts as already discussed in the previous section. In the context of the work presented in this dissertation we adopt a definition similar to \cite{becker2011beyond}. 
+%
+%
+%\textbf{Event:} \textit{An event is defined as a real-world occurrence ($ E_{i}$) with an associated time period $T_{E_{i}}$ ($t^{start}_{E_{i}}$-$t^{end}_{E_{i}}$) and a time ordered stream of social media references $M_{E_{i}} = {\{m_{1_{E_{i}}},m_{2_{E_{i}}}, ... ,m_{n_{E_{i}}}, ... ,m_{z_{E_{i}}}\}}$, of substantial volume, discussing about the event and posted in time $T_{E_{i}}$}.
 
 Users in social media post about real-life events in huge volumes and with high velocity. This results in multiple footprints of an event in different social media channels. The footprints could be in the form of textual posts, images, videos or other types of multimedia documents. For example,
 following are three different tweets retrieved for the same event ``Sydney Siege Crisis":
@@ -263,13 +269,13 @@ We consider these footprints as references to the event. One of the main aims of
 \item \textbf{Noisy Reference:} The three tweets in the example above are different in terms of information content related to the event. While the first one is very informative, the other two are surely related to the event, but not informative. The non-informative tweets might be interesting to the users having a personal conversation related to the event, but it has no value in conveying useful information about the event, that can act as an identity of the event. We consider these event related non-informative references as noise and do not want to map these tweets to the EIIS of the corresponding event. 
 \end{itemize}
 
-Also, there might be a mismatch between the way an informative event reference is posted by an user and the way the proposed framework interprets the same in an automated fashion. This would result in loss of data integrity and increase the chances of erroneous results. Such problems are prevalent in the vanilla flavor of the EIIM as discussed in the previous section, giving rise to \textit{false negative} and \textit{false positive} errors. 
+Also, there might be a mismatch between the way an informative event reference is posted by an user and the way the proposed framework interprets the same in an automated fashion. This would result in loss of data integrity and increase the chances of erroneous results. Such problems are prevalent in the vanilla flavor of the EIIM as discussed in the previous section (Section \ref{backgroundEIIM}), giving rise to \textit{false negative} and \textit{false positive} errors. 
 
 
 Since the Event Identity Information Management framework operates in an open environment of social media as discussed earlier, two new scenarios leading to erroneous conditions are observed:
 
 \begin{itemize}
-\item \textbf{Noisy Event} - The first situation occurs when a reference gets mapped to an existing EIIS in the framework, although it refers to an event, which is out of the pre-specified list of events that are being tracked. Such a scenario is shown in Figure \ref{eventresolutionmappings}, where the event $E_{p} \in \Xi$ generates the reference $m_{x_{E_{i}}} \in M_{E_{i}}$, yet the external reference gets mapped to $s_{E_{1}}$. 
+\item \textbf{Noisy Event} - The first situation occurs when a reference gets mapped to an existing EIIS in the framework, although it refers to an event, which is out of the pre-specified list of events that are being tracked. Such a scenario is shown in Figure \ref{eventresolutionmappings}, where the event $E_{p} \notin \Xi$ generates the reference $m_{x_{E_{p}}}$, yet the external reference gets mapped to $s_{E_{1}}$. 
 
 Spamming activity in social media channels can give rise to noisy events. For example, if we consider the following tweet:
 
@@ -277,10 +283,10 @@ Spamming activity in social media channels can give rise to noisy events. For ex
 \item \textit{RT @BFDealz: http://t.co/TSJAigrVJI WHEELS SUPER TREASURE HUNT SUPERIZED HARLEY DAVIDSON FAT BOY LONG CARD 2014 \#cpac2014 \#sxsw}
 \end{itemize}
 
-The above tweet might have been posted in the context of the event SXSW 2014 in order to market a Harley Davidson bike, but it also appears in the set of references for an unrelated event CPAC 2014. This is probably due to the fact that both the events took place parallely and the user posting this reference wanted to make it more visible by using the hashtags for both the trending events. This is often the case of spamming activities as discussed in Chapter \ref{challenges}. The tweet might not be related to both the events, yet it can get tracked by the framework.
+The above tweet might have been posted in the context of the event SXSW 2014 in order to market a Harley Davidson bike, but it also appears in the set of references for an unrelated event CPAC 2014. This is probably due to the fact that both the events took place parallely and the user posting this reference wanted to make it more visible by using the popular hashtags related to both the trending events. This is often the case of spamming activities as discussed in Chapter \ref{challenges}, Section \ref{veracity}. The tweet might not be related to both the events, yet it can get tracked by the framework.
 
 
-\item \textbf{Untracked reference} - The second situation occurs when there is a reference, which the framework is unable to track and map it to a pre-specified list of events although it refers to it. Such a scenario is shown in Figure \ref{eventresolutionmappings}, where the framework should have tracked the reference $m_{y_{E_{3}}} \in M_{E_{3}}$ and associate it with event $E_{3} \in \Xi $, yet it is unable to do so and lose track of the reference in the process. This can happen due to the sampling bias as discussed in Chapter \ref{challenges}, which is one of the main challenges in collecting content from social media. The other reason could be errors in data collection process.
+\item \textbf{Untracked reference} - The second situation occurs when there is a reference, which the framework is unable to track and map it to a pre-specified list of events although it refers to it. Such a scenario is shown in Figure \ref{eventresolutionmappings}, where the framework should have tracked the reference $m_{y_{E_{3}}} \in M_{E_{3}}$ and associate it with event $E_{3} \in \Xi $, yet it is unable to do so and lose track of the reference in the process. This can happen due to the sampling bias as discussed in Chapter \ref{challenges}, Section \ref{samplingBias}, which is one of the main challenges in collecting content from social media. The other reason could be errors in data collection process.
 
 \end{itemize}
 
@@ -302,7 +308,7 @@ Towards the above objective, the dissertation seeks answers to the following que
 
 \end{itemize}
 
-Chapter \ref{eiim} presents the design and implementation of the entire Event Identity Information Management framework that explains the strategies and novel techniques contributed by this dissertation in order to find answers to the above questions. A detailed survey of the existing literature related to the problem is presented in the next Chapter.
+Chapter \ref{eiim} presents the design and implementation of the entire Event Identity Information Management framework that explains the strategies and novel techniques contributed by this dissertation in order to find answers to the above questions. A detailed survey of the existing literature related to the problem is presented in the next chapter.
 
 
 

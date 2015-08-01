@@ -5,12 +5,6 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Zhou and Talburt(2011)]{zhou2011entity}
-Yinle Zhou and John Talburt.
-\newblock Entity identity information management (eiim).
-\newblock In \emph{International Conference on Information Quality (ICIQ-11),
-  Adelaide, Australia}, pages 327--341, 2011.
-
 \bibitem[Phelan et~al.(2009)Phelan, McCarthy, and Smyth]{phelan2009using}
 Owen Phelan, Kevin McCarthy, and Barry Smyth.
 \newblock Using twitter to recommend real-time topical news.
@@ -115,6 +109,12 @@ Giridhar Kumaran and James Allan.
   conference on Research and development in information retrieval}, pages
   297--304. ACM, 2004.
 
+\bibitem[Zhou and Talburt(2011)]{zhou2011entity}
+Yinle Zhou and John Talburt.
+\newblock Entity identity information management (eiim).
+\newblock In \emph{International Conference on Information Quality (ICIQ-11),
+  Adelaide, Australia}, pages 327--341, 2011.
+
 \bibitem[Kaplan and Haenlein(2010)]{kaplan2010users}
 Andreas~M Kaplan and Michael Haenlein.
 \newblock Users of the world, unite! the challenges and opportunities of social
@@ -183,6 +183,11 @@ Google and twitter launch service enabling egyptians to tweet by phone, 2011.
 \newblock URL
   \url{http://www.theguardian.com/technology/2011/feb/01/google-twitter-egypt}.
 
+\bibitem[Talburt(2011)]{talburt2011entity}
+John~R Talburt.
+\newblock \emph{Entity resolution and information quality}.
+\newblock Elsevier, 2011.
+
 \bibitem[Zalta and Abramsky(2003)]{zalta2003stanford}
 Edward~N Zalta and Samson Abramsky.
 \newblock Stanford encyclopedia of philosophy, 2003.
@@ -197,11 +202,6 @@ Jeffrey~M Zacks and Barbara Tversky.
 Hila Becker, Mor Naaman, and Luis Gravano.
 \newblock Beyond trending topics: Real-world event identification on twitter.
 \newblock \emph{ICWSM}, 11:\penalty0 438--441, 2011{\natexlab{a}}.
-
-\bibitem[Talburt(2011)]{talburt2011entity}
-John~R Talburt.
-\newblock \emph{Entity resolution and information quality}.
-\newblock Elsevier, 2011.
 
 \bibitem[Benevenuto et~al.(2010)Benevenuto, Magno, Rodrigues, and
   Almeida]{benevenuto2010detecting}
