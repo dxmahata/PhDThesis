@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.21)  2 AUG 2015 19:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.21)  3 AUG 2015 10:03
 entering extended mode
 **C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/main.tex
 (C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/main.tex
@@ -996,7 +996,7 @@ See the caption package documentation for explanation.
 
 LaTeX Warning: Reference `eiimFig1' on page 3 undefined on input line 25.
 
-[3] <Figures/NewEIIM.jpg, id=670, 2250.15656pt x 1151.80313pt>
+[3] <Figures/NewEIIM.jpg, id=665, 2250.15656pt x 1151.80313pt>
 File: Figures/NewEIIM.jpg Graphic file (type jpg)
 
 <use Figures/NewEIIM.jpg>
@@ -1063,7 +1063,7 @@ Overfull \hbox (20.74664pt too wide) in paragraph at lines 106--106
  |[]\OT1/cmr/bx/n/17.28 Background: En-tity Iden-tity In-for-ma-tion Man-
  []
 
-[22] [23] <Figures/originalEIIM.jpg, id=860, 411.78844pt x 219.82124pt>
+[22] [23] <Figures/originalEIIM.jpg, id=855, 411.78844pt x 219.82124pt>
 File: Figures/originalEIIM.jpg Graphic file (type jpg)
 
 <use Figures/originalEIIM.jpg>
@@ -1075,7 +1075,7 @@ Overfull \hbox (9.31905pt too wide) in paragraph at lines 122--123
  []
 
 [24 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/originalEIIM.jpg>]
-<Figures/identityIntegrityMDM1.jpg, id=866, 694.84593pt x 494.59781pt>
+<Figures/identityIntegrityMDM1.jpg, id=861, 694.84593pt x 494.59781pt>
 File: Figures/identityIntegrityMDM1.jpg Graphic file (type jpg)
 
 <use Figures/identityIntegrityMDM1.jpg>
@@ -1083,7 +1083,7 @@ Package pdftex.def Info: Figures/identityIntegrityMDM1.jpg used on input line 1
 45.
 (pdftex.def)             Requested size: 398.33522pt x 270.30138pt.
 
-<Figures/identityIntegrityMDM2.jpg, id=867, 694.84593pt x 494.59781pt>
+<Figures/identityIntegrityMDM2.jpg, id=862, 694.84593pt x 494.59781pt>
 File: Figures/identityIntegrityMDM2.jpg Graphic file (type jpg)
 
 <use Figures/identityIntegrityMDM2.jpg>
@@ -1103,7 +1103,7 @@ grityMDM2.jpg>] [27] [28]
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <14.4> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 198.
  [29]
-<Figures/eventIdentity.jpg, id=905, 427.5975pt x 421.575pt>
+<Figures/eventIdentity.jpg, id=900, 427.5975pt x 421.575pt>
 File: Figures/eventIdentity.jpg Graphic file (type jpg)
 
 <use Figures/eventIdentity.jpg>
@@ -1116,7 +1116,7 @@ Overfull \hbox (9.32085pt too wide) in paragraph at lines 215--216
 
 [30] [31 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/eventIdentity.j
 pg>] [32]
-<Figures/EventResolutionMappings.jpg, id=926, 804.75656pt x 653.44125pt>
+<Figures/EventResolutionMappings.jpg, id=921, 804.75656pt x 653.44125pt>
 File: Figures/EventResolutionMappings.jpg Graphic file (type jpg)
 
 <use Figures/EventResolutionMappings.jpg>
@@ -1189,7 +1189,7 @@ cmr/bx/it/12 event-
  []
 
 [58] [59] [60] [61] [62]
-<Figures/Chapter3Figures/touchgraph.jpg, id=1284, 736.1904pt x 455.7828pt>
+<Figures/Chapter3Figures/touchgraph.jpg, id=1279, 736.1904pt x 455.7828pt>
 File: Figures/Chapter3Figures/touchgraph.jpg Graphic file (type jpg)
 
 <use Figures/Chapter3Figures/touchgraph.jpg>
@@ -1197,7 +1197,7 @@ Package pdftex.def Info: Figures/Chapter3Figures/touchgraph.jpg used on input l
 ine 77.
 (pdftex.def)             Requested size: 325.20537pt x 252.94159pt.
 
-<Figures/Chapter3Figures/LongTailVsShortHead.jpg, id=1285, 649.67719pt x 356.83
+<Figures/Chapter3Figures/LongTailVsShortHead.jpg, id=1280, 649.67719pt x 356.83
 313pt>
 File: Figures/Chapter3Figures/LongTailVsShortHead.jpg Graphic file (type jpg)
  <use Figures/Chapter3Figures/LongTailVsShortHead.jpg>
@@ -1207,7 +1207,7 @@ n input line 87.
  [63] [64 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/Chapter3Figure
 s/touchgraph.jpg> <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/Chapte
 r3Figures/LongTailVsShortHead.jpg>]
-<Figures/Chapter3Figures/comp.pdf, id=1310, 1931.215pt x 680.5425pt>
+<Figures/Chapter3Figures/comp.pdf, id=1305, 1931.215pt x 680.5425pt>
 File: Figures/Chapter3Figures/comp.pdf Graphic file (type pdf)
 
 <use Figures/Chapter3Figures/comp.pdf>
@@ -1247,7 +1247,7 @@ Package Fancyhdr Warning: \headheight is too small (27.18335pt):
  This may cause the page layout to be inconsistent, however.
 
 [71]
-<Figures/EIIMComponents/IdentityIntegrity.jpg, id=1385, 687.31781pt x 528.47438
+<Figures/EIIMComponents/IdentityIntegrity.jpg, id=1380, 687.31781pt x 528.47438
 pt>
 File: Figures/EIIMComponents/IdentityIntegrity.jpg Graphic file (type jpg)
  <use Figures/EIIMComponents/IdentityIntegrity.jpg>
@@ -1256,7 +1256,7 @@ nput line 34.
 (pdftex.def)             Requested size: 398.34047pt x 312.98256pt.
  [72 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/EIIMComponents/Iden
 tityIntegrity.jpg>]
-<Figures/EventReferenceCollection.jpg, id=1391, 686.565pt x 529.98pt>
+<Figures/EventReferenceCollection.jpg, id=1386, 686.565pt x 529.98pt>
 File: Figures/EventReferenceCollection.jpg Graphic file (type jpg)
 
 <use Figures/EventReferenceCollection.jpg>
@@ -1265,7 +1265,7 @@ e 46.
 (pdftex.def)             Requested size: 398.3337pt x 312.98468pt.
  [73] [74 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/EventReference
 Collection.jpg>]
-<Figures/EIIMComponents/EventReferencePreparation.jpg, id=1405, 686.565pt x 529
+<Figures/EIIMComponents/EventReferencePreparation.jpg, id=1400, 686.565pt x 529
 .98pt>
 File: Figures/EIIMComponents/EventReferencePreparation.jpg Graphic file (type j
 pg)
@@ -1328,7 +1328,7 @@ Overfull \hbox (24.13986pt too wide) in paragraph at lines 185--186
  []
 
 [80] [81]
-<Figures/EIIMComponents/EventInformationQuality.jpg, id=1440, 686.565pt x 529.9
+<Figures/EIIMComponents/EventInformationQuality.jpg, id=1435, 686.565pt x 529.9
 8pt>
 File: Figures/EIIMComponents/EventInformationQuality.jpg Graphic file (type jpg
 )
@@ -1336,17 +1336,17 @@ File: Figures/EIIMComponents/EventInformationQuality.jpg Graphic file (type jpg
 Package pdftex.def Info: Figures/EIIMComponents/EventInformationQuality.jpg use
 d on input line 223.
 (pdftex.def)             Requested size: 398.3337pt x 312.98468pt.
- [82 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/EIIMComponents/Even
-tInformationQuality.jpg>] [83] [84] [85] [86] [87]
-<Figures/EventIdentityCapture.jpg, id=1505, 687.31781pt x 526.21594pt>
+ [82] [83 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/EIIMComponents
+/EventInformationQuality.jpg>] [84] [85] [86] [87] [88]
+<Figures/EventIdentityCapture.jpg, id=1504, 687.31781pt x 526.21594pt>
 File: Figures/EventIdentityCapture.jpg Graphic file (type jpg)
 
 <use Figures/EventIdentityCapture.jpg>
 Package pdftex.def Info: Figures/EventIdentityCapture.jpg used on input line 32
 2.
 (pdftex.def)             Requested size: 398.34047pt x 312.99397pt.
- [88] [89 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/EventIdentityC
-apture.jpg>] [90] [91]
+ [89] [90 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/EventIdentityC
+apture.jpg>] [91] [92]
 <Figures/HashTagDistribution.jpeg, id=1531, 803.0pt x 599.23875pt>
 File: Figures/HashTagDistribution.jpeg Graphic file (type jpg)
 
@@ -1376,12 +1376,11 @@ File: Figures/UserDistribution.jpeg Graphic file (type jpg)
 <use Figures/UserDistribution.jpeg>
 Package pdftex.def Info: Figures/UserDistribution.jpeg used on input line 381.
 (pdftex.def)             Requested size: 398.35005pt x 312.98663pt.
- [92] [93 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/HashTagDistrib
-ution.jpeg> <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/TokenDistrib
-ution.jpeg>] [94 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/UrlDist
-ribution.jpeg> <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/UserDistr
-ibution.jpeg>]
-<Figures/InformationAnalysisTable.jpg, id=1549, 1040.38687pt x 298.11375pt>
+ [93 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/HashTagDistribution
+.jpeg>] [94 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/TokenDistrib
+ution.jpeg> <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/UrlDistribut
+ion.jpeg>]
+<Figures/InformationAnalysisTable.jpg, id=1544, 1040.38687pt x 298.11375pt>
 File: Figures/InformationAnalysisTable.jpg Graphic file (type jpg)
 
 <use Figures/InformationAnalysisTable.jpg>
@@ -1393,269 +1392,286 @@ Overfull \hbox (9.31056pt too wide) in paragraph at lines 391--392
  [][] 
  []
 
-[95 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/InformationAnalysisT
-able.jpg>] [96] [97] [98] [99] [100]
-Overfull \hbox (144.14865pt too wide) in paragraph at lines 443--444
-[]\OT1/cmr/m/n/14.4 Therefore the EIIS is a graph $[]$, where $[]$ 
- []
-
-<Figures/EIIS.jpg, id=1585, 686.565pt x 529.98pt>
+[95 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/UserDistribution.jpe
+g> <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/InformationAnalysisTa
+ble.jpg>] [96] [97] [98] [99]
+<Figures/EIIS.jpg, id=1574, 686.565pt x 529.98pt>
 File: Figures/EIIS.jpg Graphic file (type jpg)
  <use Figures/EIIS.jpg>
-Package pdftex.def Info: Figures/EIIS.jpg used on input line 452.
+Package pdftex.def Info: Figures/EIIS.jpg used on input line 444.
 (pdftex.def)             Requested size: 398.3337pt x 312.98468pt.
 
-<Figures/EIIMComponents/EventIdentityInformationProcessing.jpg, id=1586, 686.56
+[100] [101 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/EIIS.jpg>]
+Overfull \hbox (1.4053pt too wide) in paragraph at lines 450--451
+$[]$ \OT1/cmr/m/n/14.4 is the set of di-rected edges be-tween dif-fer-ent ver-t
+ices. When-
+ []
+
+
+<Figures/EIIMComponents/EventIdentityInformationProcessing.jpg, id=1585, 686.56
 5pt x 529.98pt>
 File: Figures/EIIMComponents/EventIdentityInformationProcessing.jpg Graphic fil
 e (type jpg)
 
 <use Figures/EIIMComponents/EventIdentityInformationProcessing.jpg>
 Package pdftex.def Info: Figures/EIIMComponents/EventIdentityInformationProcess
-ing.jpg used on input line 459.
+ing.jpg used on input line 462.
 (pdftex.def)             Requested size: 398.3337pt x 312.98468pt.
- [101]
-[102 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/EIIS.jpg>] [103 <C:
-/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/EIIMComponents/EventIdentit
-yInformationProcessing.jpg>] [104]
-Overfull \hbox (11.43044pt too wide) in paragraph at lines 525--526
+ [102]
+[103 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/EIIMComponents/Even
+tIdentityInformationProcessing.jpg>] [104]
+Overfull \hbox (11.43044pt too wide) in paragraph at lines 528--529
 [][]\OT1/cmr/m/n/14.4 5.14[][]. We rep-re-sent this re-la-tion-ship in a graph 
 $[]$,
  []
 
-<Figures/TwitterEventInfoGraph.jpg, id=1608, 914.66719pt x 746.79pt>
+[105] <Figures/TwitterEventInfoGraph.jpg, id=1608, 914.66719pt x 746.79pt>
 File: Figures/TwitterEventInfoGraph.jpg Graphic file (type jpg)
 
 <use Figures/TwitterEventInfoGraph.jpg>
 Package pdftex.def Info: Figures/TwitterEventInfoGraph.jpg used on input line 5
-30.
+33.
 (pdftex.def)             Requested size: 455.23897pt x 341.43086pt.
 
-Overfull \hbox (37.7659pt too wide) in paragraph at lines 530--532
+Overfull \hbox (37.7659pt too wide) in paragraph at lines 533--535
  [][] 
  []
 
-[105] [106 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/TwitterEventI
-nfoGraph.jpg>] [107] [108] [109] [110]
-Overfull \hbox (83.57343pt too wide) detected at line 693
-[]\OML/cmm/m/it/14.4 R[] \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 A[]R[] \OT1/cmr
-/m/n/14.4 + \OML/cmm/m/it/14.4 A[]R[] \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 A[
-]R[] \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 A[]R[] \OT1/cmr/m/n/14.4 + \OML/cmm
-/m/it/14.4 A[]R[]
- []
+[106 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/TwitterEventInfoGra
+ph.jpg>] [107] [108] [109] [110] [111]
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 695.
+
+LaTeX Font Info:    Calculating math sizes for size <> on input line 696.
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <> not available
+(Font)              size <5> substituted on input line 696.
 
 
-Overfull \hbox (73.5733pt too wide) detected at line 701
-[]\OML/cmm/m/it/14.4 R[] \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 A[]R[] \OT1/cmr
-/m/n/14.4 + \OML/cmm/m/it/14.4 A[]R[] \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 A[
-]R[] \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 A[]R[] \OT1/cmr/m/n/14.4 + \OML/cmm
-/m/it/14.4 A[]R[]
- []
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <0.7> not available
+(Font)              size <5> substituted on input line 696.
 
 
-Overfull \hbox (83.82355pt too wide) detected at line 711
-[]\OML/cmm/m/it/14.4 R[] \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 A[]R[] \OT1/cmr
-/m/n/14.4 + \OML/cmm/m/it/14.4 A[]R[] \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 A[
-]R[] \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 A[]R[] \OT1/cmr/m/n/14.4 + \OML/cmm
-/m/it/14.4 A[]R[]
- []
-
-[111]
-Overfull \hbox (66.33167pt too wide) detected at line 719
-[]\OML/cmm/m/it/14.4 R[] \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 A[]R[] \OT1/cmr
-/m/n/14.4 + \OML/cmm/m/it/14.4 A[]R[] \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 A[
-]R[] \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 A[]R[] \OT1/cmr/m/n/14.4 + \OML/cmm
-/m/it/14.4 A[]R[]
- []
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <0.5> not available
+(Font)              size <5> substituted on input line 696.
 
 
-Overfull \hbox (59.65692pt too wide) detected at line 728
-[]\OML/cmm/m/it/14.4 R[] \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 A[]R[] \OT1/cmr
-/m/n/14.4 + \OML/cmm/m/it/14.4 A[]R[] \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 A[
-]R[] \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 A[]R[] \OT1/cmr/m/n/14.4 + \OML/cmm
-/m/it/14.4 A[]R[]
- []
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <> not available
+(Font)              size <5> substituted on input line 696.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.7> not available
+(Font)              size <5> substituted on input line 696.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.5> not available
+(Font)              size <5> substituted on input line 696.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <> not available
+(Font)              size <5> substituted on input line 696.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.7> not available
+(Font)              size <5> substituted on input line 696.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.5> not available
+(Font)              size <5> substituted on input line 696.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <> not available
+(Font)              size <5> substituted on input line 696.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <0.7> not available
+(Font)              size <5> substituted on input line 696.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <0.5> not available
+(Font)              size <5> substituted on input line 696.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 703.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 713.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 721.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 730.
 
 [112] [113] [114]
-Overfull \hbox (2.5304pt too wide) in paragraph at lines 788--789
+Overfull \hbox (11.77887pt too wide) in paragraph at lines 787--788
+[]\OT1/cmr/m/n/14.4 Obtain the sub-sets $[]\OML/cmm/m/it/14.4 ; []; []; []; []$
+ \OT1/cmr/m/n/14.4 con-sist-ing of the \OT1/cmr/m/it/14.4 tweets\OT1/cmr/m/n/14
+.4 ,
+ []
+
+
+Overfull \hbox (2.5304pt too wide) in paragraph at lines 791--792
 []\OT1/cmr/m/n/14.4 The fi-nal or-dered sub-sets $[]$, thus ob-tained
  []
 
-[115] <Figures/EventReferenceResolution.jpg, id=1698, 686.565pt x 529.98pt>
+[115] <Figures/EventReferenceResolution.jpg, id=1692, 686.565pt x 529.98pt>
 File: Figures/EventReferenceResolution.jpg Graphic file (type jpg)
 
 <use Figures/EventReferenceResolution.jpg>
 Package pdftex.def Info: Figures/EventReferenceResolution.jpg used on input lin
-e 836.
+e 839.
 (pdftex.def)             Requested size: 398.3337pt x 312.98468pt.
  [116] [117 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/EventReferen
 ceResolution.jpg>]
-Overfull \hbox (6.02869pt too wide) in paragraph at lines 854--855
+Overfull \hbox (6.02869pt too wide) in paragraph at lines 857--858
 \OT1/cmr/m/n/14.4 neysiege hostage cap-ture http://t.co/ED98YKMxqM - LIVE
  []
 
 
-Overfull \hbox (57.01279pt too wide) in paragraph at lines 856--857
+Overfull \hbox (57.01279pt too wide) in paragraph at lines 859--860
 \OT1/cmr/m/n/14.4 Syd-ney cafe, un-known num-ber re-main in-side http://t.co/pc
 At91LIdS
  []
 
-
-Overfull \hbox (53.25777pt too wide) in paragraph at lines 857--858
+[118]
+Overfull \hbox (53.25777pt too wide) in paragraph at lines 860--861
 \OT1/cmr/m/n/14.4 still be-ing held in-side a cen-tral Syd-ney cafe http://t.co
 /OjulBqM7w2
  []
 
-[118]
-<Figures/EIIMComponents/EventAnalytics.jpg, id=1719, 689.57625pt x 529.22719pt>
+
+<Figures/EIIMComponents/EventAnalytics.jpg, id=1712, 689.57625pt x 529.22719pt>
 File: Figures/EIIMComponents/EventAnalytics.jpg Graphic file (type jpg)
 <use Figures/EIIMComponents/EventAnalytics.jpg>
 Package pdftex.def Info: Figures/EIIMComponents/EventAnalytics.jpg used on inpu
-t line 868.
+t line 871.
 (pdftex.def)             Requested size: 398.34462pt x 312.98427pt.
  [119] [120 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/EIIMComponen
 ts/EventAnalytics.jpg>]
-Overfull \hbox (3.01503pt too wide) in paragraph at lines 893--894
+Overfull \hbox (3.01503pt too wide) in paragraph at lines 896--897
 []\OT1/cmr/m/n/14.4 http://www.cnn.com/2014/12/15/world/asia/australia-sydney-
  []
 
 
-Overfull \hbox (14.76485pt too wide) in paragraph at lines 895--896
+Overfull \hbox (14.76485pt too wide) in paragraph at lines 898--899
 []\OT1/cmr/m/n/14.4 http://edition.cnn.com/2014/12/15/world/asia/australia-sydn
 ey-
  []
 
 
-Overfull \hbox (3.40668pt too wide) in paragraph at lines 896--897
+Overfull \hbox (3.40668pt too wide) in paragraph at lines 899--900
 []\OT1/cmr/m/n/14.4 http://rt.com/news/214399-sydney-hostages-islamists-updates
 / 
  []
 
 
-Overfull \hbox (5.52165pt too wide) in paragraph at lines 897--898
+Overfull \hbox (5.52165pt too wide) in paragraph at lines 900--901
 []\OT1/cmr/m/n/14.4 http://www.newsroompost.com/138766/sydney-cafe-siege-ends-
  []
 
-
-Overfull \hbox (6.37819pt too wide) in paragraph at lines 904--905
-\OT1/cmr/bx/n/14.4 specific In-for-ma-tive Users post-ing about Syd-ney Siege E
-vent. 
- []
-
-
-Overfull \hbox (79.04033pt too wide) in paragraph at lines 908--909
-\OT1/cmr/m/n/14.4 and call with Aus-tralian PM, Sky News re-ports. http://t.co/
-a2vgrn30Xh
- []
-
 [121]
-Overfull \hbox (12.0168pt too wide) in paragraph at lines 916--917
+Overfull \hbox (12.0168pt too wide) in paragraph at lines 919--920
 \OT1/cmr/m/n/14.4 out of #Syd-ney's CBD this evening - http://t.co/aQx2lvSosm
  []
 
-
-Overfull \hbox (18.5501pt too wide) in paragraph at lines 922--923
+[122]
+Overfull \hbox (18.5501pt too wide) in paragraph at lines 925--926
 \OT1/cmr/m/n/14.4 dressed in black { eye-wit-ness http://t.co/m51P8dUPhB #Syd-
  []
 
-[122]
-Overfull \hbox (17.51776pt too wide) in paragraph at lines 924--925
+
+Overfull \hbox (17.51776pt too wide) in paragraph at lines 927--928
 \OT1/cmr/m/n/14.4 Tony Ab-bott de-liv-ers sec-ond #syd-neysiege state-ment. MOR
 E:
  []
 
 [123]
-Overfull \hbox (4.18994pt too wide) in paragraph at lines 949--950
+Overfull \hbox (4.18994pt too wide) in paragraph at lines 952--953
 []\OT1/cmr/m/n/14.4 http://rt.com/usa/214203-protests-police-brutality-nationwi
 de/ 
  []
 
 
-Overfull \hbox (3.01501pt too wide) in paragraph at lines 950--951
+Overfull \hbox (3.01501pt too wide) in paragraph at lines 953--954
 []\OT1/cmr/m/n/14.4 http://mashable.com/2014/12/13/time-lapse-new-york-protest-
 
  []
 
 
-Overfull \hbox (60.5893pt too wide) in paragraph at lines 951--952
-[]\OT1/cmr/m/n/14.4 http://www.cbsnews.com/news/eric-garner-ferguson-missouri-p
-rotesters-
- []
-
-
-Overfull \hbox (308.87152pt too wide) in paragraph at lines 952--953
+Overfull \hbox (22.11246pt too wide) in paragraph at lines 955--956
 []\OT1/cmr/m/n/14.4 http://www.huffingtonpost.com/2014/12/13/millions-march-nyc
-[]n[]6320348.html?ncid=tweetlnkushpmg00000051 
+[]n 
  []
 
-
-Overfull \hbox (46.70958pt too wide) in paragraph at lines 953--954
+[124]
+Overfull \hbox (46.70958pt too wide) in paragraph at lines 956--957
 []\OT1/cmr/m/n/14.4 https://www.youtube.com/watch?v=Iz7hkfNmfTY&feature=youtu.b
 e 
  []
 
 
-Overfull \hbox (1.1603pt too wide) in paragraph at lines 962--963
+Overfull \hbox (1.1603pt too wide) in paragraph at lines 965--966
 []\OT1/cmr/m/n/14.4 RT @Dahm-Pub-lish-ing: RT@wendycarrillo: Real thugs wear
  []
 
-[124]
-Overfull \hbox (0.57372pt too wide) in paragraph at lines 963--964
+
+Overfull \hbox (0.57372pt too wide) in paragraph at lines 966--967
 []\OT1/cmr/m/n/14.4 RT @The-Root: RT @mf-martinez: Protesters con-tinue gath-
  []
 
 
-Overfull \hbox (14.85353pt too wide) in paragraph at lines 963--964
+Overfull \hbox (14.85353pt too wide) in paragraph at lines 966--967
 \OT1/cmr/m/n/14.4 er-ing in Wash-ing-ton Square Park #Mil-lion-s-March-NYC #The
 -
  []
 
 
-Overfull \hbox (64.51215pt too wide) in paragraph at lines 969--970
+Overfull \hbox (64.51215pt too wide) in paragraph at lines 972--973
 \OT1/cmr/m/n/14.4 One Con-tin-ued Fight. Sign our pe-ti-tion at: http://t.co/KE
 TNo6bS0V
  []
 
 [125]
-Overfull \hbox (3.29787pt too wide) in paragraph at lines 977--978
+Overfull \hbox (3.29787pt too wide) in paragraph at lines 980--981
 \OT1/cmr/m/n/14.4 Bridge leav-ing Man-hat-tan Sky-line be-hind. #Mil-lion-s-Mar
 ch-
  []
 
-) (C:\Users\Jyoti\Documents\PhD-Thesis\PhDThesis\Chapters/Evaluations.tex
-[126]
+[126]) (C:\Users\Jyoti\Documents\PhD-Thesis\PhDThesis\Chapters/Evaluations.tex
+[127]
 Chapter 6.
 ------------------------------------------------------------------------------
  6 Evaluations
 ------------------------------------------------------------------------------
-[127
+[128
 
-] [128] [129]
+] [129] [130]
 Overfull \hbox (2.38835pt too wide) in paragraph at lines 44--45
 \OT1/cmr/m/n/14.4 at http://developer.seen.co/, and a freely avail-able python 
 wrap-
  []
 
-[130] [131] [132] [133]
+[131] [132] [133] [134]
 Overfull \hbox (12.88487pt too wide) in paragraph at lines 71--72
 \OT1/cmr/m/n/14.4 The ranked tweets were an-no-tated on an event-specific infor
 mativeness-
  []
 
-[134]
+[135]
 Overfull \hbox (8.10367pt too wide) in paragraph at lines 74--75
 \OT1/cmr/m/it/14.4 neysiege #Mar-t-in-Place Lindt #MYEFO #siege Ray Hadley Mus-
 
  []
 
-[135]
+[136]
 Overfull \hbox (3.1164pt too wide) in paragraph at lines 84--85
 \OT1/cmr/m/n/14.4 hash-tags, text units and URLs ob-tained us-ing \OT1/cmr/m/it
 /14.4 Even-tI-den-ti-ty-In-foRank\OT1/cmr/m/n/14.4 .
  []
 
-[136] [137] [138] [139]
-<Figures/EventIdentityInfoRankPerformanceMillionsMarchNyc.jpg, id=1912, 698.61p
+[137] [138] [139] [140]
+<Figures/EventIdentityInfoRankPerformanceMillionsMarchNyc.jpg, id=1911, 698.61p
 t x 513.41812pt>
 File: Figures/EventIdentityInfoRankPerformanceMillionsMarchNyc.jpg Graphic file
  (type jpg)
@@ -1670,7 +1686,7 @@ Overfull \hbox (16.15102pt too wide) in paragraph at lines 155--156
  []
 
 
-<Figures/EventIdentityInfoRankPerformanceSydneySiege.jpg, id=1913, 705.38531pt 
+<Figures/EventIdentityInfoRankPerformanceSydneySiege.jpg, id=1912, 705.38531pt 
 x 514.17094pt>
 File: Figures/EventIdentityInfoRankPerformanceSydneySiege.jpg Graphic file (typ
 e jpg)
@@ -1683,7 +1699,7 @@ Overfull \hbox (16.14796pt too wide) in paragraph at lines 162--163
  [][] 
  []
 
-<Figures/MillionsMarchNycCorrectedNDCG.jpg, id=1914, 807.015pt x 391.4625pt>
+<Figures/MillionsMarchNycCorrectedNDCG.jpg, id=1913, 807.015pt x 391.4625pt>
 File: Figures/MillionsMarchNycCorrectedNDCG.jpg Graphic file (type jpg)
 
 <use Figures/MillionsMarchNycCorrectedNDCG.jpg>
@@ -1691,7 +1707,7 @@ Package pdftex.def Info: Figures/MillionsMarchNycCorrectedNDCG.jpg used on inpu
 t line 174.
 (pdftex.def)             Requested size: 397.48494pt x 216.81029pt.
 
-<Figures/sydneysiegecorrectedndcg.jpg, id=1915, 807.015pt x 391.4625pt>
+<Figures/sydneysiegecorrectedndcg.jpg, id=1914, 807.015pt x 391.4625pt>
 File: Figures/sydneysiegecorrectedndcg.jpg Graphic file (type jpg)
 
 <use Figures/sydneysiegecorrectedndcg.jpg>
@@ -1699,7 +1715,7 @@ Package pdftex.def Info: Figures/sydneysiegecorrectedndcg.jpg used on input lin
 e 181.
 (pdftex.def)             Requested size: 397.48494pt x 216.81029pt.
 
-<Figures/MillionsMarchNycCorrectedPrecision.jpg, id=1916, 807.015pt x 391.4625p
+<Figures/MillionsMarchNycCorrectedPrecision.jpg, id=1915, 807.015pt x 391.4625p
 t>
 File: Figures/MillionsMarchNycCorrectedPrecision.jpg Graphic file (type jpg)
  <use Figures/MillionsMarchNycCorrectedPrecision.jpg>
@@ -1707,65 +1723,56 @@ Package pdftex.def Info: Figures/MillionsMarchNycCorrectedPrecision.jpg used on
  input line 188.
 (pdftex.def)             Requested size: 397.48494pt x 216.81029pt.
 
-<Figures/sydneysiegeprecisioncorrected.jpg, id=1917, 807.015pt x 391.4625pt>
+<Figures/sydneysiegeprecisioncorrected.jpg, id=1916, 807.015pt x 391.4625pt>
 File: Figures/sydneysiegeprecisioncorrected.jpg Graphic file (type jpg)
 
 <use Figures/sydneysiegeprecisioncorrected.jpg>
 Package pdftex.def Info: Figures/sydneysiegeprecisioncorrected.jpg used on inpu
 t line 195.
 (pdftex.def)             Requested size: 397.48494pt x 216.81029pt.
- [140 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/EventIdentityInfoR
-ankPerformanceMillionsMarchNyc.jpg>] [141 <C:/Users/Jyoti/Documents/PhD-Thesis/
+ [141 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/EventIdentityInfoR
+ankPerformanceMillionsMarchNyc.jpg>] [142 <C:/Users/Jyoti/Documents/PhD-Thesis/
 PhDThesis/Figures/EventIdentityInfoRankPerformanceSydneySiege.jpg> <C:/Users/Jy
 oti/Documents/PhD-Thesis/PhDThesis/Figures/MillionsMarchNycCorrectedNDCG.jpg>] 
-[142 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/sydneysiegecorrecte
+[143 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/sydneysiegecorrecte
 dndcg.jpg> <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/MillionsMarch
 NycCorrectedPrecision.jpg>]
-[143 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/sydneysiegeprecisio
+[144 <C:/Users/Jyoti/Documents/PhD-Thesis/PhDThesis/Figures/sydneysiegeprecisio
 ncorrected.jpg>])
 (C:\Users\Jyoti\Documents\PhD-Thesis\PhDThesis\Chapters/PotentialApplications.t
-ex [144]
+ex [145]
 Chapter 7.
 ------------------------------------------------------------------------------
  7 Potential Applications of the EIIM Framework
 ------------------------------------------------------------------------------
-[145
+[146
 
-] [146] [147]
+] [147] [148]
 Underfull \hbox (badness 10000) in paragraph at lines 82--82
 [][][]\OT1/cmr/m/n/10 http://oursocialtimes.com/using-social-media-to-make-your
 -event-a-dazzling-success-
  []
 
-[148])
+[149])
 (C:\Users\Jyoti\Documents\PhD-Thesis\PhDThesis\Chapters/ConclusionAndFutureWork
-.tex [149] [150]
+.tex [150] [151]
 Chapter 8.
 ------------------------------------------------------------------------------
  8 Conclusion and Future Work
 ------------------------------------------------------------------------------
-[151
+[152
 
-] [152] [153]
+] [153] [154]
 Overfull \hbox (14.90213pt too wide) in paragraph at lines 45--46
 []\OT1/cmr/m/n/14.4 WE FUCK-ING WON!!!!!! LETS GO HEAT #HEATgame #Heat-
  []
 
-[154]
+[155]
 Overfull \hbox (3.81711pt too wide) in paragraph at lines 74--75
 \OT1/cmr/m/n/14.4 #AkaiG-ur-ley NBC New York http://t.co/mLlYPy39Pa #Black-
  []
 
-[155] [156]) [157]
-(C:\Users\Jyoti\Documents\PhD-Thesis\PhDThesis\Appendices/AppendixA.tex
-[158]
-Appendix A.
-------------------------------------------------------------------------------
- A Appendix Title Here
-------------------------------------------------------------------------------
-) [159
-
-]
+[156] [157]) [158] [159]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
@@ -1841,7 +1848,11 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 464.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 464.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 464.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BF7D751BF5AE43883C9B68C0AC57F530;19071.
+(rerunfilecheck)             Checksum: A9E394EB97D90940EC8A07AD5D052C53;18909.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 4.5pt have occurred.
 
 
 LaTeX Warning: There were undefined references.
@@ -1849,11 +1860,11 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 464.
  ) 
 Here is how much of TeX's memory you used:
- 16228 strings out of 493921
- 237347 string characters out of 3144876
- 319673 words of memory out of 3000000
- 18540 multiletter control sequences out of 15000+200000
- 20646 words of font info for 76 fonts, out of 3000000 for 9000
+ 16243 strings out of 493921
+ 237407 string characters out of 3144876
+ 319638 words of memory out of 3000000
+ 18561 multiletter control sequences out of 15000+200000
+ 22889 words of font info for 86 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  49i,15n,45p,2721b,732s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
@@ -1877,9 +1888,9 @@ type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (203 pages, 5769891 bytes).
+Output written on main.pdf (203 pages, 5769538 bytes).
 PDF statistics:
- 2400 PDF objects out of 2487 (max. 8388607)
- 705 named destinations out of 1000 (max. 500000)
- 839 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2395 PDF objects out of 2487 (max. 8388607)
+ 704 named destinations out of 1000 (max. 500000)
+ 831 words of extra memory for PDF output out of 10000 (max. 10000000)
 

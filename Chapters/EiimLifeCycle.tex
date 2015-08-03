@@ -147,11 +147,11 @@ The Natural Language Toolkit (http://nltk.org) POS tagger is used for tagging th
 The tagged tweet is also separately stored and maintained. These tags are used later in different components down the pipeline. The Penn Treebank tags\footnote{https://www.ling.upenn.edu/courses/Fall\_2003/ling001/penn\_treebank\_pos.html} are used for tagging and is parsed accordingly for identifying words with a certain parts-of-speech.
 
 \subsection{Special Character Detection}
-All the special characters that are not alphanumeric are detected and the total number of special characters in a tweet is stored.
+All the special characters in a tweet are detected. Any character that it not alphanumeric is considered as a special character. The total number of special characters in a tweet is stored.
 
 
 \subsection{Data Cleansing}
-The raw text of the tweet is extracted and cleaned. All the user mentions, hashtags, retweet symbols, URLs and special characters are removed and the entire tweet is converted into lowercase. 
+The raw text of the tweets are extracted and cleaned. All the user mentions, hashtags, retweet symbols, URLs and special characters are removed and the entire tweet is converted into lowercase. The cleaned and normalized tweet is stored separately.
 
 \subsection{Duplicate Detection}
 The tweets after cleaning are assigned a md5 hash code, which helps in detecting duplicate content. Tweets having the same hash code are considered to be redundant copies of each other, and only a single copy of the tweet is finally stored in the database. This technique also helps in detecting the retweets of a tweet that contain the same content. Also there are certain tweets that are shared with the same content but has different user mentions and with different combination of the words expressing the content. For example, the following tweets talks about the same video shared by mashable and does not present any new information. 
@@ -162,7 +162,7 @@ The tweets after cleaning are assigned a md5 hash code, which helps in detecting
 \end{itemize}
 
 
-After the data cleansing step, the duplicate detection scheme identifies both the tweets to be same and only maintain a single copy. This process occurs in real-time. Whenever, a new tweet is obtained from the straming API, the md5 hashcode is calculated after going through the previous data pre-processing steps. A hashtable is maintained in the memory that is constantly searched for the presence of the generated hashcode. If the hashcode is already present then the tweet is dropped and not stored.
+After the data cleansing step, the duplicate detection scheme identifies both the tweets to be same and only maintain a single copy. This process occurs in real-time. Whenever, a new tweet is obtained from the straming API, the md5 hashcode is calculated after going through the previous data pre-processing steps. A hashtable is maintained in the memory that is constantly searched for the presence of the generated hashcode. If the hashcode is already present then the tweet is dropped and not considered for further processing.
 
 \subsection{Stop Word Detection and Elimination}
 A list of English stop words is compiled that is publicly shared in the following URL :  
@@ -223,7 +223,7 @@ Named entities such as name of persons, animals, places, cars and organizations 
     \includegraphics[width=14cm,height=11cm]{Figures/EIIMComponents/EventInformationQuality.jpg}
 \end{figure}
 
-This component examines the quality of information present in the tweets collected for the events. It segregates the references having high likelihood of containing good quality event related information from the ones that are less likely to contain or point to good quality information. In order to make a generic module for identifying high quality event related informative references we implemented a logistic regression classifier. Once the classifier is trained, it is used for assigning generic informativeness score to the tweets in real-time as they are collected using the streaming API. The component aids in solving the problem of information overload. Just like an user searching for relevant informative content about an event faces the challenging situation of information overload as discussed in Chapter \ref{challenges}, Section \ref{informationoverload}, it is also a challenge for automated systems to process the huge amount of content coming at high velocity and extract useful information out of it. By filtering out the tweets that are less likely to contain useful and high quality  information it solves the problem of information overload for the other components of the EIIM framework. 
+This component examines the quality of information present in the tweets collected for the events. It segregates the references having high likelihood of containing good quality event related information from the ones that are less likely to contain or point to good quality information. A logistic regression classifier is implemented in order to make a generic module for identifying high quality event related informative references. Once the classifier is trained, it is used for assigning generic informativeness score to the tweets in real-time as they are collected using the streaming API. The component aids in solving the problem of information overload. Automated systems need to process huge amounts of content coming at high velocity and extract useful information out of them. Just like an user searching for relevant informative content about an event faces the challenging situation of information overload as discussed in Chapter \ref{challenges}, Section \ref{informationoverload}, similar challenges are also faced by automated systems. By filtering out the tweets that are less likely to contain useful and high quality  information it solves the problem of information overload for the other components of the EIIM framework. 
 
 \subsection{Annotated Dataset}
 We use a publicly available annotated dataset from the CrisisLex\footnote{http://crisislex.org/data-collections.html} website shared by Olteanu et al. \cite{olteanu2014crisislex}. The collection includes tweets collected during 26 large crisis events in 2012 and 2013, with about 1,000 tweets labeled per crisis for informativeness (i.e. ``informative", or ``not informative"), information type, and source. 28,000 tweets (about 1,000 in each collection) were labeled by crowdsourced workers according to informativeness (informative or not informative), information types (e.g. caution and advice, infrastructure damage), and information sources (e.g. governments, NGOs).
@@ -266,7 +266,7 @@ In order to train the model we assigned a score of 1 to the tweets that were lab
 \item \textbf{Number of Prepositions} - total number of prepositions detected in the tweet, without considering the hashtags and the user mentions whenever they are tagged as prepositions.
 \item \textbf{Formality} - which is defined as follows,
 Formality = (\#nouns + \#adjectives + \#prepositions + \#articles - \#pronouns - \#verbs - \#adverbs - \#interjections + 100)/2
-and is proposed in \cite{alejandro2011use}. \#nouns, denotes the number of nouns detected in the tweet, and so on.
+and is proposed in \cite{alejandro2011use}. `\#nouns', denotes the number of nouns detected in the tweet, `\#adjectives', denotes the number of adjectives detected in the tweet, and so on.
 
 \end{enumerate}
 
@@ -328,16 +328,16 @@ The main functions of this component are:
 \item It enables the framework to set a threshold between 0.0-1.0 for differentiating between high quality informative tweets from low quality non-informative ones related to an event. The event identity information units are then extracted from the high quality informative tweets.
 \end{itemize}
   
-In order to understand what might consist of the event identity information units that would represent the EIIS, we conducted a detailed analysis of 3.8 million tweets collected for following three events. 
+In order to understand what might consist of the event identity information units that would represent the EIIS, a detailed analysis of 3.8 million tweets collected for following three events was conducted. 
 \begin{itemize}
 \item CPAC 2014.
 \item SXSW 2014.
 \item Sochi Winter Games 2014.
 \end{itemize}
-The analysis and the conclusions we made from it, is presented next.
+The analysis and the conclusions are presented next.
 
 \subsection{Content Analysis of Event Related Tweets}
-Details of the data collected for the analysis are provided in Table \ref{informationcuedata}. The data collection task was accomplished by `Event Reference Collection' component and was then preprocessed by the `Event Reference Preparation' component.
+Details of the data collected for the analysis are provided in Table \ref{informationcuedata}. The data collection task was accomplished by `Event Reference Collection' component and was then pre-processed by the `Event Reference Preparation' component.
 
 Twitter allows its users to post short messages with a limitation of 140 characters. Users not only post plain textual content in their messages but also share URLs, linking to other external websites, images and videos. The images and videos are 
 labeled as media elements by Twitter. Apart from curating new content, the users also share content produced by others. This activity is known as \textit{retweeting}, and such tweets are preceded by the special characters \textit{RT}.
@@ -348,8 +348,8 @@ The concise and informal content of a tweet is often contextualized by the use o
 by the users in order to add context to the tweets, categorizing the content based on a topic, join conversations related to a topic, and to make the tweets easily searchable by other interested users. They also act as strong identifiers of topics \cite{laniado2010making}. When tweeting about real-life
 events the users also tend to use hashtags in order to post event-specific content. For example `\#Egypt' and `\#Jan25', were among the most popular hashtags in Twitter used for spreading, organizing and analyzing information related to `Egyptian Revolution of 2011' \cite{barrons2012suleiman}. 
 
-Given the mechanisms of user interactions and content production in Twitter, we started our analysis with the assumption that the content of a tweet is primarily composed of hashtags, words for expressing and conveying information, and URLs that lead to additional information about the content. We plotted the distribution of occurrences of all the hashtags, tokens and shared URLs for each event. Due to the short length of the tweets we only considered unigram tokens. We also plotted the distribution of the number of tweets posted by the users.
-We observed a power law distribution for all of them (refer Figures \ref{hashtagdist}, \ref{tokendist}, \ref{urldist} and \ref{userdist}). This gave us an intuition that there are skewed sets of hashtags and tokens that are widely used for posting content related to an event. 
+Given the mechanisms of user interactions and content production in Twitter, the analysis was done with the assumption that the content of a tweet is primarily composed of hashtags, words for expressing and conveying information, and URLs that lead to additional information about the content. The distribution of occurrences of all the hashtags, tokens and shared URLs for each event were plotted. Due to the short length of the tweets only unigram tokens were considered. The distribution of the number of tweets posted by the users were also plotted.
+A power law distribution was observed for all of them (refer Figures \ref{hashtagdist}, \ref{tokendist}, \ref{urldist} and \ref{userdist}). This gave an intuition that there are skewed sets of hashtags and tokens that are widely used for posting content related to an event. 
 %We call them \textit{event-specific hashtags} and \textit{event-specific text units}. 
 There is also a specific set of URLs that become popular in comparison to others and a set of users who are more active than others in posting event related content. 
 
@@ -383,7 +383,7 @@ There is also a specific set of URLs that become popular in comparison to others
 
 
 
-Our second step was to use the logistic regression model developed for the `Event Information Quality' component and assign informativeness scores to all the 3.8 million tweets in the dataset. The tweets getting a score greater than 0.7 were considered as instances of high quality informative tweets. Those getting a score lesser than 0.3 were considered as instances of low quality non-informative tweets. We calculated the average values of different content characteristics of the tweets. Top ten percent of the frequently occurring hashtags and nouns were considered as top hashtags and top nouns respectively, for the analysis. Some of the characteristics that were prominently different for informative and non-informative tweets are listed in Table \ref{infoanalysis}.
+The second step was to use the logistic regression model developed for the `Event Information Quality' component and assign informativeness scores to all the 3.8 million tweets in the dataset. The tweets getting a score greater than 0.7 were considered as instances of high quality informative tweets. Those getting a score lesser than 0.3 were considered as instances of low quality non-informative tweets. The average values of different content characteristics of the tweets were calculated. Top ten percent of the frequently occurring hashtags and nouns were considered as top hashtags and top nouns respectively, for the analysis. Some of the characteristics that were prominently different for informative and non-informative tweets are listed in Table \ref{infoanalysis}.
 
 \begin{figure}[htbp]
 \centering
@@ -400,12 +400,12 @@ As presented in the table, some of the observations for all the three events are
 \item The average length of informative tweets is also more than the non-informative ones. 
 \item The percentage of informative tweets having URLs is strikingly high. 
 \item A greater use of slang words is observed in non-informative tweets. 
-\item Greater occurrence of top hashtags in non-informative tweets intrigued us to look into the content and obtain a detailed view of it. We observed that a lot of non-informative tweets have used popular hashtags with unrelated content and URLs directing to irrelevant information. This is typical of spam tweets as already pointed out in Chapter \ref{challenges}, Section \ref{veracity}. 
+\item Greater occurrence of top hashtags in non-informative tweets intrigued to look into the content and obtain a detailed view of it. It was observed that a lot of non-informative tweets have used popular hashtags with unrelated content and URLs directing to irrelevant information. This is typical of spam tweets as already pointed out in Chapter \ref{challenges}, Section \ref{veracity}. 
 \item The average number of follower counts for users posting informative tweets was also observed to be higher than the ones posting non-informative ones. 
 \item The average number of feeling words used in informative tweets were also relatively higher than the feeling words used in the non-informative tweets. 
 \end{itemize}
 
-The above observations gave us an idea of how high quality informative content related to events is produced in Twitter and the characteristics that differentiate them from low quality non-informative content. We made the following conclusions based on the observations:
+The above observations gave an idea of how high quality informative content related to events is produced in Twitter and the characteristics that differentiate them from low quality non-informative content. Following conclusions were made based on the observations:
 \begin{itemize}
 \item It is now intuitive that the informative tweets are more expressive, formal and lengthier, marked by higher presence of nouns. 
 \item The high presence of nouns indicates that these tweets also contain information about people, places, organizations, etc, associated with the events, which is vital information about any event and is ideal for representing its identity. 
@@ -414,7 +414,7 @@ The above observations gave us an idea of how high quality informative content r
 \end{itemize}
 
 \subsection{Event Identity Information Units}
-After the observations in the previous section we conclude that the informative tweets in general are characterized by wordiness, occurrences of URLs and are posted by users with high follower count. These characteristics are also the primary features that distinguish informative from non-informative content. Although, presence of hashtags is not a good indicator of informativeness, yet it is a strong identifier of a topic as already pointed by \cite{laniado2010making}. Popular hashtags for an event might be used maliciously. On the other hand, the presence of a popular hashtag in a wordy tweet consisting of words popular for the event, along with a popular URL, posted by an influential user is highly likely to contain event-specific content. Therefore, it is intuitive that given a stream of tweets for an event an optimal combination of event related popular text units (words, unigrams, bigrams etc),  hashtags, and URLs, posted by an influential user in a tweet, is one of the key indicators for identifying event-specific informative content. It would be highly unlikely for a tweet to contain all of these and yet not convey useful event-specific information. Based on the above analysis we decided to build the EIIS for an event $E_{i}$, composed of the following event identity information units:
+After the observations in the previous section it was concluded that the informative tweets in general are characterized by wordiness, occurrences of URLs and are posted by users with high follower count. These characteristics are also the primary features that distinguish informative from non-informative content. Although, presence of hashtags is not a good indicator of informativeness, yet it is a strong identifier of a topic as already pointed by \cite{laniado2010making}. Popular hashtags for an event might be used maliciously. On the other hand, the presence of a popular hashtag in a wordy tweet consisting of words popular for the event, along with a popular URL, posted by an influential user is highly likely to contain event-specific content. Therefore, it is intuitive that given a stream of tweets for an event an optimal combination of event related popular text units (words, unigrams, bigrams etc),  hashtags, and URLs, posted by an influential user in a tweet, is one of the key indicators for identifying event-specific informative content. It would be highly unlikely for a tweet to contain all of these and yet not convey useful event-specific information. Based on the above analysis it was decided to build the `Event Identity Information Structure' EIIS for an event $E_{i}$, composed of the following event identity information units:
 
 \begin{enumerate}
 \item A set of tweets $M_{E_{i}} = {\{m_{1_{E_{i}}},m_{2_{E_{i}}}, ... ,m_{n_{E_{i}}}\}}$, related to the event $E_{i}$, having high chances of containing informative content.
@@ -427,9 +427,9 @@ After the observations in the previous section we conclude that the informative 
 \subsection{Extracting Event Identity Information Units}
 The event identity information units for an event $E_{i}$, as defined above are extracted from the event dataset. Following steps are taken:
 \begin{itemize}
-\item A threshold for the informativeness score assigned in the previous component is set between 0.0-1.0, for extracting the tweets ($\in M_{E_{i}}$). We set a threshold of 0.7. Therefore, the tweets having an informativeness score greater than or equal to 0.7 are filtered out and comprises the set $M_{E_{i}}$.
+\item A threshold for the informativeness score assigned in the previous component is set between 0.0-1.0, for extracting the tweets ($\in M_{E_{i}}$). For the experiments a threshold of 0.7 was set. Therefore, the tweets having an informativeness score greater than or equal to 0.7 are filtered out and comprises the set $M_{E_{i}}$.
 \item The hashtags that were extracted in the `Event Reference Preparation' step from the tweets $\in M_{E_{i}}$, are used for populating the set $H_{E_{i}}$. However, the hashtags that matches the slang words and stop words are not considered. This is done in order to ensure good quality of information contextualized by the hashtags.
-\item The nouns that were extracted in the `Event Reference Preparation' step from the tweets $\in M_{E_{i}}$, are considered as the text units ($\in W_{E_{i}}$). The nouns that matches the slang words are not considered. This is done in order to ensure good quality of textual content represented by the nouns. In another experiment, we considered the extracted named entities as the text units. We report our results and compare the results obtained in both the cases in the next Chapter.
+\item The nouns that were extracted in the `Event Reference Preparation' step from the tweets $\in M_{E_{i}}$, are considered as the text units ($\in W_{E_{i}}$). The nouns that matches the slang words are not considered. This is done in order to ensure good quality of textual content represented by the nouns.
 \item The expanded URLs from the meta-data of the tweets $\in M_{E_{i}}$ populates the set $L_{E_{i}}$.
 \item The meta-information of the users posting the tweets $\in M_{E_{i}}$, represented by their user ids, is extracted for populating the set $U_{E_{i}}$ 
 \end{itemize}  
@@ -437,20 +437,23 @@ The event identity information units for an event $E_{i}$, as defined above are 
 These event identity information units forms the Event Identity Information Structure (EIIS), as explained next.
 
 \section{Event Identity Information Structure (EIIS)}
-This is the component that maintains a persistent EIIS as introduced in Chapter \ref{events}, Section \ref{problem}, for each individual event tracked by the framework and updates the metadata of the EIIS throughout the EIIM life cycle. Due to the unstructured nature of the social media references and evolving nature of the events, we store the event identity information units extracted by the previous component along with their associated meta-data, in a persistent graph data structure stored in the database. We update the meta-data related to each node of the graph using the normal database updation queries. Adjacency lists are used for representing the graph. The choice of storing the event identity information units in a graph structure is also motivated by the wide array of graph processing algorithms used for natural language processing and text mining operations. We show the efficacy and the advantages of a graph in the next section. 
-
-\begin{itemize}
-\item Therefore the EIIS is a graph $\mathbf{G_{E_{i}} = (V_{E_{i}},D_{E_{i}})}$, where $\mathbf{V_{E_{i}} = M_{E_{i}} \cup H_{E_{i}} \cup W_{E_{i}} \cup U_{E_{i}} \cup}$ \\  $\mathbf{L_{E_{i}}}$, is the set of vertices and $\mathbf{D_{E_{i}}}$ is the set of directed edges between different vertices. Whenever two vertices are associated, there are two edges between them that are oppositely directed. For example, if a tweets consist of hashtags, text units, URLs and is posted by an user, then there are bi-directed edges between each one of them. 
-\end{itemize}
-
-
-
 
 \begin{figure}[htbp]
   \caption{Event Identity Information Structure component of the EIIM life cycle.}
   \centering
     \includegraphics[width=14cm,height=11cm]{Figures/EIIS.jpg}
 \end{figure}
+
+This is the component that maintains a persistent EIIS as introduced in Chapter \ref{events}, Section \ref{problem}, for each individual event tracked by the framework and updates the metadata of the EIIS throughout the EIIM life cycle. Due to the unstructured nature of the social media references and evolving nature of the events, we store the event identity information units extracted by the previous component along with their associated meta-data, in a persistent graph data structure stored in the database. The meta-data related to each node of the graph is updated using the normal database updation queries. Adjacency lists are used for representing the graph. The choice of storing the event identity information units in a graph structure is also motivated by the wide array of graph processing algorithms used for natural language processing and text mining operations. We show the efficacy and the advantages of a graph in the next section. 
+
+\begin{itemize}
+\item Therefore the EIIS is a graph $\mathbf{G_{E_{i}} = (V_{E_{i}},D_{E_{i}})}$, where \\ $\mathbf{V_{E_{i}} = M_{E_{i}} \cup H_{E_{i}} \cup W_{E_{i}} \cup U_{E_{i}} \cup}$ $\mathbf{L_{E_{i}}}$, is the set of vertices and $\mathbf{D_{E_{i}}}$ is the set of directed edges between different vertices. Whenever two vertices are associated, there are two edges between them that are oppositely directed. For example, if a tweets consist of hashtags, text units, URLs and is posted by an user, then there are bi-directed edges between each one of them. 
+\end{itemize}
+
+
+
+
+
 
 
 \begin{figure}[htbp]
@@ -460,7 +463,7 @@ This is the component that maintains a persistent EIIS as introduced in Chapter 
 \end{figure}
 
 \section{Event Identity Information Processing\label{EventIdentityInformationProcessing}}
-This is the most important processing component of the EIIM life cycle and is at the heart of the entire framework. We make our most novel contributions in this component. The component is mainly divided into two sub-components:
+This is the most important processing component of the EIIM life cycle and is at the heart of the entire framework. Most of the novel contributions of this dissertation is made in this component. The component is mainly divided into two sub-components:
 \begin{itemize}
 \item \textbf{EventIdentityInfoGraph} - that represents and defines novel relationships between the vertices of the graph $\mathbf{G}$ representing the EIIS.
 \item \textbf{EventIdentityInfoProcess} - processes the \textit{EventIdentityInfoGraph} in order to rank its nodes and identify the top most informative event identity information units that acts as inputs to the next two components of the EIIM life cycle.
@@ -468,7 +471,7 @@ This is the most important processing component of the EIIM life cycle and is at
 
 \subsection{EventIdentityInfoGraph\label{eventidentityinfograph}}
 
-We implement a novel graph structure - \textit{EventIdentityInfoGraph}, which is dynamically generated from the graph $\mathbf{G}$ (EIIS), after a configurable interval of time, using following assumptions.
+A novel graph structure - \textit{EventIdentityInfoGraph}, is implemented, which is dynamically generated from the graph $\mathbf{G}$ (EIIS), after a configurable interval of time, using following assumptions.
   
 For an event $E_{i}$ 
 \begin{itemize} 
@@ -522,7 +525,7 @@ For an event $E_{i}$
 
 %\end{itemize}
 
-The relationships for an event $E_{i}$ as stated above, forms a \textit{Mutual Reinforcement Chain} \cite{wei2008query} for the event $E_{i}$ as shown in Figure \ref{mrc}. We represent this relationship in a graph $\mathbf{G_{E_{i}(t)} = (V_{E_{i}(t)},D_{E_{i}(t)})}$, which we call as \textit{EventIdentityInfoGraph}, where $V_{E_{i}(t)} = M_{E_{i}} \cup H_{E_{i}} \cup W_{E_{i}} \cup U_{E_{i}} \cup L_{E_{i}}$, is the set of vertices and $\mathbf{D_{E_{i}(t)}}$ is the set of directed edges between different vertices. The graph $G_{E_{i}(t)}$ is basically, a snapshot of the EIIS structure of the event $E_{i}$ at time t. 
+The relationships for an event $E_{i}$ as stated above, forms a \textit{Mutual Reinforcement Chain} \cite{wei2008query} for the event $E_{i}$ as shown in Figure \ref{mrc}. We represent this relationship in a graph $\mathbf{G_{E_{i}(t)} = (V_{E_{i}(t)},D_{E_{i}(t)})}$, which we call as \textit{EventIdentityInfoGraph}, where $V_{E_{i}(t)} = M_{E_{i}} \cup H_{E_{i}} \cup W_{E_{i}} \cup U_{E_{i}} \cup L_{E_{i}}$, is the set of vertices and $\mathbf{D_{E_{i}(t)}}$ is the set of directed edges between different vertices at a time $t$. The graph $G_{E_{i}(t)}$ is basically, a snapshot of the EIIS structure of the event $E_{i}$ at time $t$. 
 
 \begin{figure}[htbp]
 \centering
@@ -607,7 +610,7 @@ P(m_{i_{E_{i}}} \mid l_{j_{E_{i}}}) = 1.0
 \end{equation}
 
 
-We do not consider an edge between two vertices of same type. That is, we don't connect a tweet with another tweet. Similarly, for hashtags, text units, users and URLs. This constraint was imposed in order to deal with the nepotistic relationships between high quality content and low quality content introduced by the malicious users for promoting the low quality content as explained in Chapter \ref{challenges}, Section \ref{veracity}.  
+An edge between two vertices of same type is not considered. That is, a connection is not made between two tweets. Similarly, for hashtags, text units, users and URLs. This constraint was imposed in order to deal with the nepotistic relationships between high quality content and low quality content introduced by the malicious users for promoting the low quality content as explained in Chapter \ref{challenges}, Section \ref{veracity}.  
 
 
 
@@ -660,7 +663,7 @@ Next, we explain \textit{EventIdentityInfoRank}.
 \subsection{EventIdentityInfoRank\label{eventidentityinforank}}
 \textit{EventIdentityInfoRank} is an iterative algorithm that takes into account the mutually reinforcing relationships between the vertices of \textit{EventIdentityInfoGraph} as explained in the previous section and propagates event-specific scores of each vertex to connected vertices across the graph for ranking its vertices ($\in V_{E_{i}(t)}$) in terms of event-specific informativeness.
 
-We first assign a event-specific score to all the vertices of the graph. Event-specific scores for vertices $(\in H_{E_{i}}, W_{E_{i}}, U_{E_{i}}, L_{E_{i}})$ are calculated using equations 5.19-5.22. The tweets  $(\in M_{E_{i}})$ are assigned an initial informativeness score as obtained from the logistic regression model in `Event Information Quality' component. The event-specific scores for vertices $(\in H_{E_{i}}, W_{E_{i}}, U_{E_{i}}, L_{E_{i}})$ and informativeness score for vertices $(\in M_{E_{i}})$ gives an initial ranking of all the vertices of \textit{EventIdentityInfoGraph}. We aim to refine the initial scores and assign a final score for ranking the vertices by leveraging the mutually reinforcing relationships between them.
+Firstly, an event-specific score is assigned to all the vertices of the graph. Event-specific scores for vertices $(\in H_{E_{i}}, W_{E_{i}}, U_{E_{i}}, L_{E_{i}})$ are calculated using equations 5.19-5.22. The tweets  $(\in M_{E_{i}})$ are assigned an initial informativeness score as obtained from the logistic regression model in `Event Information Quality' component. The event-specific scores for vertices $(\in H_{E_{i}}, W_{E_{i}}, U_{E_{i}}, L_{E_{i}})$ and informativeness score for vertices $(\in M_{E_{i}})$ gives an initial ranking of all the vertices of \textit{EventIdentityInfoGraph}. The aim is to refine the initial scores and assign a final score for ranking the vertices by leveraging the mutually reinforcing relationships between them.
 \begin{equation}
 Score(h_{i_{E_{i}}}) = \frac{freq(h_{i})}{max\{freq(h_{1}),freq(h_{2}),...,freq(h_{p})\}}
 \end{equation}
@@ -681,7 +684,7 @@ Score(l_{i_{E_{i}}}) = \frac{freq(l_{i})}{max\{freq(l_{1}),freq(l_{2}),...,freq(
 The relationships between two different subsets of vertices in graph $\mathbf{G_{E_{i}(t)}}$ is denoted by an affinity matrix. For e.g., $\mathbf{A_{E_{i}}^{MH}}$ denotes the $\mathbf{M_{E_{i}}-H_{E_{i}}}$ affinity matrix for event $E_{i}$, where $\mathbf{(i,j)^{th}}$ entry is the edge weight quantifying the association between $i^{th}$ tweet ($\in M_{E_{i}}$) and $j^{th}$ hashtag ($\in H_{E_{i}}$), calculated using equations 5.1-5.18. Similarly, $\mathbf{A_{E_{i}}^{WH}}$ denotes the $\mathbf{W_{E_{i}}-H_{E_{i}}}$ affinity matrix between set of text units $W_{E_{i}}$ and set of hashtags $H_{E_{i}}$ for event $E_{i}$, and so on.
 
 
-The rankings of \textit{tweets}, \textit{hashtags}, \textit{text units}, \textit{users} and \textit{URLs} in terms of event-specific informativeness, can be iteratively derived from the Mutual Reinforcement Chain for the event. Let $R_{{E_{i}}}^{M}$, $R_{{E_{i}}}^{H}$, $R_{{E_{i}}}^{W}$, $R_{{E_{i}}}^{U}$ and $R_{{E_{i}}}^{L}$ denote the ranking scores for the set of tweets ($\in M_{E_{}}$), set of  hashtags $(\in H_{E_{i}})$, set of text units $(\in W_{E_{i}})$, set of users $(\in U_{E_{i}})$, and set of URLs $(\in L_{E_{i}})$, respectively. Therefore, the Mutual Reinforcement Chain ranking for the $k^{th}$ iteration can be formulated as follows:
+The rankings of \textit{tweets}, \textit{hashtags}, \textit{text units}, \textit{users} and \textit{URLs} in terms of event-specific informativeness, can be iteratively derived from the Mutual Reinforcement Chain for the event. Let $R_{{E_{i}}}^{M}$, $R_{{E_{i}}}^{H}$, $R_{{E_{i}}}^{W}$, $R_{{E_{i}}}^{U}$ and $R_{{E_{i}}}^{L}$ denote the ranking scores for the set of tweets ($\in M_{E_{i}}$), set of  hashtags $(\in H_{E_{i}})$, set of text units $(\in W_{E_{i}})$, set of users $(\in U_{E_{i}})$, and set of URLs $(\in L_{E_{i}})$, respectively. Therefore, the Mutual Reinforcement Chain ranking for the $k^{th}$ iteration can be formulated as follows:
  
 
 %\begin{equation}
@@ -689,7 +692,7 @@ The rankings of \textit{tweets}, \textit{hashtags}, \textit{text units}, \textit
 %\end{equation}
 
 \begin{equation}
-R_{{E_{i}}}^{M(k+1)} = A_{E_{i}}^{MM(k)}R_{{E_{i}}}^{M(k)} + A_{E_{i}}^{MH(k)}R_{{E_{i}}}^{H(k)} + A_{E_{i}}^{MW(k)}R_{{E_{i}}}^{W(k)}+ A_{E_{i}}^{MU(k)}R_{{E_{i}}}^{U(k)} + A_{E_{i}}^{ML(k)}R_{{E_{i}}}^{L(k)}
+\small R_{{E_{i}}}^{M(k+1)} = A_{E_{i}}^{MM(k)}R_{{E_{i}}}^{M(k)} + A_{E_{i}}^{MH(k)}R_{{E_{i}}}^{H(k)} + A_{E_{i}}^{MW(k)}R_{{E_{i}}}^{W(k)}+ A_{E_{i}}^{MU(k)}R_{{E_{i}}}^{U(k)} + A_{E_{i}}^{ML(k)}R_{{E_{i}}}^{L(k)}
 \end{equation}
 
 %\begin{equation}
@@ -697,7 +700,7 @@ R_{{E_{i}}}^{M(k+1)} = A_{E_{i}}^{MM(k)}R_{{E_{i}}}^{M(k)} + A_{E_{i}}^{MH(k)}R_
 %\end{equation}
 
 \begin{equation}
-R_{{E_{i}}}^{H(k+1)} = A_{E_{i}}^{HM(k)}R_{{E_{i}}}^{M(k)} + A_{E_{i}}^{HH(k)}R_{{E_{i}}}^{H(k)} + A_{E_{i}}^{HW(k)}R_{{E_{i}}}^{W(k)}+ A_{E_{i}}^{HU(k)}R_{{E_{i}}}^{U(k)} + A_{E_{i}}^{HL(k)}R_{{E_{i}}}^{L(k)}
+\small R_{{E_{i}}}^{H(k+1)} = A_{E_{i}}^{HM(k)}R_{{E_{i}}}^{M(k)} + A_{E_{i}}^{HH(k)}R_{{E_{i}}}^{H(k)} + A_{E_{i}}^{HW(k)}R_{{E_{i}}}^{W(k)}+ A_{E_{i}}^{HU(k)}R_{{E_{i}}}^{U(k)} + A_{E_{i}}^{HL(k)}R_{{E_{i}}}^{L(k)}
 \end{equation}
 
 
@@ -707,7 +710,7 @@ R_{{E_{i}}}^{H(k+1)} = A_{E_{i}}^{HM(k)}R_{{E_{i}}}^{M(k)} + A_{E_{i}}^{HH(k)}R_
 %\end{equation}
 
 \begin{equation}
-R_{{E_{i}}}^{W(k+1)} = A_{E_{i}}^{WM(k)}R_{{E_{i}}}^{M(k)} + A_{E_{i}}^{WH(k)}R_{{E_{i}}}^{H(k)} + A_{E_{i}}^{WW(k)}R_{{E_{i}}}^{W(k)}+ A_{E_{i}}^{WU(k)}R_{{E_{i}}}^{U(k)} + A_{E_{i}}^{WL(k)}R_{{E_{i}}}^{L(k)}
+\small R_{{E_{i}}}^{W(k+1)} = A_{E_{i}}^{WM(k)}R_{{E_{i}}}^{M(k)} + A_{E_{i}}^{WH(k)}R_{{E_{i}}}^{H(k)} + A_{E_{i}}^{WW(k)}R_{{E_{i}}}^{W(k)}+ A_{E_{i}}^{WU(k)}R_{{E_{i}}}^{U(k)} + A_{E_{i}}^{WL(k)}R_{{E_{i}}}^{L(k)}
 \end{equation}
 
 %\begin{equation}
@@ -715,7 +718,7 @@ R_{{E_{i}}}^{W(k+1)} = A_{E_{i}}^{WM(k)}R_{{E_{i}}}^{M(k)} + A_{E_{i}}^{WH(k)}R_
 %\end{equation}
 
 \begin{equation}
-R_{{E_{i}}}^{U(k+1)} = A_{E_{i}}^{UM(k)}R_{{E_{i}}}^{M(k)} + A_{E_{i}}^{UH(k)}R_{{E_{i}}}^{H(k)} + A_{E_{i}}^{UW(k)}R_{{E_{i}}}^{W(k)}+ A_{E_{i}}^{UU(k)}R_{{E_{i}}}^{U(k)} + A_{E_{i}}^{UL(k)}R_{{E_{i}}}^{L(k)}
+\small R_{{E_{i}}}^{U(k+1)} = A_{E_{i}}^{UM(k)}R_{{E_{i}}}^{M(k)} + A_{E_{i}}^{UH(k)}R_{{E_{i}}}^{H(k)} + A_{E_{i}}^{UW(k)}R_{{E_{i}}}^{W(k)}+ A_{E_{i}}^{UU(k)}R_{{E_{i}}}^{U(k)} + A_{E_{i}}^{UL(k)}R_{{E_{i}}}^{L(k)}
 \end{equation}
 
 %\begin{equation}
@@ -724,11 +727,11 @@ R_{{E_{i}}}^{U(k+1)} = A_{E_{i}}^{UM(k)}R_{{E_{i}}}^{M(k)} + A_{E_{i}}^{UH(k)}R_
 
 
 \begin{equation}
-R_{{E_{i}}}^{L(k+1)} = A_{E_{i}}^{LM(k)}R_{{E_{i}}}^{M(k)} + A_{E_{i}}^{LH(k)}R_{{E_{i}}}^{H(k)} +A_{E_{i}}^{LW(k)}R_{{E_{i}}}^{W(k)}+ A_{E_{i}}^{LU(k)}R_{{E_{i}}}^{U(k)}+ A_{E_{i}}^{LL(k)}R_{{E_{i}}}^{L(k)}
+\small R_{{E_{i}}}^{L(k+1)} = A_{E_{i}}^{LM(k)}R_{{E_{i}}}^{M(k)} + A_{E_{i}}^{LH(k)}R_{{E_{i}}}^{H(k)} +A_{E_{i}}^{LW(k)}R_{{E_{i}}}^{W(k)}+ A_{E_{i}}^{LU(k)}R_{{E_{i}}}^{U(k)}+ A_{E_{i}}^{LL(k)}R_{{E_{i}}}^{L(k)}
 \end{equation}
 
 
-The equations 5-9 can be represented in the form of a block matrix $\Delta_{E_{i}}$, where,
+The equations 5.23 - 5.27 can be represented in the form of a block matrix $\Delta_{E_{i}}$, where,
 \[ \Delta_{E_{i}} = \left( \begin{array}{ccccc}
 A_{E_{i}}^{MM} & A_{E_{i}}^{MH} & A_{E_{i}}^{MW} &  A_{E_{i}}^{MU} & A_{E_{i}}^{ML} \\
 A_{E_{i}}^{HM} & A_{E_{i}}^{HH} & A_{E_{i}}^{HW} & A_{E_{i}}^{HU} & A_{E_{i}}^{HL} \\
@@ -750,10 +753,10 @@ then, $R_{E_{i}}$ can be computed as the dominant eigenvector of $\Delta_{E_{i}}
 
 In order to guarantee a unique $R_{E_{i}}$, $\Delta_{E_{i}}$ must be forced to be stochastic and irreducible. 
 
-To make $\Delta_{E_{i}}$ stochastic we divide the value of each element in a column of $\Delta_{E_{i}}$ by the sum of the values of all the elements in that column. This finally makes $\Delta_{E_{i}}$ column stochastic. We now denote it by $\hat \Delta_{E_{i}}$.
+To make $\Delta_{E_{i}}$ stochastic the value of each element in a column of $\Delta_{E_{i}}$ is divided by the sum of the values of all the elements in that column. This finally makes $\Delta_{E_{i}}$ column stochastic. It is now denoted by $\hat \Delta_{E_{i}}$.
 %we remove all the rows and columns of the block matrices whose all elements are zeros. Since, we don't consider edges between two vertices of same type, all the elements of the diagonal block matrices are zero by default. We then 
 
-Next, we make $\hat \Delta_{E_{i}}$ irreducible. This is done by making the graph $G$ strongly connected by adding links from one node to any other node with a probability vector $p$. Now, $\hat \Delta_{E_{i}}$ is transformed to 
+Next, $\hat \Delta_{E_{i}}$ is made irreducible. This is done by making the graph $G$ strongly connected by adding links from one node to any other node with a probability vector $p$. Now, $\hat \Delta_{E_{i}}$ is transformed to 
 
 \begin{equation}
 \overline \Delta_{E_{i}} = \alpha \hat \Delta_{E_{i}} + (1-\alpha)E
@@ -761,13 +764,13 @@ Next, we make $\hat \Delta_{E_{i}}$ irreducible. This is done by making the grap
 \begin{equation}
 E = p \times [1]_{1 \times k}
 \end{equation}
-where $0 \le \alpha \le 1$ is set to 0.85 according to \textit{PageRank}, and k is the order of $\hat \Delta_{E_{i}}$. We set $p = [1/k]_{k \times 1}$ by assuming a uniform distribution over all elements. Now, $\overline \Delta_{E_{i}}$ is stochastic and irreducible and it can be shown that it is also primitive by checking $\overline \Delta_{E_{i}}^{2}$ is greater than $0$.
+where $0 \le \alpha \le 1$ is set to 0.85, and k is the order of $\hat \Delta_{E_{i}}$. $p = [1/k]_{k \times 1}$ is set by assuming a uniform distribution over all elements. Now, $\overline \Delta_{E_{i}}$ is stochastic and irreducible and it can be shown that it is also primitive by checking $\overline \Delta_{E_{i}}^{2}$ is greater than $0$.
 
 Following steps are taken next,
 \begin{itemize}
-\item[\textbf{1.}] We initialize the rank vectors ($ R_{{E_{i}}}^{M(0)}, R_{{E_{i}}}^{H(0)}, R_{{E_{i}}}^{W(0)}, R_{{E_{i}}}^{U(0)}, R_{{E_{i}}}^{L(0)}$) for each subset of vertices ($M_{E_{i}}, H_{E_{i}}, W_{E_{i}}, U_{E_{i}}, L_{E_{i}}$). We use the event-specific scores calculated for the set of hashtags, text units, users and urls as their initial scores. All the scores lie between 0 and 1. For the tweets we use the logistic regression model and assign each one of them an initial informativeness score between 0 and 1.
+\item[\textbf{1.}] Initialize rank vectors ($ R_{{E_{i}}}^{M(0)}, R_{{E_{i}}}^{H(0)}, R_{{E_{i}}}^{W(0)}, R_{{E_{i}}}^{U(0)}, R_{{E_{i}}}^{L(0)}$) for each subset of vertices ($M_{E_{i}}, H_{E_{i}}, W_{E_{i}}, U_{E_{i}}, L_{E_{i}}$). The event-specific scores calculated for the set of hashtags, text units, users and URLs are used as their initial scores. All the scores lie between 0 and 1. For the tweets the logistic regression model is used for assigning each one of them an initial informativeness score between 0 and 1.
 
-\item[\textbf{2.}] Then we assign
+\item[\textbf{2.}] Assign
 \[ R_{E_{i}}^{0} = \left( \begin{array}{c}
 R_{{E_{i}}}^{M(0)} \\
 R_{{E_{i}}}^{H(0)} \\
@@ -777,11 +780,11 @@ R_{{E_{i}}}^{L(0)} \end{array} \right)\]
 
 and normalize $R_{E_{i}}^{0}$ such that $\mid \mid R_{E_{i}}^{0}\mid \mid_{1} = 1$
 
-\item[\textbf{3.}] Apply power iteration method using the same parameters as used in PageRank with the convergence tolerance set at 1e-08 and $\lambda = 0.85$ .
+\item[\textbf{3.}] Apply power iteration method with the convergence tolerance set at 1e-08 and $\lambda = 0.85$ .
 
-\item[\textbf{4.}] We get the final rank vectors for each subset of the vertices ($R_{{E_{i}}}^{M}, R_{{E_{i}}}^{H}, R_{{E_{i}}}^{W}, R_{{E_{i}}}^{U}, R_{{E_{i}}}^{L}$) after convergence. 
+\item[\textbf{4.}] Obtain the final rank vectors for each subset of the vertices ($R_{{E_{i}}}^{M}, R_{{E_{i}}}^{H}, R_{{E_{i}}}^{W}, R_{{E_{i}}}^{U}, R_{{E_{i}}}^{L}$) after convergence. 
 
-\item[\textbf{5.}] We finally obtain the subsets $\hat{M}_{E_{i}}, \hat{H}_{E_{i}}, \hat{W}_{E_{i}}, \hat{L}_{E_{i}}, \hat{U}_{E_{i}}$ consisting of the \textit{tweets}, \textit{hashtags}, \textit{text units}, \textit{URLs} and \textit{users}, respectively arranged in descending order of their final scores.
+\item[\textbf{5.}] Obtain the subsets $\hat{M}_{E_{i}}, \hat{H}_{E_{i}}, \hat{W}_{E_{i}}, \hat{L}_{E_{i}}, \hat{U}_{E_{i}}$ consisting of the \textit{tweets}, \textit{hashtags}, \textit{text units}, \textit{URLs} and \textit{users}, respectively arranged in descending order of their final scores.
 
 \end{itemize}
 
@@ -836,10 +839,10 @@ Since the algorithm uses power iteration method for ranking the vertices of a gr
     \includegraphics[width=14cm,height=11cm]{Figures/EventReferenceResolution.jpg}
 \end{figure}
 
-One of the main aims of the EIIM framework is to assign the reference of an event $E_{i}$ to its corresponding Entity Identity Information Structure ($s_{E_{i}}$). This aim is executed by this component. The main functions are as follows:
+One of the main aims of the EIIM framework is to assign the reference of an event $E_{i}$ to its corresponding `Event Identity Information Structure' ($s_{E_{i}}$). This aim is executed by this component. The main functions are as follows:
 
 \begin{itemize}
-\item The output of the previous component assigns a final ranked event-specific informativeness scores to the tweets. Using this score the component allows to choose top k tweets ranked in terms of their event-specific informative content. This enable the identification and resolution of high quality tweets providing useful information about the event $E_{i}$, solving the problems of \textit{noisy events} and \textit{noisy references} as already discussed in Chapter \ref{events}, Section \ref{problem}. The tweets after the top K are thrown away from the EIIS. This results in extremely high quality, event-specific informative tweets in the EIIS. We performed our experiment on the two events:
+\item The output of the previous component assigns a final ranked event-specific informativeness scores to the tweets. Using this score the component allows to choose top k tweets ranked in terms of their event-specific informative content. This enable the identification and resolution of high quality tweets providing useful information about the event $E_{i}$, solving the problems of \textit{noisy events} and \textit{noisy references} as already discussed in Chapter \ref{events}, Section \ref{problem}. The tweets after the top K are thrown away from the EIIS. This results in extremely high quality, event-specific informative tweets in the EIIS. Experiment were performed on the two events:
 
 \begin{itemize}
 \item Sydney Siege Crisis
@@ -848,7 +851,7 @@ One of the main aims of the EIIM framework is to assign the reference of an even
 
 Excerpts of the top 5 tweets identified for both the events are given below.
 
-\textbf{Top Five Event-specific Informative Tweet Excerpts for Sydney Siege Event}
+\textbf{Top Five Event-specific Informative Tweet Excerpts for Sydney Siege Crisis Event}
 \begin{enumerate}
 \item RT @faithcnn: Hostage taker in Sydney cafe has demanded 2 things: ISIS flag and; phone call with Australia PM Tony Abbott \#SydneySiege http://t.co/a2vgrn30Xh
 \item Aussie grand mufti and; Imam Council condemn \#Sydneysiege hostage capture http://t.co/ED98YKMxqM - LIVE UPDATES http://t.c...
@@ -868,9 +871,9 @@ Excerpts of the top 5 tweets identified for both the events are given below.
     \includegraphics[width=14cm,height=11cm]{Figures/EIIMComponents/EventAnalytics.jpg}
 \end{figure}
 
-The outputs of the Event Identity Information Processing component after processing the EventIdentityInfoGraph of a particular event is used for generating different analytics related to the event for the chosen time period, by this component. Some of the immediately available analytics that help in extracting deeper insights from the event related content are shown below for our sample events.
+The outputs of the `Event Identity Information Processing' component after processing the \textit{EventIdentityInfoGraph} of a particular event is used for generating different analytics related to the event for the chosen time period, by this component. Some of the immediately available analytics that help in extracting deeper insights from the event related content are shown below for the sample events.
 
-\textbf{Top Five Event-specific Informative Hashtags for Sydney Siege Event}
+\textbf{Top Five Event-specific Informative Hashtags for Sydney Siege Crisis Event}
 \begin{enumerate}
 \item \#sydneysiege 
 \item \#SydneySiege
@@ -879,7 +882,7 @@ The outputs of the Event Identity Information Processing component after process
 \item \#9News                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 \end{enumerate}
 
-\textbf{Top Five Event-specific Informative Text Units for Sydney Siege Event}
+\textbf{Top Five Event-specific Informative Text Units for Sydney Siege Crisis Event}
 \begin{enumerate}
 \item police
 \item sydney
@@ -888,7 +891,7 @@ The outputs of the Event Identity Information Processing component after process
 \item isis                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 \end{enumerate}
 
-\textbf{Top Five Event-specific Informative URLs for Sydney Siege Event}
+\textbf{Top Five Event-specific Informative URLs for Sydney Siege Crisis Event}
 \begin{enumerate}
 \item http://www.cnn.com/2014/12/15/world/asia/australia-sydney-hostage-situation/\\index.html
 \item http://www.bbc.co.uk/news/world-australia-30474089
@@ -901,11 +904,11 @@ The outputs of the Event Identity Information Processing component after process
 
 
 
-\textbf{Three Randomly Selected Tweets for Top Three Event-specific Informative Users posting about Sydney Siege Event.}
+\textbf{Three Randomly Selected Tweets for Top Three Event-specific Informative Users posting about Sydney Siege Crisis Event.}
 \begin{enumerate}
 \item \textbf{User 1}
 \begin{enumerate}
-\item RT @cnni: Hostage taker in Sydney cafe demands ISIS flag and call with Australian PM, Sky News reports. http://t.co/a2vgrn30Xh \#sydneysiege
+\item RT @cnni: Hostage taker in Sydney cafe demands ISIS flag and call with Australian PM, Sky News reports. \\ http://t.co/a2vgrn30Xh \#sydneysiege
 \item RT @DR\_SHAHID: Hostage taker demands delivery of an \#ISIS flag and a conversation with Prime Minister Tony Abbott http://t.co/xTSDMKCPcD
 \item RT @SkyNewsBreak: Update - New South Wales police commissioner confirms five hostages have escaped from the Lindt cafe in Sydney \#sydneysiege
 \end{enumerate}
@@ -948,13 +951,13 @@ The outputs of the Event Identity Information Processing component after process
 \begin{enumerate}
 \item http://rt.com/usa/214203-protests-police-brutality-nationwide/\\index.html
 \item http://mashable.com/2014/12/13/time-lapse-new-york-protest-march/?utm\_cid=mash-com-Tw-main-link
-\item http://www.cbsnews.com/news/eric-garner-ferguson-missouri-protesters-converge-on-washington/
-\item http://www.huffingtonpost.com/2014/12/13/millions-march-nyc\_n\_6320348.html?ncid=tweetlnkushpmg00000051 
+\item http://www.cbsnews.com/news/eric-garner-ferguson-missouri\\-protesters-converge-on-washington/
+\item http://www.huffingtonpost.com/2014/12/13/millions-march-nyc\_n\\\_6320348.html?ncid=tweetlnkushpmg00000051 
 \item https://www.youtube.com/watch?v=Iz7hkfNmfTY\&feature=youtu.be                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 \end{enumerate}
 
 
-\textbf{Three Randomly Selected Tweets for Top Three Event-specific Informative Users posting about Millions March NYC Event for a particular hour.}
+\textbf{Three Randomly Selected Tweets for Top Three Event-specific Informative Users posting about Millions March NYC Event.}
 \begin{enumerate}
 \item \textbf{User 1}
 \begin{enumerate}
@@ -980,7 +983,7 @@ The outputs of the Event Identity Information Processing component after process
 \end{enumerate}
 
 
-Some of the other event analytics that can be readily done using the \textit{EventIdentityInfoGraph}, and we would like to explore in the near future are:
+Some of the other event analytics that can be readily done using the \textit{EventIdentityInfoGraph}, and could be explored in the near future are:
 \begin{itemize}
 \item Topic modeling.
 \item Event-specific recommendations.
@@ -989,5 +992,5 @@ Some of the other event analytics that can be readily done using the \textit{Eve
 \item Trend Analysis.
 \end{itemize}
 
-The event related data stored in the database by the `Event Reference Collection' would allow to do all types of analysis that are popular in social media.
+The event related data stored in the database by the `Event Reference Collection' would allow to do all types of analysis that are commonly done with social media data.
 
