@@ -2,7 +2,7 @@
 
 \chapter{Event Identity Information Management (EIIM) Life Cycle for Social Media} % Main chapter title
 
-\label{eiim} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+\label{eiim} % For referencing the chapter elsewhere, use \ref{eiim} 
 
 \lhead{Chapter 5. \emph{Event Identity Information Management (EIIM) Life Cycle for Social Media}} % This is for the header on each page - perhaps a shortened title
 \doublespacing
@@ -10,14 +10,22 @@
 
 %\section{Background : Entity Identity Information Management}
 
-This chapter discusses about the Event Identity Information Management framework in order to solve the problems posed in Chapter \ref{events}, Section \ref{problem}. A high level view of the EIIM components and processes for social media is shown in Figure \ref{eiimcycle}. These components provide a generic framework on which any EIIM system based on social media references could be built. The various components of the framework go through cycles of interactions with each other over time, which is known as EIIM life cycle. At the heart of the framework lies the Event Identity Information Structure (EIIS) and Event Identity Information Processing, which manages the identity information related to a particular event and also helps in resolving high quality, informative references to the event from social media. Next, we give a detailed explanation of each component.
+\begin{sidewaysfigure}[htbp]
+\caption{Event Identity Information Management (EIIM) Life Cycle for user generated textual content in social media}
+\includegraphics[width=24cm,height=14cm]{Figures/NewEIIM.jpg}
+\label{eiimFig2}
+\end{sidewaysfigure}
 
-\begin{figure}[htbp]
-  \caption{Event Identity Information Management Life Cycle for Textual Content in Social Media.}
-	\label{eiimcycle}
-  \centering
-    \includegraphics[width=16cm,height=8cm]{Figures/EIIMpic.jpg}
-\end{figure}
+
+This chapter discusses about the Event Identity Information Management framework that solves the problems posed in Chapter \ref{events}, Section \ref{problem}. A high level view of the EIIM components and processes for social media is shown in Figure \ref{eiimFig2}. These components provide a generic framework on which any EIIM system based on social media could be built. The various components of the framework go through cycles of interactions with each other over time, which is known as EIIM life cycle. At the heart of the framework lies the components of \textit{Event Identity Information Structure} (EIIS) and \textit{Event Identity Information Processing}, which manages the identity information related to a particular event and also aids in resolving high quality, informative references to the event from social media. Next, we give a detailed explanation of each component.
+
+%\begin{figure}[htbp]
+%  \caption{Event Identity Information Management Life Cycle for Textual Content in Social Media.}
+%	\label{eiimcycle}
+%  \centering
+%    \includegraphics[width=16cm,height=8cm]{Figures/EIIMpic.jpg}
+%\end{figure}
+
 
 
 \begin{figure}[htbp]
@@ -27,7 +35,7 @@ This chapter discusses about the Event Identity Information Management framework
 \end{figure}
 
 \section{Identity Integrity}
-One of the fundamental goals of the proposed framework is to maintain a one-to-one correspondence between real-world events being monitored and the Event Identity Information Structure (EIIS) of the corresponding events for ensuring identity integrity. Therefore, a separate EIIS is maintained corresponding to each event. As new events are introduced to the framework, a unique identifier is assigned to them along with the allocation of individual EIIS structures. The framework is expected to maintain the integrity throughout the EIIM life cycle, by consistently assigning the same identifier to the references of a tracked event. Modules of this component assigns 12 byte unique integers known as ObjectId  to each event, and is also responsible for maintaining the same ObjectId for event ids of collected references and related EIIS. It is also the functionality of this component to assign the right identifier to the references resolved for an event by the Event Reference Resolution component.
+One of the fundamental goals of the proposed framework is to maintain a one-to-one correspondence between real-world events being monitored and the \textit{Event Identity Information Structure} (EIIS) of the corresponding events for ensuring identity integrity. Therefore, a separate EIIS is maintained corresponding to each event. As new events are introduced to the framework, a unique identifier is assigned to them along with the allocation of individual EIIS structures. The framework is expected to maintain the integrity throughout the EIIM life cycle, by consistently assigning the same identifier to the references of a tracked event. Modules of this component assigns 12 byte unique integers known as ObjectId\footnote{http://docs.mongodb.org/manual/reference/object-id/}  to each event, and is also responsible for maintaining the same ObjectId for event ids of collected references and related EIIS. It is also the functionality of this component to assign the right identifier to the references resolved for an event by the \textit{Event Reference Resolution} component.
 
 
 \section{Event Reference Collection\label{eventreferencecollection}}
@@ -50,7 +58,7 @@ This component allows the framework to collect event references from different s
 
 %\noindent \textbf{\textit{Motivation behind source selection:}} For many people blogs have become popular social media sources for satisfying interpersonal communication needs. Blogs act as a platform for masses to share their likes and dislikes, voice their opinions, provide suggestions and report news. Over the years blogging has matured from personal diaries to citizen journalistic sources providing live coverage of events beyond the professional newsrooms. Often mainstream media rely on blogs for reporting first-hand accounts of an event \cite{ekdale2007expression}. Other social media platforms like microblogs, social networks etc., also promote such activities. But, these platforms have very little scope to elaborately discuss about the events due to the limitations in the length of content allowed to be posted. However, these alternative platforms act as good sources for studying and tracking dissemination of information during real-life events. This motivated us to perform our experiments on sources collected from the blogging platforms instead of other social media webs
 
-Due to extreme popularity of Twitter, data from it was collected for representing the microblog genre and short textual social media references. Four million tweets (approx) related to five different events were collected. Details of the collected event references are provided in Table \ref{informationcuedata}. The tweets were collected over the given period of time, by providing a popular hashtag to the Twitter streaming API  as shown in Table \ref{informationcuedata} (for details about Twitter Data Collection please refer Appendix \ref{AppendixA}). Only English language tweets are considered for the experiments as the available natural language toolkits performs well for English, and the annotators used for different tasks are only proficient in English language.
+Due to extreme popularity of Twitter, data from it was collected for representing the microblog genre and short textual social media references. Four million tweets (approx) related to five different events were collected. Details of the collected event references are provided in Table \ref{informationcuedata}. The tweets were collected over the given period of time, by providing a popular hashtag to the Twitter streaming API  as shown in Table \ref{informationcuedata}. Only English language tweets are considered for the experiments as the available natural language toolkits performs well for English, and the annotators used for different tasks are only proficient in English language.
 
 \begin{table}[htbp]
 \center
@@ -116,7 +124,7 @@ Due to extreme popularity of Twitter, data from it was collected for representin
     \includegraphics[width=14cm,height=11cm]{Figures/EIIMComponents/EventReferencePreparation.jpg}
 \end{figure}
 
-Preprocessing the raw references is an important stage of any data intensive application. This component performs a series of data preparation steps on the collected event references in order to make them suitable for further processing by the other components of the EIIM life cycle. Several resources are compiled in order to tackle the challenges posed by short informal text prevalent in social media. 
+Pre-processing the raw references is an important stage of any data intensive application. This component performs a series of data preparation steps on the collected event references in order to make them suitable for further processing by the other components of the EIIM life cycle. Several resources are compiled in order to tackle the challenges posed by short informal text prevalent in social media. 
 
 %\subsection{Microblog Reference Preparation}
 

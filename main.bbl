@@ -1,9 +1,15 @@
-\begin{thebibliography}{146}
+\begin{thebibliography}{148}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Zhou and Talburt(2011)]{zhou2011entity}
+Yinle Zhou and John Talburt.
+\newblock Entity identity information management (eiim).
+\newblock In \emph{International Conference on Information Quality (ICIQ-11),
+  Adelaide, Australia}, pages 327--341, 2011.
 
 \bibitem[Phelan et~al.(2009)Phelan, McCarthy, and Smyth]{phelan2009using}
 Owen Phelan, Kevin McCarthy, and Barry Smyth.
@@ -108,12 +114,6 @@ Giridhar Kumaran and James Allan.
 \newblock In \emph{Proceedings of the 27th annual international ACM SIGIR
   conference on Research and development in information retrieval}, pages
   297--304. ACM, 2004.
-
-\bibitem[Zhou and Talburt(2011)]{zhou2011entity}
-Yinle Zhou and John Talburt.
-\newblock Entity identity information management (eiim).
-\newblock In \emph{International Conference on Information Quality (ICIQ-11),
-  Adelaide, Australia}, pages 327--341, 2011.
 
 \bibitem[Kaplan and Haenlein(2010)]{kaplan2010users}
 Andreas~M Kaplan and Michael Haenlein.
@@ -860,6 +860,16 @@ Jimmy Lin and Michael Schatz.
 \newblock Design patterns for efficient graph algorithms in mapreduce.
 \newblock In \emph{Proceedings of the Eighth Workshop on Mining and Learning
   with Graphs}, pages 78--85. ACM, 2010.
+
+\bibitem[Ruhnau(2000)]{ruhnau2000eigenvector}
+Britta Ruhnau.
+\newblock Eigenvector-centrality-a node-centrality?
+\newblock \emph{Social networks}, 22\penalty0 (4):\penalty0 357--365, 2000.
+
+\bibitem[Garcia(2006)]{garcia2006cosine}
+E~Garcia.
+\newblock Cosine similarity and term weight tutorial.
+\newblock \emph{Information retrieval intelligence}, 2006.
 
 \bibitem[Mihalcea et~al.(2004)]{Mihalcea2004}
 R.~Mihalcea et~al.

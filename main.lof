@@ -12,29 +12,29 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Short Head Vs Long Tail media sources.\relax }}{64}{figure.caption.111}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Top 10 entities from mainstream media and blogs.\relax }}{65}{figure.caption.113}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Event Identity Information Management Life Cycle for Textual Content in Social Media.\relax }}{71}{figure.caption.119}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Event Identity Information Management (EIIM) Life Cycle for user generated textual content in social media\relax }}{71}{figure.caption.119}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Identity Integrity component of the EIIM life cycle.\relax }}{72}{figure.caption.120}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Event Reference Collection component of the EIIM life cycle.\relax }}{73}{figure.caption.123}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Event Reference Preparation component of the EIIM life cycle.\relax }}{75}{figure.caption.126}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Event Information Quality component of the EIIM life cycle.\relax }}{82}{figure.caption.142}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Event Identity Information Capture component of the EIIM life cycle.\relax }}{89}{figure.caption.173}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Distribution of hashtags in event related tweets.\relax }}{93}{figure.caption.175}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Distribution of tokens in event related tweets.\relax }}{93}{figure.caption.176}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Distribution of URLs in event related tweets.\relax }}{94}{figure.caption.177}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Distribution of users in event related tweets.\relax }}{94}{figure.caption.178}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Content characteristics of informative and non-informative tweets related to events.\relax }}{95}{figure.caption.179}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Event Identity Information Structure component of the EIIM life cycle.\relax }}{102}{figure.caption.188}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Event Identity Information Processing component of the EIIM life cycle.\relax }}{103}{figure.caption.189}
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Mutual Reinforcement Chains in Twitter for an event.\relax }}{106}{figure.caption.192}
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Event Reference Resolution component of the EIIM life cycle.\relax }}{117}{figure.caption.228}
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Event Analytics component of the EIIM life cycle.\relax }}{120}{figure.caption.235}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Event Reference Collection component of the EIIM life cycle.\relax }}{74}{figure.caption.124}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Event Reference Preparation component of the EIIM life cycle.\relax }}{76}{figure.caption.127}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Event Information Quality component of the EIIM life cycle.\relax }}{82}{figure.caption.143}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Event Identity Information Capture component of the EIIM life cycle.\relax }}{89}{figure.caption.174}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Distribution of hashtags in event related tweets.\relax }}{93}{figure.caption.176}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Distribution of tokens in event related tweets.\relax }}{93}{figure.caption.177}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Distribution of URLs in event related tweets.\relax }}{94}{figure.caption.178}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Distribution of users in event related tweets.\relax }}{94}{figure.caption.179}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Content characteristics of informative and non-informative tweets related to events.\relax }}{95}{figure.caption.180}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Event Identity Information Structure component of the EIIM life cycle.\relax }}{102}{figure.caption.189}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Event Identity Information Processing component of the EIIM life cycle.\relax }}{103}{figure.caption.190}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Mutual Reinforcement Chains in Twitter for an event.\relax }}{106}{figure.caption.193}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Event Reference Resolution component of the EIIM life cycle.\relax }}{117}{figure.caption.229}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Event Analytics component of the EIIM life cycle.\relax }}{120}{figure.caption.236}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Performance comparison of ranking techniques using NDCG scores.\relax }}{140}{figure.caption.310}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces \relax \fontsize {10.95}{13.6}\selectfont \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Performance comparison of ranking techniques using NDCG scores.\relax }}{141}{figure.caption.311}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Performance comparison of ranking techniques using NDCG scores.\relax }}{141}{figure.caption.312}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Performance comparison of ranking techniques using NDCG scores.\relax }}{142}{figure.caption.313}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Performance comparison of ranking techniques using precision scores.\relax }}{142}{figure.caption.314}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Performance comparison of ranking techniques using precision scores.\relax }}{143}{figure.caption.315}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Performance comparison of ranking techniques using NDCG scores for `Millions March Nyc' event.\relax }}{140}{figure.caption.311}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces \relax \fontsize {10.95}{13.6}\selectfont \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Performance comparison of ranking techniques using NDCG scores for `Sydney Siege Crisis' event.\relax }}{141}{figure.caption.312}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Performance comparison of ranking techniques using NDCG scores for `Millions March Nyc' event.\relax }}{141}{figure.caption.313}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Performance comparison of ranking techniques using NDCG scores for `Sydney Siege Crisis' event.\relax }}{142}{figure.caption.314}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Performance comparison of ranking techniques using precision scores for `Millions March Nyc' event.\relax }}{142}{figure.caption.315}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Performance comparison of ranking techniques using precision scores for `Sydney Siege Crisis' event.\relax }}{143}{figure.caption.316}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

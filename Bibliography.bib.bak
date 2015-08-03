@@ -1514,6 +1514,18 @@
   Timestamp                = {2015.04.09}
 }
 
+@Article{ruhnau2000eigenvector,
+  Title                    = {Eigenvector-centrality-a node-centrality?},
+  Author                   = {Ruhnau, Britta},
+  Journal                  = {Social networks},
+  Year                     = {2000},
+  Number                   = {4},
+  Pages                    = {357--365},
+  Volume                   = {22},
+
+  Publisher                = {Elsevier}
+}
+
 @Article{sakaki2013tweet,
   Title                    = {Tweet analysis for real-time event detection and earthquake reporting system development},
   Author                   = {Sakaki, Takeshi and Okazaki, Makoto and Matsuo, Yutaka},
