@@ -78,12 +78,12 @@
 \contentsline {section}{\numberline {7.5}Social Media Data Integration}{151}{section.330}
 \contentsline {chapter}{\numberline {8}Conclusion and Future Work}{152}{chapter.332}
 \contentsline {section}{\numberline {8.1}Conclusion}{152}{section.333}
-\contentsline {section}{\numberline {8.2}Future Work}{152}{section.334}
-\contentsline {subsection}{\numberline {8.2.1}Summarizing Event Related Content}{152}{subsection.335}
-\contentsline {subsection}{\numberline {8.2.2}Identifying Insightful Opinionated Content Related to Events}{153}{subsection.336}
-\contentsline {subsection}{\numberline {8.2.3}Event-specific Recommendations}{155}{subsection.347}
-\contentsline {subsection}{\numberline {8.2.4}Distributed Processing of EventIdentityInfoGraph}{157}{subsection.348}
-\contentsline {subsection}{\numberline {8.2.5}Event Ontology for Social Media}{158}{subsection.350}
+\contentsline {section}{\numberline {8.2}Future Work}{155}{section.334}
+\contentsline {subsection}{\numberline {8.2.1}Summarizing Event Related Content}{155}{subsection.335}
+\contentsline {subsection}{\numberline {8.2.2}Identifying Insightful Opinionated Content Related to Events}{156}{subsection.336}
+\contentsline {subsection}{\numberline {8.2.3}Event-specific Recommendations}{158}{subsection.347}
+\contentsline {subsection}{\numberline {8.2.4}Distributed Processing of EventIdentityInfoGraph}{160}{subsection.348}
+\contentsline {subsection}{\numberline {8.2.5}Event Ontology for Social Media}{160}{subsection.350}
 \vspace {2em}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{160}{dummy.351}
+\contentsline {chapter}{Bibliography}{163}{dummy.351}
