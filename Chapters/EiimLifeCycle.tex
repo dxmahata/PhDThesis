@@ -1,7 +1,7 @@
 % Chapter 5
 
 \chapter{Event Identity Information Management (EIIM) Life Cycle for Social Media} % Main chapter title
-
+\thispagestyle{fancy}
 \label{eiim} % For referencing the chapter elsewhere, use \ref{eiim} 
 
 \lhead{Chapter 5. \emph{Event Identity Information Management (EIIM) Life Cycle for Social Media}} % This is for the header on each page - perhaps a shortened title
@@ -167,7 +167,7 @@ After the data cleansing step, the duplicate detection scheme identifies both th
 \subsection{Stop Word Detection and Elimination}
 A list of English stop words is compiled that is publicly shared in the following URL :  
 \begin{itemize}
-\item https://github.com/dxmahata/EIIMFramework/blob/master/CodeBase/\\EventIdentityInformationManagement/Resources/englishStopwords.txt
+\item https://github.com/dxmahata/EIIMFramework/blob/master/\\CodeBase/EventIdentityInformationManagement/Resources/\\englishStopwords.txt
 \end{itemize}
 This list is used for detecting the stop words in English language tweets. The stop words are eliminated and the number of stop words detected is recorded.
 
@@ -176,13 +176,13 @@ Slang words commonly used on the Internet and twitter specific slang publicly sh
 
 The compiled list of twitter specific slang words is publicly shared and can be obtained from the following URL : 
 \begin{itemize}
-\item https://github.com/dxmahata/EIIMFramework/blob/master/CodeBase/\\EventIdentityInformationManagement/Resources/slangWords.txt
+\item https://github.com/dxmahata/EIIMFramework/blob/master/\\CodeBase/EventIdentityInformationManagement/Resources/\\slangWords.txt
 \end{itemize}
 
 \subsection{Feeling Word Detection} 
 A list of words expressing feelings on the Internet, obtained from wefeelfine.org is used for detecting and extracting the feeling words from a tweet. The number of feeling words detected is recorded and the extracted feeling words are stored. This list is also publicly available and can be obtained from the following URL :
 \begin{itemize}
-\item https://github.com/dxmahata/EIIMFramework/blob/master/CodeBase/\\EventIdentityInformationManagement/Resources/feelingWords.txt
+\item https://github.com/dxmahata/EIIMFramework/blob/master/\\CodeBase/EventIdentityInformationManagement/Resources/\\feelingWords.txt
 \end{itemize}
 
 \subsection{Tokenization}
@@ -856,8 +856,8 @@ Excerpts of the top 5 tweets identified for both the events are given below.
 \item RT @faithcnn: Hostage taker in Sydney cafe has demanded 2 things: ISIS flag and; phone call with Australia PM Tony Abbott \#SydneySiege http://t.co/a2vgrn30Xh
 \item Aussie grand mufti and; Imam Council condemn \#Sydneysiege hostage capture http://t.co/ED98YKMxqM - LIVE UPDATES http://t.c...
 \item RT @PatDollard: \#SydneySiege: Hostages Held By Jihadis In Australian Cafe - WATCH LIVE VIDEO COVERAGE http://t.co/uGxmd7zLpc \#tcot \#pjnet \\ sydney-siege-scene/index.html
-\item RT @FoxNews: MORE: Police confirm 3 hostages escape Sydney cafe, unknown number remain inside http://t.co/pcAt91LIdS \#Sydneysiege
-\item Watch \#sydneysiege police conference live as hostages are still being held inside a central Sydney cafe http://t.co/OjulBqM7w2 \#c4news
+\item RT @FoxNews: MORE: Police confirm 3 hostages escape Sydney cafe, unknown number remain inside \\ http://t.co/pcAt91LIdS \#Sydneysiege
+\item Watch \#sydneysiege police conference live as hostages are still being held inside a central Sydney cafe \\ http://t.co/OjulBqM7w2 \#c4news
 \end{enumerate}
 
 \item The other task that can be achieved using this component is the extraction of extremely informative features from the ranked results of the previous component and use them to form an evolutionary classifier or a feature vector for constantly tracking the event tweets w.r.t time. But the feature may get updated as the event progresses and a new set of ranked features needs to be obtained from the previous component after an interval of time that should be configurable. This, functionality of the component is currently not implemented and tested. We consider it as one of our future works.
@@ -952,8 +952,8 @@ The outputs of the `Event Identity Information Processing' component after proce
 \item http://rt.com/usa/214203-protests-police-brutality-nationwide/\\index.html
 \item http://mashable.com/2014/12/13/time-lapse-new-york-protest-march/?utm\_cid=mash-com-Tw-main-link
 \item http://www.cbsnews.com/news/eric-garner-ferguson-missouri\\-protesters-converge-on-washington/
-\item http://www.huffingtonpost.com/2014/12/13/millions-march-nyc\_n\\\_6320348.html?ncid=tweetlnkushpmg00000051 
-\item https://www.youtube.com/watch?v=Iz7hkfNmfTY\&feature=youtu.be                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+\item http://www.huffingtonpost.com/2014/12/13/millions-march-nyc\\\_n\_6320348.html?ncid=tweetlnkushpmg00000051 
+\item https://www.youtube.com/watch?v=Iz7hkfNmfTY\&feature=\\youtu.be                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 \end{enumerate}
 
 
@@ -969,7 +969,7 @@ The outputs of the `Event Identity Information Processing' component after proce
 \item \textbf{User 2}
 \begin{enumerate}
 \item RT @roqchams: Thousands march on NYPD headquarters to protest police terrorism http://t.co/yVyUVYkd9X http://t.co/X4QZrfOISh \#MillionsMarchNYC
-\item RT @NYjusticeleague: Hundreds killed. Ten Demands. One Continued Fight.  Sign our petition at: http://t.co/KETNo6bS0V \#MillionsMarchNYC htt…
+\item RT @NYjusticeleague: Hundreds killed. Ten Demands. One Continued Fight.  Sign our petition at: \\ http://t.co/KETNo6bS0V \#MillionsMarchNYC htt…
 \item RT @cobismith: Union Square now with NYPD in foreground, \#MillionsMarchNYC protesters at right and; US national debt ticker on the left http:/…
 \end{enumerate}
 

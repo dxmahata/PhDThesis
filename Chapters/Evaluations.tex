@@ -1,12 +1,13 @@
 % Chapter 7
 
 \chapter{Evaluations} % Main chapter title
-
+\thispagestyle{fancy}
 \label{eval} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
 \lhead{Chapter 7. \emph{Evaluations}} % This is for the header on each page - perhaps a shortened title
 \doublespacing
 \setlength{\parindent}{1cm}
+
 %\section{Conclusion}
 %
 %\section{Future Work}
@@ -48,6 +49,7 @@ The algorithm was implemented in this dissertation with slight modifications fro
 \item \textbf{RTRank} - Number of retweets is a good measure of popularity of a tweet and is also used by Twitter for ranking its search results. It is also commonly used by other paltforms for ranking tweets as already pointed out in Chapter \ref{review}. Therefore, tweets ordered in decreasing order of number of retweets were also considered as one of the baselines. This scheme is refered to as RTRank throughout this dissertation.
 
 \item \textbf{Logistic Regression Model} - This technique is the logistic regression model, implemented for initializing the informativeness score of the tweets in the \textit{Event Information Quality} component of the EIIM life cycle. The generic informativeness score assigned by the logistic regression model is different from the final event-specific informativeness score assigned by \textit{EventIdentityInfoRank}. Also the logistic regression model acts as a good representative of the common challenges with supervised approaches. This is explained with an example.
+
 
 On manually analyzing the informative tweets we tried to assess if it is good enough to train a classifier for detecting informative tweets for an event in order to identify valuable event-specific information. Although the tweets on which the logistic regression model was trained were related to events yet tweets like, \textit{RT @BFDealz: http://t.co/TSJAigrVJI WHEELS SUPER TREASURE HUNT SUPERIZED HARLEY DAVIDSON FAT BOY LONG CARD 2014 \#cpac2014 \#sxsw}, were classified as informative, despite of not containing any event-specific information. 
 
